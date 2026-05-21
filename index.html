@@ -4,14 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oxford 3000 Final</title>
+
 <style>
-*{box-sizing:border-box}
+
+*{
+box-sizing:border-box
+}
+
 body{
 margin:0;
 font-family:-apple-system,BlinkMacSystemFont,sans-serif;
 background:linear-gradient(135deg,#dbeafe,#eff6ff);
 color:#111827;
 }
+
 header{
 padding:28px;
 text-align:center;
@@ -21,12 +27,14 @@ position:sticky;
 top:0;
 z-index:999;
 }
+
 .tabs{
 display:flex;
 gap:10px;
 padding:18px;
 overflow:auto;
 }
+
 .tab-btn{
 border:none;
 background:black;
@@ -35,12 +43,17 @@ padding:14px 18px;
 border-radius:16px;
 cursor:pointer;
 }
-.active-btn{background:#111827}
+
+.active-btn{
+background:#111827
+}
+
 .container{
 max-width:1100px;
 margin:auto;
 padding:20px;
 }
+
 .card{
 background:rgba(255,255,255,.55);
 backdrop-filter:blur(18px);
@@ -48,20 +61,29 @@ padding:24px;
 border-radius:28px;
 margin-bottom:20px;
 }
-.tab{display:none}
-.active{display:block}
+
+.tab{
+display:none
+}
+
+.active{
+display:block
+}
+
 input{
 width:100%;
 padding:16px;
 border:none;
 border-radius:16px;
 }
+
 .word-item{
 padding:14px;
 margin-top:10px;
 border-radius:16px;
 background:rgba(255,255,255,.7);
 }
+
 button{
 border:none;
 background:black;
@@ -71,6 +93,7 @@ border-radius:14px;
 cursor:pointer;
 margin:5px;
 }
+
 .flashcard{
 min-height:260px;
 display:flex;
@@ -79,15 +102,19 @@ justify-content:center;
 align-items:center;
 text-align:center;
 }
+
 .big{
 font-size:48px;
 font-weight:700;
 }
+
 .pagination{
 margin-top:20px;
 }
+
 </style>
 </head>
+
 <body>
 
 <header>
@@ -96,59 +123,125 @@ margin-top:20px;
 </header>
 
 <div class="tabs">
-<button class="tab-btn active-btn" onclick="openTab(event,'search')">🔍 Search</button>
-<button class="tab-btn" onclick="openTab(event,'all')">📚 All Words</button>
-<button class="tab-btn" onclick="openTab(event,'flash')">🃏 Flashcard</button>
-<button class="tab-btn" onclick="openTab(event,'quiz')">📝 Quiz</button>
-<button class="tab-btn" onclick="openTab(event,'manage')">⚙ Manage</button>
+
+<button class="tab-btn active-btn"
+onclick="openTab(event,'search')">
+🔍 Search
+</button>
+
+<button class="tab-btn"
+onclick="openTab(event,'all')">
+📚 All Words
+</button>
+
+<button class="tab-btn"
+onclick="openTab(event,'flash')">
+🃏 Flashcard
+</button>
+
+<button class="tab-btn"
+onclick="openTab(event,'quiz')">
+📝 Quiz
+</button>
+
+<button class="tab-btn"
+onclick="openTab(event,'manage')">
+⚙ Manage
+</button>
+
 </div>
 
 <div class="container">
 
+<!-- SEARCH -->
+
 <div id="search" class="tab active">
+
 <div class="card">
-<input id="searchInput" placeholder="ค้นหาคำศัพท์..." onkeyup="searchWord()">
+
+<input
+id="searchInput"
+placeholder="ค้นหาคำศัพท์..."
+onkeyup="searchWord()"
+>
+
 <div id="searchResult"></div>
+
 </div>
 </div>
+
+<!-- ALL WORDS -->
 
 <div id="all" class="tab">
+
 <div class="card">
+
 <div id="allWords"></div>
+
 </div>
 </div>
 
+<!-- FLASHCARD -->
+
 <div id="flash" class="tab">
+
 <div class="card">
+
 <div id="flashcard" class="flashcard"></div>
+
 <div>
 <button onclick="prevCard()">◀ Prev</button>
 <button onclick="nextCard()">Next ▶</button>
 <button onclick="speak()">🔊 Speak</button>
 </div>
+
 </div>
 </div>
+
+<!-- QUIZ -->
 
 <div id="quiz" class="tab">
+
 <div class="card">
+
 <h2>Quiz</h2>
+
 <p id="quizQuestion"></p>
+
 <div id="quizOptions"></div>
+
 <div id="quizResult"></div>
-<button onclick="newQuiz()">สุ่มใหม่</button>
+
+<button onclick="newQuiz()">
+สุ่มใหม่
+</button>
+
 </div>
 </div>
+
+<!-- MANAGE -->
 
 <div id="manage" class="tab">
+
 <div class="card">
+
 <h2>Manage Vocabulary</h2>
 
-<input id="newWord" placeholder="English Word"><br><br>
-<input id="newMeaning" placeholder="คำแปลไทย"><br><br>
-<input id="newPronounce" placeholder="คำอ่านไทย"><br><br>
-<input id="newIPA" placeholder="IPA"><br><br>
+<input id="newWord"
+placeholder="English Word"><br><br>
 
-<button onclick="addWord()">➕ Add Word</button>
+<input id="newMeaning"
+placeholder="คำแปลไทย"><br><br>
+
+<input id="newPronounce"
+placeholder="คำอ่านไทย"><br><br>
+
+<input id="newIPA"
+placeholder="IPA"><br><br>
+
+<button onclick="addWord()">
+➕ Add Word
+</button>
 
 <div id="manageList"></div>
 
@@ -160,14 +253,19 @@ margin-top:20px;
 <script>
 
 let vocab=[];
+
 let current=0;
+
 let currentQuiz=null;
+
 let currentPage=1;
+
 const wordsPerPage=10;
 
 async function loadVocab(){
 
-const saved=localStorage.getItem('vocab');
+const saved=
+localStorage.getItem('vocab');
 
 if(saved){
 
@@ -183,11 +281,15 @@ localStorage.setItem(
 'vocab',
 JSON.stringify(vocab)
 );
+
 }
 
 showCard();
+
 renderWords();
+
 renderManage();
+
 newQuiz();
 }
 
@@ -201,7 +303,9 @@ JSON.stringify(vocab)
 );
 
 renderWords();
+
 renderManage();
+
 showCard();
 }
 
@@ -227,9 +331,13 @@ let q=document
 .toLowerCase();
 
 let found=vocab.filter(v=>
+
 v.word.toLowerCase().includes(q)
+
 ||
+
 v.meaning_th.includes(q)
+
 );
 
 document.getElementById('searchResult')
@@ -238,10 +346,15 @@ document.getElementById('searchResult')
 found.map(v=>`
 
 <div class="word-item">
+
 <b>${v.word}</b><br>
+
 ${v.meaning_th}<br>
+
 ${v.pronounce_th}<br>
+
 <small>${v.ipa}</small>
+
 </div>
 
 `).join('');
@@ -262,11 +375,17 @@ document.getElementById('allWords')
 pageWords.map(v=>`
 
 <div class="word-item">
+
 <b>${v.word}</b>
+
 —
+
 ${v.meaning_th}
+
 <br>
+
 <small>${v.pronounce_th}</small>
+
 </div>
 
 `).join('')
@@ -286,10 +405,15 @@ let html='<div class="pagination">';
 for(let i=1;i<=totalPages;i++){
 
 html+=`
+
 <button onclick="goPage(${i})">
+
 ${i}
+
 </button>
+
 `;
+
 }
 
 html+='</div>';
@@ -316,20 +440,37 @@ let v=vocab[current];
 document.getElementById('flashcard')
 .innerHTML=`
 
-<div class="big">${v.word}</div>
+<div class="big">
 
-<div>${v.meaning_th}</div>
+${v.word}
 
-<div>${v.pronounce_th}</div>
+</div>
 
-<small>${v.ipa}</small>
+<div>
+
+${v.meaning_th}
+
+</div>
+
+<div>
+
+${v.pronounce_th}
+
+</div>
+
+<small>
+
+${v.ipa}
+
+</small>
 
 `;
 }
 
 function nextCard(){
 
-current=(current+1)%vocab.length;
+current=
+(current+1)%vocab.length;
 
 showCard();
 }
@@ -359,7 +500,11 @@ speechSynthesis.speak(u);
 }
 
 function shuffle(a){
-return a.sort(()=>Math.random()-0.5);
+
+return a.sort(
+()=>Math.random()-0.5
+);
+
 }
 
 function newQuiz(){
@@ -380,12 +525,14 @@ Math.floor(Math.random()*vocab.length)
 
 if(!options.includes(c))
 options.push(c);
+
 }
 
 options=shuffle(options);
 
 document.getElementById('quizQuestion')
 .innerHTML=
+
 `คำว่า <b>${q.word}</b> แปลว่าอะไร?`;
 
 document.getElementById('quizOptions')
@@ -394,7 +541,9 @@ document.getElementById('quizOptions')
 options.map(o=>`
 
 <button onclick="checkAnswer('${o}')">
+
 ${o}
+
 </button>
 
 `).join('');
@@ -417,33 +566,50 @@ r.style.color='green';
 }else{
 
 r.innerHTML=
-'❌ Correct: '+currentQuiz.meaning_th;
+'❌ Correct: '+
+currentQuiz.meaning_th;
 
 r.style.color='red';
+
 }
 }
 
 function addWord(){
 
-const word=document.getElementById('newWord').value;
-const meaning=document.getElementById('newMeaning').value;
-const pronounce=document.getElementById('newPronounce').value;
-const ipa=document.getElementById('newIPA').value;
+const word=
+document.getElementById('newWord').value;
+
+const meaning=
+document.getElementById('newMeaning').value;
+
+const pronounce=
+document.getElementById('newPronounce').value;
+
+const ipa=
+document.getElementById('newIPA').value;
 
 if(!word || !meaning) return;
 
 vocab.unshift({
+
 word:word,
+
 meaning_th:meaning,
+
 pronounce_th:pronounce,
+
 ipa:ipa
+
 });
 
 saveVocab();
 
 document.getElementById('newWord').value='';
+
 document.getElementById('newMeaning').value='';
+
 document.getElementById('newPronounce').value='';
+
 document.getElementById('newIPA').value='';
 }
 
@@ -462,6 +628,20 @@ vocab.slice(0,50).map((v,i)=>`
 
 ${v.meaning_th}
 
+<br>
+
+<small>${v.pronounce_th}</small>
+
+<br>
+
+<small>${v.ipa}</small>
+
+<br><br>
+
+<button onclick="editWord(${i})">
+✏ Edit
+</button>
+
 <button onclick="deleteWord(${i})">
 🗑 Delete
 </button>
@@ -469,6 +649,53 @@ ${v.meaning_th}
 </div>
 
 `).join('');
+}
+
+function editWord(i){
+
+const v=vocab[i];
+
+const word=prompt(
+'Edit word',
+v.word
+);
+
+if(word===null) return;
+
+const meaning=prompt(
+'Edit meaning',
+v.meaning_th
+);
+
+if(meaning===null) return;
+
+const pronounce=prompt(
+'Edit pronounce',
+v.pronounce_th
+);
+
+if(pronounce===null) return;
+
+const ipa=prompt(
+'Edit IPA',
+v.ipa
+);
+
+if(ipa===null) return;
+
+vocab[i]={
+
+word:word,
+
+meaning_th:meaning,
+
+pronounce_th:pronounce,
+
+ipa:ipa
+
+};
+
+saveVocab();
 }
 
 function deleteWord(i){
