@@ -188,6 +188,10 @@
                         🔄 Flip
                     </button>
 
+                    <button onclick="editFlashcard()">
+                        ✏ Edit
+                    </button>
+
                     <button onclick="nextCard()">
                         Next ▶
                     </button>
@@ -518,6 +522,30 @@ opacity:.5;
             showMeaning = !showMeaning;
 
             showCard();
+        }
+
+        function editFlashcard() {
+
+            toggleEdit(current);
+
+            openTab(
+                {
+                    target: document.querySelectorAll('.tab-btn')[4]
+                },
+                'manage'
+            );
+
+            setTimeout(() => {
+
+                document
+                    .getElementById(
+                        `editBox-${current}`
+                    )
+                    .scrollIntoView({
+                        behavior: 'smooth'
+                    });
+
+            }, 200);
         }
 
         function speak() {
