@@ -1,0 +1,807 @@
+[
+  {
+    "word": "about",
+    "meaning": "เกี่ยวกับ",
+    "ipa": "/əˈbaʊt/"
+  },
+  {
+    "word": "above",
+    "meaning": "ข้างบน",
+    "ipa": "/əˈbʌv/"
+  },
+  {
+    "word": "across",
+    "meaning": "ข้าม",
+    "ipa": "/əˈkrɔːs/"
+  },
+  {
+    "word": "action",
+    "meaning": "การกระทำ",
+    "ipa": "/ˈæk.ʃən/"
+  },
+  {
+    "word": "activity",
+    "meaning": "กิจกรรม",
+    "ipa": "/ækˈtɪv.ə.ti/"
+  },
+  {
+    "word": "actor",
+    "meaning": "นักแสดงชาย",
+    "ipa": "/ˈæk.tər/"
+  },
+  {
+    "word": "actress",
+    "meaning": "นักแสดงหญิง",
+    "ipa": "/ˈæk.trəs/"
+  },
+  {
+    "word": "add",
+    "meaning": "เพิ่ม",
+    "ipa": "/æd/"
+  },
+  {
+    "word": "address",
+    "meaning": "ที่อยู่",
+    "ipa": "/əˈdres/"
+  },
+  {
+    "word": "adult",
+    "meaning": "ผู้ใหญ่",
+    "ipa": "/əˈdʌlt/"
+  },
+  {
+    "word": "advice",
+    "meaning": "คำแนะนำ",
+    "ipa": "/ədˈvaɪs/"
+  },
+  {
+    "word": "afraid",
+    "meaning": "เกรงกลัว",
+    "ipa": "/əˈfreɪd/"
+  },
+  {
+    "word": "after",
+    "meaning": "หลังจาก",
+    "ipa": "/ˈæf.tər/"
+  },
+  {
+    "word": "again",
+    "meaning": "อีกครั้ง",
+    "ipa": "/əˈɡen/"
+  },
+  {
+    "word": "age",
+    "meaning": "อายุ",
+    "ipa": "/eɪdʒ/"
+  },
+  {
+    "word": "agree",
+    "meaning": "เห็นด้วย",
+    "ipa": "/əˈɡriː/"
+  },
+  {
+    "word": "air",
+    "meaning": "อากาศ",
+    "ipa": "/er/"
+  },
+  {
+    "word": "airport",
+    "meaning": "สนามบิน",
+    "ipa": "/ˈer.pɔːrt/"
+  },
+  {
+    "word": "all",
+    "meaning": "ทั้งหมด",
+    "ipa": "/ɔːl/"
+  },
+  {
+    "word": "always",
+    "meaning": "เสมอ",
+    "ipa": "/ˈɔːl.weɪz/"
+  },
+  {
+    "word": "amazing",
+    "meaning": "อัศจรรย์",
+    "ipa": "/əˈmeɪ.zɪŋ/"
+  },
+  {
+    "word": "angry",
+    "meaning": "โกรธ",
+    "ipa": "/ˈæŋ.ɡri/"
+  },
+  {
+    "word": "animal",
+    "meaning": "สัตว์",
+    "ipa": "/ˈæn.ə.məl/"
+  },
+  {
+    "word": "answer",
+    "meaning": "คำตอบ",
+    "ipa": "/ˈæn.sər/"
+  },
+  {
+    "word": "apple",
+    "meaning": "แอปเปิล",
+    "ipa": "/ˈæp.əl/"
+  },
+  {
+    "word": "area",
+    "meaning": "พื้นที่",
+    "ipa": "/ˈer.i.ə/"
+  },
+  {
+    "word": "arrive",
+    "meaning": "มาถึง",
+    "ipa": "/əˈraɪv/"
+  },
+  {
+    "word": "art",
+    "meaning": "ศิลปะ",
+    "ipa": "/ɑːrt/"
+  },
+  {
+    "word": "artist",
+    "meaning": "ศิลปิน",
+    "ipa": "/ˈɑːr.tɪst/"
+  },
+  {
+    "word": "ask",
+    "meaning": "ถาม",
+    "ipa": "/æsk/"
+  },
+  {
+    "word": "baby",
+    "meaning": "เด็ก",
+    "ipa": "/ˈbeɪ.bi/"
+  },
+  {
+    "word": "back",
+    "meaning": "กลับ",
+    "ipa": "/bæk/"
+  },
+  {
+    "word": "bad",
+    "meaning": "แย่",
+    "ipa": "/bæd/"
+  },
+  {
+    "word": "bag",
+    "meaning": "ถุง",
+    "ipa": "/bæɡ/"
+  },
+  {
+    "word": "ball",
+    "meaning": "ลูกบอล",
+    "ipa": "/bɔːl/"
+  },
+  {
+    "word": "banana",
+    "meaning": "กล้วย",
+    "ipa": "/bəˈnæn.ə/"
+  },
+  {
+    "word": "bank",
+    "meaning": "ธนาคาร",
+    "ipa": "/bæŋk/"
+  },
+  {
+    "word": "bathroom",
+    "meaning": "ห้องน้ำ",
+    "ipa": "/ˈbæθ.ruːm/"
+  },
+  {
+    "word": "beach",
+    "meaning": "ชายหาด",
+    "ipa": "/biːtʃ/"
+  },
+  {
+    "word": "beautiful",
+    "meaning": "สวย",
+    "ipa": "/ˈbjuː.tɪ.fəl/"
+  },
+  {
+    "word": "because",
+    "meaning": "เพราะ",
+    "ipa": "/bɪˈkɔːz/"
+  },
+  {
+    "word": "become",
+    "meaning": "กลายเป็น",
+    "ipa": "/bɪˈkʌm/"
+  },
+  {
+    "word": "bed",
+    "meaning": "เตียง",
+    "ipa": "/bed/"
+  },
+  {
+    "word": "begin",
+    "meaning": "เริ่ม",
+    "ipa": "/bɪˈɡɪn/"
+  },
+  {
+    "word": "behind",
+    "meaning": "ด้านหลัง",
+    "ipa": "/bɪˈhaɪnd/"
+  },
+  {
+    "word": "believe",
+    "meaning": "เชื่อ",
+    "ipa": "/bɪˈliːv/"
+  },
+  {
+    "word": "best",
+    "meaning": "ดีที่สุด",
+    "ipa": "/best/"
+  },
+  {
+    "word": "bicycle",
+    "meaning": "จักรยาน",
+    "ipa": "/ˈbaɪ.sɪ.kəl/"
+  },
+  {
+    "word": "big",
+    "meaning": "ใหญ่",
+    "ipa": "/bɪɡ/"
+  },
+  {
+    "word": "bird",
+    "meaning": "นก",
+    "ipa": "/bɜːrd/"
+  },
+  {
+    "word": "birthday",
+    "meaning": "วันเกิด",
+    "ipa": "/ˈbɜːrθ.deɪ/"
+  },
+  {
+    "word": "black",
+    "meaning": "สีดำ",
+    "ipa": "/blæk/"
+  },
+  {
+    "word": "blue",
+    "meaning": "สีฟ้า",
+    "ipa": "/bluː/"
+  },
+  {
+    "word": "boat",
+    "meaning": "เรือ",
+    "ipa": "/boʊt/"
+  },
+  {
+    "word": "body",
+    "meaning": "ร่างกาย",
+    "ipa": "/ˈbɑː.di/"
+  },
+  {
+    "word": "book",
+    "meaning": "หนังสือ",
+    "ipa": "/bʊk/"
+  },
+  {
+    "word": "boy",
+    "meaning": "เด็กผู้ชาย",
+    "ipa": "/bɔɪ/"
+  },
+  {
+    "word": "bread",
+    "meaning": "ขนมปัง",
+    "ipa": "/bred/"
+  },
+  {
+    "word": "breakfast",
+    "meaning": "อาหารเช้า",
+    "ipa": "/ˈbrek.fəst/"
+  },
+  {
+    "word": "brother",
+    "meaning": "พี่ชาย",
+    "ipa": "/ˈbrʌð.ər/"
+  },
+  {
+    "word": "brown",
+    "meaning": "สีน้ำตาล",
+    "ipa": "/braʊn/"
+  },
+  {
+    "word": "build",
+    "meaning": "สร้าง",
+    "ipa": "/bɪld/"
+  },
+  {
+    "word": "business",
+    "meaning": "ธุรกิจ",
+    "ipa": "/ˈbɪz.nəs/"
+  },
+  {
+    "word": "busy",
+    "meaning": "ยุ่ง",
+    "ipa": "/ˈbɪz.i/"
+  },
+  {
+    "word": "buy",
+    "meaning": "ซื้อ",
+    "ipa": "/baɪ/"
+  },
+  {
+    "word": "cafe",
+    "meaning": "คาเฟ่",
+    "ipa": "/kæˈfeɪ/"
+  },
+  {
+    "word": "cake",
+    "meaning": "เค้ก",
+    "ipa": "/keɪk/"
+  },
+  {
+    "word": "camera",
+    "meaning": "กล้อง",
+    "ipa": "/ˈkæm.rə/"
+  },
+  {
+    "word": "car",
+    "meaning": "รถ",
+    "ipa": "/kɑːr/"
+  },
+  {
+    "word": "career",
+    "meaning": "อาชีพ",
+    "ipa": "/kəˈrɪr/"
+  },
+  {
+    "word": "carry",
+    "meaning": "พก",
+    "ipa": "/ˈkær.i/"
+  },
+  {
+    "word": "cat",
+    "meaning": "แมว",
+    "ipa": "/kæt/"
+  },
+  {
+    "word": "chair",
+    "meaning": "เก้าอี้",
+    "ipa": "/tʃer/"
+  },
+  {
+    "word": "change",
+    "meaning": "เปลี่ยน",
+    "ipa": "/tʃeɪndʒ/"
+  },
+  {
+    "word": "cheap",
+    "meaning": "ราคาถูก",
+    "ipa": "/tʃiːp/"
+  },
+  {
+    "word": "check",
+    "meaning": "ตรวจสอบ",
+    "ipa": "/tʃek/"
+  },
+  {
+    "word": "child",
+    "meaning": "เด็ก",
+    "ipa": "/tʃaɪld/"
+  },
+  {
+    "word": "choose",
+    "meaning": "เลือก",
+    "ipa": "/tʃuːz/"
+  },
+  {
+    "word": "city",
+    "meaning": "เมือง",
+    "ipa": "/ˈsɪt.i/"
+  },
+  {
+    "word": "classroom",
+    "meaning": "ห้องเรียน",
+    "ipa": "/ˈklæs.ruːm/"
+  },
+  {
+    "word": "clean",
+    "meaning": "สะอาด",
+    "ipa": "/kliːn/"
+  },
+  {
+    "word": "clock",
+    "meaning": "นาฬิกา",
+    "ipa": "/klɑːk/"
+  },
+  {
+    "word": "coffee",
+    "meaning": "กาแฟ",
+    "ipa": "/ˈkɑː.fi/"
+  },
+  {
+    "word": "cold",
+    "meaning": "เย็น",
+    "ipa": "/koʊld/"
+  },
+  {
+    "word": "college",
+    "meaning": "วิทยาลัย",
+    "ipa": "/ˈkɑː.lɪdʒ/"
+  },
+  {
+    "word": "colour",
+    "meaning": "สี",
+    "ipa": "/ˈkʌl.ər/"
+  },
+  {
+    "word": "computer",
+    "meaning": "คอมพิวเตอร์",
+    "ipa": "/kəmˈpjuː.tər/"
+  },
+  {
+    "word": "country",
+    "meaning": "ประเทศ",
+    "ipa": "/ˈkʌn.tri/"
+  },
+  {
+    "word": "course",
+    "meaning": "คอร์ส",
+    "ipa": "/kɔːrs/"
+  },
+  {
+    "word": "create",
+    "meaning": "สร้าง",
+    "ipa": "/kriˈeɪt/"
+  },
+  {
+    "word": "culture",
+    "meaning": "วัฒนธรรม",
+    "ipa": "/ˈkʌl.tʃər/"
+  },
+  {
+    "word": "customer",
+    "meaning": "ลูกค้า",
+    "ipa": "/ˈkʌs.tə.mər/"
+  },
+  {
+    "word": "dance",
+    "meaning": "เต้นรำ",
+    "ipa": "/dæns/"
+  },
+  {
+    "word": "dangerous",
+    "meaning": "อันตราย",
+    "ipa": "/ˈdeɪn.dʒər.əs/"
+  },
+  {
+    "word": "dark",
+    "meaning": "มืด",
+    "ipa": "/dɑːrk/"
+  },
+  {
+    "word": "daughter",
+    "meaning": "ลูกสาว",
+    "ipa": "/ˈdɔː.tər/"
+  },
+  {
+    "word": "day",
+    "meaning": "วัน",
+    "ipa": "/deɪ/"
+  },
+  {
+    "word": "December",
+    "meaning": "ธันวาคม",
+    "ipa": "/dɪˈsem.bər/"
+  },
+  {
+    "word": "decide",
+    "meaning": "ตัดสินใจ",
+    "ipa": "/dɪˈsaɪd/"
+  },
+  {
+    "word": "describe",
+    "meaning": "อธิบาย",
+    "ipa": "/dɪˈskraɪb/"
+  },
+  {
+    "word": "design",
+    "meaning": "ออกแบบ",
+    "ipa": "/dɪˈzaɪn/"
+  },
+  {
+    "word": "dictionary",
+    "meaning": "พจนานุกรม",
+    "ipa": "/ˈdɪk.ʃən.er.i/"
+  },
+  {
+    "word": "different",
+    "meaning": "แตกต่าง",
+    "ipa": "/ˈdɪf.ər.ənt/"
+  },
+  {
+    "word": "difficult",
+    "meaning": "ยาก",
+    "ipa": "/ˈdɪf.ɪ.kəlt/"
+  },
+  {
+    "word": "dinner",
+    "meaning": "อาหารเย็น",
+    "ipa": "/ˈdɪn.ər/"
+  },
+  {
+    "word": "doctor",
+    "meaning": "หมอ",
+    "ipa": "/ˈdɑːk.tər/"
+  },
+  {
+    "word": "dog",
+    "meaning": "สุนัข",
+    "ipa": "/dɔːɡ/"
+  },
+  {
+    "word": "drink",
+    "meaning": "ดื่ม",
+    "ipa": "/drɪŋk/"
+  },
+  {
+    "word": "drive",
+    "meaning": "ขับรถ",
+    "ipa": "/draɪv/"
+  },
+  {
+    "word": "early",
+    "meaning": "แต่แรก",
+    "ipa": "/ˈɜːr.li/"
+  },
+  {
+    "word": "easy",
+    "meaning": "ง่าย",
+    "ipa": "/ˈiː.zi/"
+  },
+  {
+    "word": "eat",
+    "meaning": "กิน",
+    "ipa": "/iːt/"
+  },
+  {
+    "word": "egg",
+    "meaning": "ไข่",
+    "ipa": "/eɡ/"
+  },
+  {
+    "word": "email",
+    "meaning": "อีเมล",
+    "ipa": "/ˈiː.meɪl/"
+  },
+  {
+    "word": "enjoy",
+    "meaning": "สนุก",
+    "ipa": "/ɪnˈdʒɔɪ/"
+  },
+  {
+    "word": "family",
+    "meaning": "ครอบครัว",
+    "ipa": "/ˈfæm.əl.i/"
+  },
+  {
+    "word": "food",
+    "meaning": "อาหาร",
+    "ipa": "/fuːd/"
+  },
+  {
+    "word": "friend",
+    "meaning": "เพื่อน",
+    "ipa": "/frend/"
+  },
+  {
+    "word": "game",
+    "meaning": "เกม",
+    "ipa": "/ɡeɪm/"
+  },
+  {
+    "word": "garden",
+    "meaning": "สวน",
+    "ipa": "/ˈɡɑːr.dən/"
+  },
+  {
+    "word": "girl",
+    "meaning": "เด็กผู้หญิง",
+    "ipa": "/ɡɜːrl/"
+  },
+  {
+    "word": "good",
+    "meaning": "ดี",
+    "ipa": "/ɡʊd/"
+  },
+  {
+    "word": "happy",
+    "meaning": "มีความสุข",
+    "ipa": "/ˈhæp.i/"
+  },
+  {
+    "word": "help",
+    "meaning": "ช่วย",
+    "ipa": "/help/"
+  },
+  {
+    "word": "home",
+    "meaning": "บ้าน",
+    "ipa": "/hoʊm/"
+  },
+  {
+    "word": "hospital",
+    "meaning": "โรงพยาบาล",
+    "ipa": "/ˈhɑː.spɪ.təl/"
+  },
+  {
+    "word": "hotel",
+    "meaning": "โรงแรม",
+    "ipa": "/hoʊˈtel/"
+  },
+  {
+    "word": "house",
+    "meaning": "บ้าน",
+    "ipa": "/haʊs/"
+  },
+  {
+    "word": "important",
+    "meaning": "สำคัญ",
+    "ipa": "/ɪmˈpɔːr.tənt/"
+  },
+  {
+    "word": "internet",
+    "meaning": "อินเทอร์เน็ต",
+    "ipa": "/ˈɪn.tər.net/"
+  },
+  {
+    "word": "job",
+    "meaning": "งาน",
+    "ipa": "/dʒɑːb/"
+  },
+  {
+    "word": "kitchen",
+    "meaning": "ครัว",
+    "ipa": "/ˈkɪtʃ.ən/"
+  },
+  {
+    "word": "language",
+    "meaning": "ภาษา",
+    "ipa": "/ˈlæŋ.ɡwɪdʒ/"
+  },
+  {
+    "word": "learn",
+    "meaning": "เรียนรู้",
+    "ipa": "/lɜːrn/"
+  },
+  {
+    "word": "library",
+    "meaning": "ห้องสมุด",
+    "ipa": "/ˈlaɪ.brer.i/"
+  },
+  {
+    "word": "love",
+    "meaning": "รัก",
+    "ipa": "/lʌv/"
+  },
+  {
+    "word": "market",
+    "meaning": "ตลาด",
+    "ipa": "/ˈmɑːr.kɪt/"
+  },
+  {
+    "word": "money",
+    "meaning": "เงิน",
+    "ipa": "/ˈmʌn.i/"
+  },
+  {
+    "word": "music",
+    "meaning": "ดนตรี",
+    "ipa": "/ˈmjuː.zɪk/"
+  },
+  {
+    "word": "name",
+    "meaning": "ชื่อ",
+    "ipa": "/neɪm/"
+  },
+  {
+    "word": "night",
+    "meaning": "กลางคืน",
+    "ipa": "/naɪt/"
+  },
+  {
+    "word": "number",
+    "meaning": "ตัวเลข",
+    "ipa": "/ˈnʌm.bər/"
+  },
+  {
+    "word": "office",
+    "meaning": "สำนักงาน",
+    "ipa": "/ˈɔː.fɪs/"
+  },
+  {
+    "word": "orange",
+    "meaning": "ส้ม",
+    "ipa": "/ˈɔːr.ɪndʒ/"
+  },
+  {
+    "word": "paper",
+    "meaning": "กระดาษ",
+    "ipa": "/ˈpeɪ.pər/"
+  },
+  {
+    "word": "park",
+    "meaning": "สวน",
+    "ipa": "/pɑːrk/"
+  },
+  {
+    "word": "people",
+    "meaning": "ผู้คน",
+    "ipa": "/ˈpiː.pəl/"
+  },
+  {
+    "word": "person",
+    "meaning": "บุคคล",
+    "ipa": "/ˈpɜːr.sən/"
+  },
+  {
+    "word": "phone",
+    "meaning": "โทรศัพท์",
+    "ipa": "/foʊn/"
+  },
+  {
+    "word": "picture",
+    "meaning": "รูปภาพ",
+    "ipa": "/ˈpɪk.tʃər/"
+  },
+  {
+    "word": "question",
+    "meaning": "คำถาม",
+    "ipa": "/ˈkwes.tʃən/"
+  },
+  {
+    "word": "read",
+    "meaning": "อ่าน",
+    "ipa": "/riːd/"
+  },
+  {
+    "word": "restaurant",
+    "meaning": "ร้านอาหาร",
+    "ipa": "/ˈres.tər.ɑːnt/"
+  },
+  {
+    "word": "school",
+    "meaning": "โรงเรียน",
+    "ipa": "/skuːl/"
+  },
+  {
+    "word": "student",
+    "meaning": "นักเรียน",
+    "ipa": "/ˈstuː.dənt/"
+  },
+  {
+    "word": "teacher",
+    "meaning": "ครู",
+    "ipa": "/ˈtiː.tʃər/"
+  },
+  {
+    "word": "travel",
+    "meaning": "เดินทาง",
+    "ipa": "/ˈtræv.əl/"
+  },
+  {
+    "word": "water",
+    "meaning": "น้ำ",
+    "ipa": "/ˈwɔː.tər/"
+  },
+  {
+    "word": "weather",
+    "meaning": "อากาศ",
+    "ipa": "/ˈweð.ər/"
+  },
+  {
+    "word": "work",
+    "meaning": "ทำงาน",
+    "ipa": "/wɜːrk/"
+  },
+  {
+    "word": "write",
+    "meaning": "เขียน",
+    "ipa": "/raɪt/"
+  }
+]
