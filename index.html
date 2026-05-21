@@ -1,90 +1,60 @@
 
 <!DOCTYPE html>
-<html lang="th">
+<html>
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Oxford 3000 E‑Learning</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oxford 3000</title>
 <style>
-body{font-family:Arial,sans-serif;margin:0;background:#f7f2ed;color:#333}
-header{background:#d98c5f;color:#fff;padding:20px;text-align:center}
-.container{max-width:1000px;margin:auto;padding:20px}
-.card{background:#fff;border-radius:16px;padding:20px;margin-bottom:20px;box-shadow:0 2px 8px rgba(0,0,0,.08)}
-.flashcard{background:#fff4ec;border-radius:16px;padding:50px;text-align:center;font-size:34px;cursor:pointer;min-height:120px}
-.controls button, .quiz button{padding:12px 18px;border:none;border-radius:10px;background:#d98c5f;color:white;margin:6px;font-size:16px}
-input{width:100%;padding:14px;border-radius:10px;border:1px solid #ccc;font-size:16px}
-.result{font-weight:bold;margin-top:10px}
-small{color:#666}
+body{font-family:Arial;background:#f7f2ed;padding:20px}
+.card{background:white;padding:20px;border-radius:16px;margin-bottom:20px}
+.flash{background:#fff4ec;padding:40px;border-radius:16px;text-align:center;font-size:34px}
+button{padding:10px 16px;border:none;border-radius:10px;background:#d98c5f;color:white;margin:5px}
+input{width:100%;padding:14px}
 </style>
 </head>
 <body>
 
-<header>
+<div class="card">
 <h1>Oxford 3000 E‑Learning</h1>
-<p>ใช้งานได้บน iPad / iPhone / Safari</p>
-</header>
-
-<div class="container">
+<p>Total words loaded dynamically</p>
+</div>
 
 <div class="card">
-<h2>🔍 ค้นหาคำศัพท์</h2>
-<input type="text" id="search" placeholder="พิมพ์คำศัพท์ภาษาอังกฤษ..." onkeyup="searchWord()">
+<input id="search" placeholder="Search..." onkeyup="searchWord()">
 <div id="searchResult"></div>
 </div>
 
 <div class="card">
-<h2>🃏 Flashcard</h2>
-<div id="flashcard" class="flashcard" onclick="flipCard()">Loading...</div>
-<div class="controls">
-<button onclick="prevCard()">◀ Previous</button>
-<button onclick="nextCard()">Next ▶</button>
-<button onclick="speak(vocab[current].word)">
-🔊 Speak
-</button>
- 
-</div>
-</div>
-
-<div class="card quiz">
-<h2>📝 Quiz</h2>
-<p id="quizQuestion"></p>
-<div id="quizOptions"></div>
-<div class="result" id="quizResult"></div>
-<button onclick="newQuiz()">สุ่มคำถามใหม่</button>
-</div>
-
+<div id="flashcard" class="flash">Loading...</div>
+<button onclick="prevCard()">Prev</button>
+<button onclick="nextCard()">Next</button>
+<button onclick="speak()">🔊 Speak</button>
 </div>
 
 <script>
+
 let vocab=[];
 let current=0;
-let flipped=false;
-let currentQuiz=null;
 
 fetch('vocab.json')
 .then(r=>r.json())
 .then(data=>{
  vocab=data;
  showCard();
- newQuiz();
 });
 
 function showCard(){
- const card=document.getElementById('flashcard');
- const item=vocab[current];
- flipped=false;
- card.innerHTML=`<div>${item.word}</div><small>${item.ipa}</small>`;
-}
 
-function flipCard(){
- const card=document.getElementById('flashcard');
- const item=vocab[current];
- if(!flipped){
-   card.innerHTML=`<div>${item.meaning}</div><small>${item.word}</small>`;
-   flipped=true;
- } else {
-   showCard();
- }
+ let item=vocab[current];
+
+ document.getElementById('flashcard').innerHTML=`
+   <div>${item.word}</div>
+   <div style="font-size:24px">${item.meaning_th}</div>
+   <small>${item.pronounce_th}</small>
+   <br>
+   <small>${item.ipa}</small>
+ `;
 }
 
 function nextCard(){
@@ -97,69 +67,30 @@ function prevCard(){
  showCard();
 }
 
- function speak(word){
-
- const utterance =
-
-   new SpeechSynthesisUtterance(word);
-
- utterance.lang='en-US';
-
- utterance.rate=0.9;
-
+function speak(){
  speechSynthesis.cancel();
-
- speechSynthesis.speak(utterance);
-
+ let u=new SpeechSynthesisUtterance(vocab[current].word);
+ u.lang='en-US';
+ speechSynthesis.speak(u);
 }
 
 function searchWord(){
- const q=document.getElementById('search').value.toLowerCase();
- const result=document.getElementById('searchResult');
- if(q===''){
-   result.innerHTML='';
-   return;
- }
- const found=vocab.filter(v=>v.word.toLowerCase().includes(q)).slice(0,20);
- result.innerHTML=found.map(v=>`<p><strong>${v.word}</strong> = ${v.meaning} <small>${v.ipa}</small></p>`).join('');
+
+ let q=document.getElementById('search').value.toLowerCase();
+
+ let found=vocab.filter(v=>
+   v.word.toLowerCase().includes(q)
+ ).slice(0,20);
+
+ document.getElementById('searchResult').innerHTML=
+ found.map(v=>`
+   <p>
+   <b>${v.word}</b> =
+   ${v.meaning_th}
+   </p>
+ `).join('');
 }
 
-function shuffle(arr){
- return arr.sort(()=>Math.random()-0.5);
-}
-
-function newQuiz(){
- const q=vocab[Math.floor(Math.random()*vocab.length)];
- currentQuiz=q;
-
- let options=[q.meaning];
- while(options.length<4){
-   const candidate=vocab[Math.floor(Math.random()*vocab.length)].meaning;
-   if(!options.includes(candidate)) options.push(candidate);
- }
-
- options=shuffle(options);
-
- document.getElementById('quizQuestion').innerHTML=`คำว่า "<strong>${q.word}</strong>" แปลว่าอะไร?`;
-
- document.getElementById('quizOptions').innerHTML=options.map(opt=>
-   `<button onclick="checkAnswer('${opt.replace(/'/g,"")}')">${opt}</button>`
- ).join('');
-
- document.getElementById('quizResult').innerHTML='';
-}
-
-function checkAnswer(answer){
- const result=document.getElementById('quizResult');
- if(answer===currentQuiz.meaning){
-   result.innerHTML='✅ ถูกต้อง';
-   result.style.color='green';
- } else {
-   result.innerHTML=`❌ คำตอบที่ถูกคือ "${currentQuiz.meaning}"`;
-   result.style.color='red';
- }
-}
 </script>
-
 </body>
 </html>
