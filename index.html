@@ -180,9 +180,25 @@
                 <div id="flashcard" class="flashcard"></div>
 
                 <div>
-                    <button onclick="prevCard()">◀ Prev</button>
-                    <button onclick="nextCard()">Next ▶</button>
-                    <button onclick="speak()">🔊 Speak</button>
+                    <button onclick="prevCard()">
+                        ◀ Prev
+                    </button>
+
+                    <button onclick="flipCard()">
+                        🔄 Flip
+                    </button>
+
+                    <button onclick="nextCard()">
+                        Next ▶
+                    </button>
+
+                    <button onclick="randomCard()">
+                        🎲 Random
+                    </button>
+
+                    <button onclick="speak()">
+                        🔊 Speak
+                    </button>
                 </div>
 
             </div>
@@ -241,6 +257,8 @@
         let vocab = [];
 
         let current = 0;
+
+        let showMeaning = true;
 
         let currentQuiz = null;
 
@@ -427,28 +445,44 @@ ${i}
                 .innerHTML = `
 
 <div class="big">
-
 ${v.word}
-
 </div>
 
-<div>
+${showMeaning
 
+                    ?
+
+                    `
+
+<div>
 ${v.meaning_th}
-
 </div>
 
 <div>
-
 ${v.pronounce_th}
-
 </div>
 
 <small>
-
 ${v.ipa}
-
 </small>
+
+`
+
+                    :
+
+                    `
+
+<div style="
+margin-top:20px;
+font-size:22px;
+opacity:.5;
+">
+🔄 Flip Card
+</div>
+
+`
+
+                }
 
 `;
         }
@@ -465,6 +499,23 @@ ${v.ipa}
 
             current =
                 (current - 1 + vocab.length) % vocab.length;
+
+            showCard();
+        }
+
+        function randomCard() {
+
+            current =
+                Math.floor(
+                    Math.random() * vocab.length
+                );
+
+            showCard();
+        }
+
+        function flipCard() {
+
+            showMeaning = !showMeaning;
 
             showCard();
         }
