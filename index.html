@@ -38,6 +38,10 @@ small{color:#666}
 <div class="controls">
 <button onclick="prevCard()">◀ Previous</button>
 <button onclick="nextCard()">Next ▶</button>
+<button onclick="speak(vocab[current].word)">
+🔊 Speak
+</button>
+ 
 </div>
 </div>
 
@@ -91,6 +95,22 @@ function nextCard(){
 function prevCard(){
  current=(current-1+vocab.length)%vocab.length;
  showCard();
+}
+
+ function speak(word){
+
+ const utterance =
+
+   new SpeechSynthesisUtterance(word);
+
+ utterance.lang='en-US';
+
+ utterance.rate=0.9;
+
+ speechSynthesis.cancel();
+
+ speechSynthesis.speak(utterance);
+
 }
 
 function searchWord(){
