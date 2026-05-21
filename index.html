@@ -2,71 +2,96 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oxford 3000</title>
+
 <style>
+*{box-sizing:border-box}
+
 body{
 margin:0;
 font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-background:linear-gradient(135deg,#f5f1eb,#ece6de);
-color:#222;
+background:
+linear-gradient(135deg,#dbeafe,#eff6ff);
+color:#111827;
 }
+
 header{
-padding:24px;
+padding:28px;
 text-align:center;
-backdrop-filter:blur(14px);
-background:rgba(255,255,255,.4);
+backdrop-filter:blur(18px);
+background:rgba(255,255,255,.55);
 position:sticky;
 top:0;
+z-index:999;
+border-bottom:1px solid rgba(255,255,255,.4);
 }
+
+h1{
+margin:0;
+font-size:38px;
+}
+
 .tabs{
 display:flex;
-gap:10px;
-padding:16px;
+gap:12px;
+padding:18px;
 overflow:auto;
 }
+
 .tab-btn{
 border:none;
-padding:12px 18px;
-border-radius:999px;
-background:rgba(255,255,255,.55);
+background:#000;
+color:white;
+padding:14px 20px;
+border-radius:16px;
+font-size:15px;
 cursor:pointer;
 }
+
 .active-btn{
-background:#d99a6c;
-color:white;
+background:#111827;
 }
+
 .container{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
 padding:20px;
 }
+
 .card{
 background:rgba(255,255,255,.55);
-backdrop-filter:blur(18px);
-padding:24px;
+backdrop-filter:blur(20px);
 border-radius:28px;
-margin-bottom:20px;
+padding:24px;
+margin-bottom:22px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
 }
+
 .tab{
 display:none;
 }
+
 .active{
 display:block;
 }
+
 input{
 width:100%;
-padding:16px;
+padding:18px;
 border:none;
-border-radius:16px;
-font-size:16px;
-}
-.word-card{
-padding:14px;
-margin-top:10px;
 border-radius:18px;
-background:rgba(255,255,255,.6);
+font-size:16px;
+background:white;
 }
+
+.word-item{
+padding:16px;
+margin-top:12px;
+border-radius:18px;
+background:rgba(255,255,255,.7);
+}
+
 .flashcard{
 min-height:260px;
 display:flex;
@@ -74,21 +99,33 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-font-size:24px;
 }
+
 .big{
-font-size:48px;
+font-size:52px;
 font-weight:700;
 }
+
+.thai{
+font-size:28px;
+margin-top:10px;
+}
+
+small{
+color:#555;
+}
+
 button{
 border:none;
-padding:12px 18px;
-border-radius:16px;
-background:#d99a6c;
+background:black;
 color:white;
+padding:14px 18px;
+border-radius:16px;
 cursor:pointer;
 margin:6px;
+font-size:15px;
 }
+
 .quiz-option{
 display:block;
 width:100%;
@@ -96,16 +133,17 @@ margin-top:10px;
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<h1>Oxford 3000 E‑Learning</h1>
-<p>2 Files Version • Clean Blur UI</p>
+<h1>Oxford 3000</h1>
+<p>Clean Blue Glass UI</p>
 </header>
 
 <div class="tabs">
 <button class="tab-btn active-btn" onclick="openTab(event,'search')">🔍 Search</button>
-<button class="tab-btn" onclick="openTab(event,'words')">📚 Words</button>
+<button class="tab-btn" onclick="openTab(event,'all')">📚 All Words</button>
 <button class="tab-btn" onclick="openTab(event,'flash')">🃏 Flashcard</button>
 <button class="tab-btn" onclick="openTab(event,'quiz')">📝 Quiz</button>
 </div>
@@ -119,7 +157,7 @@ margin-top:10px;
 </div>
 </div>
 
-<div id="words" class="tab">
+<div id="all" class="tab">
 <div class="card">
 <div id="allWords"></div>
 </div>
@@ -127,28 +165,40 @@ margin-top:10px;
 
 <div id="flash" class="tab">
 <div class="card">
-<div id="flashcard" class="flashcard">Loading...</div>
+
+<div id="flashcard" class="flashcard">
+Loading...
+</div>
+
 <div>
 <button onclick="prevCard()">◀ Prev</button>
 <button onclick="nextCard()">Next ▶</button>
 <button onclick="speak()">🔊 Speak</button>
 </div>
+
 </div>
 </div>
 
 <div id="quiz" class="tab">
 <div class="card">
-<h2>Quiz</h2>
+
+<h2>Vocabulary Quiz</h2>
+
 <p id="quizQuestion"></p>
+
 <div id="quizOptions"></div>
+
 <div id="quizResult"></div>
+
 <button onclick="newQuiz()">สุ่มใหม่</button>
+
 </div>
 </div>
 
 </div>
 
 <script>
+
 let vocab=[];
 let current=0;
 let currentQuiz=null;
@@ -163,19 +213,34 @@ newQuiz();
 });
 
 function openTab(e,id){
-document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-document.querySelectorAll('.tab-btn').forEach(b=>b.classList.remove('active-btn'));
-document.getElementById(id).classList.add('active');
+
+document.querySelectorAll('.tab')
+.forEach(t=>t.classList.remove('active'));
+
+document.querySelectorAll('.tab-btn')
+.forEach(b=>b.classList.remove('active-btn'));
+
+document.getElementById(id)
+.classList.add('active');
+
 e.target.classList.add('active-btn');
 }
 
 function showCard(){
+
 let v=vocab[current];
-document.getElementById('flashcard').innerHTML=`
+
+document.getElementById('flashcard')
+.innerHTML=`
+
 <div class="big">${v.word}</div>
-<div>${v.meaning_th}</div>
+
+<div class="thai">${v.meaning_th}</div>
+
 <div>${v.pronounce_th}</div>
+
 <small>${v.ipa}</small>
+
 `;
 }
 
@@ -190,38 +255,86 @@ showCard();
 }
 
 function speak(){
+
 speechSynthesis.cancel();
-const u=new SpeechSynthesisUtterance(vocab[current].word);
+
+const u=
+new SpeechSynthesisUtterance(
+vocab[current].word
+);
+
 u.lang='en-US';
+
 u.rate=.9;
+
 speechSynthesis.speak(u);
+
 }
 
 function searchWord(){
-let q=document.getElementById('searchInput').value.toLowerCase();
-let found=vocab.filter(v=>
-v.word.toLowerCase().includes(q)||
-(v.meaning_th||'').includes(q)
-).slice(0,50);
 
-document.getElementById('searchResult').innerHTML=
+let q=document
+.getElementById('searchInput')
+.value
+.toLowerCase();
+
+let found=vocab.filter(v=>
+
+v.word.toLowerCase().includes(q)
+
+||
+
+v.meaning_th.includes(q)
+
+);
+
+document.getElementById('searchResult')
+.innerHTML=
+
 found.map(v=>`
-<div class="word-card">
-<b>${v.word}</b><br>
-${v.meaning_th}<br>
-${v.pronounce_th}<br>
+
+<div class="word-item">
+
+<b>${v.word}</b>
+
+<br>
+
+${v.meaning_th}
+
+<br>
+
+${v.pronounce_th}
+
+<br>
+
 <small>${v.ipa}</small>
+
 </div>
+
 `).join('');
 }
 
 function renderWords(){
-document.getElementById('allWords').innerHTML=
+
+document.getElementById('allWords')
+.innerHTML=
+
 vocab.map(v=>`
-<div class="word-card">
-<b>${v.word}</b> — ${v.meaning_th}<br>
+
+<div class="word-item">
+
+<b>${v.word}</b>
+
+—
+
+${v.meaning_th}
+
+<br>
+
 <small>${v.pronounce_th}</small>
+
 </div>
+
 `).join('');
 }
 
@@ -230,40 +343,71 @@ return a.sort(()=>Math.random()-0.5);
 }
 
 function newQuiz(){
-const q=vocab[Math.floor(Math.random()*vocab.length)];
+
+const q=vocab[
+Math.floor(Math.random()*vocab.length)
+];
+
 currentQuiz=q;
 
 let options=[q.meaning_th];
 
 while(options.length<4){
-const c=vocab[Math.floor(Math.random()*vocab.length)].meaning_th;
-if(!options.includes(c)) options.push(c);
+
+let c=vocab[
+Math.floor(Math.random()*vocab.length)
+].meaning_th;
+
+if(!options.includes(c))
+options.push(c);
 }
 
 options=shuffle(options);
 
-document.getElementById('quizQuestion').innerHTML=
+document.getElementById('quizQuestion')
+.innerHTML=
 `คำว่า <b>${q.word}</b> แปลว่าอะไร?`;
 
-document.getElementById('quizOptions').innerHTML=
+document.getElementById('quizOptions')
+.innerHTML=
+
 options.map(o=>`
-<button class="quiz-option" onclick="checkAnswer('${o}')">${o}</button>
+
+<button
+class="quiz-option"
+onclick="checkAnswer('${o}')"
+>
+${o}
+</button>
+
 `).join('');
 
-document.getElementById('quizResult').innerHTML='';
+document.getElementById('quizResult')
+.innerHTML='';
 }
 
 function checkAnswer(ans){
-let r=document.getElementById('quizResult');
+
+let r=document
+.getElementById('quizResult');
 
 if(ans===currentQuiz.meaning_th){
+
 r.innerHTML='✅ Correct';
+
 r.style.color='green';
+
 }else{
-r.innerHTML='❌ Correct: '+currentQuiz.meaning_th;
+
+r.innerHTML=
+'❌ Correct: '
++currentQuiz.meaning_th;
+
 r.style.color='red';
+
 }
 }
+
 </script>
 
 </body>

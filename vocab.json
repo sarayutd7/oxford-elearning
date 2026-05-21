@@ -3,64 +3,300 @@
     "word": "about",
     "meaning_th": "เกี่ยวกับ",
     "pronounce_th": "เออะ บ้าว ถึ",
-    "ipa": "ʌ b ˈaʊ t",
-    "part_of_speech": "prep. adv.",
-    "level": "A1"
+    "ipa": "ʌ b ˈaʊ t"
+  },
+  {
+    "word": "above",
+    "meaning_th": "ข้างบน",
+    "pronounce_th": "เออะ บัฟ",
+    "ipa": "ʌ b ˈʌ v"
+  },
+  {
+    "word": "across",
+    "meaning_th": "ข้าม",
+    "pronounce_th": "เออะ ครอส",
+    "ipa": "ʌ k r ˈɔː s"
+  },
+  {
+    "word": "action",
+    "meaning_th": "การกระทำ",
+    "pronounce_th": "แอค ชัน",
+    "ipa": "ˈæk ʃʌn"
+  },
+  {
+    "word": "activity",
+    "meaning_th": "กิจกรรม",
+    "pronounce_th": "แอค ทิ วิ ถี่",
+    "ipa": "ækˈtɪvəti"
+  },
+  {
+    "word": "actor",
+    "meaning_th": "นักแสดงชาย",
+    "pronounce_th": "แอค เทอร์",
+    "ipa": "ˈæk tɜːr"
   },
   {
     "word": "airport",
     "meaning_th": "สนามบิน",
     "pronounce_th": "แอร์ พอร์ต",
-    "ipa": "ˈeəpɔːrt",
-    "part_of_speech": "n.",
-    "level": "A1"
+    "ipa": "ˈeəpɔːrt"
+  },
+  {
+    "word": "all",
+    "meaning_th": "ทั้งหมด",
+    "pronounce_th": "ออล",
+    "ipa": "ɔːl"
+  },
+  {
+    "word": "always",
+    "meaning_th": "เสมอ",
+    "pronounce_th": "ออล เวย์ส",
+    "ipa": "ˈɔːlweɪz"
+  },
+  {
+    "word": "amazing",
+    "meaning_th": "น่าทึ่ง",
+    "pronounce_th": "อะ เมย์ ซิง",
+    "ipa": "ʌˈmeɪzɪŋ"
+  },
+  {
+    "word": "animal",
+    "meaning_th": "สัตว์",
+    "pronounce_th": "แอน นิ มอล",
+    "ipa": "ˈænɪməl"
+  },
+  {
+    "word": "answer",
+    "meaning_th": "คำตอบ",
+    "pronounce_th": "แอน เซอร์",
+    "ipa": "ˈænsər"
+  },
+  {
+    "word": "apple",
+    "meaning_th": "แอปเปิล",
+    "pronounce_th": "แอพ เพิล",
+    "ipa": "ˈæpəl"
+  },
+  {
+    "word": "around",
+    "meaning_th": "รอบๆ",
+    "pronounce_th": "อะ ราวนด์",
+    "ipa": "əˈraʊnd"
+  },
+  {
+    "word": "arrive",
+    "meaning_th": "มาถึง",
+    "pronounce_th": "อะ ไรฟ์",
+    "ipa": "əˈraɪv"
+  },
+  {
+    "word": "art",
+    "meaning_th": "ศิลปะ",
+    "pronounce_th": "อาร์ต",
+    "ipa": "ɑːrt"
+  },
+  {
+    "word": "ask",
+    "meaning_th": "ถาม",
+    "pronounce_th": "แอสก์",
+    "ipa": "æsk"
+  },
+  {
+    "word": "baby",
+    "meaning_th": "เด็กทารก",
+    "pronounce_th": "เบ บี้",
+    "ipa": "ˈbeɪbi"
+  },
+  {
+    "word": "back",
+    "meaning_th": "กลับ",
+    "pronounce_th": "แบ็ก",
+    "ipa": "bæk"
+  },
+  {
+    "word": "bad",
+    "meaning_th": "แย่",
+    "pronounce_th": "แบด",
+    "ipa": "bæd"
+  },
+  {
+    "word": "bag",
+    "meaning_th": "กระเป๋า",
+    "pronounce_th": "แบ็ก",
+    "ipa": "bæg"
+  },
+  {
+    "word": "ball",
+    "meaning_th": "ลูกบอล",
+    "pronounce_th": "บอล",
+    "ipa": "bɔːl"
+  },
+  {
+    "word": "banana",
+    "meaning_th": "กล้วย",
+    "pronounce_th": "บะ นา น่า",
+    "ipa": "bəˈnɑːnə"
+  },
+  {
+    "word": "bank",
+    "meaning_th": "ธนาคาร",
+    "pronounce_th": "แบงก์",
+    "ipa": "bæŋk"
   },
   {
     "word": "beautiful",
     "meaning_th": "สวยงาม",
-    "pronounce_th": "บิว ทิ ฟึล",
-    "ipa": "ˈbjuːtɪfəl",
-    "part_of_speech": "adj.",
-    "level": "A1"
+    "pronounce_th": "บิว ทิ ฟูล",
+    "ipa": "ˈbjuːtɪfəl"
+  },
+  {
+    "word": "bed",
+    "meaning_th": "เตียง",
+    "pronounce_th": "เบด",
+    "ipa": "bed"
+  },
+  {
+    "word": "bike",
+    "meaning_th": "จักรยาน",
+    "pronounce_th": "ไบก์",
+    "ipa": "baɪk"
+  },
+  {
+    "word": "bird",
+    "meaning_th": "นก",
+    "pronounce_th": "เบิร์ด",
+    "ipa": "bɜːrd"
+  },
+  {
+    "word": "black",
+    "meaning_th": "สีดำ",
+    "pronounce_th": "แบล็ก",
+    "ipa": "blæk"
+  },
+  {
+    "word": "blue",
+    "meaning_th": "สีฟ้า",
+    "pronounce_th": "บลู",
+    "ipa": "bluː"
   },
   {
     "word": "book",
     "meaning_th": "หนังสือ",
-    "pronounce_th": "บุ๊ค",
-    "ipa": "bʊk",
-    "part_of_speech": "n.",
-    "level": "A1"
+    "pronounce_th": "บุ๊ก",
+    "ipa": "bʊk"
+  },
+  {
+    "word": "boy",
+    "meaning_th": "เด็กผู้ชาย",
+    "pronounce_th": "บอย",
+    "ipa": "bɔɪ"
+  },
+  {
+    "word": "bread",
+    "meaning_th": "ขนมปัง",
+    "pronounce_th": "เบรด",
+    "ipa": "bred"
+  },
+  {
+    "word": "breakfast",
+    "meaning_th": "อาหารเช้า",
+    "pronounce_th": "เบรก ฟาสต์",
+    "ipa": "ˈbrekfəst"
+  },
+  {
+    "word": "brother",
+    "meaning_th": "พี่ชาย",
+    "pronounce_th": "บรอ เธอร์",
+    "ipa": "ˈbrʌðər"
+  },
+  {
+    "word": "bus",
+    "meaning_th": "รถบัส",
+    "pronounce_th": "บัส",
+    "ipa": "bʌs"
+  },
+  {
+    "word": "business",
+    "meaning_th": "ธุรกิจ",
+    "pronounce_th": "บิซ เนส",
+    "ipa": "ˈbɪznəs"
+  },
+  {
+    "word": "buy",
+    "meaning_th": "ซื้อ",
+    "pronounce_th": "บาย",
+    "ipa": "baɪ"
+  },
+  {
+    "word": "cafe",
+    "meaning_th": "คาเฟ่",
+    "pronounce_th": "คา เฟ่",
+    "ipa": "kæˈfeɪ"
+  },
+  {
+    "word": "cake",
+    "meaning_th": "เค้ก",
+    "pronounce_th": "เค้ก",
+    "ipa": "keɪk"
+  },
+  {
+    "word": "camera",
+    "meaning_th": "กล้อง",
+    "pronounce_th": "แคม เมอ ร่า",
+    "ipa": "ˈkæmərə"
   },
   {
     "word": "car",
-    "meaning_th": "รถยนต์",
+    "meaning_th": "รถ",
     "pronounce_th": "คาร์",
-    "ipa": "kɑːr",
-    "part_of_speech": "n.",
-    "level": "A1"
+    "ipa": "kɑːr"
   },
   {
-    "word": "dark",
-    "meaning_th": "มืด",
-    "pronounce_th": "ดาร์ก",
-    "ipa": "dɑːrk",
-    "part_of_speech": "n.",
-    "level": "A1"
+    "word": "cat",
+    "meaning_th": "แมว",
+    "pronounce_th": "แคท",
+    "ipa": "kæt"
   },
   {
-    "word": "easy",
-    "meaning_th": "ง่าย",
-    "pronounce_th": "อี๊ ซี่",
-    "ipa": "ˈiːzi",
-    "part_of_speech": "n.",
-    "level": "A1"
+    "word": "chair",
+    "meaning_th": "เก้าอี้",
+    "pronounce_th": "แชร์",
+    "ipa": "tʃer"
   },
   {
-    "word": "family",
-    "meaning_th": "ครอบครัว",
-    "pronounce_th": "แฟ มะ ลี่",
-    "ipa": "ˈfæməli",
-    "part_of_speech": "n.",
-    "level": "A1"
+    "word": "change",
+    "meaning_th": "เปลี่ยน",
+    "pronounce_th": "เชนจ์",
+    "ipa": "tʃeɪndʒ"
+  },
+  {
+    "word": "cheap",
+    "meaning_th": "ราคาถูก",
+    "pronounce_th": "ชีพ",
+    "ipa": "tʃiːp"
+  },
+  {
+    "word": "chicken",
+    "meaning_th": "ไก่",
+    "pronounce_th": "ชิค เคน",
+    "ipa": "ˈtʃɪkɪn"
+  },
+  {
+    "word": "city",
+    "meaning_th": "เมือง",
+    "pronounce_th": "ซิ ตี้",
+    "ipa": "ˈsɪti"
+  },
+  {
+    "word": "class",
+    "meaning_th": "ชั้นเรียน",
+    "pronounce_th": "คลาส",
+    "ipa": "klæs"
+  },
+  {
+    "word": "clean",
+    "meaning_th": "สะอาด",
+    "pronounce_th": "คลีน",
+    "ipa": "kliːn"
   }
 ]
