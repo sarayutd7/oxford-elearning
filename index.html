@@ -638,7 +638,7 @@ ${v.meaning_th}
 
 <br><br>
 
-<button onclick="editWord(${i})">
+<button onclick="toggleEdit(${i})">
 ✏ Edit
 </button>
 
@@ -646,56 +646,111 @@ ${v.meaning_th}
 🗑 Delete
 </button>
 
+<div
+id="editBox-${i}"
+style="
+display:none;
+margin-top:15px;
+padding:15px;
+border-radius:16px;
+background:white;
+"
+>
+
+<input
+id="edit-word-${i}"
+value="${v.word}"
+placeholder="Word"
+>
+
+<br><br>
+
+<input
+id="edit-meaning-${i}"
+value="${v.meaning_th}"
+placeholder="Meaning"
+>
+
+<br><br>
+
+<input
+id="edit-pronounce-${i}"
+value="${v.pronounce_th}"
+placeholder="Pronounce"
+>
+
+<br><br>
+
+<input
+id="edit-ipa-${i}"
+value="${v.ipa}"
+placeholder="IPA"
+>
+
+<br><br>
+
+<button onclick="saveEdit(${i})">
+💾 Save
+</button>
+
+<button onclick="toggleEdit(${i})">
+❌ Cancel
+</button>
+
+</div>
+
 </div>
 
 `).join('');
 }
 
-function editWord(i){
+function toggleEdit(i){
 
-const v=vocab[i];
-
-const word=prompt(
-'Edit word',
-v.word
+const box=
+document.getElementById(
+`editBox-${i}`
 );
 
-if(word===null) return;
+if(box.style.display==='none'){
 
-const meaning=prompt(
-'Edit meaning',
-v.meaning_th
-);
+box.style.display='block';
 
-if(meaning===null) return;
+}else{
 
-const pronounce=prompt(
-'Edit pronounce',
-v.pronounce_th
-);
+box.style.display='none';
 
-if(pronounce===null) return;
+}
+}
 
-const ipa=prompt(
-'Edit IPA',
-v.ipa
-);
-
-if(ipa===null) return;
+function saveEdit(i){
 
 vocab[i]={
 
-word:word,
+word:
+document.getElementById(
+`edit-word-${i}`
+).value,
 
-meaning_th:meaning,
+meaning_th:
+document.getElementById(
+`edit-meaning-${i}`
+).value,
 
-pronounce_th:pronounce,
+pronounce_th:
+document.getElementById(
+`edit-pronounce-${i}`
+).value,
 
-ipa:ipa
+ipa:
+document.getElementById(
+`edit-ipa-${i}`
+).value
 
 };
 
 saveVocab();
+
+toggleEdit(i);
 }
 
 function deleteWord(i){
