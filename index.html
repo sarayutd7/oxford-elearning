@@ -1,345 +1,484 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vocab Manager</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #f4f6f9;
-      padding: 20px;
-    }
-
-    .container {
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-      color: #222;
-    }
-
-    .top-bar {
-      display: flex;
-      gap: 10px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-    }
-
-    input {
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 10px;
-      flex: 1;
-      min-width: 150px;
-    }
-
-    button {
-      border: none;
-      border-radius: 10px;
-      padding: 12px 16px;
-      cursor: pointer;
-      font-weight: bold;
-    }
-
-    .add-btn {
-      background: #2ecc71;
-      color: white;
-    }
-
-    .save-btn {
-      background: #3498db;
-      color: white;
-    }
-
-    .vocab-list {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 16px;
-    }
-
-    .vocab-card {
-      background: white;
-      border-radius: 16px;
-      padding: 16px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
-    }
-
-    .word {
-      font-size: 22px;
-      font-weight: bold;
-      color: #222;
-      margin-bottom: 8px;
-    }
-
-    .meaning {
-      color: #444;
-      margin-bottom: 6px;
-    }
-
-    .pronounce,
-    .ipa,
-    .pos {
-      color: #666;
-      font-size: 14px;
-      margin-bottom: 4px;
-    }
-
-    .vocab-actions {
-      display: flex;
-      gap: 10px;
-      margin-top: 14px;
-    }
-
-    .edit-btn {
-      flex: 1;
-      background: #3498db;
-      color: white;
-    }
-
-    .delete-btn {
-      flex: 1;
-      background: #e74c3c;
-      color: white;
-    }
-
-    .modal {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.5);
-      display: none;
-      justify-content: center;
-      align-items: center;
-      padding: 20px;
-      z-index: 999;
-    }
-
-    .modal-content {
-      background: white;
-      width: 100%;
-      max-width: 500px;
-      border-radius: 20px;
-      padding: 20px;
-    }
-
-    .modal-content h2 {
-      margin-bottom: 16px;
-    }
-
-    .modal-content .form-group {
-      margin-bottom: 12px;
-    }
-
-    .modal-content input {
-      width: 100%;
-    }
-
-    .modal-buttons {
-      display: flex;
-      gap: 10px;
-      margin-top: 20px;
-    }
-
-    .cancel-btn {
-      background: #999;
-      color: white;
-      flex: 1;
-    }
-
-    .update-btn {
-      background: #2ecc71;
-      color: white;
-      flex: 1;
-    }
-
-    @media (max-width: 600px) {
-      .top-bar {
-        flex-direction: column;
-      }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oxford 3000 Final</title>
+<style>
+*{box-sizing:border-box}
+body{
+margin:0;
+font-family:-apple-system,BlinkMacSystemFont,sans-serif;
+background:linear-gradient(135deg,#dbeafe,#eff6ff);
+color:#111827;
+}
+header{
+padding:28px;
+text-align:center;
+background:rgba(255,255,255,.55);
+backdrop-filter:blur(18px);
+position:sticky;
+top:0;
+z-index:999;
+}
+.tabs{
+display:flex;
+gap:10px;
+padding:18px;
+overflow:auto;
+}
+.tab-btn{
+border:none;
+background:black;
+color:white;
+padding:14px 18px;
+border-radius:16px;
+cursor:pointer;
+}
+.active-btn{background:#111827}
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+.card{
+background:rgba(255,255,255,.55);
+backdrop-filter:blur(18px);
+padding:24px;
+border-radius:28px;
+margin-bottom:20px;
+}
+.tab{display:none}
+.active{display:block}
+input{
+width:100%;
+padding:16px;
+border:none;
+border-radius:16px;
+}
+.word-item{
+padding:14px;
+margin-top:10px;
+border-radius:16px;
+background:rgba(255,255,255,.7);
+}
+button{
+border:none;
+background:black;
+color:white;
+padding:12px 16px;
+border-radius:14px;
+cursor:pointer;
+margin:5px;
+}
+.flashcard{
+min-height:260px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+.big{
+font-size:48px;
+font-weight:700;
+}
+.pagination{
+margin-top:20px;
+}
+</style>
 </head>
 <body>
 
-  <div class="container">
-    <h1>📚 Vocab Manager</h1>
+<header>
+<h1>Oxford 3000</h1>
+<p>Final 2-File Version</p>
+</header>
 
-    <div class="top-bar">
-      <input type="text" id="wordInput" placeholder="Word" />
-      <input type="text" id="meaningInput" placeholder="Meaning TH" />
-      <input type="text" id="pronounceInput" placeholder="Pronounce TH" />
-      <input type="text" id="ipaInput" placeholder="IPA" />
-      <input type="text" id="posInput" placeholder="Part of Speech" />
+<div class="tabs">
+<button class="tab-btn active-btn" onclick="openTab(event,'search')">🔍 Search</button>
+<button class="tab-btn" onclick="openTab(event,'all')">📚 All Words</button>
+<button class="tab-btn" onclick="openTab(event,'flash')">🃏 Flashcard</button>
+<button class="tab-btn" onclick="openTab(event,'quiz')">📝 Quiz</button>
+<button class="tab-btn" onclick="openTab(event,'manage')">⚙ Manage</button>
+</div>
 
-      <button class="add-btn" onclick="addVocab()">Add</button>
-      <button class="save-btn" onclick="downloadJSON()">Export JSON</button>
-    </div>
+<div class="container">
 
-    <div class="vocab-list" id="vocabList"></div>
-  </div>
+<div id="search" class="tab active">
+<div class="card">
+<input id="searchInput" placeholder="ค้นหาคำศัพท์..." onkeyup="searchWord()">
+<div id="searchResult"></div>
+</div>
+</div>
 
-  <div class="modal" id="editModal">
-    <div class="modal-content">
-      <h2>Edit Vocabulary</h2>
+<div id="all" class="tab">
+<div class="card">
+<div id="allWords"></div>
+</div>
+</div>
 
-      <div class="form-group">
-        <input type="text" id="editWord" placeholder="Word">
-      </div>
+<div id="flash" class="tab">
+<div class="card">
+<div id="flashcard" class="flashcard"></div>
+<div>
+<button onclick="prevCard()">◀ Prev</button>
+<button onclick="nextCard()">Next ▶</button>
+<button onclick="speak()">🔊 Speak</button>
+</div>
+</div>
+</div>
 
-      <div class="form-group">
-        <input type="text" id="editMeaning" placeholder="Meaning">
-      </div>
+<div id="quiz" class="tab">
+<div class="card">
+<h2>Quiz</h2>
+<p id="quizQuestion"></p>
+<div id="quizOptions"></div>
+<div id="quizResult"></div>
+<button onclick="newQuiz()">สุ่มใหม่</button>
+</div>
+</div>
 
-      <div class="form-group">
-        <input type="text" id="editPronounce" placeholder="Pronounce TH">
-      </div>
+<div id="manage" class="tab">
+<div class="card">
+<h2>Manage Vocabulary</h2>
 
-      <div class="form-group">
-        <input type="text" id="editIPA" placeholder="IPA">
-      </div>
+<input id="newWord" placeholder="English Word"><br><br>
+<input id="newMeaning" placeholder="คำแปลไทย"><br><br>
+<input id="newPronounce" placeholder="คำอ่านไทย"><br><br>
+<input id="newIPA" placeholder="IPA"><br><br>
 
-      <div class="form-group">
-        <input type="text" id="editPOS" placeholder="Part of Speech">
-      </div>
+<button onclick="addWord()">➕ Add Word</button>
 
-      <div class="modal-buttons">
-        <button class="cancel-btn" onclick="closeModal()">Cancel</button>
-        <button class="update-btn" onclick="updateVocab()">Save</button>
-      </div>
-    </div>
-  </div>
+<div id="manageList"></div>
 
-  <script>
-    let vocabData = JSON.parse(localStorage.getItem('vocabData')) || [];
+</div>
+</div>
 
-    let currentEditIndex = null;
+</div>
 
-    function renderVocab() {
-      const vocabList = document.getElementById('vocabList');
-      vocabList.innerHTML = '';
+<script>
 
-      vocabData.forEach((item, index) => {
-        const card = document.createElement('div');
-        card.className = 'vocab-card';
+let vocab=[];
+let current=0;
+let currentQuiz=null;
+let currentPage=1;
+const wordsPerPage=10;
 
-        card.innerHTML = `
-          <div class="word">${item.word || ''}</div>
-          <div class="meaning">${item.meaning_th || ''}</div>
-          <div class="pronounce">🗣 ${item.pronounce_th || ''}</div>
-          <div class="ipa">/${item.ipa || ''}/</div>
-          <div class="pos">📘 ${item.part_of_speech || '-'}</div>
+async function loadVocab(){
 
-          <div class="vocab-actions">
-            <button class="edit-btn" onclick="openEdit(${index})">Edit</button>
-            <button class="delete-btn" onclick="deleteVocab(${index})">Delete</button>
-          </div>
-        `;
+const saved=localStorage.getItem('vocab');
 
-        vocabList.appendChild(card);
-      });
+if(saved){
 
-      localStorage.setItem('vocabData', JSON.stringify(vocabData));
-    }
+vocab=JSON.parse(saved);
 
-    function addVocab() {
-      const word = document.getElementById('wordInput').value.trim();
-      const meaning = document.getElementById('meaningInput').value.trim();
-      const pronounce = document.getElementById('pronounceInput').value.trim();
-      const ipa = document.getElementById('ipaInput').value.trim();
-      const pos = document.getElementById('posInput').value.trim();
+}else{
 
-      if (!word) {
-        alert('Please enter a word');
-        return;
-      }
+const r=await fetch('vocab.json');
 
-      vocabData.push({
-        word,
-        meaning_th: meaning,
-        pronounce_th: pronounce,
-        ipa,
-        part_of_speech: pos
-      });
+vocab=await r.json();
 
-      document.getElementById('wordInput').value = '';
-      document.getElementById('meaningInput').value = '';
-      document.getElementById('pronounceInput').value = '';
-      document.getElementById('ipaInput').value = '';
-      document.getElementById('posInput').value = '';
+localStorage.setItem(
+'vocab',
+JSON.stringify(vocab)
+);
+}
 
-      renderVocab();
-    }
+showCard();
+renderWords();
+renderManage();
+newQuiz();
+}
 
-    function deleteVocab(index) {
-      const confirmDelete = confirm('Delete this vocabulary?');
+loadVocab();
 
-      if (!confirmDelete) return;
+function saveVocab(){
 
-      vocabData.splice(index, 1);
-      renderVocab();
-    }
+localStorage.setItem(
+'vocab',
+JSON.stringify(vocab)
+);
 
-    function openEdit(index) {
-      currentEditIndex = index;
+renderWords();
+renderManage();
+showCard();
+}
 
-      const item = vocabData[index];
+function openTab(e,id){
 
-      document.getElementById('editWord').value = item.word || '';
-      document.getElementById('editMeaning').value = item.meaning_th || '';
-      document.getElementById('editPronounce').value = item.pronounce_th || '';
-      document.getElementById('editIPA').value = item.ipa || '';
-      document.getElementById('editPOS').value = item.part_of_speech || '';
+document.querySelectorAll('.tab')
+.forEach(t=>t.classList.remove('active'));
 
-      document.getElementById('editModal').style.display = 'flex';
-    }
+document.querySelectorAll('.tab-btn')
+.forEach(b=>b.classList.remove('active-btn'));
 
-    function closeModal() {
-      document.getElementById('editModal').style.display = 'none';
-    }
+document.getElementById(id)
+.classList.add('active');
 
-    function updateVocab() {
-      if (currentEditIndex === null) return;
+e.target.classList.add('active-btn');
+}
 
-      vocabData[currentEditIndex] = {
-        word: document.getElementById('editWord').value,
-        meaning_th: document.getElementById('editMeaning').value,
-        pronounce_th: document.getElementById('editPronounce').value,
-        ipa: document.getElementById('editIPA').value,
-        part_of_speech: document.getElementById('editPOS').value
-      };
+function searchWord(){
 
-      renderVocab();
-      closeModal();
-    }
+let q=document
+.getElementById('searchInput')
+.value
+.toLowerCase();
 
-    function downloadJSON() {
-      const blob = new Blob([
-        JSON.stringify(vocabData, null, 2)
-      ], {
-        type: 'application/json'
-      });
+let found=vocab.filter(v=>
+v.word.toLowerCase().includes(q)
+||
+v.meaning_th.includes(q)
+);
 
-      const url = URL.createObjectURL(blob);
+document.getElementById('searchResult')
+.innerHTML=
 
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = 'vocab_3000.json';
-      a.click();
+found.map(v=>`
 
-      URL.revokeObjectURL(url);
-    }
+<div class="word-item">
+<b>${v.word}</b><br>
+${v.meaning_th}<br>
+${v.pronounce_th}<br>
+<small>${v.ipa}</small>
+</div>
 
-    renderVocab();
-  </script>
+`).join('');
+}
+
+function renderWords(){
+
+const start=
+(currentPage-1)*wordsPerPage;
+
+const end=start+wordsPerPage;
+
+const pageWords=vocab.slice(start,end);
+
+document.getElementById('allWords')
+.innerHTML=
+
+pageWords.map(v=>`
+
+<div class="word-item">
+<b>${v.word}</b>
+—
+${v.meaning_th}
+<br>
+<small>${v.pronounce_th}</small>
+</div>
+
+`).join('')
+
++
+
+renderPagination();
+}
+
+function renderPagination(){
+
+const totalPages=
+Math.ceil(vocab.length/wordsPerPage);
+
+let html='<div class="pagination">';
+
+for(let i=1;i<=totalPages;i++){
+
+html+=`
+<button onclick="goPage(${i})">
+${i}
+</button>
+`;
+}
+
+html+='</div>';
+
+return html;
+}
+
+function goPage(page){
+
+currentPage=page;
+
+renderWords();
+
+window.scrollTo({
+top:0,
+behavior:'smooth'
+});
+}
+
+function showCard(){
+
+let v=vocab[current];
+
+document.getElementById('flashcard')
+.innerHTML=`
+
+<div class="big">${v.word}</div>
+
+<div>${v.meaning_th}</div>
+
+<div>${v.pronounce_th}</div>
+
+<small>${v.ipa}</small>
+
+`;
+}
+
+function nextCard(){
+
+current=(current+1)%vocab.length;
+
+showCard();
+}
+
+function prevCard(){
+
+current=
+(current-1+vocab.length)%vocab.length;
+
+showCard();
+}
+
+function speak(){
+
+speechSynthesis.cancel();
+
+const u=
+new SpeechSynthesisUtterance(
+vocab[current].word
+);
+
+u.lang='en-US';
+
+u.rate=.9;
+
+speechSynthesis.speak(u);
+}
+
+function shuffle(a){
+return a.sort(()=>Math.random()-0.5);
+}
+
+function newQuiz(){
+
+const q=vocab[
+Math.floor(Math.random()*vocab.length)
+];
+
+currentQuiz=q;
+
+let options=[q.meaning_th];
+
+while(options.length<4){
+
+let c=vocab[
+Math.floor(Math.random()*vocab.length)
+].meaning_th;
+
+if(!options.includes(c))
+options.push(c);
+}
+
+options=shuffle(options);
+
+document.getElementById('quizQuestion')
+.innerHTML=
+`คำว่า <b>${q.word}</b> แปลว่าอะไร?`;
+
+document.getElementById('quizOptions')
+.innerHTML=
+
+options.map(o=>`
+
+<button onclick="checkAnswer('${o}')">
+${o}
+</button>
+
+`).join('');
+
+document.getElementById('quizResult')
+.innerHTML='';
+}
+
+function checkAnswer(ans){
+
+let r=document
+.getElementById('quizResult');
+
+if(ans===currentQuiz.meaning_th){
+
+r.innerHTML='✅ Correct';
+
+r.style.color='green';
+
+}else{
+
+r.innerHTML=
+'❌ Correct: '+currentQuiz.meaning_th;
+
+r.style.color='red';
+}
+}
+
+function addWord(){
+
+const word=document.getElementById('newWord').value;
+const meaning=document.getElementById('newMeaning').value;
+const pronounce=document.getElementById('newPronounce').value;
+const ipa=document.getElementById('newIPA').value;
+
+if(!word || !meaning) return;
+
+vocab.unshift({
+word:word,
+meaning_th:meaning,
+pronounce_th:pronounce,
+ipa:ipa
+});
+
+saveVocab();
+
+document.getElementById('newWord').value='';
+document.getElementById('newMeaning').value='';
+document.getElementById('newPronounce').value='';
+document.getElementById('newIPA').value='';
+}
+
+function renderManage(){
+
+document.getElementById('manageList')
+.innerHTML=
+
+vocab.slice(0,50).map((v,i)=>`
+
+<div class="word-item">
+
+<b>${v.word}</b>
+
+—
+
+${v.meaning_th}
+
+<button onclick="deleteWord(${i})">
+🗑 Delete
+</button>
+
+</div>
+
+`).join('');
+}
+
+function deleteWord(i){
+
+vocab.splice(i,1);
+
+saveVocab();
+}
+
+</script>
 
 </body>
 </html>
