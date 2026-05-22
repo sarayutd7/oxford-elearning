@@ -12253,5 +12253,1505 @@
       "nature",
       "basic"
     ]
+  },
+  {
+    "word": "ability",
+    "meaning_th": "ความสามารถ",
+    "meaning_en": "the physical or mental power or skill needed to do something",
+    "pronounce_th": "อะบิลิตี",
+    "ipa": "/əˈbɪləti/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "She has the ability to speak three languages fluently."
+    ],
+    "synonyms": [
+      "capability",
+      "skill",
+      "talent"
+    ],
+    "tags": [
+      "general",
+      "mind"
+    ]
+  },
+  {
+    "word": "able",
+    "meaning_th": "สามารถ, เก่ง",
+    "meaning_en": "having the necessary power, skill, or opportunity to do something",
+    "pronounce_th": "เอบิล",
+    "ipa": "/ˈeɪbl/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "Will you be able to come to the team meeting tomorrow?"
+    ],
+    "synonyms": [
+      "capable",
+      "competent"
+    ],
+    "tags": [
+      "description",
+      "ability"
+    ]
+  },
+  {
+    "word": "abroad",
+    "meaning_th": "ในต่างประเทศ, ต่างแดน",
+    "meaning_en": "in or to a foreign country or countries",
+    "pronounce_th": "อะบรอด",
+    "ipa": "/əˈbrɔːd/",
+    "part_of_speech": "adverb",
+    "cefr": "A2",
+    "examples": [
+      "He loves traveling abroad during the winter holidays."
+    ],
+    "synonyms": [
+      "overseas",
+      "internationally"
+    ],
+    "tags": [
+      "travel",
+      "geography"
+    ]
+  },
+  {
+    "word": "absolute",
+    "meaning_th": "เด็ดขาด, แน่นอน, สุทธิ",
+    "meaning_en": "not qualified or diminished in any way; total",
+    "pronounce_th": "แอบโซลูท",
+    "ipa": "/ˈæbsəluːt/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "You must have absolute confidence in your test script results."
+    ],
+    "synonyms": [
+      "total",
+      "complete",
+      "utter"
+    ],
+    "tags": [
+      "description"
+    ]
+  },
+  {
+    "word": "absolutely",
+    "meaning_th": "อย่างแน่นอน, อย่างเด็ดขาด",
+    "meaning_en": "with no qualification, restriction, or limitation; totally",
+    "pronounce_th": "แอบโซลูทลี",
+    "ipa": "/ˈæbsəluːtli/",
+    "part_of_speech": "adverb",
+    "cefr": "A2",
+    "examples": [
+      "I absolutely agree with your opinion on Robot Framework."
+    ],
+    "synonyms": [
+      "completely",
+      "totally",
+      "perfectly"
+    ],
+    "tags": [
+      "grammar",
+      "conversation"
+    ]
+  },
+  {
+    "word": "academic",
+    "meaning_th": "ทางวิชาการ, เกี่ยวกับสถาบันการศึกษา",
+    "meaning_en": "relating to education and scholarship",
+    "pronounce_th": "แอกะเดมิก",
+    "ipa": "/ˌækəˈdemɪk/",
+    "part_of_speech": "adjective, noun",
+    "cefr": "A2",
+    "examples": [
+      "The university offers high academic standards."
+    ],
+    "synonyms": [
+      "educational",
+      "scholarly"
+    ],
+    "tags": [
+      "school",
+      "education"
+    ]
+  },
+  {
+    "word": "accept",
+    "meaning_th": "ยอมรับ, ตกลง",
+    "meaning_en": "consent to receive a thing offered",
+    "pronounce_th": "แอคเซพท์",
+    "ipa": "/əkˈsept/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "Please accept our invitation to the company party."
+    ],
+    "synonyms": [
+      "receive",
+      "welcome",
+      "agree to"
+    ],
+    "tags": [
+      "action",
+      "communication"
+    ]
+  },
+  {
+    "word": "acceptable",
+    "meaning_th": "เป็นที่ยอมรับได้, ใช้ได้",
+    "meaning_en": "able to be agreed on or suitable",
+    "pronounce_th": "แอคเซพทะเบิล",
+    "ipa": "/əkˈseptəbl/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "This code quality is acceptable for the first project draft."
+    ],
+    "synonyms": [
+      "satisfactory",
+      "suitable",
+      "tolerable"
+    ],
+    "tags": [
+      "description"
+    ]
+  },
+  {
+    "word": "accident",
+    "meaning_th": "อุบัติเหตุ",
+    "meaning_en": "an unfortunate incident that happens unexpectedly",
+    "pronounce_th": "แอคสิเดนท์",
+    "ipa": "/ˈæksɪdənt/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "He had a minor car accident yesterday morning."
+    ],
+    "synonyms": [
+      "mishap",
+      "crash",
+      "collision"
+    ],
+    "tags": [
+      "general",
+      "danger"
+    ]
+  },
+  {
+    "word": "accommodation",
+    "meaning_th": "ที่พักอาศัย",
+    "meaning_en": "a room, group of rooms, or building in which someone may live or stay",
+    "pronounce_th": "อะคอมโมเดเชิน",
+    "ipa": "/əˌkɒməˈdeɪʃn/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Hotel accommodation is included in the travel package price."
+    ],
+    "synonyms": [
+      "lodging",
+      "housing",
+      "stay"
+    ],
+    "tags": [
+      "places",
+      "travel",
+      "home"
+    ]
+  },
+  {
+    "word": "accompany",
+    "meaning_th": "ไปเป็นเพื่อน, ร่วมเดินทาง, มาควบคู่กับ",
+    "meaning_en": "go somewhere with someone as a companion",
+    "pronounce_th": "อะคอมพะนี",
+    "ipa": "/əˈkʌmpəni/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "Children must be accompanied by an adult in the museum."
+    ],
+    "synonyms": [
+      "escort",
+      "attend",
+      "go with"
+    ],
+    "tags": [
+      "action",
+      "movement"
+    ]
+  },
+  {
+    "word": "according to",
+    "meaning_th": "ตามที่, อ้างอิงจาก",
+    "meaning_en": "as stated by or in conformity with",
+    "pronounce_th": "อะคอร์ดิง ทู",
+    "ipa": "/əˈkɔːdɪŋ tuː/",
+    "part_of_speech": "preposition",
+    "cefr": "A2",
+    "examples": [
+      "According to the project report, our application cleanup is complete."
+    ],
+    "synonyms": [
+      "as stated by",
+      "reported by"
+    ],
+    "tags": [
+      "grammar",
+      "connection"
+    ]
+  },
+  {
+    "word": "account",
+    "meaning_th": "บัญชีผู้ใช้, บัญชีธนาคาร, อธิบาย",
+    "meaning_en": "a profile or record of financial transactions; report",
+    "pronounce_th": "อะเคานท์",
+    "ipa": "/əˈkaʊnt/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A2",
+    "examples": [
+      "Please log into your AppSheet account to study vocabulary."
+    ],
+    "synonyms": [
+      "profile",
+      "record",
+      "report"
+    ],
+    "tags": [
+      "technology",
+      "business",
+      "money"
+    ]
+  },
+  {
+    "word": "accurate",
+    "meaning_th": "ถูกต้องแม่นยำ, ไร้ข้อผิดพลาด",
+    "meaning_en": "correct in all details; exact",
+    "pronounce_th": "แอกคิวเรท",
+    "ipa": "/ˈækjərət/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "An accurate SQL query parameter ensures fast dataset rendering."
+    ],
+    "synonyms": [
+      "precise",
+      "correct",
+      "exact"
+    ],
+    "tags": [
+      "description",
+      "business",
+      "work"
+    ]
+  },
+  {
+    "word": "accuse",
+    "meaning_th": "กล่าวหา, ฟ้องร้อง",
+    "meaning_en": "charge someone with an offense or crime",
+    "pronounce_th": "อะคิวซ์",
+    "ipa": "/əˈkjuːz/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "Do not accuse anyone without verified logic proof."
+    ],
+    "synonyms": [
+      "blame",
+      "charge"
+    ],
+    "tags": [
+      "action",
+      "communication"
+    ]
+  },
+  {
+    "word": "achieve",
+    "meaning_th": "บรรลุผลสำเร็จ, สำเร็จ",
+    "meaning_en": "successfully bring about or reach a desired objective",
+    "pronounce_th": "อะชีฝ",
+    "ipa": "/əˈtʃiːv/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "You can achieve your software testing milestones with proper preparation."
+    ],
+    "synonyms": [
+      "accomplish",
+      "attain",
+      "fulfill"
+    ],
+    "tags": [
+      "action",
+      "work"
+    ]
+  },
+  {
+    "word": "achievement",
+    "meaning_th": "ความสำเร็จ, การบรรลุผล",
+    "meaning_en": "a thing done successfully, typically by effort, courage, or skill",
+    "pronounce_th": "อะชีฝเมินท์",
+    "ipa": "/əˈtʃiːvmənt/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Completing the test automation architecture is a great achievement."
+    ],
+    "synonyms": [
+      "accomplishment",
+      "success",
+      "attainment"
+    ],
+    "tags": [
+      "general",
+      "business"
+    ]
+  },
+  {
+    "word": "acid",
+    "meaning_th": "กรด, สารที่มีฤทธิ์เป็นกรด",
+    "meaning_en": "a chemical substance that neutralizes alkalis, turns litmus red, and typically has a sour taste",
+    "pronounce_th": "แอสิด",
+    "ipa": "/ˈæsɪd/",
+    "part_of_speech": "noun, adjective",
+    "cefr": "A2",
+    "examples": [
+      "Be careful when handling acid solutions inside the laboratory."
+    ],
+    "synonyms": [],
+    "tags": [
+      "nature",
+      "objects"
+    ]
+  },
+  {
+    "word": "acknowledge",
+    "meaning_th": "รับทราบ, ยอมรับความจริง",
+    "meaning_en": "accept or admit the existence or truth of; confirm receipt of something",
+    "pronounce_th": "แอคนาเลจญ์",
+    "ipa": "/əkˈnɒlɪdʒ/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "Please acknowledge the email received from our project manager."
+    ],
+    "synonyms": [
+      "admit",
+      "accept",
+      "recognize",
+      "confirm"
+    ],
+    "tags": [
+      "action",
+      "communication",
+      "work"
+    ]
+  },
+  {
+    "word": "acquire",
+    "meaning_th": "ได้รับมา, ได้มา, เข้าซื้อกิจการ",
+    "meaning_en": "buy or obtain an asset or object for oneself; learn a skill",
+    "pronounce_th": "อะไควเออะ",
+    "ipa": "/əˈkwaɪə(r)/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "Reading helps you acquire new vocabulary knowledge naturally."
+    ],
+    "synonyms": [
+      "obtain",
+      "gain",
+      "get",
+      "earn"
+    ],
+    "tags": [
+      "action",
+      "education"
+    ]
+  },
+  {
+    "word": "act",
+    "meaning_th": "แสดง, การกระทำ, พรบ.",
+    "meaning_en": "take action; do something; perform in a play or film",
+    "pronounce_th": "แอคท์",
+    "ipa": "/ækt/",
+    "part_of_speech": "verb, noun",
+    "cefr": "A2",
+    "examples": [
+      "It is important to act quickly in an emergency."
+    ],
+    "synonyms": [
+      "perform",
+      "behave",
+      "deed"
+    ],
+    "tags": [
+      "action",
+      "entertainment"
+    ]
+  },
+  {
+    "word": "action",
+    "meaning_th": "การกระทำ, การปฏิบัติ",
+    "meaning_en": "the fact or process of doing something, typically to achieve an aim",
+    "pronounce_th": "แอคเชิน",
+    "ipa": "/ˈækʃn/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Our QA management team will take instant action on software bugs."
+    ],
+    "synonyms": [
+      "act",
+      "deed",
+      "movement"
+    ],
+    "tags": [
+      "general",
+      "activity"
+    ]
+  },
+  {
+    "word": "active",
+    "meaning_th": "คล่องแคล่ว, กระตือรือร้น",
+    "meaning_en": "engaging or ready to engage in physically energetic pursuits",
+    "pronounce_th": "แอคทิฝ",
+    "ipa": "/ˈæktɪv/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "He leads an active lifestyle and goes to the fitness gym often."
+    ],
+    "synonyms": [
+      "energetic",
+      "lively",
+      "dynamic"
+    ],
+    "tags": [
+      "description",
+      "lifestyle"
+    ]
+  },
+  {
+    "word": "actor",
+    "meaning_th": "นักแสดงชาย",
+    "meaning_en": "a person whose profession is acting on the stage, in movies, or on television",
+    "pronounce_th": "แอคเทอะ",
+    "ipa": "/ˈæktə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "He wants to be a professional movie actor in the future."
+    ],
+    "synonyms": [
+      "performer",
+      "player"
+    ],
+    "tags": [
+      "jobs",
+      "entertainment",
+      "media"
+    ]
+  },
+  {
+    "word": "actually",
+    "meaning_th": "จริงๆ แล้ว, ในความเป็นจริง",
+    "meaning_en": "as the truth or facts of a situation; really",
+    "pronounce_th": "แอคชัวลี",
+    "ipa": "/ˈæktʃuəli/",
+    "part_of_speech": "adverb",
+    "cefr": "A2",
+    "examples": [
+      "I actually don't know the parameters of the custom SQL query statement."
+    ],
+    "synonyms": [
+      "really",
+      "truly",
+      "in fact"
+    ],
+    "tags": [
+      "grammar",
+      "conversation"
+    ]
+  },
+  {
+    "word": "admire",
+    "meaning_th": "ชื่นชม, เลื่อมใส",
+    "meaning_en": "regard with respect or warm approval",
+    "pronounce_th": "แอดไมเออะ",
+    "ipa": "/ədˈmaɪə(r)/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "I highly admire your dedication to automated software testing."
+    ],
+    "synonyms": [
+      "respect",
+      "esteem",
+      "praise"
+    ],
+    "tags": [
+      "action",
+      "feelings"
+    ]
+  },
+  {
+    "word": "affect",
+    "meaning_th": "ส่งผลกระทบ, มีผลต่อ",
+    "meaning_en": "have an effect on; make a difference to",
+    "pronounce_th": "อะเฟคท์",
+    "ipa": "/əˈfekt/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "The new database structure will affect the script parameters."
+    ],
+    "synonyms": [
+      "influence",
+      "impact",
+      "alter"
+    ],
+    "tags": [
+      "action",
+      "general"
+    ]
+  },
+  {
+    "word": "afford",
+    "meaning_th": "สามารถจ่ายได้, มีเงินพอซื้อ",
+    "meaning_en": "have enough money to pay for something",
+    "pronounce_th": "อะฟอร์ด",
+    "ipa": "/əˈfɔːd/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "Our department can afford to buy a new fast server printer."
+    ],
+    "synonyms": [
+      "pay for",
+      "manage",
+      "bear"
+    ],
+    "tags": [
+      "action",
+      "money",
+      "shopping"
+    ]
+  },
+  {
+    "word": "afternoon",
+    "meaning_th": "ช่วงบ่าย, ตอนบ่าย",
+    "meaning_en": "the time from noon or lunchtime until evening",
+    "pronounce_th": "อาฟเทอะนูน",
+    "ipa": "/ˌɑːftəˈnuːn/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Let's run the Robot Framework test script this afternoon."
+    ],
+    "synonyms": [],
+    "tags": [
+      "time",
+      "daily-life"
+    ]
+  },
+  {
+    "word": "against",
+    "meaning_th": "ต่อต้าน, ต่อสู้กับ, พิงกับ",
+    "meaning_en": "in opposition to; in contact with",
+    "pronounce_th": "อะเกนสต์",
+    "ipa": "/əˈɡenst/",
+    "part_of_speech": "preposition",
+    "cefr": "A2",
+    "examples": [
+      "We are playing a match against a strong local football team.",
+      "Place the ladder against the wall."
+    ],
+    "synonyms": [
+      "opposed to",
+      "versus"
+    ],
+    "tags": [
+      "grammar",
+      "location"
+    ]
+  },
+  {
+    "word": "aged",
+    "meaning_th": "ที่มีอายุ, สูงอายุ",
+    "meaning_en": "having lived for a specified period of time; old",
+    "pronounce_th": "เอจญ์ด",
+    "ipa": "/eɪdʒd/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "The program targets elderly people aged sixty and above."
+    ],
+    "synonyms": [
+      "old",
+      "elderly"
+    ],
+    "tags": [
+      "description",
+      "age"
+    ]
+  },
+  {
+    "word": "agency",
+    "meaning_th": "ตัวแทน, หน่วยงาน, เอเจนซี่",
+    "meaning_en": "a business or organization established to provide a particular service",
+    "pronounce_th": "เอเจินซี",
+    "ipa": "/ˈeɪdʒənsi/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "He hired a digital marketing agency to run product promotions."
+    ],
+    "synonyms": [
+      "bureau",
+      "organization",
+      "office",
+      "firm"
+    ],
+    "tags": [
+      "business",
+      "work"
+    ]
+  },
+  {
+    "word": "agent",
+    "meaning_th": "ตัวแทน, นายหน้า",
+    "meaning_en": "a person who acts on behalf of another person or group",
+    "pronounce_th": "เอเจินท์",
+    "ipa": "/ˈeɪdʒənt/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "The travel agent helped us book a modern hotel room."
+    ],
+    "synonyms": [
+      "representative",
+      "broker",
+      "proxy"
+    ],
+    "tags": [
+      "people",
+      "business",
+      "jobs"
+    ]
+  },
+  {
+    "word": "aggressive",
+    "meaning_th": "ก้าวร้าว, รุกราน",
+    "meaning_en": "ready or likely to attack or confront",
+    "pronounce_th": "อะเกรสสิฝ",
+    "ipa": "/əˈɡresɪv/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "Do not use aggressive words during team conversations."
+    ],
+    "synonyms": [
+      "hostile",
+      "combative"
+    ],
+    "tags": [
+      "description",
+      "feelings"
+    ]
+  },
+  {
+    "word": "agreement",
+    "meaning_th": "ข้อตกลง, สัญญา, ความเห็นพ้อง",
+    "meaning_en": "harmony or accordance in opinion or feeling; a negotiated arrangement",
+    "pronounce_th": "อะกรีเมินท์",
+    "ipa": "/əˈɡriːmənt/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "The two business firms finally signed the project agreement."
+    ],
+    "synonyms": [
+      "contract",
+      "deal",
+      "treaty",
+      "accord"
+    ],
+    "tags": [
+      "business",
+      "communication"
+    ]
+  },
+  {
+    "word": "ahead",
+    "meaning_th": "ข้างหน้า, ล่วงหน้า, นำหน้า",
+    "meaning_en": "further forward in space or time; in the lead",
+    "pronounce_th": "อะเฮด",
+    "ipa": "/əˈhed/",
+    "part_of_speech": "adverb",
+    "cefr": "A2",
+    "examples": [
+      "The station is straight ahead, past the local bank."
+    ],
+    "synonyms": [
+      "forward",
+      "leading",
+      "before"
+    ],
+    "tags": [
+      "direction",
+      "location",
+      "time"
+    ]
+  },
+  {
+    "word": "aim",
+    "meaning_th": "เป้าหมาย, จุดมุ่งหมาย, เล็งเป้า",
+    "meaning_en": "a purpose or intention; a desired outcome",
+    "pronounce_th": "เอม",
+    "ipa": "/eɪm/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A2",
+    "examples": [
+      "Our primary aim is to ensure high application rendering quality.",
+      "We aim to finish the script today."
+    ],
+    "synonyms": [
+      "goal",
+      "purpose",
+      "target",
+      "intend"
+    ],
+    "tags": [
+      "general",
+      "action",
+      "mind"
+    ]
+  },
+  {
+    "word": "airline",
+    "meaning_th": "สายการบิน",
+    "meaning_en": "a company that provides regular flights for passengers or cargo",
+    "pronounce_th": "แอร์ไลน์",
+    "ipa": "/ˈeəlaɪน/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "The national airline offers cheap flight tickets this month."
+    ],
+    "synonyms": [
+      "air carrier"
+    ],
+    "tags": [
+      "travel",
+      "transportation",
+      "business"
+    ]
+  },
+  {
+    "word": "alive",
+    "meaning_th": "มีชีวิตอยู่, ร่าเริง",
+    "meaning_en": "living; not dead",
+    "pronounce_th": "อะไลฝ",
+    "ipa": "/əˈlaɪv/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "The rare plant species is still alive inside the botanical garden."
+    ],
+    "synonyms": [
+      "living",
+      "breathing"
+    ],
+    "tags": [
+      "description",
+      "life"
+    ]
+  },
+  {
+    "word": "allow",
+    "meaning_th": "อนุญาต, ยอมให้",
+    "meaning_en": "give someone permission to do something",
+    "pronounce_th": "อะลาว",
+    "ipa": "/əˈlaʊ/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "Please allow me to explain the software testing parameters."
+    ],
+    "synonyms": [
+      "permit",
+      "let",
+      "authorize"
+    ],
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "almost",
+    "meaning_th": "เกือบจะ, จวนจะ",
+    "meaning_en": "not quite; very nearly",
+    "pronounce_th": "ออลโมสต์",
+    "ipa": "/ˈɔːlməʊst/",
+    "part_of_speech": "adverb",
+    "cefr": "A2",
+    "examples": [
+      "The database cleanup project is almost complete."
+    ],
+    "synonyms": [
+      "nearly",
+      "practically"
+    ],
+    "tags": [
+      "quantity",
+      "grammar"
+    ]
+  },
+  {
+    "word": "alone",
+    "meaning_th": "คนเดียว, ตามลำพัง",
+    "meaning_en": "having no one else present; on one's own",
+    "pronounce_th": "อะโลน",
+    "ipa": "/əˈləʊน/",
+    "part_of_speech": "adjective, adverb",
+    "cefr": "A2",
+    "examples": [
+      "It can be unsafe to walk alone inside the dark alley at night."
+    ],
+    "synonyms": [
+      "solitary",
+      "unaccompanied",
+      "by oneself"
+    ],
+    "tags": [
+      "description",
+      "lifestyle"
+    ]
+  },
+  {
+    "word": "along",
+    "meaning_th": "ตามแนว, ขนานไปกับ, ร่วมด้วย",
+    "meaning_en": "moving in a constant direction on a path",
+    "pronounce_th": "อะลอง",
+    "ipa": "/əˈlɒŋ/",
+    "part_of_speech": "preposition, adverb",
+    "cefr": "A2",
+    "examples": [
+      "We walked along the beautiful beach shore.",
+      "Bring your laptop along."
+    ],
+    "synonyms": [
+      "beside",
+      "throughout"
+    ],
+    "tags": [
+      "direction",
+      "location",
+      "grammar"
+    ]
+  },
+  {
+    "word": "already",
+    "meaning_th": "เรียบร้อยแล้ว, อยู่ก่อนแล้ว",
+    "meaning_en": "before or by now or the time in question",
+    "pronounce_th": "ออลเรดดี",
+    "ipa": "/ɔːlˈredi/",
+    "part_of_speech": "adverb",
+    "cefr": "A2",
+    "examples": [
+      "I have already updated my professional resume details."
+    ],
+    "synonyms": [
+      "by this time",
+      "previously"
+    ],
+    "tags": [
+      "time",
+      "grammar"
+    ]
+  },
+  {
+    "word": "alternative",
+    "meaning_th": "ทางเลือก, ตัวเลือกอื่น",
+    "meaning_en": "one of two or more available possibilities",
+    "pronounce_th": "ออลเทอร์เนอทิฝ",
+    "ipa": "/ɔːlˈtɜːnətɪv/",
+    "part_of_speech": "noun, adjective",
+    "cefr": "A2",
+    "examples": [
+      "We need to find an alternative method for validation cleanup."
+    ],
+    "synonyms": [
+      "option",
+      "choice",
+      "substitute"
+    ],
+    "tags": [
+      "general",
+      "description"
+    ]
+  },
+  {
+    "word": "although",
+    "meaning_th": "แม้ว่า, ถึงแม้ว่า",
+    "meaning_en": "in spite of the fact that; even though",
+    "pronounce_th": "ออลโธ",
+    "ipa": "/ɔːlˈðəʊ/",
+    "part_of_speech": "conjunction",
+    "cefr": "A2",
+    "examples": [
+      "Although the exam was difficult, everyone passed successfully."
+    ],
+    "synonyms": [
+      "even though",
+      "though",
+      "while"
+    ],
+    "tags": [
+      "grammar",
+      "connection"
+    ]
+  },
+  {
+    "word": "amazed",
+    "meaning_th": "รู้สึกทึ่ง, รู้สึกประหลาดใจมาก",
+    "meaning_en": "greatly surprised; astonished",
+    "pronounce_th": "อะเมซญ์ด",
+    "ipa": "/əˈmeɪzd/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "I was amazed by the fast speed of the new automation tool."
+    ],
+    "synonyms": [
+      "astonished",
+      "surprised",
+      "stunned"
+    ],
+    "tags": [
+      "feelings",
+      "emotions"
+    ]
+  },
+  {
+    "word": "ambition",
+    "meaning_th": "ความทะเยอทะยาน, ความมุ่งมั่น",
+    "meaning_en": "a strong desire to do or achieve something, typically requiring determination and hard work",
+    "pronounce_th": "แอมบิแชน",
+    "ipa": "/æmˈbɪʃn/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "His chief ambition is to lead the software quality engineering department."
+    ],
+    "synonyms": [
+      "aspiration",
+      "goal",
+      "dream"
+    ],
+    "tags": [
+      "general",
+      "mind"
+    ]
+  },
+  {
+    "word": "among",
+    "meaning_th": "ท่ามกลาง, ในหมู่พวก",
+    "meaning_en": "surrounded by; in the company of",
+    "pronounce_th": "อะมัง",
+    "ipa": "/əˈmʌŋ/",
+    "part_of_speech": "preposition",
+    "cefr": "A2",
+    "examples": [
+      "The new features are highly popular among our active application users."
+    ],
+    "synonyms": [
+      "amidst",
+      "between",
+      "surrounded by"
+    ],
+    "tags": [
+      "location",
+      "grammar"
+    ]
+  },
+  {
+    "word": "amount",
+    "meaning_th": "จำนวน, ปริมาณ",
+    "meaning_en": "a quantity of something, especially the total of a thing in number, size, value, or extent",
+    "pronounce_th": "อะเมานท์",
+    "ipa": "/əˈmaʊnt/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Please input the exact amount of currency parameters inside the sheet."
+    ],
+    "synonyms": [
+      "quantity",
+      "volume",
+      "total"
+    ],
+    "tags": [
+      "quantity",
+      "math",
+      "money"
+    ]
+  },
+  {
+    "word": "ancient",
+    "meaning_th": "โบราณ,เก่าแก่มารวมปี",
+    "meaning_en": "belonging to the very distant past and no longer in existence",
+    "pronounce_th": "เอนเชินท์",
+    "ipa": "/ˈeɪnʃənt/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "We enjoy looking at ancient art collections inside the city museum."
+    ],
+    "synonyms": [
+      "antique",
+      "old",
+      "historic"
+    ],
+    "tags": [
+      "description",
+      "history"
+    ]
+  },
+  {
+    "word": "ankle",
+    "meaning_th": "ข้อเท้า",
+    "meaning_en": "the joint connecting the foot with the leg",
+    "pronounce_th": "แองเคิล",
+    "ipa": "/ˈæŋkl/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "He sprained his left ankle during the physical football game match."
+    ],
+    "synonyms": [],
+    "tags": [
+      "body",
+      "health"
+    ]
+  },
+  {
+    "word": "announce",
+    "meaning_th": "ประกาศ, แจ้งให้ทราบ",
+    "meaning_en": "make a formal public statement about a fact, occurrence, or intention",
+    "pronounce_th": "อะเนาส์",
+    "ipa": "/əˈnaʊน์ส/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "The manager will announce the new software deployment roadmap today."
+    ],
+    "synonyms": [
+      "declare",
+      "publish",
+      "state",
+      "proclaim"
+    ],
+    "tags": [
+      "action",
+      "communication",
+      "work"
+    ]
+  },
+  {
+    "word": "announcement",
+    "meaning_th": "การประกาศ, คำประกาศ",
+    "meaning_en": "a formal public statement about a fact, occurrence, or intention",
+    "pronounce_th": "อะเนาส์เมินท์",
+    "ipa": "/əˈnaʊnsmənt/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Please read the new office policy announcement carefully."
+    ],
+    "synonyms": [
+      "declaration",
+      "statement",
+      "notice"
+    ],
+    "tags": [
+      "communication",
+      "business"
+    ]
+  },
+  {
+    "word": "annoy",
+    "meaning_th": "ทำให้รำคาญ, กวนใจ",
+    "meaning_en": "make someone a little angry; irritate",
+    "pronounce_th": "อะนอย",
+    "ipa": "/əˈnɔɪ/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "Flashing advertisements can annoy website readers."
+    ],
+    "synonyms": [
+      "irritate",
+      "bother",
+      "vex"
+    ],
+    "tags": [
+      "action",
+      "feelings"
+    ]
+  },
+  {
+    "word": "annoyed",
+    "meaning_th": "รู้สึกรำคาญ, หงุดหงิด",
+    "meaning_en": "slightly angry; irritated",
+    "pronounce_th": "อะนอยด์",
+    "ipa": "/əˈnɔɪd/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "He felt highly annoyed by the slow rendering parameters of the tool."
+    ],
+    "synonyms": [
+      "irritated",
+      "bothered",
+      "frustrated"
+    ],
+    "tags": [
+      "feelings",
+      "emotions"
+    ]
+  },
+  {
+    "word": "annoying",
+    "meaning_th": "น่ารำคาญ",
+    "meaning_en": "causing irritation or annoyance",
+    "pronounce_th": "อะนอยอิง",
+    "ipa": "/əˈnɔɪɪŋ/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "Dealing with unresolved software loop bugs is very annoying."
+    ],
+    "synonyms": [
+      "irritating",
+      "bothersome",
+      "tedious"
+    ],
+    "tags": [
+      "description"
+    ]
+  },
+  {
+    "word": "annual",
+    "meaning_th": "ประจำปี, ทุกปี",
+    "meaning_en": "occurring once every year",
+    "pronounce_th": "แอนนวล",
+    "ipa": "/ˈænjuəl/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "Our company holds an annual performance review in January."
+    ],
+    "synonyms": [
+      "yearly"
+    ],
+    "tags": [
+      "description",
+      "time",
+      "business"
+    ]
+  },
+  {
+    "word": "anxiety",
+    "meaning_th": "ความวิตกกังวล, ความกระสับกระส่าย",
+    "meaning_en": "a feeling of worry, nervousness, or unease, typically about an imminent event or something with an uncertain outcome",
+    "pronounce_th": "แองไซเออที",
+    "ipa": "/æŋˈzaɪəti/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Preparing technical milestones properly helps reduce interview anxiety."
+    ],
+    "synonyms": [
+      "worry",
+      "concern",
+      "unease",
+      "nervousness"
+    ],
+    "tags": [
+      "general",
+      "feelings"
+    ]
+  },
+  {
+    "word": "anxious",
+    "meaning_th": "รู้สึกวิตกกังวล, ร้อนใจ",
+    "meaning_en": "experiencing worry, nervousness, or unease",
+    "pronounce_th": "แองแชส",
+    "ipa": "/ˈæŋkʃəs/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "The project team is anxious to deploy the verified code update."
+    ],
+    "synonyms": [
+      "worried",
+      "nervous",
+      "concerned"
+    ],
+    "tags": [
+      "description",
+      "feelings",
+      "emotions"
+    ]
+  },
+  {
+    "word": "anybody",
+    "meaning_th": "ใครก็ตาม, ใครบางคน (ในประโยคปฏิเสธ/คำถาม)",
+    "meaning_en": "anyone",
+    "pronounce_th": "เอนีบอดี",
+    "ipa": "/ˈenibɒdi/",
+    "part_of_speech": "pronoun",
+    "cefr": "A2",
+    "examples": [
+      "Is there anybody inside the main office conference room?"
+    ],
+    "synonyms": [
+      "anyone"
+    ],
+    "tags": [
+      "people",
+      "grammar"
+    ]
+  },
+  {
+    "word": "anymore",
+    "meaning_th": "อีกต่อไป (ในประโยคปฏิเสธ)",
+    "meaning_en": "to any further extent; any longer",
+    "pronounce_th": "เอนีมอร์",
+    "ipa": "/ˌeniˈmɔː(r)/",
+    "part_of_speech": "adverb",
+    "cefr": "A2",
+    "examples": [
+      "The old SQL dataset server is not functional anymore."
+    ],
+    "synonyms": [
+      "any longer"
+    ],
+    "tags": [
+      "time",
+      "grammar"
+    ]
+  },
+  {
+    "word": "anyway",
+    "meaning_th": "อย่างไรก็ตาม, ถึงอย่างไรก็",
+    "meaning_en": "used to confirm or support a point or to change the subject; regardless",
+    "pronounce_th": "เอนีเวย์",
+    "ipa": "/ˈeniweɪ/",
+    "part_of_speech": "adverb",
+    "cefr": "A2",
+    "examples": [
+      "The technical parameters were tough, but we completed the test scripts anyway."
+    ],
+    "synonyms": [
+      "anyhow",
+      "nevertheless",
+      "regardless"
+    ],
+    "tags": [
+      "grammar",
+      "conversation"
+    ]
+  },
+  {
+    "word": "anywhere",
+    "meaning_th": "ที่ไหนก็ตาม, ทุกที่",
+    "meaning_en": "in or to any place",
+    "pronounce_th": "เอนีแวร์",
+    "ipa": "/ˈeniweə(r)/",
+    "part_of_speech": "adverb, pronoun",
+    "cefr": "A2",
+    "examples": [
+      "You can manage your cloud AppSheet application from anywhere."
+    ],
+    "synonyms": [
+      "anyplace"
+    ],
+    "tags": [
+      "location",
+      "grammar"
+    ]
+  },
+  {
+    "word": "apart",
+    "meaning_th": "แยกจากกัน, ต่างหาก",
+    "meaning_en": "separated by a specified distance in time or space",
+    "pronounce_th": "อะพาร์ท",
+    "ipa": "/əˈpɑːt/",
+    "part_of_speech": "adverb, adjective",
+    "cefr": "A2",
+    "examples": [
+      "The two server racks are located two meters apart."
+    ],
+    "synonyms": [
+      "separated",
+      "divided",
+      "aside"
+    ],
+    "tags": [
+      "location",
+      "distance",
+      "grammar"
+    ]
+  },
+  {
+    "word": "apologize",
+    "meaning_th": "ขออภัย, ขอโทษ",
+    "meaning_en": "express regret for something that one has done wrong",
+    "pronounce_th": "อะพอลโลไจซ์",
+    "ipa": "/əˈpɒlədʒaɪz/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "I apologize for the delay in rendering your requested verification parameters."
+    ],
+    "synonyms": [
+      "say sorry",
+      "make an apology"
+    ],
+    "tags": [
+      "action",
+      "communication",
+      "conversation"
+    ]
+  },
+  {
+    "word": "apology",
+    "meaning_th": "คำขอโทษ, การขออภัย",
+    "meaning_en": "a regretful acknowledgment of an offense or failure",
+    "pronounce_th": "อะพอลโลจี",
+    "ipa": "/əˈpɒlədʒi/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Please accept our sincere apology for the system connection breakdown."
+    ],
+    "synonyms": [
+      "excuse",
+      "defense"
+    ],
+    "tags": [
+      "communication",
+      "conversation"
+    ]
+  },
+  {
+    "word": "apparent",
+    "meaning_th": "เด่นชัด, ชัดเจน, เท่าที่เห็น",
+    "meaning_en": "clearly visible or understood; obvious",
+    "pronounce_th": "อะแพเรินท์",
+    "ipa": "/əˈpærənt/",
+    "part_of_speech": "adjective",
+    "cefr": "A2",
+    "examples": [
+      "The core logic error became apparent after verifying the clean SQL test dataset."
+    ],
+    "synonyms": [
+      "obvious",
+      "clear",
+      "evident",
+      "visible"
+    ],
+    "tags": [
+      "description"
+    ]
+  },
+  {
+    "word": "apparently",
+    "meaning_th": "ชี้ชัดว่า, ดูเหมือนว่า, ตามที่เห็น",
+    "meaning_en": "as far as one can see; seemingly",
+    "pronounce_th": "อะแพเรินท์ลี",
+    "ipa": "/əˈpærəntli/",
+    "part_of_speech": "adverb",
+    "cefr": "A2",
+    "examples": [
+      "Apparently, the custom automated loop architecture functions without bugs."
+    ],
+    "synonyms": [
+      "seemingly",
+      "evidently",
+      "allegedly"
+    ],
+    "tags": [
+      "grammar"
+    ]
+  },
+  {
+    "word": "appeal",
+    "meaning_th": "ดึงดูดใจ, อุทธรณ์, ร้องเรียน",
+    "meaning_en": "make a serious or urgent request; be attractive or interesting",
+    "pronounce_th": "อะพึล",
+    "ipa": "/əˈpiːl/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A2",
+    "examples": [
+      "Modern layout design clean interfaces appeal to Affiliate platform builders."
+    ],
+    "synonyms": [
+      "attract",
+      "charm",
+      "request",
+      "plead"
+    ],
+    "tags": [
+      "general",
+      "action",
+      "communication"
+    ]
+  },
+  {
+    "word": "appear",
+    "meaning_th": "ปรากฏตัว, ดูเหมือนว่า",
+    "meaning_en": "come into sight; seem to be",
+    "pronounce_th": "อะเพียร์",
+    "ipa": "/əˈpɪə(r)/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "Verify if the parameters appear inside the table header view after query execution."
+    ],
+    "synonyms": [
+      "seem",
+      "look",
+      "emerge",
+      "surface"
+    ],
+    "tags": [
+      "action"
+    ]
+  },
+  {
+    "word": "appearance",
+    "meaning_th": "ภาพลักษณ์, รูปร่างหน้าตา, การปรากฏตัว",
+    "meaning_en": "the way that someone or something looks",
+    "pronounce_th": "อะเพียเริน์ส",
+    "ipa": "/əˈpɪərəns/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "The UI designer enhanced the system’s physical application appearance."
+    ],
+    "synonyms": [
+      "look",
+      "aspect",
+      "countenance",
+      "arrival"
+    ],
+    "tags": [
+      "general",
+      "appearance"
+    ]
   }
 ]
