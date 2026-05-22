@@ -2,530 +2,299 @@
 <html lang="th">
 
 <head>
+
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0" />
+
     <title>📚 Vocab Manager</title>
 
     <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: Arial, Helvetica, sans-serif;
+
+        *{
+            box-sizing:border-box;
+            margin:0;
+            padding:0;
+            font-family:Arial, Helvetica, sans-serif;
         }
 
-        body {
-            background: #f5f5f5;
-            padding: 20px;
-            color: #222;
+        body{
+            background:#f5f5f5;
+            padding:20px;
+            color:#222;
         }
 
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            background: white;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        .container{
+            max-width:1200px;
+            margin:auto;
+            background:white;
+            border-radius:12px;
+            padding:20px;
+            box-shadow:0 2px 10px rgba(0,0,0,.1);
         }
 
-        h1 {
-            margin-bottom: 20px;
+        h1{
+            margin-bottom:20px;
         }
 
-        .tabs {
-            display: flex;
-            gap: 10px;
-            margin-bottom: 20px;
-            flex-wrap: wrap;
+        .tabs{
+            display:flex;
+            gap:10px;
+            margin-bottom:20px;
+            flex-wrap:wrap;
         }
 
-        .tab-btn {
-            padding: 10px 20px;
-            border: none;
-            background: #ddd;
-            cursor: pointer;
-            border-radius: 8px;
-            font-weight: bold;
+        .tab-btn{
+            padding:10px 20px;
+            border:none;
+            background:#ddd;
+            cursor:pointer;
+            border-radius:8px;
+            font-weight:bold;
         }
 
-        .tab-btn.active {
-            background: #007bff;
-            color: white;
+        .tab-btn.active{
+            background:#007bff;
+            color:white;
         }
 
-        .tab-content {
-            display: none;
+        .tab-content{
+            display:none;
         }
 
-        .tab-content.active {
-            display: block;
+        .tab-content.active{
+            display:block;
         }
 
         input,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
+        textarea{
+            width:100%;
+            padding:10px;
+            margin-top:5px;
+            margin-bottom:15px;
+            border:1px solid #ccc;
+            border-radius:6px;
         }
 
-        button {
-            padding: 10px 16px;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
+        button{
+            padding:10px 16px;
+            border:none;
+            border-radius:6px;
+            cursor:pointer;
         }
 
-        .btn-primary {
-            background: #007bff;
-            color: white;
+        .btn-primary{
+            background:#007bff;
+            color:white;
         }
 
-        .btn-danger {
-            background: #dc3545;
-            color: white;
+        .btn-danger{
+            background:#dc3545;
+            color:white;
         }
 
-        .btn-warning {
-            background: #ffc107;
-            color: black;
+        .btn-warning{
+            background:#ffc107;
+            color:black;
         }
 
-        .search-box {
-            margin-bottom: 20px;
+        .card{
+            border:1px solid #ddd;
+            border-radius:10px;
+            padding:15px;
+            margin-bottom:15px;
+            background:#fafafa;
         }
 
-        .card {
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            padding: 15px;
-            margin-bottom: 15px;
-            background: #fafafa;
+        .grid{
+            display:grid;
+            grid-template-columns:1fr 1fr;
+            gap:20px;
         }
 
-        .card h3 {
-            margin-bottom: 10px;
-            color: #007bff;
+        .pagination{
+            display:flex;
+            gap:5px;
+            flex-wrap:wrap;
+            margin-top:20px;
         }
 
-        .card-actions {
-            margin-top: 10px;
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
+        .pagination button.active{
+            background:#007bff;
+            color:white;
         }
 
-        .pagination {
-            display: flex;
-            gap: 5px;
-            justify-content: center;
-            margin-top: 20px;
-            flex-wrap: wrap;
+        .flashcard{
+            text-align:center;
         }
 
-        .pagination button {
-            min-width: 40px;
-            background: #eee;
+        .flash-word{
+            font-size:48px;
+            font-weight:bold;
+            color:#007bff;
         }
 
-        .pagination button.active {
-            background: #007bff;
-            color: white;
+        .flash-buttons{
+            margin-top:20px;
+            display:flex;
+            gap:10px;
+            justify-content:center;
+            flex-wrap:wrap;
         }
 
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
+        .quiz-choice{
+            width:100%;
+            margin-bottom:10px;
+            text-align:left;
+            padding:14px;
+            background:#eee;
+            border-radius:8px;
+            cursor:pointer;
+            border:none;
         }
 
-        .empty {
-            text-align: center;
-            padding: 40px;
-            color: #888;
+        .correct{
+            background:#28a745 !important;
+            color:white;
         }
 
-        .flashcard {
-            text-align: center;
-            min-height: 250px;
+        .wrong{
+            background:#dc3545 !important;
+            color:white;
         }
 
-        .flash-word {
-            font-size: 48px;
-            font-weight: bold;
-            color: #007bff;
-            margin-bottom: 20px;
+        .tag{
+            display:inline-block;
+            background:#007bff;
+            color:white;
+            padding:4px 10px;
+            border-radius:999px;
+            font-size:12px;
+            margin-right:5px;
+            margin-top:5px;
         }
 
-        .flash-back {
-            margin-top: 20px;
-            font-size: 18px;
-            line-height: 1.8;
-        }
+        @media(max-width:768px){
 
-        .flash-buttons {
-            display: flex;
-            gap: 10px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 20px;
-        }
-
-        .quiz-choice {
-            width: 100%;
-            margin-bottom: 10px;
-            text-align: left;
-            padding: 14px;
-            background: #eee;
-            border-radius: 8px;
-            cursor: pointer;
-            border: none;
-            font-size: 16px;
-        }
-
-        .quiz-choice:hover {
-            background: #ddd;
-        }
-
-        .correct {
-            background: #28a745 !important;
-            color: white;
-        }
-
-        .wrong {
-            background: #dc3545 !important;
-            color: white;
-        }
-
-        .quiz-question-box {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            flex-wrap: wrap;
-        }
-
-        .speak-btn {
-            width: 42px;
-            height: 42px;
-            border-radius: 50%;
-            background: #007bff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            font-size: 18px;
-        }
-
-        @media(max-width:768px) {
-
-            .grid {
-                grid-template-columns: 1fr;
+            .grid{
+                grid-template-columns:1fr;
             }
 
-            .flash-word {
-                font-size: 32px;
+            .flash-word{
+                font-size:32px;
             }
 
         }
+
     </style>
 
 </head>
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <h1>📚 Vocab Manager</h1>
+    <h1>📚 Vocab Manager</h1>
 
-        <div class="tabs">
+    <div class="tabs">
 
-            <button class="tab-btn active" onclick="switchTab(event, 'search')">
-                🔍 Search
-            </button>
+        <button class="tab-btn active"
+                onclick="switchTab(event,'search')">
+            🔍 Search
+        </button>
 
-            <button class="tab-btn" onclick="switchTab(event, 'manager')">
-                ⚙️ Manager
-            </button>
+        <button class="tab-btn"
+                onclick="switchTab(event,'manager')">
+            ⚙️ Manager
+        </button>
 
-            <button class="tab-btn" onclick="switchTab(event, 'flashcard')">
-                🃏 FlashCard
-            </button>
+        <button class="tab-btn"
+                onclick="switchTab(event,'flashcard')">
+            🃏 FlashCard
+        </button>
 
-            <button class="tab-btn" onclick="switchTab(event, 'quiz')">
-                📝 Quiz
-            </button>
+        <button class="tab-btn"
+                onclick="unlockSpeech(); switchTab(event,'quiz')">
+            📝 Quiz
+        </button>
 
-            <button class="tab-btn" onclick="switchTab(event, 'translate')">
-                🌐 Translate
-            </button>
+        <button class="tab-btn"
+                onclick="switchTab(event,'translate')">
+            🌐 Translate
+        </button>
 
-        </div>
+    </div>
 
-        <!-- SEARCH -->
+    <!-- SEARCH -->
 
-        <div id="search" class="tab-content active">
+    <div id="search"
+         class="tab-content active">
 
-            <div class="search-box">
+        <input type="text"
+               id="searchInput"
+               placeholder="ค้นหาคำศัพท์..."
+               oninput="searchVocab()" />
 
-                <input type="text" id="searchInput" placeholder="พิมพ์เพื่อค้นหาคำศัพท์..." oninput="searchVocab()" />
+        <div id="searchResults"></div>
 
-            </div>
+    </div>
 
-            <div id="searchResults"></div>
+    <!-- MANAGER -->
 
-        </div>
+    <div id="manager"
+         class="tab-content">
 
-        <!-- MANAGER -->
+        <div class="grid">
 
-        <div id="manager" class="tab-content">
+            <div>
 
-            <div class="grid">
+                <input type="hidden"
+                       id="editIndex">
 
-                <!-- FORM -->
+                <label>Word</label>
+                <input type="text" id="word">
 
-                <div>
+                <label>Meaning TH</label>
+                <input type="text" id="meaning_th">
 
-                    <h2 id="formTitle">
-                        ➕ เพิ่มคำศัพท์
-                    </h2>
+                <label>Meaning EN</label>
+                <input type="text" id="meaning_en">
 
-                    <input type="hidden" id="editIndex">
+                <label>Pronounce TH</label>
+                <input type="text" id="pronounce_th">
 
-                    <label>Word</label>
-                    <input type="text" id="word">
+                <label>IPA</label>
+                <input type="text" id="ipa">
 
-                    <label>Meaning TH</label>
-                    <input type="text" id="meaning_th">
+                <label>Part Of Speech</label>
+                <input type="text" id="part_of_speech">
 
-                    <label>Meaning EN</label>
-                    <input type="text" id="meaning_en">
+                <label>CEFR</label>
+                <input type="text" id="cefr">
 
-                    <label>Pronounce TH</label>
-                    <input type="text" id="pronounce_th">
+                <label>Examples</label>
+                <textarea id="examples"></textarea>
 
-                    <label>IPA</label>
-                    <input type="text" id="ipa">
+                <label>Synonyms</label>
+                <textarea id="synonyms"></textarea>
 
-                    <label>Part of Speech</label>
-                    <input type="text" id="part_of_speech">
+                <label>Tags</label>
+                <input type="text" id="tags">
 
-                    <label>CEFR</label>
-                    <input type="text" id="cefr">
-
-                    <label>Examples</label>
-                    <textarea id="examples"></textarea>
-
-                    <label>Synonyms</label>
-                    <textarea id="synonyms"></textarea>
-
-                    <label>Tags</label>
-                    <input type="text" id="tags">
-
-                    <button class="btn-primary" onclick="saveVocab()">
-                        💾 Save
-                    </button>
-
-                </div>
-
-                <!-- LIST -->
-
-                <div>
-
-                    <h2>📋 Vocabulary List</h2>
-
-                    <div id="vocabList"></div>
-
-                    <div class="pagination" id="pagination"></div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- FLASHCARD -->
-
-        <div id="flashcard" class="tab-content">
-
-            <div class="card flashcard">
-
-                <div class="flash-word" id="flashWord">
-                    Loading...
-                </div>
-
-                <div class="flash-back" id="flashBack" style="display:none;">
-
-                    <p>
-                        <strong>TH:</strong>
-                        <span id="flashTH"></span>
-                    </p>
-
-                    <p>
-                        <strong>EN:</strong>
-                        <span id="flashEN"></span>
-                    </p>
-
-                    <p>
-                        <strong>IPA:</strong>
-                        <span id="flashIPA"></span>
-                    </p>
-
-                    <p>
-                        <strong>POS:</strong>
-                        <span id="flashPOS"></span>
-                    </p>
-
-                    <p>
-                        <strong>CEFR:</strong>
-                        <span id="flashCEFR"></span>
-                    </p>
-
-                </div>
-
-            </div>
-
-            <div class="flash-buttons">
-
-                <button onclick="prevFlashcard()">
-                    ⬅ Prev
-                </button>
-
-                <button onclick="nextFlashcard()">
-                    Next ➡
-                </button>
-
-                <button onclick="randomFlashcard()">
-                    🎲 Random
-                </button>
-
-                <button onclick="flipFlashcard()">
-                    🔄 Flip
-                </button>
-
-                <button onclick="speakFlashcard()">
-                    🔊 Speak
+                <button class="btn-primary"
+                        onclick="saveVocab()">
+                    💾 Save
                 </button>
 
             </div>
 
-        </div>
+            <div>
 
-        <!-- QUIZ -->
+                <div id="vocabList"></div>
 
-        <div id="quiz" class="tab-content">
-
-            <div class="card">
-
-                <h2>📝 Vocabulary Quiz</h2>
-
-                <div id="quizScore" style="
-                        margin-top:10px;
-                        margin-bottom:20px;
-                        font-weight:bold;
-                     ">
-                    Score: 0 / 0
-                </div>
-
-                <div id="quizQuestion" style="
-                        font-size:28px;
-                        margin:20px 0;
-                        font-weight:bold;
-                        text-align:center;
-                     ">
-                </div>
-
-                <div id="quizChoices"></div>
-
-                <div id="quizResult" style="
-                        margin-top:20px;
-                        font-size:20px;
-                        font-weight:bold;
-                     ">
-                </div>
-
-                <div style="margin-top:20px;">
-
-                    <button class="btn-primary" onclick="generateQuiz()">
-                        Next Question
-                    </button>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- TRANSLATE -->
-
-        <div id="translate" class="tab-content">
-
-            <div class="card">
-
-                <h2>🌐 Translate</h2>
-
-                <textarea id="translateInput" placeholder="พิมพ์คำศัพท์หรือประโยค..."
-                    style="min-height:120px;"></textarea>
-
-                <div style="
-                    display:flex;
-                    gap:10px;
-                    flex-wrap:wrap;
-                    margin-bottom:20px;
-                ">
-
-                    <button class="btn-primary" onclick="translateText()">
-                        🔄 Translate
-                    </button>
-
-                    <button onclick="speakTranslateInput()">
-                        🔊 Speak
-                    </button>
-
-                </div>
-
-                <div id="translateLoading" style="
-                        display:none;
-                        margin-bottom:20px;
-                        color:#666;
-                     ">
-                    Translating...
-                </div>
-
-                <div id="translateResult" class="card" style="display:none;">
-
-                    <h3 id="translateWord"></h3>
-
-                    <p>
-                        <strong>TH:</strong>
-                        <span id="translateTH"></span>
-                    </p>
-
-                    <p>
-                        <strong>EN:</strong>
-                        <span id="translateEN"></span>
-                    </p>
-
-                    <div style="
-                        display:flex;
-                        gap:10px;
-                        flex-wrap:wrap;
-                        margin-top:20px;
-                    ">
-
-                        <button class="btn-primary" onclick="addTranslateToVocab()">
-                            ➕ Add To Vocabulary
-                        </button>
-
-                        <button onclick="speakTranslatedWord()">
-                            🔊 Speak
-                        </button>
-
-                    </div>
-
-                </div>
+                <div class="pagination"
+                     id="pagination"></div>
 
             </div>
 
@@ -533,702 +302,765 @@
 
     </div>
 
-    <script>
+    <!-- FLASHCARD -->
 
-        let vocabData = [];
+    <div id="flashcard"
+         class="tab-content">
 
-        let currentPage = 1;
+        <div class="card flashcard">
 
-        const itemsPerPage = 10;
+            <div class="flash-word"
+                 id="flashWord">
+            </div>
 
-        let flashIndex = 0;
+            <div id="flashPronounce"></div>
 
-        let isFlipped = false;
+            <div id="flashBack"
+                 style="display:none; margin-top:20px;">
 
-        let currentQuiz = null;
+                <p>
+                    <strong>TH:</strong>
+                    <span id="flashTH"></span>
+                </p>
 
-        let score = 0;
+                <p>
+                    <strong>EN:</strong>
+                    <span id="flashEN"></span>
+                </p>
 
-        let total = 0;
+                <p>
+                    <strong>IPA:</strong>
+                    <span id="flashIPA"></span>
+                </p>
 
-        let translateCache = null;
+                <p>
+                    <strong>POS:</strong>
+                    <span id="flashPOS"></span>
+                </p>
 
-        // =========================
-        // LOAD VOCAB
-        // =========================
+            </div>
 
-        async function loadVocab() {
+        </div>
 
-            try {
+        <div class="flash-buttons">
 
-                const localData =
-                    localStorage.getItem("vocabData");
+            <button onclick="prevFlashcard()">⬅ Prev</button>
 
-                if (localData) {
+            <button onclick="nextFlashcard()">Next ➡</button>
 
-                    vocabData =
-                        JSON.parse(localData);
+            <button onclick="randomFlashcard()">🎲 Random</button>
 
-                } else {
+            <button onclick="flipFlashcard()">🔄 Flip</button>
 
-                    const response =
-                        await fetch("vocab-500.json");
+            <button onclick="speakFlashcard()">🔊 Speak</button>
 
-                    vocabData =
-                        await response.json();
+        </div>
 
-                }
+    </div>
 
-                renderManager();
+    <!-- QUIZ -->
 
-                renderFlashcard();
+    <div id="quiz"
+         class="tab-content">
 
-                generateQuiz();
+        <div class="card">
 
-            } catch (error) {
+            <h2>📝 Quiz</h2>
 
-                console.error(error);
+            <div id="quizScore">
+                Score: 0 / 0
+            </div>
 
-                alert("โหลด vocab.json ไม่สำเร็จ");
+            <div id="quizQuestion"
+                 style="margin:20px 0; font-size:28px;">
+            </div>
 
-            }
+            <div id="quizChoices"></div>
 
-        }
+        </div>
 
-        // =========================
-        // LOCAL STORAGE
-        // =========================
+    </div>
 
-        function saveToLocal() {
+    <!-- TRANSLATE -->
 
-            localStorage.setItem(
-                "vocabData",
-                JSON.stringify(vocabData)
-            );
+    <div id="translate"
+         class="tab-content">
 
-        }
+        <div class="card">
 
-        // =========================
-        // TAB
-        // =========================
+            <h2>🌐 Translate + Dictionary</h2>
 
-        function switchTab(event, tabId) {
+            <textarea id="translateInput"
+                      placeholder="Type english word..."></textarea>
 
-            document.querySelectorAll(".tab-btn")
-                .forEach(btn =>
-                    btn.classList.remove("active")
-                );
+            <div style="display:flex; gap:10px; flex-wrap:wrap;">
 
-            document.querySelectorAll(".tab-content")
-                .forEach(tab =>
-                    tab.classList.remove("active")
-                );
+                <button class="btn-primary"
+                        onclick="translateText()">
+                    🔄 Translate
+                </button>
 
-            event.target.classList.add("active");
-
-            document.getElementById(tabId)
-                .classList.add("active");
-
-        }
-
-        // =========================
-        // SEARCH
-        // =========================
-
-        function searchVocab() {
-
-            const keyword =
-                document.getElementById("searchInput")
-                    .value
-                    .trim()
-                    .toLowerCase();
-
-            const container =
-                document.getElementById("searchResults");
-
-            if (keyword === "") {
-
-                container.innerHTML = "";
-
-                return;
-
-            }
-
-            const filtered =
-                vocabData.filter(item => {
-
-                    return (
-
-                        item.word?.toLowerCase()
-                            .includes(keyword)
-
-                        ||
-
-                        item.meaning_th?.toLowerCase()
-                            .includes(keyword)
-
-                        ||
-
-                        item.meaning_en?.toLowerCase()
-                            .includes(keyword)
-
-                    );
-
-                });
-
-            if (filtered.length === 0) {
-
-                container.innerHTML = `
-                    <div class="empty">
-                        ❌ ไม่พบคำศัพท์
-                    </div>
-                `;
-
-                return;
-
-            }
-
-            container.innerHTML =
-                filtered.map(item => `
-
-                <div class="card">
-
-                    <h3>${item.word}</h3>
-
-                    <p>
-                        <strong>TH:</strong>
-                        ${item.meaning_th || "-"}
-                    </p>
-
-                    <p>
-                        <strong>EN:</strong>
-                        ${item.meaning_en || "-"}
-                    </p>
-
-                    <p>
-                        <strong>IPA:</strong>
-                        ${item.ipa || "-"}
-                    </p>
-
-                    <p>
-                        <strong>POS:</strong>
-                        ${item.part_of_speech || "-"}
-                    </p>
-
-                    <p>
-                        <strong>CEFR:</strong>
-                        ${item.cefr || "-"}
-                    </p>
-
-                </div>
-
-            `).join("");
-
-        }
-
-        // =========================
-        // MANAGER
-        // =========================
-
-        function renderManager() {
-
-            const list =
-                document.getElementById("vocabList");
-
-            const start =
-                (currentPage - 1) * itemsPerPage;
-
-            const end =
-                start + itemsPerPage;
-
-            const pageItems =
-                vocabData.slice(start, end);
-
-            if (pageItems.length === 0) {
-
-                list.innerHTML = `
-                    <div class="empty">
-                        ไม่มีข้อมูล
-                    </div>
-                `;
-
-                return;
-
-            }
-
-            list.innerHTML =
-                pageItems.map((item, index) => `
-
-                <div class="card">
-
-                    <h3>${item.word}</h3>
-
-                    <p>${item.meaning_th || "-"}</p>
-
-                    <div class="card-actions">
-
-                        <button
-                            class="btn-warning"
-                            onclick="editVocab(${start + index})">
-                            Edit
-                        </button>
-
-                        <button
-                            class="btn-danger"
-                            onclick="deleteVocab(${start + index})">
-                            Delete
-                        </button>
-
-                    </div>
-
-                </div>
-
-            `).join("");
-
-            renderPagination();
-
-        }
-
-        function renderPagination() {
-
-            const totalPages =
-                Math.ceil(
-                    vocabData.length / itemsPerPage
-                );
-
-            let html = "";
-
-            for (let i = 1; i <= totalPages; i++) {
-
-                html += `
-                    <button
-                        class="${i === currentPage ? 'active' : ''}"
-                        onclick="goPage(${i})">
-                        ${i}
-                    </button>
-                `;
-
-            }
-
-            document.getElementById("pagination")
-                .innerHTML = html;
-
-        }
-
-        function goPage(page) {
-
-            currentPage = page;
-
-            renderManager();
-
-        }
-
-        function saveVocab() {
-
-            const vocab = {
-
-                word:
-                    document.getElementById("word").value,
-
-                meaning_th:
-                    document.getElementById("meaning_th").value,
-
-                meaning_en:
-                    document.getElementById("meaning_en").value,
-
-                pronounce_th:
-                    document.getElementById("pronounce_th").value,
-
-                ipa:
-                    document.getElementById("ipa").value,
-
-                part_of_speech:
-                    document.getElementById("part_of_speech").value,
-
-                cefr:
-                    document.getElementById("cefr").value,
-
-                examples:
-                    document.getElementById("examples")
-                        .value
-                        .split(",")
-                        .map(v => v.trim())
-                        .filter(v => v),
-
-                synonyms:
-                    document.getElementById("synonyms")
-                        .value
-                        .split(",")
-                        .map(v => v.trim())
-                        .filter(v => v),
-
-                tags:
-                    document.getElementById("tags")
-                        .value
-                        .split(",")
-                        .map(v => v.trim())
-                        .filter(v => v)
-
-            };
-
-            const editIndex =
-                document.getElementById("editIndex")
-                    .value;
-
-            if (editIndex !== "") {
-
-                vocabData[editIndex] = vocab;
-
-            } else {
-
-                vocabData.unshift(vocab);
-
-            }
-
-            saveToLocal();
-
-            clearForm();
-
-            renderManager();
-
-            renderFlashcard();
-
-            generateQuiz();
-
-            alert("บันทึกคำศัพท์เรียบร้อย");
-
-        }
-
-        function editVocab(index) {
-
-            const item = vocabData[index];
-
-            document.getElementById("editIndex")
-                .value = index;
-
-            document.getElementById("word")
-                .value = item.word || "";
-
-            document.getElementById("meaning_th")
-                .value = item.meaning_th || "";
-
-            document.getElementById("meaning_en")
-                .value = item.meaning_en || "";
-
-            document.getElementById("pronounce_th")
-                .value = item.pronounce_th || "";
-
-            document.getElementById("ipa")
-                .value = item.ipa || "";
-
-            document.getElementById("part_of_speech")
-                .value = item.part_of_speech || "";
-
-            document.getElementById("cefr")
-                .value = item.cefr || "";
-
-            document.getElementById("examples")
-                .value =
-                (item.examples || []).join(", ");
-
-            document.getElementById("synonyms")
-                .value =
-                (item.synonyms || []).join(", ");
-
-            document.getElementById("tags")
-                .value =
-                (item.tags || []).join(", ");
-
-        }
-
-        function deleteVocab(index) {
-
-            if (confirm("ลบคำศัพท์นี้ ?")) {
-
-                vocabData.splice(index, 1);
-
-                saveToLocal();
-
-                renderManager();
-
-                renderFlashcard();
-
-                generateQuiz();
-
-            }
-
-        }
-
-        function clearForm() {
-
-            document.getElementById("editIndex")
-                .value = "";
-
-            [
-                "word",
-                "meaning_th",
-                "meaning_en",
-                "pronounce_th",
-                "ipa",
-                "part_of_speech",
-                "cefr",
-                "examples",
-                "synonyms",
-                "tags"
-            ].forEach(id => {
-
-                document.getElementById(id)
-                    .value = "";
-
-            });
-
-        }
-
-        // =========================
-        // FLASHCARD
-        // =========================
-
-        function renderFlashcard() {
-
-            if (vocabData.length === 0) return;
-
-            const item =
-                vocabData[flashIndex];
-
-            document.getElementById("flashWord")
-                .innerHTML = `
-
-                <div style="
-                    font-size:48px;
-                    font-weight:bold;
-                ">
-                    ${item.word || "-"}
-                </div>
-
-                <div style="
-                    margin-top:10px;
-                    font-size:22px;
-                    color:#666;
-                ">
-                    ${item.pronounce_th || "-"}
-                </div>
-
-            `;
-
-            document.getElementById("flashTH")
-                .innerText =
-                item.meaning_th || "-";
-
-            document.getElementById("flashEN")
-                .innerText =
-                item.meaning_en || "-";
-
-            document.getElementById("flashIPA")
-                .innerText =
-                item.ipa || "-";
-
-            document.getElementById("flashPOS")
-                .innerText =
-                item.part_of_speech || "-";
-
-            document.getElementById("flashCEFR")
-                .innerText =
-                item.cefr || "-";
-
-            document.getElementById("flashBack")
-                .style.display =
-                isFlipped ? "block" : "none";
-
-        }
-
-        function nextFlashcard() {
-
-            flashIndex++;
-
-            if (flashIndex >= vocabData.length) {
-
-                flashIndex = 0;
-
-            }
-
-            isFlipped = false;
-
-            renderFlashcard();
-
-        }
-
-        function prevFlashcard() {
-
-            flashIndex--;
-
-            if (flashIndex < 0) {
-
-                flashIndex =
-                    vocabData.length - 1;
-
-            }
-
-            isFlipped = false;
-
-            renderFlashcard();
-
-        }
-
-        function randomFlashcard() {
-
-            flashIndex =
-                Math.floor(
-                    Math.random() * vocabData.length
-                );
-
-            isFlipped = false;
-
-            renderFlashcard();
-
-        }
-
-        function flipFlashcard() {
-
-            isFlipped = !isFlipped;
-
-            renderFlashcard();
-
-        }
-
-        // =========================
-        // SPEAK
-        // =========================
-
-        function speakWord(word) {
-
-            speechSynthesis.cancel();
-
-            const utterance =
-                new SpeechSynthesisUtterance(word);
-
-            utterance.lang = "en-US";
-
-            utterance.rate = 0.9;
-
-            speechSynthesis.speak(utterance);
-
-        }
-
-        function speakFlashcard() {
-
-            const item =
-                vocabData[flashIndex];
-
-            speakWord(item.word);
-
-        }
-
-        //<!-- ========================= -->
-        //<!--QUIZ -->
-        //<!-- ========================= -->
-
-
-            function generateQuiz() {
-
-                if (vocabData.length < 4) {
-
-                    alert("ต้องมี vocab อย่างน้อย 4 คำ");
-
-                    return;
-
-                }
-
-                const correct =
-                    vocabData[
-                    Math.floor(
-                        Math.random() * vocabData.length
-                    )
-                    ];
-
-                const choices = [correct];
-
-                while (choices.length < 4) {
-
-                    const random =
-                        vocabData[
-                        Math.floor(
-                            Math.random() * vocabData.length
-                        )
-                        ];
-
-                    if (!choices.includes(random)) {
-
-                        choices.push(random);
-
-                    }
-
-                }
-
-                // shuffle
-                choices.sort(() => Math.random() - 0.5);
-
-                currentQuiz = correct;
-
-                // render question
-                document.getElementById("quizQuestion")
-                    .innerHTML = `
-
-            <div class="quiz-question-box">
-
-                <span>${correct.word}</span>
-
-                <button
-                    class="speak-btn"
-                    onclick="speakWord('${correct.word}')">
-                    🔊
+                <button onclick="speakTranslateInput()">
+                    🔊 Speak
                 </button>
 
             </div>
 
-        `;
+            <div id="translateLoading"
+                 style="display:none; margin-top:20px;">
+                Loading...
+            </div>
 
-                // render choices
-                document.getElementById("quizChoices")
-                    .innerHTML =
-                    choices.map(choice => `
+            <div id="translateResult"
+                 class="card"
+                 style="display:none; margin-top:20px;">
+
+                <h3 id="translateWord"></h3>
+
+                <p>
+                    <strong>TH:</strong>
+                    <span id="translateTH"></span>
+                </p>
+
+                <p>
+                    <strong>EN:</strong>
+                    <span id="translateEN"></span>
+                </p>
+
+                <p>
+                    <strong>IPA:</strong>
+                    <span id="translateIPA"></span>
+                </p>
+
+                <p>
+                    <strong>POS:</strong>
+                    <span id="translatePOS"></span>
+                </p>
+
+                <p>
+                    <strong>Examples:</strong>
+                </p>
+
+                <ul id="translateExamples"></ul>
+
+                <p>
+                    <strong>Synonyms:</strong>
+                </p>
+
+                <div id="translateSynonyms"></div>
+ 
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+let vocabData = [];
+
+let currentPage = 1;
+
+const itemsPerPage = 10;
+
+let flashIndex = 0;
+
+let isFlipped = false;
+
+let currentQuiz = null;
+
+let score = 0;
+
+let total = 0;
+
+let translateCache = null;
+
+// LOAD
+
+async function loadVocab(){
+
+    try{
+
+        const localData =
+            localStorage.getItem("vocabData");
+
+        if(localData){
+
+            vocabData = JSON.parse(localData);
+
+        }else{
+
+            const response =
+                await fetch("vocab-500.json");
+
+            vocabData =
+                await response.json();
+
+        }
+
+        renderManager();
+
+        renderFlashcard();
+
+        generateQuiz();
+
+    }catch(error){
+
+        console.error(error);
+
+    }
+
+}
+
+// TAB
+
+function switchTab(event,tabId){
+
+    document.querySelectorAll(".tab-btn")
+        .forEach(btn =>
+            btn.classList.remove("active")
+        );
+
+    document.querySelectorAll(".tab-content")
+        .forEach(tab =>
+            tab.classList.remove("active")
+        );
+
+    event.target.classList.add("active");
+
+    document.getElementById(tabId)
+        .classList.add("active");
+
+}
+
+// SAVE LOCAL
+
+function saveToLocal(){
+
+    localStorage.setItem(
+        "vocabData",
+        JSON.stringify(vocabData)
+    );
+
+}
+
+// SEARCH
+
+function searchVocab(){
+
+    const keyword =
+        document.getElementById("searchInput")
+            .value
+            .toLowerCase();
+
+    const filtered =
+        vocabData.filter(item =>
+
+            item.word?.toLowerCase().includes(keyword)
+
+            ||
+
+            item.meaning_th?.toLowerCase().includes(keyword)
+
+            ||
+
+            item.meaning_en?.toLowerCase().includes(keyword)
+
+        );
+
+    document.getElementById("searchResults")
+        .innerHTML =
+        filtered.map(item => `
+
+        <div class="card">
+
+            <h3>${item.word}</h3>
+
+            <p>${item.meaning_th || "-"}</p>
+
+            <p>${item.ipa || "-"}</p>
+
+        </div>
+
+    `).join("");
+
+}
+
+// MANAGER
+
+function renderManager(){
+
+    const start =
+        (currentPage - 1) * itemsPerPage;
+
+    const end =
+        start + itemsPerPage;
+
+    const pageItems =
+        vocabData.slice(start,end);
+
+    document.getElementById("vocabList")
+        .innerHTML =
+        pageItems.map((item,index)=>`
+
+        <div class="card">
+
+            <h3>${item.word}</h3>
+
+            <p>${item.meaning_th || "-"}</p>
+
+            <button class="btn-warning"
+                    onclick="editVocab(${start+index})">
+                Edit
+            </button>
+
+            <button class="btn-danger"
+                    onclick="deleteVocab(${start+index})">
+                Delete
+            </button>
+
+        </div>
+
+    `).join("");
+
+
+
+    // =========================
+    // PAGINATION
+    // =========================
+
+    let paginationHTML = "";
+
+    const totalPages =
+        Math.ceil(vocabData.length / itemsPerPage);
+
+    for(let i=1;i<=totalPages;i++){
+
+        paginationHTML += `
 
             <button
-                class="quiz-choice"
-                data-answer="${choice.meaning_th}"
-                onclick="checkQuizAnswer(this)">
+                class="${i===currentPage ? 'active' : ''}"
+                onclick="goPage(${i})">
 
-                ${choice.meaning_th}
+                ${i}
 
             </button>
 
-        `).join("");
+        `;
 
-                document.getElementById("quizResult")
-                    .innerHTML = "";
+    }
 
-                // IMPORTANT:
-                // ไม่มี auto speak แล้ว
+    document.getElementById("pagination")
+        .innerHTML = paginationHTML;
 
-            }
+}
 
-        function checkQuizAnswer(button) {
+function goPage(page){
 
-            const answer =
-                button.dataset.answer;
+    currentPage = page;
 
-            const correctAnswer =
-                currentQuiz.meaning_th;
+    renderManager();
 
-            const buttons =
-                document.querySelectorAll(".quiz-choice");
+}
 
-            buttons.forEach(btn => {
+function saveVocab(){
 
-                btn.disabled = true;
+    const vocab = {
 
-                if (
-                    btn.dataset.answer === correctAnswer
-                ) {
+        word:
+            document.getElementById("word").value,
+
+        meaning_th:
+            document.getElementById("meaning_th").value,
+
+        meaning_en:
+            document.getElementById("meaning_en").value,
+
+        pronounce_th:
+            document.getElementById("pronounce_th").value,
+
+        ipa:
+            document.getElementById("ipa").value,
+
+        part_of_speech:
+            document.getElementById("part_of_speech").value,
+
+        cefr:
+            document.getElementById("cefr").value,
+
+        examples:
+            document.getElementById("examples")
+                .value
+                .split(","),
+
+        synonyms:
+            document.getElementById("synonyms")
+                .value
+                .split(","),
+
+        tags:
+            document.getElementById("tags")
+                .value
+                .split(",")
+
+    };
+
+    const editIndex =
+        document.getElementById("editIndex").value;
+
+    if(editIndex !== ""){
+
+        vocabData[editIndex] = vocab;
+
+    }else{
+
+        vocabData.unshift(vocab);
+
+    }
+
+    saveToLocal();
+
+    renderManager();
+
+    renderFlashcard();
+
+    generateQuiz();
+
+    clearForm();
+
+}
+
+function clearForm(){
+
+    document.getElementById("editIndex").value = "";
+
+    [
+        "word",
+        "meaning_th",
+        "meaning_en",
+        "pronounce_th",
+        "ipa",
+        "part_of_speech",
+        "cefr",
+        "examples",
+        "synonyms",
+        "tags"
+    ].forEach(id=>{
+
+        document.getElementById(id).value = "";
+
+    });
+
+}
+
+function editVocab(index){
+
+    document.getElementById("editIndex").value = index;
+
+    const item = vocabData[index];
+
+    document.getElementById("word").value =
+        item.word || "";
+
+    document.getElementById("meaning_th").value =
+        item.meaning_th || "";
+
+    document.getElementById("meaning_en").value =
+        item.meaning_en || "";
+
+    document.getElementById("pronounce_th").value =
+        item.pronounce_th || "";
+
+    document.getElementById("ipa").value =
+        item.ipa || "";
+
+    document.getElementById("part_of_speech").value =
+        item.part_of_speech || "";
+
+    document.getElementById("cefr").value =
+        item.cefr || "";
+
+    document.getElementById("examples").value =
+        (item.examples || []).join(",");
+
+    document.getElementById("synonyms").value =
+        (item.synonyms || []).join(",");
+
+    document.getElementById("tags").value =
+        (item.tags || []).join(",");
+
+}
+
+function deleteVocab(index){
+
+    vocabData.splice(index,1);
+
+    if(flashIndex >= vocabData.length){
+
+        flashIndex = 0;
+
+    }
+
+    const totalPages =
+        Math.ceil(vocabData.length / itemsPerPage);
+
+    if(currentPage > totalPages){
+
+        currentPage = totalPages || 1;
+
+    }
+
+    saveToLocal();
+
+    renderManager();
+
+    renderFlashcard();
+
+    generateQuiz();
+
+}
+
+// FLASHCARD
+
+function renderFlashcard(){
+
+    if(vocabData.length === 0) return;
+
+    const item =
+        vocabData[flashIndex];
+
+    document.getElementById("flashWord")
+        .innerText =
+        item.word || "-";
+
+    document.getElementById("flashPronounce")
+        .innerText =
+        item.pronounce_th || "-";
+
+    document.getElementById("flashTH")
+        .innerText =
+        item.meaning_th || "-";
+
+    document.getElementById("flashEN")
+        .innerText =
+        item.meaning_en || "-";
+
+    document.getElementById("flashIPA")
+        .innerText =
+        item.ipa || "-";
+
+    document.getElementById("flashPOS")
+        .innerText =
+        item.part_of_speech || "-";
+
+}
+
+function nextFlashcard(){
+
+    flashIndex++;
+
+    if(flashIndex >= vocabData.length){
+
+        flashIndex = 0;
+
+    }
+
+    renderFlashcard();
+
+}
+
+function prevFlashcard(){
+
+    flashIndex--;
+
+    if(flashIndex < 0){
+
+        flashIndex =
+            vocabData.length - 1;
+
+    }
+
+    renderFlashcard();
+
+}
+
+function randomFlashcard(){
+
+    flashIndex =
+        Math.floor(
+            Math.random() * vocabData.length
+        );
+
+    renderFlashcard();
+
+}
+
+function flipFlashcard(){
+
+    isFlipped = !isFlipped;
+
+    document.getElementById("flashBack")
+        .style.display =
+        isFlipped ? "block" : "none";
+
+}
+
+function speakWord(word){
+
+    if(!word) return;
+
+    speechSynthesis.cancel();
+
+    const utterance =
+        new SpeechSynthesisUtterance(word);
+
+    utterance.lang = "en-US";
+
+    utterance.rate = 0.9;
+
+    utterance.pitch = 1;
+
+    speechSynthesis.speak(utterance);
+
+}
+
+function unlockSpeech(){
+
+    speechSynthesis.cancel();
+
+    const utterance =
+        new SpeechSynthesisUtterance("");
+
+    utterance.volume = 0;
+
+    speechSynthesis.speak(utterance);
+
+}
+
+function speakFlashcard(){
+
+    speakWord(vocabData[flashIndex].word);
+
+}
+
+// QUIZ
+
+function generateQuiz(){
+
+    if(vocabData.length < 4) return;
+
+    const correct =
+        vocabData[
+            Math.floor(
+                Math.random() * vocabData.length
+            )
+        ];
+
+    currentQuiz = correct;
+
+    const choices = [correct];
+
+    while(choices.length < 4){
+
+        const random =
+            vocabData[
+                Math.floor(
+                    Math.random() * vocabData.length
+                )
+            ];
+
+        if(!choices.includes(random)){
+
+            choices.push(random);
+
+        }
+
+    }
+
+    choices.sort(()=>Math.random() - 0.5);
+
+    document.getElementById("quizQuestion")
+    .innerHTML = `
+
+    <div style="
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:10px;
+        flex-wrap:wrap;
+    ">
+
+        <span>${correct.word}</span>
+
+        <button
+            onclick="speakWord('${correct.word}')"
+            style="
+                width:42px;
+                height:42px;
+                border-radius:50%;
+                background:#007bff;
+                color:white;
+                border:none;
+                cursor:pointer;
+                font-size:18px;
+            ">
+            🔊
+        </button>
+
+    </div>
+
+`;
+
+    document.getElementById("quizChoices")
+        .innerHTML =
+        choices.map(choice=>`
+
+        <button class="quiz-choice"
+                onclick="checkQuizAnswer(this)"
+                data-answer="${choice.meaning_th}">
+
+            ${choice.meaning_th}
+
+        </button>
+
+    `).join("");
+
+}
+
+function checkQuizAnswer(button){
+
+    document.querySelectorAll(".quiz-choice")
+        .forEach(btn => {
+
+            btn.disabled = true;
+
+        });
+
+    const answer =
+        button.dataset.answer;
+
+    const correctAnswer =
+        currentQuiz.meaning_th;
+
+    total++;
+
+    if(answer === correctAnswer){
+
+        score++;
+
+        button.classList.add("correct");
+
+    }else{
+
+        button.classList.add("wrong");
+
+        document.querySelectorAll(".quiz-choice")
+            .forEach(btn => {
+
+                if(btn.dataset.answer === correctAnswer){
 
                     btn.classList.add("correct");
 
@@ -1236,188 +1068,316 @@
 
             });
 
-            total++;
+    }
 
-            if (answer === correctAnswer) {
+    document.getElementById("quizScore")
+        .innerText =
+        `Score: ${score} / ${total}`;
 
-                score++;
+    setTimeout(()=>{
 
-                document.getElementById("quizResult")
-                    .innerHTML =
-                    "✅ Correct!";
+        generateQuiz();
 
-            } else {
+    },1000);
 
-                button.classList.add("wrong");
+}
 
-                document.getElementById("quizResult")
-                    .innerHTML =
-                    `❌ Wrong! Correct answer: ${correctAnswer}`;
+/// =========================
+// TRANSLATE + SMART DICTIONARY
+// =========================
 
-            }
+async function translateText() {
 
-            document.getElementById("quizScore")
-                .innerText =
-                `Score: ${score} / ${total}`;
+    const input =
+        document.getElementById("translateInput")
+            .value
+            .trim();
 
-            setTimeout(() => {
+    if (!input) {
 
-                generateQuiz();
+        alert("กรุณากรอกข้อความ");
 
-            }, 1500);
+        return;
 
-        }
+    }
 
+    document.getElementById("translateLoading")
+        .style.display = "block";
+
+    document.getElementById("translateResult")
+        .style.display = "none";
+
+    try {
 
         // =========================
-        // TRANSLATE
+        // GOOGLE TRANSLATE
         // =========================
 
-        async function translateText() {
+        const url =
+            `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=th&dt=t&q=${encodeURIComponent(input)}`;
 
-            const input =
-                document.getElementById("translateInput")
-                    .value
-                    .trim();
+        const response =
+            await fetch(url);
 
-            if (!input) {
+        const data =
+            await response.json();
 
-                alert("กรุณากรอกข้อความ");
+        const translated =
+            data[0]
+                .map(item => item[0])
+                .join("");
 
-                return;
+        // =========================
+        // SMART DICTIONARY
+        // =========================
 
-            }
+        let ipa = "";
+        let pos = "";
+        let examples = [];
+        let synonyms = [];
 
-            document.getElementById("translateLoading")
-                .style.display = "block";
+        try {
 
-            document.getElementById("translateResult")
-                .style.display = "none";
-
-            try {
-
-                const url =
-                    `https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=th&dt=t&q=${encodeURIComponent(input)}`;
-
-                const response =
-                    await fetch(url);
-
-                const data =
-                    await response.json();
-
-                const translated =
-                    data[0]
-                        .map(item => item[0])
-                        .join("");
-
-                translateCache = {
-
-                    word: input,
-
-                    meaning_th: translated,
-
-                    meaning_en: input,
-
-                    pronounce_th: "",
-
-                    ipa: "",
-
-                    part_of_speech: "",
-
-                    cefr: "",
-
-                    examples: [],
-
-                    synonyms: [],
-
-                    tags: ["translate"]
-
-                };
-
-                document.getElementById("translateWord")
-                    .innerText = input;
-
-                document.getElementById("translateTH")
-                    .innerText = translated;
-
-                document.getElementById("translateEN")
-                    .innerText = input;
-
-                document.getElementById("translateLoading")
-                    .style.display = "none";
-
-                document.getElementById("translateResult")
-                    .style.display = "block";
-
-            } catch (error) {
-
-                console.error(error);
-
-                document.getElementById("translateLoading")
-                    .style.display = "none";
-
-                alert("Translate failed");
-
-            }
-
-        }
-
-        function addTranslateToVocab() {
-
-            if (!translateCache) return;
-
-            const exists =
-                vocabData.some(item =>
-                    item.word?.toLowerCase() ===
-                    translateCache.word.toLowerCase()
+            const dictResponse =
+                await fetch(
+                    `https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(input)}`
                 );
 
-            if (exists) {
+            const dictData =
+                await dictResponse.json();
 
-                alert("คำนี้มีอยู่แล้ว");
+            if (Array.isArray(dictData)) {
 
-                return;
+                const entry =
+                    dictData[0];
+
+                ipa =
+                    entry.phonetic || "";
+
+                if (
+                    entry.meanings &&
+                    entry.meanings.length > 0
+                ) {
+
+                    const meaning =
+                        entry.meanings[0];
+
+                    pos =
+                        meaning.partOfSpeech || "";
+
+                    const defs =
+                        meaning.definitions || [];
+
+                    if (
+                        defs.length > 0 &&
+                        defs[0].example
+                    ) {
+
+                        examples.push(
+                            defs[0].example
+                        );
+
+                    }
+
+                    synonyms =
+                        meaning.synonyms
+                            ?.slice(0, 5) || [];
+
+                }
 
             }
 
-            vocabData.unshift(translateCache);
+        } catch (dictError) {
 
-            saveToLocal();
-
-            renderManager();
-
-            renderFlashcard();
-
-            generateQuiz();
-
-            alert("เพิ่มคำศัพท์เรียบร้อย");
+            console.log("Dictionary API Error");
 
         }
 
-        function speakTranslateInput() {
+        // =========================
+        // CACHE
+        // =========================
 
-            const text =
-                document.getElementById("translateInput")
-                    .value
-                    .trim();
+        translateCache = {
 
-            if (!text) return;
+            word: input,
 
-            speakWord(text);
+            meaning_th: translated,
+
+            meaning_en: input,
+
+            pronounce_th: ipa,
+
+            ipa: ipa,
+
+            part_of_speech: pos,
+
+            cefr: "",
+
+            examples: examples,
+
+            synonyms: synonyms,
+
+            tags: ["translate"]
+
+        };
+
+        // =========================
+        // UI
+        // =========================
+
+        document.getElementById("translateWord")
+            .innerText = input;
+
+        document.getElementById("translateTH")
+            .innerText = translated;
+
+        document.getElementById("translateEN")
+            .innerText = input;
+
+        // remove old extra UI
+        const oldExtra =
+            document.getElementById("translateExtra");
+
+        if (oldExtra) {
+
+            oldExtra.remove();
 
         }
 
-        function speakTranslatedWord() {
+        // create extra UI
+        const extraDiv =
+            document.createElement("div");
 
-            if (!translateCache) return;
+        extraDiv.id = "translateExtra";
 
-            speakWord(translateCache.word);
+        extraDiv.innerHTML = `
 
+    <p>
+        <strong>IPA:</strong>
+        ${ipa || "-"}
+    </p>
+
+    <p>
+        <strong>POS:</strong>
+        ${pos || "-"}
+    </p>
+
+    <p>
+        <strong>Examples:</strong>
+    </p>
+
+    <ul>
+        ${
+            examples.length > 0
+            ? examples.map(v =>
+                `<li>${v}</li>`
+            ).join("")
+            : "<li>-</li>"
         }
+    </ul>
 
-        loadVocab();
+    <p>
+        <strong>Synonyms:</strong>
+    </p>
 
-    </script>
+    <div>
+        ${
+            synonyms.length > 0
+            ? synonyms.map(v => `
+                <span style="
+                    display:inline-block;
+                    background:#007bff;
+                    color:white;
+                    padding:4px 10px;
+                    border-radius:999px;
+                    margin:4px;
+                    font-size:12px;
+                ">
+                    ${v}
+                </span>
+            `).join("")
+            : "-"
+        }
+    </div>
+
+    <div style="margin-top:20px;">
+
+        <button class="btn-primary"
+                onclick="addTranslateToVocab()">
+            ➕ Add To Vocabulary
+        </button>
+
+    </div>
+
+`;
+
+        document.getElementById("translateResult")
+            .appendChild(extraDiv);
+
+        document.getElementById("translateLoading")
+            .style.display = "none";
+
+        document.getElementById("translateResult")
+            .style.display = "block";
+
+    } catch (error) {
+
+        console.error(error);
+
+        document.getElementById("translateLoading")
+            .style.display = "none";
+
+        alert("Translate failed");
+
+    }
+
+}
+function addTranslateToVocab(){
+
+    if(!translateCache) return;
+
+    const exists =
+        vocabData.some(item =>
+
+            item.word?.toLowerCase()
+            ===
+            translateCache.word?.toLowerCase()
+
+        );
+
+    if(exists){
+
+        alert("คำนี้มีอยู่แล้ว");
+
+        return;
+
+    }
+
+    vocabData.unshift(translateCache);
+
+    saveToLocal();
+
+    renderManager();
+
+    renderFlashcard();
+
+    generateQuiz();
+
+}
+
+function speakTranslateInput(){
+
+    const text =
+        document.getElementById("translateInput")
+            .value;
+
+    speakWord(text);
+
+}
+
+loadVocab();
+
+</script>
 
 </body>
 
