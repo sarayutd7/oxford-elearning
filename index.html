@@ -148,17 +148,6 @@
             color: #888;
         }
 
-        .tag {
-            display: inline-block;
-            background: #007bff;
-            color: white;
-            padding: 4px 8px;
-            border-radius: 999px;
-            font-size: 12px;
-            margin-right: 5px;
-            margin-top: 5px;
-        }
-
         .flashcard {
             text-align: center;
             min-height: 250px;
@@ -185,8 +174,34 @@
             margin-top: 20px;
         }
 
-        @media(max-width:768px) {
+        .quiz-choice {
+            width: 100%;
+            margin-bottom: 10px;
+            text-align: left;
+            padding: 14px;
+            background: #eee;
+            border-radius: 8px;
+            cursor: pointer;
+            border: none;
+            font-size: 16px;
+            transition: 0.2s;
+        }
 
+        .quiz-choice:hover {
+            background: #ddd;
+        }
+
+        .correct {
+            background: #28a745 !important;
+            color: white;
+        }
+
+        .wrong {
+            background: #dc3545 !important;
+            color: white;
+        }
+
+        @media(max-width:768px) {
             .grid {
                 grid-template-columns: 1fr;
             }
@@ -194,10 +209,8 @@
             .flash-word {
                 font-size: 32px;
             }
-
         }
     </style>
-
 </head>
 
 <body>
@@ -208,16 +221,24 @@
 
         <div class="tabs">
 
-            <button class="tab-btn active" onclick="switchTab(event, 'search')">
+            <button class="tab-btn active"
+                    onclick="switchTab(event, 'search')">
                 🔍 Search
             </button>
 
-            <button class="tab-btn" onclick="switchTab(event, 'manager')">
+            <button class="tab-btn"
+                    onclick="switchTab(event, 'manager')">
                 ⚙️ Manager
             </button>
 
-            <button class="tab-btn" onclick="switchTab(event, 'flashcard')">
+            <button class="tab-btn"
+                    onclick="switchTab(event, 'flashcard')">
                 🃏 FlashCard
+            </button>
+
+            <button class="tab-btn"
+                    onclick="switchTab(event, 'quiz')">
+                📝 Quiz
             </button>
 
         </div>
@@ -228,7 +249,10 @@
 
             <div class="search-box">
 
-                <input type="text" id="searchInput" placeholder="พิมพ์เพื่อค้นหาคำศัพท์..." oninput="searchVocab()" />
+                <input type="text"
+                       id="searchInput"
+                       placeholder="พิมพ์เพื่อค้นหาคำศัพท์..."
+                       oninput="searchVocab()" />
 
             </div>
 
@@ -280,7 +304,8 @@
                     <label>Tags</label>
                     <input type="text" id="tags">
 
-                    <button class="btn-primary" onclick="saveVocab()">
+                    <button class="btn-primary"
+                            onclick="saveVocab()">
                         💾 Save
                     </button>
 
@@ -294,7 +319,8 @@
 
                     <div id="vocabList"></div>
 
-                    <div class="pagination" id="pagination"></div>
+                    <div class="pagination"
+                         id="pagination"></div>
 
                 </div>
 
@@ -312,7 +338,9 @@
                     Loading...
                 </div>
 
-                <div class="flash-back" id="flashBack" style="display:none;">
+                <div class="flash-back"
+                     id="flashBack"
+                     style="display:none;">
 
                     <p>
                         <strong>TH:</strong>
@@ -353,10 +381,6 @@
                     Next ➡
                 </button>
 
-                <button onclick="speakFlashcard()">
-                    🔊 Speak
-                </button>
-
                 <button onclick="randomFlashcard()">
                     🎲 Random
                 </button>
@@ -364,6 +388,58 @@
                 <button onclick="flipFlashcard()">
                     🔄 Flip
                 </button>
+
+                <button onclick="speakFlashcard()">
+                    🔊 Speak
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- QUIZ -->
+
+        <div id="quiz" class="tab-content">
+
+            <div class="card">
+
+                <h2>📝 Vocabulary Quiz</h2>
+
+                <div id="quizScore"
+                     style="
+                        margin-top:10px;
+                        margin-bottom:20px;
+                        font-weight:bold;
+                     ">
+                    Score: 0 / 0
+                </div>
+
+                <p id="quizQuestion"
+                   style="
+                        font-size:28px;
+                        margin:20px 0;
+                        font-weight:bold;
+                   ">
+                </p>
+
+                <div id="quizChoices"></div>
+
+                <div id="quizResult"
+                     style="
+                        margin-top:20px;
+                        font-size:20px;
+                        font-weight:bold;
+                     ">
+                </div>
+
+                <div style="margin-top:20px;">
+
+                    <button class="btn-primary"
+                            onclick="generateQuiz()">
+                        Next Question
+                    </button>
+
+                </div>
 
             </div>
 
@@ -383,20 +459,37 @@
 
         let isFlipped = false;
 
+        let currentQuiz = null;
 
+        let score = 0;
+
+        let total = 0;
 
         async function loadVocab() {
 
             try {
 
-                const response =
-                    await fetch("vocab-500.json");
+                const localData =
+                    localStorage.getItem("vocabData");
 
-                vocabData = await response.json();
+                if (localData) {
+
+                    vocabData = JSON.parse(localData);
+
+                } else {
+
+                    const response =
+                        await fetch("vocab-500.json");
+
+                    vocabData = await response.json();
+
+                }
 
                 renderManager();
 
                 renderFlashcard();
+
+                generateQuiz();
 
             } catch (error) {
 
@@ -408,7 +501,14 @@
 
         }
 
+        function saveToLocal() {
 
+            localStorage.setItem(
+                "vocabData",
+                JSON.stringify(vocabData)
+            );
+
+        }
 
         function switchTab(event, tabId) {
 
@@ -425,15 +525,13 @@
 
         }
 
-
-
         function searchVocab() {
 
-            const keyword = document
-                .getElementById("searchInput")
-                .value
-                .trim()
-                .toLowerCase();
+            const keyword =
+                document.getElementById("searchInput")
+                    .value
+                    .trim()
+                    .toLowerCase();
 
             const container =
                 document.getElementById("searchResults");
@@ -463,45 +561,42 @@
             if (filtered.length === 0) {
 
                 container.innerHTML = `
-
-      <div class="empty">
-        ❌ ไม่พบคำศัพท์
-      </div>
-
-    `;
+                    <div class="empty">
+                        ❌ ไม่พบคำศัพท์
+                    </div>
+                `;
 
                 return;
 
             }
 
-            container.innerHTML = filtered.map(item => `
+            container.innerHTML =
+                filtered.map(item => `
 
-    <div class="card">
+                <div class="card">
 
-      <h3>${item.word}</h3>
+                    <h3>${item.word}</h3>
 
-      <p><strong>TH:</strong>
-      ${item.meaning_th || "-"}</p>
+                    <p><strong>TH:</strong>
+                    ${item.meaning_th || "-"}</p>
 
-      <p><strong>EN:</strong>
-      ${item.meaning_en || "-"}</p>
+                    <p><strong>EN:</strong>
+                    ${item.meaning_en || "-"}</p>
 
-      <p><strong>IPA:</strong>
-      ${item.ipa || "-"}</p>
+                    <p><strong>IPA:</strong>
+                    ${item.ipa || "-"}</p>
 
-      <p><strong>POS:</strong>
-      ${item.part_of_speech || "-"}</p>
+                    <p><strong>POS:</strong>
+                    ${item.part_of_speech || "-"}</p>
 
-      <p><strong>CEFR:</strong>
-      ${item.cefr || "-"}</p>
+                    <p><strong>CEFR:</strong>
+                    ${item.cefr || "-"}</p>
 
-    </div>
+                </div>
 
-  `).join("");
+            `).join("");
 
         }
-
-
 
         function renderManager() {
 
@@ -511,7 +606,8 @@
             const start =
                 (currentPage - 1) * itemsPerPage;
 
-            const end = start + itemsPerPage;
+            const end =
+                start + itemsPerPage;
 
             const pageItems =
                 vocabData.slice(start, end);
@@ -519,52 +615,47 @@
             if (pageItems.length === 0) {
 
                 list.innerHTML = `
-
-      <div class="empty">
-        ไม่มีข้อมูล
-      </div>
-
-    `;
+                    <div class="empty">
+                        ไม่มีข้อมูล
+                    </div>
+                `;
 
                 return;
 
             }
 
-            list.innerHTML = pageItems.map((item, index) => `
+            list.innerHTML =
+                pageItems.map((item, index) => `
 
-    <div class="card">
+                <div class="card">
 
-      <h3>${item.word}</h3>
+                    <h3>${item.word}</h3>
 
-      <p>${item.meaning_th || "-"}</p>
+                    <p>${item.meaning_th || "-"}</p>
 
-      <div class="card-actions">
+                    <div class="card-actions">
 
-        <button
-          class="btn-warning"
-          onclick="editVocab(${start + index})"
-        >
-          Edit
-        </button>
+                        <button
+                            class="btn-warning"
+                            onclick="editVocab(${start + index})">
+                            Edit
+                        </button>
 
-        <button
-          class="btn-danger"
-          onclick="deleteVocab(${start + index})"
-        >
-          Delete
-        </button>
+                        <button
+                            class="btn-danger"
+                            onclick="deleteVocab(${start + index})">
+                            Delete
+                        </button>
 
-      </div>
+                    </div>
 
-    </div>
+                </div>
 
-  `).join("");
+            `).join("");
 
             renderPagination();
 
         }
-
-
 
         function renderPagination() {
 
@@ -573,67 +664,22 @@
 
             let html = "";
 
-            html += `
-    <button onclick="goPage(1)">|&lt;</button>
-  `;
-
-            html += `
-    <button onclick="goPage(${Math.max(1, currentPage - 1)})">
-      &lt;
-    </button>
-  `;
-
             for (let i = 1; i <= totalPages; i++) {
 
-                if (
-                    i === 1 ||
-                    i === totalPages ||
-                    (i >= currentPage - 2 &&
-                        i <= currentPage + 2)
-                ) {
-
-                    html += `
-        <button
-          class="${i === currentPage ? 'active' : ''}"
-          onclick="goPage(${i})"
-        >
-          ${i}
-        </button>
-      `;
-
-                } else if (
-                    i === currentPage - 3 ||
-                    i === currentPage + 3
-                ) {
-
-                    html += `
-        <button disabled>...</button>
-      `;
-
-                }
+                html += `
+                    <button
+                        class="${i === currentPage ? 'active' : ''}"
+                        onclick="goPage(${i})">
+                        ${i}
+                    </button>
+                `;
 
             }
-
-            html += `
-    <button
-      onclick="goPage(${Math.min(totalPages, currentPage + 1)})"
-    >
-      &gt;
-    </button>
-  `;
-
-            html += `
-    <button onclick="goPage(${totalPages})">
-      &gt;|
-    </button>
-  `;
 
             document.getElementById("pagination")
                 .innerHTML = html;
 
         }
-
-
 
         function goPage(page) {
 
@@ -642,8 +688,6 @@
             renderManager();
 
         }
-
-
 
         function saveVocab() {
 
@@ -706,17 +750,19 @@
 
             }
 
+            saveToLocal();
+
             clearForm();
 
             renderManager();
 
             renderFlashcard();
 
-            alert("แก้ไขข้อมูลใน memory แล้ว");
+            generateQuiz();
+
+            alert("บันทึกคำศัพท์เรียบร้อย");
 
         }
-
-
 
         function editVocab(index) {
 
@@ -760,23 +806,23 @@
 
         }
 
-
-
         function deleteVocab(index) {
 
             if (confirm("ลบคำศัพท์นี้ ?")) {
 
                 vocabData.splice(index, 1);
 
+                saveToLocal();
+
                 renderManager();
 
                 renderFlashcard();
 
+                generateQuiz();
+
             }
 
         }
-
-
 
         function clearForm() {
 
@@ -804,34 +850,30 @@
 
         }
 
-
-
         function renderFlashcard() {
 
             if (vocabData.length === 0) return;
 
-            const item = vocabData[flashIndex];
+            const item =
+                vocabData[flashIndex];
 
-            // ด้านหน้า card
             document.getElementById("flashWord").innerHTML = `
 
-    <div style="font-size:48px; font-weight:bold;">
-      ${item.word || "-"}
-    </div>
+                <div style="font-size:48px; font-weight:bold;">
+                    ${item.word || "-"}
+                </div>
 
-    <div
-      style="
-        margin-top:10px;
-        font-size:22px;
-        color:#666;
-      "
-    >
-      ${item.pronounce_th || "-"}
-    </div>
+                <div
+                    style="
+                        margin-top:10px;
+                        font-size:22px;
+                        color:#666;
+                    ">
+                    ${item.pronounce_th || "-"}
+                </div>
 
-  `;
+            `;
 
-            // ด้านหลัง card
             document.getElementById("flashTH").innerText =
                 item.meaning_th || "-";
 
@@ -852,8 +894,6 @@
 
         }
 
-
-
         function nextFlashcard() {
 
             flashIndex++;
@@ -869,8 +909,6 @@
             renderFlashcard();
 
         }
-
-
 
         function prevFlashcard() {
 
@@ -888,21 +926,18 @@
 
         }
 
-
-
         function randomFlashcard() {
 
-            flashIndex = Math.floor(
-                Math.random() * vocabData.length
-            );
+            flashIndex =
+                Math.floor(
+                    Math.random() * vocabData.length
+                );
 
             isFlipped = false;
 
             renderFlashcard();
 
         }
-
-
 
         function flipFlashcard() {
 
@@ -912,11 +947,10 @@
 
         }
 
-
-
         function speakFlashcard() {
 
-            const item = vocabData[flashIndex];
+            const item =
+                vocabData[flashIndex];
 
             const utterance =
                 new SpeechSynthesisUtterance(item.word);
@@ -927,7 +961,124 @@
 
         }
 
+        function generateQuiz() {
 
+            if (vocabData.length < 4) {
+
+                alert("ต้องมี vocab อย่างน้อย 4 คำ");
+
+                return;
+
+            }
+
+            const correct =
+                vocabData[
+                    Math.floor(
+                        Math.random() * vocabData.length
+                    )
+                ];
+
+            const choices = [correct];
+
+            while (choices.length < 4) {
+
+                const random =
+                    vocabData[
+                        Math.floor(
+                            Math.random() * vocabData.length
+                        )
+                    ];
+
+                if (!choices.includes(random)) {
+
+                    choices.push(random);
+
+                }
+
+            }
+
+            choices.sort(() => Math.random() - 0.5);
+
+            currentQuiz = correct;
+
+            document.getElementById("quizQuestion")
+                .innerText = correct.word;
+
+            document.getElementById("quizChoices")
+                .innerHTML =
+                choices.map(choice => `
+
+                <button
+                    class="quiz-choice"
+                    data-answer="${choice.meaning_th}"
+                    onclick="checkQuizAnswer(this)">
+
+                    ${choice.meaning_th}
+
+                </button>
+
+            `).join("");
+
+            document.getElementById("quizResult")
+                .innerHTML = "";
+
+        }
+
+        function checkQuizAnswer(button) {
+
+            const answer =
+                button.dataset.answer;
+
+            const correctAnswer =
+                currentQuiz.meaning_th;
+
+            const buttons =
+                document.querySelectorAll(".quiz-choice");
+
+            buttons.forEach(btn => {
+
+                btn.disabled = true;
+
+                if (
+                    btn.dataset.answer === correctAnswer
+                ) {
+
+                    btn.classList.add("correct");
+
+                }
+
+            });
+
+            total++;
+
+            if (answer === correctAnswer) {
+
+                score++;
+
+                document.getElementById("quizResult")
+                    .innerHTML = "✅ Correct!";
+
+            } else {
+
+                button.classList.add("wrong");
+
+                document.getElementById("quizResult")
+                    .innerHTML =
+                    `❌ Wrong! Correct answer: ${correctAnswer}`;
+
+            }
+
+            document.getElementById("quizScore")
+                .innerText =
+                `Score: ${score} / ${total}`;
+
+            setTimeout(() => {
+
+                generateQuiz();
+
+            }, 1500);
+
+        }
 
         loadVocab();
 
