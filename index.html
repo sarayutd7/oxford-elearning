@@ -290,6 +290,12 @@
             </div>
 
             <div>
+                <input
+        type="text"
+        id="managerSearch"
+        placeholder="ค้นหาใน manager..."
+        oninput="renderManager()"
+    >
 
                 <div id="vocabList"></div>
 
@@ -593,6 +599,26 @@ function searchVocab(){
 
 function renderManager(){
 
+    const keyword =
+        document.getElementById("managerSearch")
+        ?.value
+        ?.toLowerCase() || "";
+
+    const filteredData =
+        vocabData.filter(item =>
+
+            item.word?.toLowerCase().includes(keyword)
+
+            ||
+
+            item.meaning_th?.toLowerCase().includes(keyword)
+
+            ||
+
+            item.meaning_en?.toLowerCase().includes(keyword)
+
+        );
+
     const start =
         (currentPage - 1) * itemsPerPage;
 
@@ -600,33 +626,38 @@ function renderManager(){
         start + itemsPerPage;
 
     const pageItems =
-        vocabData.slice(start,end);
+        filteredData.slice(start,end);
 
     document.getElementById("vocabList")
         .innerHTML =
-        pageItems.map((item,index)=>`
+        pageItems.map((item,index)=>{
 
-        <div class="card">
+            const realIndex =
+                vocabData.indexOf(item);
 
-            <h3>${item.word}</h3>
+            return `
 
-            <p>${item.meaning_th || "-"}</p>
+                <div class="card">
 
-            <button class="btn-warning"
-                    onclick="editVocab(${start+index})">
-                Edit
-            </button>
+                    <h3>${item.word}</h3>
 
-            <button class="btn-danger"
-                    onclick="deleteVocab(${start+index})">
-                Delete
-            </button>
+                    <p>${item.meaning_th || "-"}</p>
 
-        </div>
+                    <button class="btn-warning"
+                            onclick="editVocab(${realIndex})">
+                        Edit
+                    </button>
 
-    `).join("");
+                    <button class="btn-danger"
+                            onclick="deleteVocab(${realIndex})">
+                        Delete
+                    </button>
 
+                </div>
 
+            `;
+
+        }).join("");
 
     // =========================
     // PAGINATION
@@ -635,9 +666,33 @@ function renderManager(){
     let paginationHTML = "";
 
     const totalPages =
-        Math.ceil(vocabData.length / itemsPerPage);
+        Math.ceil(filteredData.length / itemsPerPage);
 
-    for(let i=1;i<=totalPages;i++){
+    let startPage =
+        Math.max(currentPage - 2, 1);
+
+    let endPage =
+        Math.min(startPage + 4, totalPages);
+
+    if(endPage - startPage < 4){
+
+        startPage =
+            Math.max(endPage - 4, 1);
+
+    }
+
+    // Prev
+    if(currentPage > 1){
+
+        paginationHTML += `
+            <button onclick="goPage(${currentPage - 1})">
+                ◀
+            </button>
+        `;
+
+    }
+
+    for(let i=startPage;i<=endPage;i++){
 
         paginationHTML += `
 
@@ -649,6 +704,17 @@ function renderManager(){
 
             </button>
 
+        `;
+
+    }
+
+    // Next
+    if(currentPage < totalPages){
+
+        paginationHTML += `
+            <button onclick="goPage(${currentPage + 1})">
+                ▶
+            </button>
         `;
 
     }
