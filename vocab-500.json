@@ -13753,5 +13753,459 @@
       "general",
       "appearance"
     ]
+  },
+  {
+    "word": "baseball",
+    "meaning_th": "เบสบอล",
+    "meaning_en": "a ball game played with a bat and ball between two teams of nine players",
+    "pronounce_th": "เบสบอล",
+    "ipa": "/ˈbeɪsbɔːl/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "He enjoys playing baseball with his local team on Saturdays."
+    ],
+    "synonyms": [],
+    "tags": [
+      "sports",
+      "games",
+      "lifestyle"
+    ]
+  },
+  {
+    "word": "bean",
+    "meaning_th": "ถั่ว",
+    "meaning_en": "an edible seed, typically rounded, flat, and kidney-shaped",
+    "pronounce_th": "บีน",
+    "ipa": "/biːn/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Green beans are highly important for a healthy physical diet."
+    ],
+    "synonyms": [
+      "seed",
+      "pod"
+    ],
+    "tags": [
+      "food",
+      "vegetables",
+      "cooking"
+    ]
+  },
+  {
+    "word": "behave",
+    "meaning_th": "ประพฤติตัว, ทำตัวดี",
+    "meaning_en": "act or conduct oneself in a specified way, especially toward others",
+    "pronounce_th": "บิเฮฝ",
+    "ipa": "/bɪˈheɪv/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "The children always behave perfectly when guests visit our house."
+    ],
+    "synonyms": [
+      "act",
+      "conduct oneself"
+    ],
+    "tags": [
+      "action",
+      "general"
+    ]
+  },
+  {
+    "word": "benefit",
+    "meaning_th": "ผลประโยชน์, ข้อดี, มีประโยชน์",
+    "meaning_en": "an advantage or profit gained from something",
+    "pronounce_th": "เบนเนอะฟิต",
+    "ipa": "/ˈbenɪfɪt/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A2",
+    "examples": [
+      "Regular vocabulary study has an immense benefit for English conversational fluency."
+    ],
+    "synonyms": [
+      "advantage",
+      "profit",
+      "gain",
+      "asset"
+    ],
+    "tags": [
+      "general",
+      "business"
+    ]
+  },
+  {
+    "word": "billion",
+    "meaning_th": "พันล้าน, จำนวนพันล้าน",
+    "meaning_en": "a number equivalent to a thousand millions",
+    "pronounce_th": "บิลเยัน",
+    "ipa": "/ˈbɪljən/",
+    "part_of_speech": "number",
+    "cefr": "A2",
+    "examples": [
+      "The technology company earned several billion dollars last year."
+    ],
+    "synonyms": [],
+    "tags": [
+      "numbers",
+      "math",
+      "money"
+    ]
+  },
+  {
+    "word": "candle",
+    "meaning_th": "เทียน, เทียนไข",
+    "meaning_en": "a cylinder or block of wax or tallow with a central wick which is lit to produce light",
+    "pronounce_th": "แคนเดิล",
+    "ipa": "/ˈkændl/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "The room was dark, so she lit a white candle on the desk."
+    ],
+    "synonyms": [
+      "wick",
+      "taper"
+    ],
+    "tags": [
+      "objects",
+      "home"
+    ]
+  },
+  {
+    "word": "cash",
+    "meaning_th": "เงินสด",
+    "meaning_en": "money in coins or banknotes, as distinct from checks or credit cards",
+    "pronounce_th": "แคช",
+    "ipa": "/kæʃ/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A2",
+    "examples": [
+      "Do you prefer to pay with cash parameters or credit card parameters?"
+    ],
+    "synonyms": [
+      "money",
+      "currency",
+      "banknotes"
+    ],
+    "tags": [
+      "money",
+      "shopping",
+      "business"
+    ]
+  },
+  {
+    "word": "century",
+    "meaning_th": "ศตวรรษ, รอบหนึ่งร้อยปี",
+    "meaning_en": "a period of one hundred years",
+    "pronounce_th": "เซนชูรี",
+    "ipa": "/ˈsentʃəri/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Modern test automation tools advanced significantly in the 21st century."
+    ],
+    "synonyms": [],
+    "tags": [
+      "time",
+      "history"
+    ]
+  },
+  {
+    "word": "degree",
+    "meaning_th": "องศา, ระดับ, ปริญญาบัตร",
+    "meaning_en": "a unit of measurement of angles or temperature; an academic title",
+    "pronounce_th": "ดิกรีย์",
+    "ipa": "/dɪˈɡriː/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "The afternoon temperature reached forty degrees.",
+      "He has a computer science degree."
+    ],
+    "synonyms": [
+      "grade",
+      "level",
+      "extent",
+      "title"
+    ],
+    "tags": [
+      "math",
+      "education",
+      "weather",
+      "school"
+    ]
+  },
+  {
+    "word": "exercise",
+    "meaning_th": "ออกกำลังกาย, แบบฝึกหัด",
+    "meaning_en": "activity requiring physical effort, carried out to sustain health",
+    "pronounce_th": "เอ็กเซอะไซซฺ",
+    "ipa": "/ˈeksəsaɪz/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A2",
+    "examples": [
+      "Please complete vocabulary exercise three on page five."
+    ],
+    "synonyms": [
+      "practice",
+      "workout",
+      "drill"
+    ],
+    "tags": [
+      "health",
+      "sports",
+      "school"
+    ]
+  },
+  {
+    "word": "goal",
+    "meaning_th": "เป้าหมาย, ประตูฟุตบอล",
+    "meaning_en": "the object of a person's ambition or effort; an aim or desired result",
+    "pronounce_th": "โกล",
+    "ipa": "/ɡəʊl/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Our QA engineering team achieved its technical testing goal early."
+    ],
+    "synonyms": [
+      "aim",
+      "target",
+      "objective",
+      "purpose"
+    ],
+    "tags": [
+      "general",
+      "business",
+      "sports"
+    ]
+  },
+  {
+    "word": "invite",
+    "meaning_th": "เชิญ, เชื้อเชิญ",
+    "meaning_en": "make a polite, formal, or friendly request to someone to go somewhere",
+    "pronounce_th": "อินไฝท์",
+    "ipa": "/ɪnˈvaɪt/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "I want to invite my neighbor to the birthday party this Friday evening."
+    ],
+    "synonyms": [
+      "ask",
+      "request",
+      "summon"
+    ],
+    "tags": [
+      "action",
+      "communication",
+      "conversation"
+    ]
+  },
+  {
+    "word": "location",
+    "meaning_th": "สถานที่, ที่ตั้ง, ทำเล",
+    "meaning_en": "a particular place or position",
+    "pronounce_th": "โลเคเชิน",
+    "ipa": "/ləʊˈkeɪʃn/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "Please verify the physical server location parameters inside the system map."
+    ],
+    "synonyms": [
+      "place",
+      "position",
+      "spot",
+      "site"
+    ],
+    "tags": [
+      "location",
+      "places",
+      "business"
+    ]
+  },
+  {
+    "word": "manner",
+    "meaning_th": "มารยาท, ท่าทาง, วิธีการ",
+    "meaning_en": "a way in which a thing is done or happens; a person's outward bearing",
+    "pronounce_th": "แมนเนอะ",
+    "ipa": "/ˈmænə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "She answered the difficult query questions in a professional manner."
+    ],
+    "synonyms": [
+      "way",
+      "method",
+      "style",
+      "behavior",
+      "conduct"
+    ],
+    "tags": [
+      "general",
+      "description",
+      "conversation"
+    ]
+  },
+  {
+    "word": "notice",
+    "meaning_th": "สังเกตเห็น, ประกาศ, แถลงการณ์",
+    "meaning_en": "become aware of; a displayed sheet of information giving news or notification",
+    "pronounce_th": "โนทิส",
+    "ipa": "/ˈnəʊtɪs/",
+    "part_of_speech": "verb, noun",
+    "cefr": "A2",
+    "examples": [
+      "Did you notice the system performance improvements?",
+      "Read the office notice."
+    ],
+    "synonyms": [
+      "spot",
+      "observe",
+      "announcement",
+      "sign",
+      "warning"
+    ],
+    "tags": [
+      "action",
+      "communication",
+      "business"
+    ]
+  },
+  {
+    "word": "option",
+    "meaning_th": "ทางเลือก, ตัวเลือก",
+    "meaning_en": "a thing that is or may be chosen",
+    "pronounce_th": "อ็อพเชิน",
+    "ipa": "/ˈɒpʃn/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "We have several advanced layout options inside our AppSheet application configurations."
+    ],
+    "synonyms": [
+      "choice",
+      "alternative",
+      "possibility"
+    ],
+    "tags": [
+      "general",
+      "technology"
+    ]
+  },
+  {
+    "word": "project",
+    "meaning_th": "โครงการ, แผนงาน",
+    "meaning_en": "an enterprise that is carefully planned to achieve a particular aim",
+    "pronounce_th": "โปรเจ็คท์",
+    "ipa": "/ˈprɒdʒekt/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "The software verification project is now running without logic bugs."
+    ],
+    "synonyms": [
+      "undertaking",
+      "venture",
+      "plan",
+      "scheme"
+    ],
+    "tags": [
+      "business",
+      "work",
+      "school"
+    ]
+  },
+  {
+    "word": "quality",
+    "meaning_th": "คุณภาพ, คุณสมบัติ",
+    "meaning_en": "the standard of something as measured against other things of a similar kind",
+    "pronounce_th": "ควอลิตี",
+    "ipa": "/ˈkwɒləti/",
+    "part_of_speech": "noun",
+    "cefr": "A2",
+    "examples": [
+      "A Senior QA Engineer ensures high product quality parameters."
+    ],
+    "synonyms": [
+      "standard",
+      "excellence",
+      "grade"
+    ],
+    "tags": [
+      "general",
+      "business",
+      "work"
+    ]
+  },
+  {
+    "word": "receive",
+    "meaning_th": "ได้รับ, ต้อนรับ",
+    "meaning_en": "be given, presented with, or paid something",
+    "pronounce_th": "ริซีฝ",
+    "ipa": "/rɪˈsiːv/",
+    "part_of_speech": "verb",
+    "cefr": "A2",
+    "examples": [
+      "I receive a detailed performance query report every Monday morning."
+    ],
+    "synonyms": [
+      "get",
+      "obtain",
+      "acquire",
+      "accept"
+    ],
+    "tags": [
+      "action",
+      "business"
+    ]
+  },
+  {
+    "word": "worry",
+    "meaning_th": "กังวล, เป็นห่วง",
+    "meaning_en": "feel or cause to feel anxious or troubled about actual or potential problems",
+    "pronounce_th": "วอรี",
+    "ipa": "/ˈwʌri/",
+    "part_of_speech": "verb, noun",
+    "cefr": "A2",
+    "examples": [
+      "Don't worry about the loop script; it verified successfully yesterday."
+    ],
+    "synonyms": [
+      "anxiety",
+      "concern",
+      "fret",
+      "trouble"
+    ],
+    "tags": [
+      "action",
+      "feelings",
+      "emotions"
+    ]
+  },
+  {
+    "word": "zero",
+    "meaning_th": "ศูนย์, เลขศูนย์",
+    "meaning_en": "the numerical symbol 0; the lowest possible amount",
+    "pronounce_th": "ซีโร",
+    "ipa": "/ˈzɪərəʊ/",
+    "part_of_speech": "number",
+    "cefr": "A2",
+    "examples": [
+      "The software verification test detected zero loop errors inside the code."
+    ],
+    "synonyms": [
+      "naught",
+      "nil"
+    ],
+    "tags": [
+      "numbers",
+      "math",
+      "basic"
+    ]
   }
 ]
