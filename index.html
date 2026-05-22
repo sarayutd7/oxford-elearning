@@ -2,1151 +2,937 @@
 <html lang="th">
 
 <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vocab Manager</title>
 
-<meta charset="UTF-8">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
 
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
+        body {
+            background: #f5f5f5;
+            padding: 20px;
+            color: #222;
+        }
 
-<title>
-Oxford 3000 Ultra Fast
-</title>
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
 
-<style>
+        h1 {
+            margin-bottom: 20px;
+        }
 
-*{
-box-sizing:border-box;
-}
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
 
-body{
-margin:0;
-font-family:-apple-system,BlinkMacSystemFont,sans-serif;
-background:linear-gradient(
-135deg,
-#dbeafe,
-#eff6ff
-);
-color:#111827;
-}
+        .tab-btn {
+            padding: 10px 20px;
+            border: none;
+            background: #ddd;
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: bold;
+        }
 
-header{
-padding:24px;
-text-align:center;
-background:rgba(255,255,255,.55);
-backdrop-filter:blur(18px);
-position:sticky;
-top:0;
-z-index:999;
-}
+        .tab-btn.active {
+            background: #007bff;
+            color: white;
+        }
 
-.tabs{
-display:flex;
-gap:10px;
-padding:16px;
-overflow:auto;
-}
+        .tab-content {
+            display: none;
+        }
 
-.tab-btn{
-border:none;
-background:black;
-color:white;
-padding:12px 16px;
-border-radius:14px;
-cursor:pointer;
-white-space:nowrap;
-flex-shrink:0;
-}
+        .tab-content.active {
+            display: block;
+        }
 
-.active-btn{
-background:#111827;
-}
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
 
-.container{
-max-width:1000px;
-margin:auto;
-padding:16px;
-}
+        button {
+            padding: 10px 16px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
 
-.card{
-background:rgba(255,255,255,.55);
-backdrop-filter:blur(18px);
-padding:20px;
-border-radius:24px;
-margin-bottom:20px;
-}
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
 
-.tab{
-display:none;
-}
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
 
-.active{
-display:block;
-}
+        .btn-warning {
+            background: #ffc107;
+            color: black;
+        }
 
-input{
-width:100%;
-padding:14px;
-border:none;
-border-radius:14px;
-font-size:16px;
-}
+        .search-box {
+            margin-bottom: 20px;
+        }
 
-.word-item{
-padding:14px;
-margin-top:10px;
-border-radius:14px;
-background:rgba(255,255,255,.7);
-}
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 15px;
+            background: #fafafa;
+        }
 
-button{
-border:none;
-background:black;
-color:white;
-padding:10px 14px;
-border-radius:12px;
-cursor:pointer;
-margin:4px;
-}
+        .card h3 {
+            margin-bottom: 10px;
+            color: #007bff;
+        }
 
-.flashcard{
-min-height:260px;
-display:flex;
-flex-direction:column;
-justify-content:center;
-align-items:center;
-text-align:center;
-}
+        .card-actions {
+            margin-top: 10px;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
 
-.big{
-font-size:44px;
-font-weight:700;
-word-break:break-word;
-}
+        .pagination {
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
 
-.pagination{
-margin-top:20px;
-display:flex;
-flex-wrap:wrap;
-gap:6px;
-}
+        .pagination button {
+            min-width: 40px;
+            background: #eee;
+        }
 
-.edit-box{
-display:none;
-margin-top:12px;
-padding:14px;
-border-radius:14px;
-background:white;
-}
+        .pagination button.active {
+            background: #007bff;
+            color: white;
+        }
 
-small{
-opacity:.7;
-}
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
 
-</style>
+        .empty {
+            text-align: center;
+            padding: 40px;
+            color: #888;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #007bff;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 999px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-top: 5px;
+        }
+
+        .flashcard {
+            text-align: center;
+            min-height: 250px;
+        }
+
+        .flash-word {
+            font-size: 48px;
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 20px;
+        }
+
+        .flash-back {
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .flash-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        @media(max-width:768px) {
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .flash-word {
+                font-size: 32px;
+            }
+
+        }
+    </style>
 
 </head>
 
 <body>
 
-<header>
+    <div class="container">
 
-<h1>
-Oxford 3000
-</h1>
+        <h1>📚 Vocab Manager</h1>
 
-<p>
-Ultra Fast Version
-</p>
+        <div class="tabs">
 
-</header>
+            <button class="tab-btn active" onclick="switchTab(event, 'search')">
+                🔍 Search
+            </button>
 
-<div class="tabs">
+            <button class="tab-btn" onclick="switchTab(event, 'manager')">
+                ⚙️ Manager
+            </button>
 
-<button
-class="tab-btn active-btn"
-onclick="openTab(event,'search')">
-🔍 Search
-</button>
+            <button class="tab-btn" onclick="switchTab(event, 'flashcard')">
+                🃏 FlashCard
+            </button>
 
-<button
-class="tab-btn"
-onclick="openTab(event,'all')">
-📚 All Words
-</button>
+        </div>
 
-<button
-class="tab-btn"
-onclick="openTab(event,'flash')">
-🃏 Flashcard
-</button>
+        <!-- SEARCH -->
 
-<button
-class="tab-btn"
-onclick="openTab(event,'quiz')">
-📝 Quiz
-</button>
+        <div id="search" class="tab-content active">
 
-<button
-class="tab-btn"
-onclick="openTab(event,'manage')">
-⚙ Manage
-</button>
+            <div class="search-box">
 
-</div>
+                <input type="text" id="searchInput" placeholder="พิมพ์เพื่อค้นหาคำศัพท์..." oninput="searchVocab()" />
 
-<div class="container">
+            </div>
 
-<!-- SEARCH -->
+            <div id="searchResults"></div>
 
-<div id="search"
-class="tab active">
+        </div>
 
-<div class="card">
+        <!-- MANAGER -->
 
-<input
-id="searchInput"
-placeholder="ค้นหาคำศัพท์..."
-onkeyup="debounceSearch()"
->
+        <div id="manager" class="tab-content">
 
-<div id="searchResult"></div>
+            <div class="grid">
 
-</div>
+                <!-- FORM -->
 
-</div>
+                <div>
 
-<!-- ALL WORDS -->
+                    <h2 id="formTitle">➕ เพิ่มคำศัพท์</h2>
 
-<div id="all"
-class="tab">
+                    <input type="hidden" id="editIndex">
 
-<div class="card">
+                    <label>Word</label>
+                    <input type="text" id="word">
 
-<div id="allWords"></div>
+                    <label>Meaning TH</label>
+                    <input type="text" id="meaning_th">
 
-</div>
+                    <label>Meaning EN</label>
+                    <input type="text" id="meaning_en">
 
-</div>
+                    <label>Pronounce TH</label>
+                    <input type="text" id="pronounce_th">
 
-<!-- FLASHCARD -->
+                    <label>IPA</label>
+                    <input type="text" id="ipa">
 
-<div id="flash"
-class="tab">
+                    <label>Part of Speech</label>
+                    <input type="text" id="part_of_speech">
 
-<div class="card">
+                    <label>CEFR</label>
+                    <input type="text" id="cefr">
 
-<div
-id="flashcard"
-class="flashcard">
-</div>
+                    <label>Examples</label>
+                    <textarea id="examples"></textarea>
 
-<div>
+                    <label>Synonyms</label>
+                    <textarea id="synonyms"></textarea>
 
-<button onclick="prevCard()">
-◀ Prev
-</button>
+                    <label>Tags</label>
+                    <input type="text" id="tags">
 
-<button onclick="flipCard()">
-🔄 Flip
-</button>
+                    <button class="btn-primary" onclick="saveVocab()">
+                        💾 Save
+                    </button>
 
-<button onclick="editFlashcard()">
-✏ Edit
-</button>
+                </div>
 
-<button onclick="nextCard()">
-Next ▶
-</button>
+                <!-- LIST -->
 
-<button onclick="randomCard()">
-🎲 Random
-</button>
+                <div>
 
-<button onclick="speak()">
-🔊 Speak
-</button>
+                    <h2>📋 Vocabulary List</h2>
 
-</div>
+                    <div id="vocabList"></div>
 
-</div>
+                    <div class="pagination" id="pagination"></div>
 
-</div>
+                </div>
 
-<!-- QUIZ -->
+            </div>
 
-<div id="quiz"
-class="tab">
+        </div>
 
-<div class="card">
+        <!-- FLASHCARD -->
 
-<h2>
-Quiz
-</h2>
+        <div id="flashcard" class="tab-content">
 
-<p id="quizQuestion"></p>
+            <div class="card flashcard">
 
-<div id="quizOptions"></div>
+                <div class="flash-word" id="flashWord">
+                    Loading...
+                </div>
 
-<div id="quizResult"></div>
+                <div class="flash-back" id="flashBack" style="display:none;">
 
-<button onclick="newQuiz()">
-สุ่มใหม่
-</button>
+                    <p>
+                        <strong>TH:</strong>
+                        <span id="flashTH"></span>
+                    </p>
 
-</div>
+                    <p>
+                        <strong>EN:</strong>
+                        <span id="flashEN"></span>
+                    </p>
 
-</div>
+                    <p>
+                        <strong>IPA:</strong>
+                        <span id="flashIPA"></span>
+                    </p>
 
-<!-- MANAGE -->
+                    <p>
+                        <strong>POS:</strong>
+                        <span id="flashPOS"></span>
+                    </p>
 
-<div id="manage"
-class="tab">
+                    <p>
+                        <strong>CEFR:</strong>
+                        <span id="flashCEFR"></span>
+                    </p>
 
-<div class="card">
+                </div>
 
-<h2>
-Manage Vocabulary
-</h2>
+            </div>
 
-<input
-id="newWord"
-placeholder="English Word"
->
+            <div class="flash-buttons">
 
-<br><br>
+                <button onclick="prevFlashcard()">
+                    ⬅ Prev
+                </button>
 
-<input
-id="newMeaning"
-placeholder="คำแปลไทย"
->
+                <button onclick="nextFlashcard()">
+                    Next ➡
+                </button>
 
-<br><br>
+                <button onclick="speakFlashcard()">
+                    🔊 Speak
+                </button>
 
-<input
-id="newPronounce"
-placeholder="คำอ่านไทย"
->
+                <button onclick="randomFlashcard()">
+                    🎲 Random
+                </button>
 
-<br><br>
+                <button onclick="flipFlashcard()">
+                    🔄 Flip
+                </button>
 
-<input
-id="newIPA"
-placeholder="IPA"
->
+            </div>
 
-<br><br>
+        </div>
 
-<button onclick="addWord()">
-➕ Add Word
-</button>
+    </div>
 
-<div id="manageList"></div>
+    <script>
 
-</div>
+        let vocabData = [];
 
-</div>
+        let currentPage = 1;
 
-</div>
+        const itemsPerPage = 10;
 
-<script>
+        let flashIndex = 0;
 
-let vocab=[];
+        let isFlipped = false;
 
-let current=0;
 
-let showMeaning=true;
 
-let currentQuiz=null;
+        async function loadVocab() {
 
-let currentPage=1;
+            try {
 
-const wordsPerPage=20;
+                const response =
+                    await fetch("vocab-500.json");
 
-let searchTimeout=null;
+                vocabData = await response.json();
 
-async function loadVocab(){
+                renderManager();
 
-try{
+                renderFlashcard();
 
-const r=await fetch(
-'vocab.json'
-);
+            } catch (error) {
 
-const text=
-await r.text();
+                console.error(error);
 
-vocab=
-JSON.parse(text);
+                alert("โหลด vocab.json ไม่สำเร็จ");
 
-renderWords();
+            }
 
-showCard();
+        }
 
-newQuiz();
 
-}catch(e){
 
-console.error(e);
+        function switchTab(event, tabId) {
 
-alert(
-'โหลด vocab.json ไม่สำเร็จ'
-);
+            document.querySelectorAll(".tab-btn")
+                .forEach(btn => btn.classList.remove("active"));
 
-}
+            document.querySelectorAll(".tab-content")
+                .forEach(tab => tab.classList.remove("active"));
 
-}
+            event.target.classList.add("active");
 
-loadVocab();
+            document.getElementById(tabId)
+                .classList.add("active");
 
-function openTab(e,id){
+        }
 
-document.querySelectorAll('.tab')
-.forEach(t=>
-t.classList.remove('active')
-);
 
-document.querySelectorAll('.tab-btn')
-.forEach(b=>
-b.classList.remove('active-btn')
-);
 
-document.getElementById(id)
-.classList.add('active');
+        function searchVocab() {
 
-e.target.classList.add('active-btn');
+            const keyword = document
+                .getElementById("searchInput")
+                .value
+                .trim()
+                .toLowerCase();
 
-if(id==='manage'){
+            const container =
+                document.getElementById("searchResults");
 
-renderManage();
+            if (keyword === "") {
 
-}
+                container.innerHTML = "";
 
-}
+                return;
 
+            }
 
+            const filtered = vocabData.filter(item => {
 
+                return (
 
+                    item.word?.toLowerCase().includes(keyword) ||
 
+                    item.meaning_th?.toLowerCase().includes(keyword) ||
 
+                    item.meaning_en?.toLowerCase().includes(keyword)
 
+                );
 
+            });
 
+            if (filtered.length === 0) {
 
-/* SEARCH */
+                container.innerHTML = `
 
-function debounceSearch(){
+      <div class="empty">
+        ❌ ไม่พบคำศัพท์
+      </div>
 
-clearTimeout(searchTimeout);
+    `;
 
-searchTimeout=
-setTimeout(()=>{
+                return;
 
-searchWord();
+            }
 
-},150);
+            container.innerHTML = filtered.map(item => `
 
-}
+    <div class="card">
 
-function searchWord(){
+      <h3>${item.word}</h3>
 
-const q=
-document
-.getElementById('searchInput')
-.value
-.trim()
-.toLowerCase();
+      <p><strong>TH:</strong>
+      ${item.meaning_th || "-"}</p>
 
-if(!q){
+      <p><strong>EN:</strong>
+      ${item.meaning_en || "-"}</p>
 
-document
-.getElementById('searchResult')
-.innerHTML='';
+      <p><strong>IPA:</strong>
+      ${item.ipa || "-"}</p>
 
-return;
+      <p><strong>POS:</strong>
+      ${item.part_of_speech || "-"}</p>
 
-}
+      <p><strong>CEFR:</strong>
+      ${item.cefr || "-"}</p>
 
-const result=[];
+    </div>
 
-const len=vocab.length;
+  `).join("");
 
-for(let i=0;i<len;i++){
+        }
 
-const v=vocab[i];
 
-if(
 
-(v.word||'')
-.toLowerCase()
-.includes(q)
+        function renderManager() {
 
-||
+            const list =
+                document.getElementById("vocabList");
 
-(v.meaning_th||'')
-.toLowerCase()
-.includes(q)
+            const start =
+                (currentPage - 1) * itemsPerPage;
 
-){
+            const end = start + itemsPerPage;
 
-result.push(v);
+            const pageItems =
+                vocabData.slice(start, end);
 
-}
+            if (pageItems.length === 0) {
 
-if(result.length>=30)
-break;
+                list.innerHTML = `
 
-}
+      <div class="empty">
+        ไม่มีข้อมูล
+      </div>
 
-let html='';
+    `;
 
-for(const v of result){
+                return;
 
-html+=`
+            }
 
-<div class="word-item">
+            list.innerHTML = pageItems.map((item, index) => `
 
-<b>
-${v.word}
-</b>
+    <div class="card">
 
-<br>
+      <h3>${item.word}</h3>
 
-${v.meaning_th||'-'}
+      <p>${item.meaning_th || "-"}</p>
 
-<br>
+      <div class="card-actions">
 
-<small>
-${v.pronounce_th||''}
-</small>
+        <button
+          class="btn-warning"
+          onclick="editVocab(${start + index})"
+        >
+          Edit
+        </button>
 
-</div>
+        <button
+          class="btn-danger"
+          onclick="deleteVocab(${start + index})"
+        >
+          Delete
+        </button>
 
-`;
+      </div>
 
-}
+    </div>
 
-document
-.getElementById('searchResult')
-.innerHTML=html;
+  `).join("");
 
-}
+            renderPagination();
 
+        }
 
 
 
+        function renderPagination() {
 
+            const totalPages =
+                Math.ceil(vocabData.length / itemsPerPage);
 
+            let html = "";
 
+            html += `
+    <button onclick="goPage(1)">|&lt;</button>
+  `;
 
+            html += `
+    <button onclick="goPage(${Math.max(1, currentPage - 1)})">
+      &lt;
+    </button>
+  `;
 
+            for (let i = 1; i <= totalPages; i++) {
 
-/* ALL WORDS */
+                if (
+                    i === 1 ||
+                    i === totalPages ||
+                    (i >= currentPage - 2 &&
+                        i <= currentPage + 2)
+                ) {
 
-function renderWords(){
+                    html += `
+        <button
+          class="${i === currentPage ? 'active' : ''}"
+          onclick="goPage(${i})"
+        >
+          ${i}
+        </button>
+      `;
 
-const start=
-(currentPage-1)
-*wordsPerPage;
+                } else if (
+                    i === currentPage - 3 ||
+                    i === currentPage + 3
+                ) {
 
-const end=
-start+wordsPerPage;
+                    html += `
+        <button disabled>...</button>
+      `;
 
-const pageWords=
-vocab.slice(start,end);
+                }
 
-let html='';
+            }
 
-for(const v of pageWords){
+            html += `
+    <button
+      onclick="goPage(${Math.min(totalPages, currentPage + 1)})"
+    >
+      &gt;
+    </button>
+  `;
 
-html+=`
+            html += `
+    <button onclick="goPage(${totalPages})">
+      &gt;|
+    </button>
+  `;
 
-<div class="word-item">
+            document.getElementById("pagination")
+                .innerHTML = html;
 
-<b>
-${v.word}
-</b>
+        }
 
-—
 
-${v.meaning_th||'-'}
 
-<br>
+        function goPage(page) {
 
-<small>
-${v.pronounce_th||''}
-</small>
+            currentPage = page;
 
-</div>
+            renderManager();
 
-`;
+        }
 
-}
 
-html+=renderPagination();
 
-document
-.getElementById('allWords')
-.innerHTML=html;
+        function saveVocab() {
 
-}
+            const vocab = {
 
-function renderPagination(){
+                word:
+                    document.getElementById("word").value,
 
-const totalPages=
-Math.ceil(
-vocab.length/wordsPerPage
-);
+                meaning_th:
+                    document.getElementById("meaning_th").value,
 
-let html=
-'<div class="pagination">';
+                meaning_en:
+                    document.getElementById("meaning_en").value,
 
-const start=
-Math.max(
-1,
-currentPage-2
-);
+                pronounce_th:
+                    document.getElementById("pronounce_th").value,
 
-const end=
-Math.min(
-totalPages,
-currentPage+2
-);
+                ipa:
+                    document.getElementById("ipa").value,
 
-if(currentPage>1){
+                part_of_speech:
+                    document.getElementById("part_of_speech").value,
 
-html+=`
+                cefr:
+                    document.getElementById("cefr").value,
 
-<button onclick="
-goPage(${currentPage-1})
-">
-◀
-</button>
+                examples:
+                    document.getElementById("examples")
+                        .value
+                        .split(",")
+                        .map(v => v.trim())
+                        .filter(v => v),
 
-`;
+                synonyms:
+                    document.getElementById("synonyms")
+                        .value
+                        .split(",")
+                        .map(v => v.trim())
+                        .filter(v => v),
 
-}
+                tags:
+                    document.getElementById("tags")
+                        .value
+                        .split(",")
+                        .map(v => v.trim())
+                        .filter(v => v)
 
-for(let i=start;i<=end;i++){
+            };
 
-html+=`
+            const editIndex =
+                document.getElementById("editIndex").value;
 
-<button onclick="
-goPage(${i})
-">
+            if (editIndex !== "") {
 
-${i}
+                vocabData[editIndex] = vocab;
 
-</button>
+            } else {
 
-`;
+                vocabData.unshift(vocab);
 
-}
+            }
 
-if(currentPage<totalPages){
+            clearForm();
 
-html+=`
+            renderManager();
 
-<button onclick="
-goPage(${currentPage+1})
-">
-▶
-</button>
+            renderFlashcard();
 
-`;
+            alert("แก้ไขข้อมูลใน memory แล้ว");
 
-}
+        }
 
-html+='</div>';
 
-return html;
 
-}
+        function editVocab(index) {
 
-function goPage(page){
+            const item = vocabData[index];
 
-currentPage=page;
+            document.getElementById("editIndex").value =
+                index;
 
-renderWords();
+            document.getElementById("word").value =
+                item.word || "";
 
-window.scrollTo({
-top:0,
-behavior:'smooth'
-});
+            document.getElementById("meaning_th").value =
+                item.meaning_th || "";
 
-}
+            document.getElementById("meaning_en").value =
+                item.meaning_en || "";
 
+            document.getElementById("pronounce_th").value =
+                item.pronounce_th || "";
 
+            document.getElementById("ipa").value =
+                item.ipa || "";
 
+            document.getElementById("part_of_speech").value =
+                item.part_of_speech || "";
 
+            document.getElementById("cefr").value =
+                item.cefr || "";
 
+            document.getElementById("examples").value =
+                (item.examples || []).join(", ");
 
+            document.getElementById("synonyms").value =
+                (item.synonyms || []).join(", ");
 
+            document.getElementById("tags").value =
+                (item.tags || []).join(", ");
 
+            document.getElementById("formTitle").innerText =
+                "✏️ Edit Vocabulary";
 
+        }
 
-/* FLASHCARD */
 
-function showCard(){
 
-if(!vocab.length)
-return;
+        function deleteVocab(index) {
 
-const v=vocab[current];
+            if (confirm("ลบคำศัพท์นี้ ?")) {
 
-document
-.getElementById('flashcard')
-.innerHTML=`
+                vocabData.splice(index, 1);
 
-<div class="big">
+                renderManager();
 
-${v.word}
+                renderFlashcard();
 
-</div>
+            }
 
-${
-showMeaning
+        }
 
-?
 
-`
 
-<div>
-${v.meaning_th||'-'}
-</div>
+        function clearForm() {
 
-<div>
-${v.pronounce_th||''}
-</div>
+            document.getElementById("editIndex").value = "";
 
-<small>
-${v.ipa||''}
-</small>
+            document.getElementById("formTitle").innerText =
+                "➕ เพิ่มคำศัพท์";
 
-`
+            [
+                "word",
+                "meaning_th",
+                "meaning_en",
+                "pronounce_th",
+                "ipa",
+                "part_of_speech",
+                "cefr",
+                "examples",
+                "synonyms",
+                "tags"
+            ].forEach(id => {
 
-:
+                document.getElementById(id).value = "";
 
-`
+            });
 
-<div style="
-margin-top:20px;
-font-size:22px;
-opacity:.5;
-">
-🔄 Flip Card
-</div>
+        }
 
-`
 
-}
 
-`;
+        function renderFlashcard() {
 
-}
+            if (vocabData.length === 0) return;
 
-function nextCard(){
+            const item = vocabData[flashIndex];
 
-current++;
+            // ด้านหน้า card
+            document.getElementById("flashWord").innerHTML = `
 
-if(current>=vocab.length)
-current=0;
+    <div style="font-size:48px; font-weight:bold;">
+      ${item.word || "-"}
+    </div>
 
-showCard();
+    <div
+      style="
+        margin-top:10px;
+        font-size:22px;
+        color:#666;
+      "
+    >
+      ${item.pronounce_th || "-"}
+    </div>
 
-}
+  `;
 
-function prevCard(){
+            // ด้านหลัง card
+            document.getElementById("flashTH").innerText =
+                item.meaning_th || "-";
 
-current--;
+            document.getElementById("flashEN").innerText =
+                item.meaning_en || "-";
 
-if(current<0)
-current=vocab.length-1;
+            document.getElementById("flashIPA").innerText =
+                item.ipa || "-";
 
-showCard();
+            document.getElementById("flashPOS").innerText =
+                item.part_of_speech || "-";
 
-}
+            document.getElementById("flashCEFR").innerText =
+                item.cefr || "-";
 
-function randomCard(){
+            document.getElementById("flashBack").style.display =
+                isFlipped ? "block" : "none";
 
-current=
-Math.floor(
-Math.random()
-*vocab.length
-);
+        }
 
-showCard();
 
-}
 
-function flipCard(){
+        function nextFlashcard() {
 
-showMeaning=!showMeaning;
+            flashIndex++;
 
-showCard();
+            if (flashIndex >= vocabData.length) {
 
-}
+                flashIndex = 0;
 
-function speak(){
+            }
 
-speechSynthesis.cancel();
+            isFlipped = false;
 
-const u=
-new SpeechSynthesisUtterance(
-vocab[current].word
-);
+            renderFlashcard();
 
-u.lang='en-US';
+        }
 
-u.rate=.9;
 
-speechSynthesis.speak(u);
 
-}
+        function prevFlashcard() {
 
-function editFlashcard(){
+            flashIndex--;
 
-openTab(
-{
-target:
-document.querySelectorAll('.tab-btn')[4]
-},
-'manage'
-);
+            if (flashIndex < 0) {
 
-setTimeout(()=>{
+                flashIndex = vocabData.length - 1;
 
-const box=
-document.getElementById(
-`editBox-${current}`
-);
+            }
 
-if(box){
+            isFlipped = false;
 
-box.style.display='block';
+            renderFlashcard();
 
-box.scrollIntoView({
-behavior:'smooth',
-block:'center'
-});
+        }
 
-}
 
-},200);
 
-}
+        function randomFlashcard() {
 
+            flashIndex = Math.floor(
+                Math.random() * vocabData.length
+            );
 
+            isFlipped = false;
 
+            renderFlashcard();
 
+        }
 
 
 
+        function flipFlashcard() {
 
+            isFlipped = !isFlipped;
 
+            renderFlashcard();
 
-/* QUIZ */
+        }
 
-function shuffle(a){
 
-return a.sort(
-()=>Math.random()-0.5
-);
 
-}
+        function speakFlashcard() {
 
-function newQuiz(){
+            const item = vocabData[flashIndex];
 
-const q=
-vocab[
-Math.floor(
-Math.random()
-*vocab.length
-)
-];
+            const utterance =
+                new SpeechSynthesisUtterance(item.word);
 
-currentQuiz=q;
+            utterance.lang = "en-US";
 
-let options=[
-q.meaning_th||'-'
-];
+            speechSynthesis.speak(utterance);
 
-while(options.length<4){
+        }
 
-const c=
-vocab[
-Math.floor(
-Math.random()
-*vocab.length
-)
-].meaning_th||'-';
 
-if(!options.includes(c))
-options.push(c);
 
-}
+        loadVocab();
 
-options=shuffle(options);
-
-document
-.getElementById('quizQuestion')
-.innerHTML=
-
-`คำว่า <b>
-${q.word}
-</b> แปลว่าอะไร?`;
-
-document
-.getElementById('quizOptions')
-.innerHTML=
-
-options.map(o=>`
-
-<button onclick="
-checkAnswer('${o}')
-">
-
-${o}
-
-</button>
-
-`).join('');
-
-document
-.getElementById('quizResult')
-.innerHTML='';
-
-}
-
-function checkAnswer(ans){
-
-const r=
-document.getElementById(
-'quizResult'
-);
-
-if(ans===currentQuiz.meaning_th){
-
-r.innerHTML=
-'✅ Correct';
-
-r.style.color='green';
-
-}else{
-
-r.innerHTML=
-'❌ Correct: '
-+currentQuiz.meaning_th;
-
-r.style.color='red';
-
-}
-
-}
-
-
-
-
-
-
-
-
-
-
-/* MANAGE */
-
-function addWord(){
-
-const word=
-document.getElementById(
-'newWord'
-).value.trim();
-
-const meaning=
-document.getElementById(
-'newMeaning'
-).value.trim();
-
-const pronounce=
-document.getElementById(
-'newPronounce'
-).value.trim();
-
-const ipa=
-document.getElementById(
-'newIPA'
-).value.trim();
-
-if(!word||!meaning)
-return;
-
-vocab.unshift({
-
-word,
-
-meaning_th:meaning,
-
-pronounce_th:pronounce,
-
-ipa
-
-});
-
-renderWords();
-
-renderManage();
-
-showCard();
-
-document.getElementById(
-'newWord'
-).value='';
-
-document.getElementById(
-'newMeaning'
-).value='';
-
-document.getElementById(
-'newPronounce'
-).value='';
-
-document.getElementById(
-'newIPA'
-).value='';
-
-}
-
-function renderManage(){
-
-let html='';
-
-const limit=
-vocab.slice(0,10);
-
-for(let i=0;i<limit.length;i++){
-
-const v=limit[i];
-
-html+=`
-
-<div class="word-item">
-
-<b>
-${v.word}
-</b>
-
-—
-
-${v.meaning_th||'-'}
-
-<br><br>
-
-<button onclick="
-toggleEdit(${i})
-">
-✏ Edit
-</button>
-
-<button onclick="
-deleteWord(${i})
-">
-🗑 Delete
-</button>
-
-<div
-id="editBox-${i}"
-class="edit-box"
->
-
-<input
-id="edit-word-${i}"
-value="${v.word}"
->
-
-<br><br>
-
-<input
-id="edit-meaning-${i}"
-value="${v.meaning_th||''}"
->
-
-<br><br>
-
-<button onclick="
-saveEdit(${i})
-">
-💾 Save
-</button>
-
-</div>
-
-</div>
-
-`;
-
-}
-
-document
-.getElementById('manageList')
-.innerHTML=html;
-
-}
-
-function toggleEdit(i){
-
-const box=
-document.getElementById(
-`editBox-${i}`
-);
-
-box.style.display=
-
-box.style.display==='block'
-
-?
-
-'none'
-
-:
-
-'block';
-
-}
-
-function saveEdit(i){
-
-vocab[i].word=
-
-document.getElementById(
-`edit-word-${i}`
-).value;
-
-vocab[i].meaning_th=
-
-document.getElementById(
-`edit-meaning-${i}`
-).value;
-
-renderWords();
-
-renderManage();
-
-showCard();
-
-}
-
-function deleteWord(i){
-
-vocab.splice(i,1);
-
-renderWords();
-
-renderManage();
-
-showCard();
-
-}
-
-</script>
+    </script>
 
 </body>
+
 </html>
