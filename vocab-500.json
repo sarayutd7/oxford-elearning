@@ -1,22 +1,17 @@
 [
   {
-    "word": "a",
-    "meaning_th": "หนึ่ง / คำนำหน้านาม",
-    "meaning_en": "used before singular nouns",
-    "pronounce_th": "อะ",
-    "ipa": "/ə/",
-    "part_of_speech": "article",
+    "word": "a, an",
+    "meaning_th": "หนึ่ง (คำนำหน้านามนับได้เอกพจน์ที่ไม่ชี้เฉพาะ)",
+    "meaning_en": "used before countable singular nouns",
+    "pronounce_th": "อะ / แอน",
+    "ipa": "/ə/, /æn/",
+    "part_of_speech": "indefinite article",
     "cefr": "A1",
     "examples": [
-      "This is an example using 'a'."
+      "I saw an elephant at the zoo."
     ],
-    "synonyms": [
-      "general"
-    ],
-    "tags": [
-      "A1",
-      "article"
-    ]
+    "synonyms": ["one"],
+    "tags": ["grammar", "basic", "noun-marker"]
   },
   {
     "word": "about",
@@ -27,1876 +22,4963 @@
     "part_of_speech": "preposition",
     "cefr": "A1",
     "examples": [
-      "This is an example using 'about'."
+      "This book is about animals."
     ],
-    "synonyms": [
-      "general"
-    ],
-    "tags": [
-      "A1",
-      "preposition"
-    ]
+    "synonyms": ["regarding", "concerning"],
+    "tags": ["conversation", "basic"]
   },
   {
     "word": "above",
-    "meaning_th": "ด้านบน",
-    "meaning_en": "in a higher position",
-    "pronounce_th": "อะบัฟ",
+    "meaning_th": "ข้างบน, เหนือ",
+    "meaning_en": "in or to a higher place than something else",
+    "pronounce_th": "อะบัฝ",
     "ipa": "/əˈbʌv/",
     "part_of_speech": "preposition",
     "cefr": "A1",
     "examples": [
-      "This is an example using 'above'."
+      "The birds are flying above the clouds."
     ],
-    "synonyms": [
-      "general"
-    ],
-    "tags": [
-      "A1",
-      "preposition"
-    ]
+    "synonyms": ["over", "higher than"],
+    "tags": ["location", "direction", "basic"]
   },
   {
     "word": "across",
-    "meaning_th": "ข้าม",
-    "meaning_en": "from one side to another",
+    "meaning_th": "ข้าม, จากอีกฝั่งหนึ่งไปยังอีกฝั่งหนึ่ง",
+    "meaning_en": "from one side to the other side",
     "pronounce_th": "อะครอส",
     "ipa": "/əˈkrɒs/",
     "part_of_speech": "preposition",
     "cefr": "A1",
     "examples": [
-      "This is an example using 'across'."
+      "He walked across the street."
     ],
-    "synonyms": [
-      "general"
-    ],
-    "tags": [
-      "A1",
-      "preposition"
-    ]
+    "synonyms": ["through", "over"],
+    "tags": ["movement", "location"]
   },
   {
     "word": "action",
-    "meaning_th": "ความหมายของ action",
-    "meaning_en": "basic meaning of action",
-    "pronounce_th": "action",
-    "ipa": "/action/",
+    "meaning_th": "การกระทำ, การปฏิบัติ, ฉากแอคชั่น",
+    "meaning_en": "the process of doing something",
+    "pronounce_th": "แอคเชิน",
+    "ipa": "/ˈækʃn/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'action' in a sentence."
+      "Deeds are better than words, so let's take action."
     ],
-    "synonyms": [
-      "action-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["act", "movement", "deed"],
+    "tags": ["general", "activity"]
   },
   {
     "word": "activity",
-    "meaning_th": "ความหมายของ activity",
-    "meaning_en": "basic meaning of activity",
-    "pronounce_th": "activity",
-    "ipa": "/activity/",
+    "meaning_th": "กิจกรรม",
+    "meaning_en": "a thing that a person or group does or has done",
+    "pronounce_th": "แอคทิฝิที",
+    "ipa": "/ækˈtɪvəti/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'activity' in a sentence."
+      "The school offers many after-school activities."
     ],
-    "synonyms": [
-      "activity-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["event", "hobby", "exercise"],
+    "tags": ["lifestyle", "school", "general"]
   },
   {
     "word": "actor",
-    "meaning_th": "ความหมายของ actor",
-    "meaning_en": "basic meaning of actor",
-    "pronounce_th": "actor",
-    "ipa": "/actor/",
+    "meaning_th": "นักแสดงชาย",
+    "meaning_en": "a person who performs in a play or movie",
+    "pronounce_th": "แอคเทอะ",
+    "ipa": "/ˈæktə(r)/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'actor' in a sentence."
+      "He wants to be a famous actor."
     ],
-    "synonyms": [
-      "actor-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["performer", "player"],
+    "tags": ["jobs", "entertainment", "media"]
   },
   {
     "word": "actress",
-    "meaning_th": "ความหมายของ actress",
-    "meaning_en": "basic meaning of actress",
-    "pronounce_th": "actress",
-    "ipa": "/actress/",
+    "meaning_th": "นักแสดงหญิง",
+    "meaning_en": "a woman who performs in a play or movie",
+    "pronounce_th": "แอคทริส",
+    "ipa": "/ˈæktrəs/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'actress' in a sentence."
+      "She is a very talented actress."
     ],
-    "synonyms": [
-      "actress-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["performer"],
+    "tags": ["jobs", "entertainment", "media"]
   },
   {
     "word": "add",
-    "meaning_th": "ความหมายของ add",
-    "meaning_en": "basic meaning of add",
-    "pronounce_th": "add",
-    "ipa": "/add/",
+    "meaning_th": "เพิ่ม, บวก",
+    "meaning_en": "join something to something else so as to increase the size, number, or amount",
+    "pronounce_th": "แอด",
+    "ipa": "/æd/",
     "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'add' in a sentence."
+      "Please add some sugar to my coffee."
     ],
-    "synonyms": [
-      "add-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["include", "attach", "plus"],
+    "tags": ["math", "cooking", "action"]
   },
   {
     "word": "address",
-    "meaning_th": "ความหมายของ address",
-    "meaning_en": "basic meaning of address",
-    "pronounce_th": "address",
-    "ipa": "/address/",
+    "meaning_th": "ที่อยู่",
+    "meaning_en": "the particulars of the place where someone lives or an organization is situated",
+    "pronounce_th": "อะเดรส",
+    "ipa": "/əˈdres/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'address' in a sentence."
+      "Please write your name and address here."
     ],
-    "synonyms": [
-      "address-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["location", "residence"],
+    "tags": ["personal-info", "communication"]
   },
   {
     "word": "adult",
-    "meaning_th": "ความหมายของ adult",
-    "meaning_en": "basic meaning of adult",
-    "pronounce_th": "adult",
-    "ipa": "/adult/",
+    "meaning_th": "ผู้ใหญ่",
+    "meaning_en": "a person who is fully grown or developed",
+    "pronounce_th": "อะดัลท์",
+    "ipa": "/ˈædʌlt/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'adult' in a sentence."
+      "Children must be accompanied by an adult."
     ],
-    "synonyms": [
-      "adult-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["grown-up"],
+    "tags": ["people", "family"]
   },
   {
     "word": "advice",
-    "meaning_th": "ความหมายของ advice",
-    "meaning_en": "basic meaning of advice",
-    "pronounce_th": "advice",
-    "ipa": "/advice/",
+    "meaning_th": "คำแนะนำ",
+    "meaning_en": "guidance or recommendations offered with regard to prudent future action",
+    "pronounce_th": "อะดไฝซฺ",
+    "ipa": "/ədˈvaɪs/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'advice' in a sentence."
+      "Can you give me some advice about buying a car?"
     ],
-    "synonyms": [
-      "advice-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["guidance", "suggestion", "tip"],
+    "tags": ["communication", "conversation"]
   },
   {
     "word": "afraid",
-    "meaning_th": "ความหมายของ afraid",
-    "meaning_en": "basic meaning of afraid",
-    "pronounce_th": "afraid",
-    "ipa": "/afraid/",
-    "part_of_speech": "noun",
+    "meaning_th": "กลัว",
+    "meaning_en": "feeling fear or anxiety; frightened",
+    "pronounce_th": "อะเฟรด",
+    "ipa": "/əˈfreɪd/",
+    "part_of_speech": "adjective",
     "cefr": "A1",
     "examples": [
-      "I use the word 'afraid' in a sentence."
+      "Don't be afraid of the dog; it's friendly."
     ],
-    "synonyms": [
-      "afraid-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["scared", "frightened", "fearful"],
+    "tags": ["feelings", "emotions"]
   },
   {
     "word": "after",
-    "meaning_th": "ความหมายของ after",
-    "meaning_en": "basic meaning of after",
-    "pronounce_th": "after",
-    "ipa": "/after/",
-    "part_of_speech": "noun",
+    "meaning_th": "หลังจาก, หลัง",
+    "meaning_en": "during the period of time following an event",
+    "pronounce_th": "อาฟเทอะ",
+    "ipa": "/ˈɑːftə(r)/",
+    "part_of_speech": "preposition",
     "cefr": "A1",
     "examples": [
-      "I use the word 'after' in a sentence."
+      "We went for a walk after dinner."
     ],
-    "synonyms": [
-      "after-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["following", "behind"],
+    "tags": ["time", "sequence"]
   },
   {
     "word": "afternoon",
-    "meaning_th": "ความหมายของ afternoon",
-    "meaning_en": "basic meaning of afternoon",
-    "pronounce_th": "afternoon",
-    "ipa": "/afternoon/",
+    "meaning_th": "ตอนบ่าย, ช่วงบ่าย",
+    "meaning_en": "the time from noon or lunchtime until evening",
+    "pronounce_th": "อาฟเทอะนูน",
+    "ipa": "/ˌɑːftəˈnuːn/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'afternoon' in a sentence."
+      "I will see you tomorrow afternoon."
     ],
-    "synonyms": [
-      "afternoon-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["midday", "post-noon"],
+    "tags": ["time", "daily-life"]
   },
   {
     "word": "again",
-    "meaning_th": "ความหมายของ again",
-    "meaning_en": "basic meaning of again",
-    "pronounce_th": "again",
-    "ipa": "/again/",
-    "part_of_speech": "noun",
+    "meaning_th": "อีกครั้ง, อีกที",
+    "meaning_en": "another time; once more",
+    "pronounce_th": "อะเกน",
+    "ipa": "/əˈɡen/",
+    "part_of_speech": "adverb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'again' in a sentence."
+      "Could you say that again, please?"
     ],
-    "synonyms": [
-      "again-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["once more", "repeatedly"],
+    "tags": ["time", "frequency"]
   },
   {
     "word": "age",
-    "meaning_th": "ความหมายของ age",
-    "meaning_en": "basic meaning of age",
-    "pronounce_th": "age",
-    "ipa": "/age/",
+    "meaning_th": "อายุ, ยุคสมัย",
+    "meaning_en": "the length of time that a person or thing has existed",
+    "pronounce_th": "เอจญ์",
+    "ipa": "/eɪdʒ/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'age' in a sentence."
+      "He started school at the age of five."
     ],
-    "synonyms": [
-      "age-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["lifetime", "era"],
+    "tags": ["personal-info", "time"]
   },
   {
     "word": "ago",
-    "meaning_th": "ความหมายของ ago",
-    "meaning_en": "basic meaning of ago",
-    "pronounce_th": "ago",
-    "ipa": "/ago/",
-    "part_of_speech": "noun",
+    "meaning_th": "มาแล้ว, ล่วงมาแล้ว (ใช้บอกเวลาในอดีต)",
+    "meaning_en": "before the present; in the past",
+    "pronounce_th": "อะโก",
+    "ipa": "/əˈɡəʊ/",
+    "part_of_speech": "adverb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'ago' in a sentence."
+      "I finished my homework ten minutes ago."
     ],
-    "synonyms": [
-      "ago-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["previously", "back"],
+    "tags": ["time", "past"]
   },
   {
     "word": "agree",
-    "meaning_th": "ความหมายของ agree",
-    "meaning_en": "basic meaning of agree",
-    "pronounce_th": "agree",
-    "ipa": "/agree/",
+    "meaning_th": "เห็นด้วย, ตกลง",
+    "meaning_en": "have the same opinion about something",
+    "pronounce_th": "อะกรี",
+    "ipa": "/əˈɡriː/",
     "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'agree' in a sentence."
+      "I agree with your opinion."
     ],
-    "synonyms": [
-      "agree-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["concur", "accept"],
+    "tags": ["conversation", "opinion"]
   },
   {
     "word": "air",
-    "meaning_th": "ความหมายของ air",
-    "meaning_en": "basic meaning of air",
-    "pronounce_th": "air",
-    "ipa": "/air/",
+    "meaning_th": "อากาศ",
+    "meaning_en": "the invisible gaseous substance surrounding the earth",
+    "pronounce_th": "แอร์",
+    "ipa": "/eə(r)/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'air' in a sentence."
+      "Let's go outside and get some fresh air."
     ],
-    "synonyms": [
-      "air-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["atmosphere", "oxygen"],
+    "tags": ["nature", "environment"]
   },
   {
     "word": "airport",
-    "meaning_th": "ความหมายของ airport",
-    "meaning_en": "basic meaning of airport",
-    "pronounce_th": "airport",
-    "ipa": "/airport/",
+    "meaning_th": "สนามบิน",
+    "meaning_en": "a complex of runways and buildings for the take-off, landing, and maintenance of civil aircraft",
+    "pronounce_th": "แอร์พอร์ต",
+    "ipa": "/ˈeəpɔːt/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'airport' in a sentence."
+      "We arrived at the airport two hours before our flight."
     ],
-    "synonyms": [
-      "airport-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["airfield", "airstrip"],
+    "tags": ["travel", "transportation", "places"]
   },
   {
     "word": "all",
-    "meaning_th": "ความหมายของ all",
-    "meaning_en": "basic meaning of all",
-    "pronounce_th": "all",
-    "ipa": "/all/",
-    "part_of_speech": "noun",
+    "meaning_th": "ทั้งหมด, ทุกคน, ทุกสิ่ง",
+    "meaning_en": "used to refer to the whole quantity or extent of a particular group or thing",
+    "pronounce_th": "ออล",
+    "ipa": "/ɔːl/",
+    "part_of_speech": "determiner, pronoun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'all' in a sentence."
+      "All the students passed the English exam."
     ],
-    "synonyms": [
-      "all-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["every", "whole", "entire"],
+    "tags": ["quantity", "grammar", "basic"]
   },
   {
     "word": "also",
-    "meaning_th": "ความหมายของ also",
-    "meaning_en": "basic meaning of also",
-    "pronounce_th": "also",
-    "ipa": "/also/",
-    "part_of_speech": "noun",
+    "meaning_th": "ด้วย, เช่นเดียวกัน, อีกด้วย",
+    "meaning_en": "in addition; too",
+    "pronounce_th": "ออลโซ",
+    "ipa": "/ˈɔːlsəʊ/",
+    "part_of_speech": "adverb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'also' in a sentence."
+      "She speaks French and she also speaks Spanish."
     ],
-    "synonyms": [
-      "also-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["too", "as well", "additionally"],
+    "tags": ["connection", "grammar"]
   },
   {
     "word": "always",
-    "meaning_th": "ความหมายของ always",
-    "meaning_en": "basic meaning of always",
-    "pronounce_th": "always",
-    "ipa": "/always/",
-    "part_of_speech": "noun",
+    "meaning_th": "เสมอ, เป็นประจำ, ตลอดเวลา",
+    "meaning_en": "at all times; on all occasions",
+    "pronounce_th": "ออลเวซฺ",
+    "ipa": "/ˈɔːlweɪz/",
+    "part_of_speech": "adverb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'always' in a sentence."
+      "I always drink milk before going to bed."
     ],
-    "synonyms": [
-      "always-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["constantly", "forever"],
+    "tags": ["frequency", "time", "daily-life"]
   },
   {
     "word": "amazing",
-    "meaning_th": "ความหมายของ amazing",
-    "meaning_en": "basic meaning of amazing",
-    "pronounce_th": "amazing",
-    "ipa": "/amazing/",
-    "part_of_speech": "verb",
+    "meaning_th": "น่าทึ่ง, มหัศจญ์, ประหลาดใจมาก",
+    "meaning_en": "causing great surprise or wonder",
+    "pronounce_th": "อะเมซิง",
+    "ipa": "/əˈmeɪzɪŋ/",
+    "part_of_speech": "adjective",
     "cefr": "A1",
     "examples": [
-      "I use the word 'amazing' in a sentence."
+      "The view from the top of the mountain is amazing."
     ],
-    "synonyms": [
-      "amazing-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["wonderful", "incredible", "astonishing"],
+    "tags": ["description", "feelings"]
   },
   {
     "word": "and",
-    "meaning_th": "ความหมายของ and",
-    "meaning_en": "basic meaning of and",
-    "pronounce_th": "and",
-    "ipa": "/and/",
-    "part_of_speech": "noun",
+    "meaning_th": "และ",
+    "meaning_en": "used to connect words of the same part of speech, clauses, or sentences",
+    "pronounce_th": "แอนด์",
+    "ipa": "/ænd/",
+    "part_of_speech": "conjunction",
     "cefr": "A1",
     "examples": [
-      "I use the word 'and' in a sentence."
+      "I bought an apple and a banana."
     ],
-    "synonyms": [
-      "and-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["plus", "along with"],
+    "tags": ["connection", "grammar", "basic"]
   },
   {
     "word": "angry",
-    "meaning_th": "ความหมายของ angry",
-    "meaning_en": "basic meaning of angry",
-    "pronounce_th": "angry",
-    "ipa": "/angry/",
+    "meaning_th": "โกรธ",
+    "meaning_en": "feeling or showing strong annoyance, displeasure, or hostility",
+    "pronounce_th": "แองกรี",
+    "ipa": "/ˈæŋɡri/",
     "part_of_speech": "adjective",
     "cefr": "A1",
     "examples": [
-      "I use the word 'angry' in a sentence."
+      "He was angry with me for being late."
     ],
-    "synonyms": [
-      "angry-similar"
-    ],
-    "tags": [
-      "A1",
-      "adjective"
-    ]
+    "synonyms": ["mad", "furious", "annoyed"],
+    "tags": ["feelings", "emotions"]
   },
   {
     "word": "animal",
-    "meaning_th": "ความหมายของ animal",
-    "meaning_en": "basic meaning of animal",
-    "pronounce_th": "animal",
-    "ipa": "/animal/",
+    "meaning_th": "สัตว์",
+    "meaning_en": "a living organism that feeds on organic matter",
+    "pronounce_th": "แอนิมัล",
+    "ipa": "/ˈænɪml/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'animal' in a sentence."
+      "A lion is a wild animal."
     ],
-    "synonyms": [
-      "animal-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["creature", "beast"],
+    "tags": ["nature", "animals"]
   },
   {
     "word": "another",
-    "meaning_th": "ความหมายของ another",
-    "meaning_en": "basic meaning of another",
-    "pronounce_th": "another",
-    "ipa": "/another/",
-    "part_of_speech": "noun",
+    "meaning_th": "อีกหนึ่ง, อื่นอีก",
+    "meaning_en": "used to refer to an additional person or thing of the same type",
+    "pronounce_th": "อะนัธเธอะ",
+    "ipa": "/əˈnʌðə(r)/",
+    "part_of_speech": "determiner, pronoun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'another' in a sentence."
+      "Would you like another cup of tea?"
     ],
-    "synonyms": [
-      "another-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["additional", "one more"],
+    "tags": ["quantity", "grammar"]
   },
   {
     "word": "answer",
-    "meaning_th": "ความหมายของ answer",
-    "meaning_en": "basic meaning of answer",
-    "pronounce_th": "answer",
-    "ipa": "/answer/",
-    "part_of_speech": "noun",
+    "meaning_th": "คำตอบ, ตอบ",
+    "meaning_en": "a thing said, written, or done to deal with or as a reaction to a question or situation",
+    "pronounce_th": "อานเซอะ",
+    "ipa": "/ˈɑːnsə(r)/",
+    "part_of_speech": "noun, verb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'answer' in a sentence."
+      "Please answer the question.",
+      "I don't know the answer."
     ],
-    "synonyms": [
-      "answer-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["reply", "respond"],
+    "tags": ["communication", "school"]
   },
   {
     "word": "any",
-    "meaning_th": "ความหมายของ any",
-    "meaning_en": "basic meaning of any",
-    "pronounce_th": "any",
-    "ipa": "/any/",
-    "part_of_speech": "noun",
+    "meaning_th": "บ้างไหม, เลย (ใช้ในประโยคคำถามและปฏิเสธ)",
+    "meaning_en": "used to refer to one or some of a thing or number of things, no matter how much or many",
+    "pronounce_th": "เอนี",
+    "ipa": "/ˈeni/",
+    "part_of_speech": "determiner, pronoun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'any' in a sentence."
+      "Do you have any questions?",
+      "I don't have any money left."
     ],
-    "synonyms": [
-      "any-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "anyone",
-    "meaning_th": "ความหมายของ anyone",
-    "meaning_en": "basic meaning of anyone",
-    "pronounce_th": "anyone",
-    "ipa": "/anyone/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'anyone' in a sentence."
-    ],
-    "synonyms": [
-      "anyone-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["some"],
+    "tags": ["quantity", "grammar"]
   },
   {
     "word": "anything",
-    "meaning_th": "ความหมายของ anything",
-    "meaning_en": "basic meaning of anything",
-    "pronounce_th": "anything",
-    "ipa": "/anything/",
-    "part_of_speech": "verb",
+    "meaning_th": "สิ่งใดๆ, อะไรก็ตาม",
+    "meaning_en": "used to refer to a thing, no matter what",
+    "pronounce_th": "เอนีธิง",
+    "ipa": "/ˈeniθɪŋ/",
+    "part_of_speech": "pronoun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'anything' in a sentence."
+      "Is there anything in the box?",
+      "I didn't eat anything this morning."
     ],
-    "synonyms": [
-      "anything-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["whatever", "something"],
+    "tags": ["grammar", "general"]
   },
   {
     "word": "apartment",
-    "meaning_th": "ความหมายของ apartment",
-    "meaning_en": "basic meaning of apartment",
-    "pronounce_th": "apartment",
-    "ipa": "/apartment/",
+    "meaning_th": "อพาร์ตเมนต์, ห้องชุด",
+    "meaning_en": "a suite of rooms forming one residence, typically in a building containing more than one",
+    "pronounce_th": "อะพาร์ตเมินท์",
+    "ipa": "/əˈpɑːtmənt/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'apartment' in a sentence."
+      "They live in a small apartment in Bangkok."
     ],
-    "synonyms": [
-      "apartment-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["flat", "condo", "suite"],
+    "tags": ["home", "places", "living"]
   },
   {
     "word": "apple",
-    "meaning_th": "ความหมายของ apple",
-    "meaning_en": "basic meaning of apple",
-    "pronounce_th": "apple",
-    "ipa": "/apple/",
+    "meaning_th": "แอปเปิ้ล",
+    "meaning_en": "the round fruit of a tree of the rose family, which typically has thin green or red skin",
+    "pronounce_th": "แอปเปิล",
+    "ipa": "/ˈæpl/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'apple' in a sentence."
+      "She ate a red apple for breakfast."
     ],
-    "synonyms": [
-      "apple-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": [],
+    "tags": ["food", "fruits"]
   },
   {
     "word": "April",
-    "meaning_th": "ความหมายของ April",
-    "meaning_en": "basic meaning of April",
-    "pronounce_th": "April",
-    "ipa": "/April/",
+    "meaning_th": "เมษายน",
+    "meaning_en": "the fourth month of the year, in the northern hemisphere usually considered the second month of spring",
+    "pronounce_th": "เอพริล",
+    "ipa": "/ˈeɪprəl/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'April' in a sentence."
+      "Songkran festival is in April."
     ],
-    "synonyms": [
-      "April-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": [],
+    "tags": ["time", "months"]
   },
   {
     "word": "area",
-    "meaning_th": "ความหมายของ area",
-    "meaning_en": "basic meaning of area",
-    "pronounce_th": "area",
-    "ipa": "/area/",
+    "meaning_th": "พื้นที่, บริเวณ",
+    "meaning_en": "a region or part of a town, a country, or the world",
+    "pronounce_th": "แอเรีย",
+    "ipa": "/ˈeəriə/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'area' in a sentence."
+      "There is a children's play area in the park."
     ],
-    "synonyms": [
-      "area-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["region", "zone", "space"],
+    "tags": ["location", "general"]
   },
   {
     "word": "arm",
-    "meaning_th": "ความหมายของ arm",
-    "meaning_en": "basic meaning of arm",
-    "pronounce_th": "arm",
-    "ipa": "/arm/",
+    "meaning_th": "แขน",
+    "meaning_en": "each of the two upper limbs of the human body from the shoulder to the hand",
+    "pronounce_th": "อาร์ม",
+    "ipa": "/ɑːm/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'arm' in a sentence."
+      "He broke his left arm during the football match."
     ],
-    "synonyms": [
-      "arm-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["limb"],
+    "tags": ["body", "health"]
   },
   {
     "word": "around",
-    "meaning_th": "ความหมายของ around",
-    "meaning_en": "basic meaning of around",
-    "pronounce_th": "around",
-    "ipa": "/around/",
-    "part_of_speech": "noun",
+    "meaning_th": "รอบๆ, ประมาณ",
+    "meaning_en": "located or moving on all sides of; approximately",
+    "pronounce_th": "อะราวนด์",
+    "ipa": "/əˈraʊnd/",
+    "part_of_speech": "preposition, adverb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'around' in a sentence."
+      "The earth moves around the sun.",
+      "I will meet you at around 5 o'clock."
     ],
-    "synonyms": [
-      "around-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["round", "about", "approximately"],
+    "tags": ["location", "time", "direction"]
   },
   {
     "word": "arrive",
-    "meaning_th": "ความหมายของ arrive",
-    "meaning_en": "basic meaning of arrive",
-    "pronounce_th": "arrive",
-    "ipa": "/arrive/",
+    "meaning_th": "มาถึง, ถึง",
+    "meaning_en": "reach a place at the end of a journey or a stage in a journey",
+    "pronounce_th": "อะไรฝ",
+    "ipa": "/əˈraɪv/",
     "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'arrive' in a sentence."
+      "The train will arrive at the station soon."
     ],
-    "synonyms": [
-      "arrive-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["reach", "show up", "come"],
+    "tags": ["travel", "movement", "action"]
   },
   {
     "word": "art",
-    "meaning_th": "ความหมายของ art",
-    "meaning_en": "basic meaning of art",
-    "pronounce_th": "art",
-    "ipa": "/art/",
+    "meaning_th": "ศิลปะ",
+    "meaning_en": "the expression or application of human creative skill and imagination",
+    "pronounce_th": "อาร์ต",
+    "ipa": "/ɑːt/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'art' in a sentence."
+      "She loves painting and art history."
     ],
-    "synonyms": [
-      "art-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["artwork", "craft"],
+    "tags": ["school", "hobby", "entertainment"]
   },
   {
     "word": "article",
-    "meaning_th": "ความหมายของ article",
-    "meaning_en": "basic meaning of article",
-    "pronounce_th": "article",
-    "ipa": "/article/",
+    "meaning_th": "บทความ",
+    "meaning_en": "a piece of writing included with others in a newspaper, magazine, or other publication",
+    "pronounce_th": "อาร์ทิเคิล",
+    "ipa": "/ˈɑːtɪkl/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'article' in a sentence."
+      "I read an interesting article about technology today."
     ],
-    "synonyms": [
-      "article-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["piece", "story", "report"],
+    "tags": ["media", "reading", "school"]
   },
   {
     "word": "artist",
-    "meaning_th": "ความหมายของ artist",
-    "meaning_en": "basic meaning of artist",
-    "pronounce_th": "artist",
-    "ipa": "/artist/",
+    "meaning_th": "ศิลปิน",
+    "meaning_en": "a person who creates paintings or drawings as a profession or hobby",
+    "pronounce_th": "อาร์ทิสต์",
+    "ipa": "/ˈɑːtɪst/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'artist' in a sentence."
+      "Van Gogh is a world-famous artist."
     ],
-    "synonyms": [
-      "artist-similar"
+    "synonyms": ["painter", "creator"],
+    "tags": ["jobs", "entertainment", "art"]
+  },
+  {
+    "word": "as",
+    "meaning_th": "เช่นเดียวกับ, ในขณะที่, เพราะว่า, ในฐานะ",
+    "meaning_en": "used to refer to the function or character that someone or something has; because; while",
+    "pronounce_th": "แอซฺ",
+    "ipa": "/æz/",
+    "part_of_speech": "preposition, conjunction",
+    "cefr": "A1",
+    "examples": [
+      "She works as a teacher.",
+      "As it was raining, we stayed indoors."
     ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["like", "because", "while"],
+    "tags": ["grammar", "connection"]
   },
   {
     "word": "ask",
-    "meaning_th": "ความหมายของ ask",
-    "meaning_en": "basic meaning of ask",
-    "pronounce_th": "ask",
-    "ipa": "/ask/",
+    "meaning_th": "ถาม, ขอร้อง",
+    "meaning_en": "say something in order to obtain information or a reply",
+    "pronounce_th": "อาสคฺ",
+    "ipa": "/ɑːsk/",
     "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'ask' in a sentence."
+      "Can I ask you a question?"
     ],
-    "synonyms": [
-      "ask-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["inquire", "request", "question"],
+    "tags": ["communication", "conversation"]
   },
   {
     "word": "at",
-    "meaning_th": "ความหมายของ at",
-    "meaning_en": "basic meaning of at",
-    "pronounce_th": "at",
-    "ipa": "/at/",
-    "part_of_speech": "noun",
+    "meaning_th": "ที่ (ระบุเวลาหรือสถานที่)",
+    "meaning_en": "expressing location or arrival in a particular place or position; expressing the time when an event takes place",
+    "pronounce_th": "แอต",
+    "ipa": "/æt/",
+    "part_of_speech": "preposition",
     "cefr": "A1",
     "examples": [
-      "I use the word 'at' in a sentence."
+      "I am at the office.",
+      "The meeting starts at 9 o'clock."
     ],
-    "synonyms": [
-      "at-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": [],
+    "tags": ["location", "time", "grammar"]
   },
   {
     "word": "August",
-    "meaning_th": "ความหมายของ August",
-    "meaning_en": "basic meaning of August",
-    "pronounce_th": "August",
-    "ipa": "/August/",
+    "meaning_th": "สิงหาคม",
+    "meaning_en": "the eighth month of the year",
+    "pronounce_th": "ออกัสต์",
+    "ipa": "/ɔːˈɡʌst/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'August' in a sentence."
+      "My school starts in August."
     ],
-    "synonyms": [
-      "August-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "aunt",
-    "meaning_th": "ความหมายของ aunt",
-    "meaning_en": "basic meaning of aunt",
-    "pronounce_th": "aunt",
-    "ipa": "/aunt/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'aunt' in a sentence."
-    ],
-    "synonyms": [
-      "aunt-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": [],
+    "tags": ["time", "months"]
   },
   {
     "word": "autumn",
-    "meaning_th": "ความหมายของ autumn",
-    "meaning_en": "basic meaning of autumn",
-    "pronounce_th": "autumn",
-    "ipa": "/autumn/",
+    "meaning_th": "ฤดูใบไม้ร่วง",
+    "meaning_en": "the season after summer and before winter, in which leaves fall from trees",
+    "pronounce_th": "ออทัม",
+    "ipa": "/ˈɔːtəm/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'autumn' in a sentence."
+      "The leaves turn yellow and red in autumn."
     ],
-    "synonyms": [
-      "autumn-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["fall"],
+    "tags": ["nature", "seasons", "weather"]
   },
   {
     "word": "away",
-    "meaning_th": "ความหมายของ away",
-    "meaning_en": "basic meaning of away",
-    "pronounce_th": "away",
-    "ipa": "/away/",
-    "part_of_speech": "noun",
+    "meaning_th": "ไปที่อื่น, ออกไป, ห่างออกไป",
+    "meaning_en": "to or at a distance from a particular place, person, or thing",
+    "pronounce_th": "อะเวย์",
+    "ipa": "/əˈweɪ/",
+    "part_of_speech": "adverb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'away' in a sentence."
+      "Go away! I am busy right now.",
+      "The station is two miles away."
     ],
-    "synonyms": [
-      "away-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["distant", "off", "elsewhere"],
+    "tags": ["direction", "distance", "movement"]
   },
   {
     "word": "baby",
-    "meaning_th": "ความหมายของ baby",
-    "meaning_en": "basic meaning of baby",
-    "pronounce_th": "baby",
-    "ipa": "/baby/",
+    "meaning_th": "ทารก, เด็กอ่อน",
+    "meaning_en": "a very young child or animal",
+    "pronounce_th": "เบบี",
+    "ipa": "/ˈbeɪbi/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'baby' in a sentence."
+      "The baby is sleeping soundly in the crib."
     ],
-    "synonyms": [
-      "baby-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["infant", "newborn"],
+    "tags": ["people", "family"]
   },
   {
     "word": "back",
-    "meaning_th": "ความหมายของ back",
-    "meaning_en": "basic meaning of back",
-    "pronounce_th": "back",
-    "ipa": "/back/",
-    "part_of_speech": "noun",
+    "meaning_th": "หลัง, ด้านหลัง, กลับคืน",
+    "meaning_en": "the rear surface of the human body from the shoulders to the hips; return to an earlier situation or position",
+    "pronounce_th": "แบค",
+    "ipa": "/bæk/",
+    "part_of_speech": "noun, adverb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'back' in a sentence."
+      "He hurt his back while lifting the box.",
+      "When will you come back?"
     ],
-    "synonyms": [
-      "back-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["rear", "return"],
+    "tags": ["body", "location", "direction"]
   },
   {
     "word": "bad",
-    "meaning_th": "ความหมายของ bad",
-    "meaning_en": "basic meaning of bad",
-    "pronounce_th": "bad",
-    "ipa": "/bad/",
+    "meaning_th": "เลว, ไม่ดี, แย่",
+    "meaning_en": "of poor quality; not good",
+    "pronounce_th": "แบลด",
+    "ipa": "/bæd/",
     "part_of_speech": "adjective",
     "cefr": "A1",
     "examples": [
-      "I use the word 'bad' in a sentence."
+      "Smoking is a bad habit."
     ],
-    "synonyms": [
-      "bad-similar"
-    ],
-    "tags": [
-      "A1",
-      "adjective"
-    ]
+    "synonyms": ["poor", "evil", "terrible"],
+    "tags": ["description", "general"]
   },
   {
     "word": "bag",
-    "meaning_th": "ความหมายของ bag",
-    "meaning_en": "basic meaning of bag",
-    "pronounce_th": "bag",
-    "ipa": "/bag/",
+    "meaning_th": "กระเป๋า, ถุง",
+    "meaning_en": "a flexible container with an opening at the top, used for carrying things",
+    "pronounce_th": "แบก",
+    "ipa": "/bæɡ/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'bag' in a sentence."
+      "Put your books inside your bag."
     ],
-    "synonyms": [
-      "bag-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["sack", "pouch", "backpack"],
+    "tags": ["objects", "travel", "clothing"]
   },
   {
     "word": "ball",
-    "meaning_th": "ความหมายของ ball",
-    "meaning_en": "basic meaning of ball",
-    "pronounce_th": "ball",
-    "ipa": "/ball/",
+    "meaning_th": "ลูกบอล, ลูกกลมๆ",
+    "meaning_en": "a solid or hollow spherical or egg-shaped object used in a game",
+    "pronounce_th": "บอล",
+    "ipa": "/bɔːl/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'ball' in a sentence."
+      "The children are kicking a ball in the yard."
     ],
-    "synonyms": [
-      "ball-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["sphere", "globe"],
+    "tags": ["sports", "objects", "games"]
   },
   {
     "word": "banana",
-    "meaning_th": "ความหมายของ banana",
-    "meaning_en": "basic meaning of banana",
-    "pronounce_th": "banana",
-    "ipa": "/banana/",
+    "meaning_th": "กล้วย",
+    "meaning_en": "a long curved fruit which grows in clusters and has soft pulpy flesh and yellow skin when ripe",
+    "pronounce_th": "บะแนนะ",
+    "ipa": "/bəˈnɑːnə/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'banana' in a sentence."
+      "Monkeys love eating bananas."
     ],
-    "synonyms": [
-      "banana-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": [],
+    "tags": ["food", "fruits"]
   },
   {
     "word": "band",
-    "meaning_th": "ความหมายของ band",
-    "meaning_en": "basic meaning of band",
-    "pronounce_th": "band",
-    "ipa": "/band/",
+    "meaning_th": "วงดนตรี, แถบรัด",
+    "meaning_en": "a small group of musicians and vocalists who play music together",
+    "pronounce_th": "แบนด์",
+    "ipa": "/bænd/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'band' in a sentence."
+      "He plays guitar in a rock band."
     ],
-    "synonyms": [
-      "band-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["group", "orchestra"],
+    "tags": ["entertainment", "music"]
   },
   {
     "word": "bank",
-    "meaning_th": "ความหมายของ bank",
-    "meaning_en": "basic meaning of bank",
-    "pronounce_th": "bank",
-    "ipa": "/bank/",
+    "meaning_th": "ธนาคาร, ตลิ่ง (ฝั่งแม่น้ำ)",
+    "meaning_en": "a financial establishment that invests money deposited by customers",
+    "pronounce_th": "แบงคฺ",
+    "ipa": "/bæŋk/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'bank' in a sentence."
+      "I need to go to the bank to deposit some money."
     ],
-    "synonyms": [
-      "bank-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": [],
+    "tags": ["places", "money", "business"]
   },
   {
     "word": "bath",
-    "meaning_th": "ความหมายของ bath",
-    "meaning_en": "basic meaning of bath",
-    "pronounce_th": "bath",
-    "ipa": "/bath/",
+    "meaning_th": "การอาบน้ำ (แบบแช่อ่าง), อ่างอาบน้ำ",
+    "meaning_en": "an act of washing the body in a large container of water",
+    "pronounce_th": "บาท",
+    "ipa": "/bɑːθ/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'bath' in a sentence."
+      "I like to take a warm bath after a long work day."
     ],
-    "synonyms": [
-      "bath-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["shower", "tub"],
+    "tags": ["daily-life", "home", "health"]
   },
   {
     "word": "bathroom",
-    "meaning_th": "ความหมายของ bathroom",
-    "meaning_en": "basic meaning of bathroom",
-    "pronounce_th": "bathroom",
-    "ipa": "/bathroom/",
+    "meaning_th": "ห้องน้ำ",
+    "meaning_en": "a room containing a toilet and tub or shower",
+    "pronounce_th": "บาทรูม",
+    "ipa": "/ˈbɑːθruːm/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'bathroom' in a sentence."
+      "Excuse me, where is the bathroom?"
     ],
-    "synonyms": [
-      "bathroom-similar"
+    "synonyms": ["restroom", "toilet", "lavatory"],
+    "tags": ["home", "places", "daily-life"]
+  },
+  {
+    "word": "be",
+    "meaning_th": "เป็น, อยู่, คือ",
+    "meaning_en": "exist; occur; take place (used as an auxiliary verb or linking verb)",
+    "pronounce_th": "บี",
+    "ipa": "/biː/",
+    "part_of_speech": "verb, auxiliary verb",
+    "cefr": "A1",
+    "examples": [
+      "I want to be a doctor when I grow up.",
+      "She is a good student."
     ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["exist"],
+    "tags": ["grammar", "basic"]
   },
   {
     "word": "beach",
-    "meaning_th": "ความหมายของ beach",
-    "meaning_en": "basic meaning of beach",
-    "pronounce_th": "beach",
-    "ipa": "/beach/",
+    "meaning_th": "ชายหาด, ชายทะเล",
+    "meaning_en": "a pebbly or sandy shore, especially by the ocean or a lake",
+    "pronounce_th": "บีช",
+    "ipa": "/biːtʃ/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'beach' in a sentence."
+      "We built a sandcastle on the beach."
     ],
-    "synonyms": [
-      "beach-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["shore", "coast", "seaside"],
+    "tags": ["travel", "places", "nature"]
   },
   {
     "word": "beautiful",
-    "meaning_th": "ความหมายของ beautiful",
-    "meaning_en": "basic meaning of beautiful",
-    "pronounce_th": "beautiful",
-    "ipa": "/beautiful/",
+    "meaning_th": "สวย, งดงาม",
+    "meaning_en": "pleasing the senses or mind aesthetically",
+    "pronounce_th": "บิวทิฟุล",
+    "ipa": "/ˈbjuːtɪfl/",
     "part_of_speech": "adjective",
     "cefr": "A1",
     "examples": [
-      "I use the word 'beautiful' in a sentence."
+      "The flowers in the garden are very beautiful."
     ],
-    "synonyms": [
-      "beautiful-similar"
-    ],
-    "tags": [
-      "A1",
-      "adjective"
-    ]
+    "synonyms": ["pretty", "gorgeous", "lovely"],
+    "tags": ["description", "appearance"]
   },
   {
     "word": "because",
-    "meaning_th": "ความหมายของ because",
-    "meaning_en": "basic meaning of because",
-    "pronounce_th": "because",
-    "ipa": "/because/",
-    "part_of_speech": "noun",
+    "meaning_th": "เพราะว่า",
+    "meaning_en": "for the reason that; since",
+    "pronounce_th": "บิคอส",
+    "ipa": "/bɪˈkɒz/",
+    "part_of_speech": "conjunction",
     "cefr": "A1",
     "examples": [
-      "I use the word 'because' in a sentence."
+      "I stayed at home because it was raining."
     ],
-    "synonyms": [
-      "because-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["since", "as"],
+    "tags": ["grammar", "connection"]
   },
   {
     "word": "become",
-    "meaning_th": "ความหมายของ become",
-    "meaning_en": "basic meaning of become",
-    "pronounce_th": "become",
-    "ipa": "/become/",
+    "meaning_th": "กลายเป็น, เปลี่ยนเป็น",
+    "meaning_en": "begin to be; grow to be",
+    "pronounce_th": "บิคัม",
+    "ipa": "/bɪˈkʌm/",
     "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'become' in a sentence."
+      "He wants to become a doctor in the future."
     ],
-    "synonyms": [
-      "become-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["turn into", "grow"],
+    "tags": ["action", "general"]
   },
   {
     "word": "bed",
-    "meaning_th": "ความหมายของ bed",
-    "meaning_en": "basic meaning of bed",
-    "pronounce_th": "bed",
+    "meaning_th": "เตียง, เตียงนอน",
+    "meaning_en": "a piece of furniture for sleep or rest",
+    "pronounce_th": "เบด",
     "ipa": "/bed/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'bed' in a sentence."
+      "It's late, time to go to bed."
     ],
-    "synonyms": [
-      "bed-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["couch"],
+    "tags": ["home", "furniture", "objects"]
   },
   {
     "word": "bedroom",
-    "meaning_th": "ความหมายของ bedroom",
-    "meaning_en": "basic meaning of bedroom",
-    "pronounce_th": "bedroom",
-    "ipa": "/bedroom/",
+    "meaning_th": "ห้องนอน",
+    "meaning_en": "a room for sleeping in",
+    "pronounce_th": "เบดรูม",
+    "ipa": "/ˈbedruːm/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'bedroom' in a sentence."
+      "My bedroom has a big window."
     ],
-    "synonyms": [
-      "bedroom-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": [],
+    "tags": ["home", "places"]
   },
   {
     "word": "beer",
-    "meaning_th": "ความหมายของ beer",
-    "meaning_en": "basic meaning of beer",
-    "pronounce_th": "beer",
-    "ipa": "/beer/",
+    "meaning_th": "เบียร์",
+    "meaning_en": "an alcoholic drink made from yeast-fermented malt flavored with hops",
+    "pronounce_th": "เบียร์",
+    "ipa": "/bɪə(r)/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'beer' in a sentence."
+      "He drank a glass of cold beer."
     ],
-    "synonyms": [
-      "beer-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": [],
+    "tags": ["drinks"]
   },
   {
     "word": "before",
-    "meaning_th": "ความหมายของ before",
-    "meaning_en": "basic meaning of before",
-    "pronounce_th": "before",
-    "ipa": "/before/",
-    "part_of_speech": "noun",
+    "meaning_th": "ก่อน, ก่อนหน้า",
+    "meaning_en": "during the period of time preceding a particular event or time",
+    "pronounce_th": "บิฟอร์",
+    "ipa": "/bɪˈfɔː(r)/",
+    "part_of_speech": "preposition, conjunction, adverb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'before' in a sentence."
+      "Wash your hands before eating."
     ],
-    "synonyms": [
-      "before-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["prior to", "earlier"],
+    "tags": ["time", "sequence", "grammar"]
   },
   {
     "word": "begin",
-    "meaning_th": "ความหมายของ begin",
-    "meaning_en": "basic meaning of begin",
-    "pronounce_th": "begin",
-    "ipa": "/begin/",
+    "meaning_th": "เริ่ม, เริ่มต้น",
+    "meaning_en": "start; perform the first part of an action",
+    "pronounce_th": "บิกิน",
+    "ipa": "/bɪˈɡɪn/",
     "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'begin' in a sentence."
+      "The movie will begin at 8 p.m."
     ],
-    "synonyms": [
-      "begin-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["start", "commence"],
+    "tags": ["time", "action"]
   },
   {
     "word": "beginning",
-    "meaning_th": "ความหมายของ beginning",
-    "meaning_en": "basic meaning of beginning",
-    "pronounce_th": "beginning",
-    "ipa": "/beginning/",
-    "part_of_speech": "verb",
+    "meaning_th": "การเริ่มต้น, จุดเริ่มต้น",
+    "meaning_en": "the point in time or space at which something starts",
+    "pronounce_th": "บิกินนิง",
+    "ipa": "/bɪˈɡɪnɪŋ/",
+    "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'beginning' in a sentence."
+      "I missed the beginning of the story."
     ],
-    "synonyms": [
-      "beginning-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["start", "origin", "outset"],
+    "tags": ["time", "general"]
   },
   {
     "word": "behind",
-    "meaning_th": "ความหมายของ behind",
-    "meaning_en": "basic meaning of behind",
-    "pronounce_th": "behind",
-    "ipa": "/behind/",
-    "part_of_speech": "noun",
+    "meaning_th": "ข้างหลัง, ด้านหลัง",
+    "meaning_en": "at or to the far side of something; further back than",
+    "pronounce_th": "บิไฮนด์",
+    "ipa": "/bɪˈhaɪnd/",
+    "part_of_speech": "preposition, adverb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'behind' in a sentence."
+      "The cat is hiding behind the sofa."
     ],
-    "synonyms": [
-      "behind-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["back of", "rear of"],
+    "tags": ["location", "direction", "grammar"]
   },
   {
     "word": "believe",
-    "meaning_th": "ความหมายของ believe",
-    "meaning_en": "basic meaning of believe",
-    "pronounce_th": "believe",
-    "ipa": "/believe/",
+    "meaning_th": "เชื่อ, ศรัทธา",
+    "meaning_en": "accept something as true; feel sure of the truth of",
+    "pronounce_th": "บิหลีฝ",
+    "ipa": "/bɪˈliːv/",
     "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'believe' in a sentence."
+      "I believe that honesty is important."
     ],
-    "synonyms": [
-      "believe-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["trust", "accept"],
+    "tags": ["mind", "opinion", "conversation"]
   },
   {
     "word": "below",
-    "meaning_th": "ความหมายของ below",
-    "meaning_en": "basic meaning of below",
-    "pronounce_th": "below",
-    "ipa": "/below/",
-    "part_of_speech": "noun",
+    "meaning_th": "ข้างล่าง, ต่ำกว่า",
+    "meaning_en": "at a lower level or layer than",
+    "pronounce_th": "บิโลว์",
+    "ipa": "/bɪˈləʊ/",
+    "part_of_speech": "adverb, preposition",
     "cefr": "A1",
     "examples": [
-      "I use the word 'below' in a sentence."
+      "Please read the sentences below."
     ],
-    "synonyms": [
-      "below-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["under", "beneath", "lower"],
+    "tags": ["location", "direction", "grammar"]
   },
   {
     "word": "best",
-    "meaning_th": "ความหมายของ best",
-    "meaning_en": "basic meaning of best",
-    "pronounce_th": "best",
+    "meaning_th": "ดีที่สุด",
+    "meaning_en": "of the most excellent, effective, or desirable type or quality",
+    "pronounce_th": "เบสต์",
     "ipa": "/best/",
-    "part_of_speech": "noun",
+    "part_of_speech": "adjective",
     "cefr": "A1",
     "examples": [
-      "I use the word 'best' in a sentence."
+      "This is the best pizza I have ever eaten."
     ],
-    "synonyms": [
-      "best-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["finest", "top", "greatest"],
+    "tags": ["description", "comparison"]
   },
   {
     "word": "better",
-    "meaning_th": "ความหมายของ better",
-    "meaning_en": "basic meaning of better",
-    "pronounce_th": "better",
-    "ipa": "/better/",
-    "part_of_speech": "noun",
+    "meaning_th": "ดีกว่า",
+    "meaning_en": "more excellent or effective than something else",
+    "pronounce_th": "เบทเทอะ",
+    "ipa": "/ˈbetə(r)/",
+    "part_of_speech": "adjective",
     "cefr": "A1",
     "examples": [
-      "I use the word 'better' in a sentence."
+      "Your English is getting much better."
     ],
-    "synonyms": [
-      "better-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["superior", "improved"],
+    "tags": ["description", "comparison"]
   },
   {
     "word": "between",
-    "meaning_th": "ความหมายของ between",
-    "meaning_en": "basic meaning of between",
-    "pronounce_th": "between",
-    "ipa": "/between/",
-    "part_of_speech": "noun",
+    "meaning_th": "ระหว่าง",
+    "meaning_en": "in or into the space separating two objects or people",
+    "pronounce_th": "บิทวีน",
+    "ipa": "/bɪˈtwiːn/",
+    "part_of_speech": "preposition",
     "cefr": "A1",
     "examples": [
-      "I use the word 'between' in a sentence."
+      "The library is between the school and the bank."
     ],
-    "synonyms": [
-      "between-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["amidst", "amongst"],
+    "tags": ["location", "grammar"]
   },
   {
     "word": "bicycle",
-    "meaning_th": "ความหมายของ bicycle",
-    "meaning_en": "basic meaning of bicycle",
-    "pronounce_th": "bicycle",
-    "ipa": "/bicycle/",
+    "meaning_th": "จักรยาน",
+    "meaning_en": "a vehicle consisting of two wheels held in a frame one behind the other, propelled by pedals",
+    "pronounce_th": "ไบซิเคิล",
+    "ipa": "/ˈbaɪsɪkl/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'bicycle' in a sentence."
+      "He rides his bicycle to school every morning."
     ],
-    "synonyms": [
-      "bicycle-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["bike", "cycle"],
+    "tags": ["transportation", "vehicles", "sports"]
   },
   {
     "word": "big",
-    "meaning_th": "ความหมายของ big",
-    "meaning_en": "basic meaning of big",
-    "pronounce_th": "big",
-    "ipa": "/big/",
+    "meaning_th": "ใหญ่, โต",
+    "meaning_en": "of considerable size, extent, or intensity",
+    "pronounce_th": "บิก",
+    "ipa": "/bɪɡ/",
     "part_of_speech": "adjective",
     "cefr": "A1",
     "examples": [
-      "I use the word 'big' in a sentence."
+      "They live in a big house."
     ],
-    "synonyms": [
-      "big-similar"
-    ],
-    "tags": [
-      "A1",
-      "adjective"
-    ]
+    "synonyms": ["large", "huge", "giant"],
+    "tags": ["description", "size"]
   },
   {
     "word": "bike",
-    "meaning_th": "ความหมายของ bike",
-    "meaning_en": "basic meaning of bike",
-    "pronounce_th": "bike",
-    "ipa": "/bike/",
+    "meaning_th": "จักรยาน, มอเตอร์ไซค์",
+    "meaning_en": "a bicycle or motorcycle",
+    "pronounce_th": "ไบค์",
+    "ipa": "/baɪk/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'bike' in a sentence."
+      "Can I borrow your bike?"
     ],
-    "synonyms": [
-      "bike-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["bicycle", "motorcycle"],
+    "tags": ["transportation", "vehicles"]
   },
   {
     "word": "bird",
-    "meaning_th": "ความหมายของ bird",
-    "meaning_en": "basic meaning of bird",
-    "pronounce_th": "bird",
-    "ipa": "/bird/",
+    "meaning_th": "นก",
+    "meaning_en": "a warm-blooded egg-laying vertebrate distinguished by the possession of feathers, wings, and a beak",
+    "pronounce_th": "เบิร์ด",
+    "ipa": "/bɜːd/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'bird' in a sentence."
+      "A small bird is singing in the tree."
     ],
-    "synonyms": [
-      "bird-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": [],
+    "tags": ["animals", "nature"]
   },
   {
     "word": "birthday",
-    "meaning_th": "ความหมายของ birthday",
-    "meaning_en": "basic meaning of birthday",
-    "pronounce_th": "birthday",
-    "ipa": "/birthday/",
+    "meaning_th": "วันเกิด",
+    "meaning_en": "the anniversary of the day on which a person was born",
+    "pronounce_th": "เบิร์ธเดย์",
+    "ipa": "/ˈbɜːθdeɪ/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'birthday' in a sentence."
+      "Happy birthday! I bought a gift for you."
     ],
-    "synonyms": [
-      "birthday-similar"
+    "synonyms": [],
+    "tags": ["time", "celebration", "personal-info"]
+  },
+  {
+    "word": "biscuit",
+    "meaning_th": "ขนมปังกรอบ, บิสกิต",
+    "meaning_en": "a small, flat, crisp baked cake, typically sweetened",
+    "pronounce_th": "บิสคิท",
+    "ipa": "/ˈbɪskɪt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I usually have a biscuit with my afternoon tea."
     ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["cookie", "cracker"],
+    "tags": ["food", "snacks"]
   },
   {
     "word": "black",
-    "meaning_th": "ความหมายของ black",
-    "meaning_en": "basic meaning of black",
-    "pronounce_th": "black",
-    "ipa": "/black/",
+    "meaning_th": "สีดำ",
+    "meaning_en": "of the very darkest color owing to the absence of or complete absorption of light",
+    "pronounce_th": "แบล็ก",
+    "ipa": "/blæk/",
+    "part_of_speech": "adjective, noun",
+    "cefr": "A1",
+    "examples": [
+      "She loves wearing black clothes."
+    ],
+    "synonyms": ["dark"],
+    "tags": ["colors", "description"]
+  },
+  {
+    "word": "blog",
+    "meaning_th": "บล็อก, เว็บไซต์บันทึกส่วนตัว",
+    "meaning_en": "a regularly updated website or web page, typically one run by an individual or small group",
+    "pronounce_th": "บล็อก",
+    "ipa": "/blɒɡ/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'black' in a sentence."
+      "He writes a travel blog about his journeys."
     ],
-    "synonyms": [
-      "black-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["weblog", "journal"],
+    "tags": ["media", "internet", "technology"]
   },
   {
-    "word": "blue",
-    "meaning_th": "ความหมายของ blue",
-    "meaning_en": "basic meaning of blue",
-    "pronounce_th": "blue",
-    "ipa": "/blue/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'blue' in a sentence."
-    ],
-    "synonyms": [
-      "blue-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "boat",
-    "meaning_th": "ความหมายของ boat",
-    "meaning_en": "basic meaning of boat",
-    "pronounce_th": "boat",
-    "ipa": "/boat/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'boat' in a sentence."
-    ],
-    "synonyms": [
-      "boat-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "body",
-    "meaning_th": "ความหมายของ body",
-    "meaning_en": "basic meaning of body",
-    "pronounce_th": "body",
-    "ipa": "/body/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'body' in a sentence."
-    ],
-    "synonyms": [
-      "body-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "book",
-    "meaning_th": "ความหมายของ book",
-    "meaning_en": "basic meaning of book",
-    "pronounce_th": "book",
-    "ipa": "/book/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'book' in a sentence."
-    ],
-    "synonyms": [
-      "book-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "boy",
-    "meaning_th": "ความหมายของ boy",
-    "meaning_en": "basic meaning of boy",
-    "pronounce_th": "boy",
-    "ipa": "/boy/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'boy' in a sentence."
-    ],
-    "synonyms": [
-      "boy-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "bread",
-    "meaning_th": "ความหมายของ bread",
-    "meaning_en": "basic meaning of bread",
-    "pronounce_th": "bread",
-    "ipa": "/bread/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'bread' in a sentence."
-    ],
-    "synonyms": [
-      "bread-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "breakfast",
-    "meaning_th": "ความหมายของ breakfast",
-    "meaning_en": "basic meaning of breakfast",
-    "pronounce_th": "breakfast",
-    "ipa": "/breakfast/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'breakfast' in a sentence."
-    ],
-    "synonyms": [
-      "breakfast-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "bring",
-    "meaning_th": "ความหมายของ bring",
-    "meaning_en": "basic meaning of bring",
-    "pronounce_th": "bring",
-    "ipa": "/bring/",
-    "part_of_speech": "verb",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'bring' in a sentence."
-    ],
-    "synonyms": [
-      "bring-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
-  },
-  {
-    "word": "brother",
-    "meaning_th": "ความหมายของ brother",
-    "meaning_en": "basic meaning of brother",
-    "pronounce_th": "brother",
-    "ipa": "/brother/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'brother' in a sentence."
-    ],
-    "synonyms": [
-      "brother-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "brown",
-    "meaning_th": "ความหมายของ brown",
-    "meaning_en": "basic meaning of brown",
-    "pronounce_th": "brown",
-    "ipa": "/brown/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'brown' in a sentence."
-    ],
-    "synonyms": [
-      "brown-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "building",
-    "meaning_th": "ความหมายของ building",
-    "meaning_en": "basic meaning of building",
-    "pronounce_th": "building",
-    "ipa": "/building/",
-    "part_of_speech": "verb",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'building' in a sentence."
-    ],
-    "synonyms": [
-      "building-similar"
-    ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
-  },
-  {
-    "word": "bus",
-    "meaning_th": "ความหมายของ bus",
-    "meaning_en": "basic meaning of bus",
-    "pronounce_th": "bus",
-    "ipa": "/bus/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'bus' in a sentence."
-    ],
-    "synonyms": [
-      "bus-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "business",
-    "meaning_th": "ความหมายของ business",
-    "meaning_en": "basic meaning of business",
-    "pronounce_th": "business",
-    "ipa": "/business/",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "I use the word 'business' in a sentence."
-    ],
-    "synonyms": [
-      "business-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
-  },
-  {
-    "word": "busy",
-    "meaning_th": "ความหมายของ busy",
-    "meaning_en": "basic meaning of busy",
-    "pronounce_th": "busy",
-    "ipa": "/busy/",
+    "word": "blonde",
+    "meaning_th": "บลอนด์, สีทอง (มักใช้กับสีผม)",
+    "meaning_en": "of a hair color that is light-colored, yellowish, or golden",
+    "pronounce_th": "บลอนด์",
+    "ipa": "/blɒnd/",
     "part_of_speech": "adjective",
     "cefr": "A1",
     "examples": [
-      "I use the word 'busy' in a sentence."
+      "She has long blonde hair and blue eyes."
     ],
-    "synonyms": [
-      "busy-similar"
-    ],
-    "tags": [
-      "A1",
-      "adjective"
-    ]
+    "synonyms": ["fair-haired", "golden"],
+    "tags": ["description", "appearance", "colors"]
   },
   {
-    "word": "but",
-    "meaning_th": "ความหมายของ but",
-    "meaning_en": "basic meaning of but",
-    "pronounce_th": "but",
-    "ipa": "/but/",
+    "word": "blue",
+    "meaning_th": "สีน้ำเงิน, สีฟ้า",
+    "meaning_en": "of a color intermediate between green and violet, as of the sky on a clear day",
+    "pronounce_th": "บลู",
+    "ipa": "/bluː/",
+    "part_of_speech": "adjective, noun",
+    "cefr": "A1",
+    "examples": [
+      "The sky is bright blue today."
+    ],
+    "synonyms": [],
+    "tags": ["colors", "description"]
+  },
+  {
+    "word": "boat",
+    "meaning_th": "เรือ, เรือขนาดเล็ก",
+    "meaning_en": "a small vessel for traveling over water",
+    "pronounce_th": "โบท",
+    "ipa": "/bəʊt/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'but' in a sentence."
+      "We took a boat to cross the river."
     ],
-    "synonyms": [
-      "but-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["ship", "vessel", "craft"],
+    "tags": ["transportation", "vehicles", "travel"]
   },
   {
-    "word": "butter",
-    "meaning_th": "ความหมายของ butter",
-    "meaning_en": "basic meaning of butter",
-    "pronounce_th": "butter",
-    "ipa": "/butter/",
+    "word": "book",
+    "meaning_th": "หนังสือ, จอง (ห้อง, ตั๋ว)",
+    "meaning_en": "a written or printed work consisting of pages glued or sewn together along one side; reserve accommodations or a ticket",
+    "pronounce_th": "บุค",
+    "ipa": "/bʊk/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "I am reading an English book.",
+      "You should book your flight in advance."
+    ],
+    "synonyms": ["volume", "reserve"],
+    "tags": ["objects", "reading", "travel", "action"]
+  },
+  {
+    "word": "boot",
+    "meaning_th": "รองเท้าบูท, พื้นที่เก็บของท้ายรถ",
+    "meaning_en": "a sturdy item of footwear covering the foot and the ankle; a space at the back of a car for carrying luggage",
+    "pronounce_th": "บูท",
+    "ipa": "/buːt/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'butter' in a sentence."
+      "She wore leather boots in the winter.",
+      "Put the grocery bags in the boot of the car."
     ],
-    "synonyms": [
-      "butter-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["footwear", "trunk"],
+    "tags": ["clothing", "vehicles"]
   },
   {
-    "word": "buy",
-    "meaning_th": "ความหมายของ buy",
-    "meaning_en": "basic meaning of buy",
-    "pronounce_th": "buy",
-    "ipa": "/buy/",
+    "word": "bored",
+    "meaning_th": "เบื่อ, รู้สึกเบื่อ",
+    "meaning_en": "feeling weary and restless through lack of interest",
+    "pronounce_th": "บอร์ด",
+    "ipa": "/bɔːd/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "I'm bored with this movie; let's watch something else."
+    ],
+    "synonyms": ["tired", "uninterested"],
+    "tags": ["feelings", "emotions"]
+  },
+  {
+    "word": "boring",
+    "meaning_th": "น่าเบื่อ",
+    "meaning_en": "not interesting; tedious",
+    "pronounce_th": "บอริง",
+    "ipa": "/ˈbɔːrɪŋ/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "The lecture was so boring that I almost fell asleep."
+    ],
+    "synonyms": ["dull", "tedious", "unexciting"],
+    "tags": ["description"]
+  },
+  {
+    "word": "born",
+    "meaning_th": "เกิด, กำเนิด",
+    "meaning_en": "existing as a result of birth",
+    "pronounce_th": "บอนด์",
+    "ipa": "/bɔːn/",
+    "part_of_speech": "verb (used as adjective)",
+    "cefr": "A1",
+    "examples": [
+      "I was born in Bangkok in 1995."
+    ],
+    "synonyms": [],
+    "tags": ["personal-info", "life"]
+  },
+  {
+    "word": "both",
+    "meaning_th": "ทั้งสอง, ทั้งคู่",
+    "meaning_en": "used for referring to two people or things together",
+    "pronounce_th": "โบธ",
+    "ipa": "/bəʊθ/",
+    "part_of_speech": "determiner, pronoun",
+    "cefr": "A1",
+    "examples": [
+      "Both of his brothers are engineers."
+    ],
+    "synonyms": ["the two", "each"],
+    "tags": ["quantity", "grammar"]
+  },
+  {
+    "word": "bottle",
+    "meaning_th": "ขวด",
+    "meaning_en": "a glass or plastic container with a narrow neck, used for storing drinks",
+    "pronounce_th": "บอเทิล",
+    "ipa": "/ˈbɒtl/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "Can I have a bottle of water, please?"
+    ],
+    "synonyms": ["flask", "container"],
+    "tags": ["objects", "kitchen"]
+  },
+  {
+    "word": "box",
+    "meaning_th": "กล่อง",
+    "meaning_en": "a container with a flat base and sides, typically square or rectangular and having a lid",
+    "pronounce_th": "บ็อกซ์",
+    "ipa": "/bɒks/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "He put all his toys into a cardboard box."
+    ],
+    "synonyms": ["carton", "case", "crate"],
+    "tags": ["objects"]
+  },
+  {
+    "word": "boy",
+    "meaning_th": "เด็กผู้ชาย",
+    "meaning_en": "a male child or youth",
+    "pronounce_th": "บอย",
+    "ipa": "/bɔɪ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "The little boy is playing with a toy car."
+    ],
+    "synonyms": ["lad", "kid"],
+    "tags": ["people", "family"]
+  },
+  {
+    "word": "bread",
+    "meaning_th": "ขนมปัง",
+    "meaning_en": "food made of flour, water, and yeast mixed together and baked",
+    "pronounce_th": "เบรด",
+    "ipa": "/bred/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I love the smell of fresh bread from the bakery."
+    ],
+    "synonyms": [],
+    "tags": ["food", "breakfast"]
+  },
+  {
+    "word": "break",
+    "meaning_th": "ทำแตก, หัก, ช่วงเวลาพัก",
+    "meaning_en": "separate into pieces as a result of a blow, shock, or strain; an interruption of continuity or a short rest",
+    "pronounce_th": "เบรค",
+    "ipa": "/breɪk/",
+    "part_of_speech": "verb, noun",
+    "cefr": "A1",
+    "examples": [
+      "Be careful not to break that mirror.",
+      "Let's take a 10-minute break."
+    ],
+    "synonyms": ["smash", "fracture", "rest", "pause"],
+    "tags": ["action", "time", "general"]
+  },
+  {
+    "word": "breakfast",
+    "meaning_th": "อาหารเช้า",
+    "meaning_en": "the first meal of the day, especially when taken in the morning",
+    "pronounce_th": "เบรคฟาสต์",
+    "ipa": "/ˈbrekfəst/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "What did you eat for breakfast today?"
+    ],
+    "synonyms": [],
+    "tags": ["food", "daily-life", "meals"]
+  },
+  {
+    "word": "bring",
+    "meaning_th": "นำมา, เอามาให้",
+    "meaning_en": "take or go with someone or something to a place",
+    "pronounce_th": "บริง",
+    "ipa": "/brɪŋ/",
     "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'buy' in a sentence."
+      "Please bring your umbrella with you; it might rain."
     ],
-    "synonyms": [
-      "buy-similar"
+    "synonyms": ["fetch", "carry", "take"],
+    "tags": ["action", "movement"]
+  },
+  {
+    "word": "brother",
+    "meaning_th": "พี่ชาย, น้องชาย",
+    "meaning_en": "a man or boy in relation to other sons and daughters of his parents",
+    "pronounce_th": "บราเธอะ",
+    "ipa": "/ˈbrʌðə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "My older brother is a university student."
     ],
-    "tags": [
-      "A1",
-      "verb"
-    ]
+    "synonyms": ["sibling"],
+    "tags": ["people", "family"]
+  },
+  {
+    "word": "brown",
+    "meaning_th": "สีน้ำตาล",
+    "meaning_en": "of a color produced by mixing red, yellow, and black, as of dark wood or rich soil",
+    "pronounce_th": "บราวน์",
+    "ipa": "/braʊn/",
+    "part_of_speech": "adjective, noun",
+    "cefr": "A1",
+    "examples": [
+      "The dog has beautiful brown fur."
+    ],
+    "synonyms": [],
+    "tags": ["colors", "description"]
+  },
+  {
+    "word": "build",
+    "meaning_th": "สร้าง, ก่อสร้าง",
+    "meaning_en": "construct something by putting parts or materials together",
+    "pronounce_th": "บิลด์",
+    "ipa": "/bɪld/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "They plan to build a new school here next year."
+    ],
+    "synonyms": ["construct", "create", "make"],
+    "tags": ["action", "construction"]
+  },
+  {
+    "word": "building",
+    "meaning_th": "อาคาร, ตึก",
+    "meaning_en": "a structure with a roof and walls, such as a house, school, or factory",
+    "pronounce_th": "บิลดิง",
+    "ipa": "/ˈbɪldɪŋ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "That tall building is the town hall."
+    ],
+    "synonyms": ["structure", "tower", "house"],
+    "tags": ["places", "architecture"]
+  },
+  {
+    "word": "bus",
+    "meaning_th": "รถโดยสารประจำทาง, รถบัส",
+    "meaning_en": "a large motor vehicle carrying passengers by road, especially one serving the public",
+    "pronounce_th": "บัส",
+    "ipa": "/bʌs/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I catch the bus to work every morning."
+    ],
+    "synonyms": ["coach"],
+    "tags": ["transportation", "vehicles", "travel"]
+  },
+  {
+    "word": "business",
+    "meaning_th": "ธุรกิจ, การค้า, กิจการ",
+    "meaning_en": "the practice of making one's living by engaging in commerce",
+    "pronounce_th": "บิซเนิส",
+    "ipa": "/ˈbɪznəs/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "She wants to start her own clothing business."
+    ],
+    "synonyms": ["trade", "commerce", "company"],
+    "tags": ["business", "jobs", "money"]
+  },
+  {
+    "word": "busy",
+    "meaning_th": "ยุ่ง, ไม่ว่าง, มีงานมาก",
+    "meaning_en": "having a great deal to do; occupied with activity",
+    "pronounce_th": "บิซี",
+    "ipa": "/ˈbɪzi/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "The doctor is very busy with patients right now."
+    ],
+    "synonyms": ["occupied", "unavailable", "active"],
+    "tags": ["description", "daily-life"]
+  },
+  {
+    "word": "but",
+    "meaning_th": "แต่, แต่ว่า",
+    "meaning_en": "used to introduce a phrase or clause contrasting with what has already been said",
+    "pronounce_th": "บัท",
+    "ipa": "/bʌt/",
+    "part_of_speech": "conjunction",
+    "cefr": "A1",
+    "examples": [
+      "I love tea, but I don't like coffee."
+    ],
+    "synonyms": ["however", "yet"],
+    "tags": ["grammar", "connection"]
+  },
+  {
+    "word": "butter",
+    "meaning_th": "เนย, เนยเหลว",
+    "meaning_en": "a pale yellow fatty substance made by churning cream",
+    "pronounce_th": "บัทเทอะ",
+    "ipa": "/ˈbʌtə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "Spread some butter on your toast."
+    ],
+    "synonyms": [],
+    "tags": ["food", "cooking", "breakfast"]
+  },
+  {
+    "word": "buy",
+    "meaning_th": "ซื้อ",
+    "meaning_en": "obtain in exchange for payment",
+    "pronounce_th": "บาย",
+    "ipa": "/baɪ/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "Where can I buy a ticket for the concert?"
+    ],
+    "synonyms": ["purchase"],
+    "tags": ["action", "shopping", "money"]
   },
   {
     "word": "by",
-    "meaning_th": "ความหมายของ by",
-    "meaning_en": "basic meaning of by",
-    "pronounce_th": "by",
-    "ipa": "/by/",
+    "meaning_th": "โดย, ข้างๆ, ด้วย (บอกวิธีการหรือสถานที่)",
+    "meaning_en": "identifying the agent performing an action; near or next to",
+    "pronounce_th": "บาย",
+    "ipa": "/baɪ/",
+    "part_of_speech": "preposition",
+    "cefr": "A1",
+    "examples": [
+      "This book was written by a famous author.",
+      "She sat down by the window."
+    ],
+    "synonyms": ["near", "beside", "through"],
+    "tags": ["grammar", "location"]
+  },
+  {
+    "word": "cafe",
+    "meaning_th": "คาเฟ่, ร้านกาแฟ",
+    "meaning_en": "a small restaurant selling light meals and drinks",
+    "pronounce_th": "คาเฟ่",
+    "ipa": "/ˈkæfeɪ/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'by' in a sentence."
+      "Let's meet at the cafe down the street."
     ],
-    "synonyms": [
-      "by-similar"
-    ],
-    "tags": [
-      "A1",
-      "noun"
-    ]
+    "synonyms": ["coffee shop", "cafeteria"],
+    "tags": ["places", "food", "drinks"]
   },
   {
     "word": "cake",
-    "meaning_th": "ความหมายของ cake",
-    "meaning_en": "basic meaning of cake",
-    "pronounce_th": "cake",
-    "ipa": "/cake/",
+    "meaning_th": "เค้ก",
+    "meaning_en": "an item of soft, sweet food made from a baked mixture of flour, fat, eggs, and sugar",
+    "pronounce_th": "เค้ก",
+    "ipa": "/keɪk/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'cake' in a sentence."
+      "She baked a delicious chocolate cake for my birthday."
+    ],
+    "synonyms": [],
+    "tags": ["food", "desserts", "celebration"]
+  },
+  {
+    "word": "call",
+    "meaning_th": "โทรหา, เรียก, ขานชื่อ",
+    "meaning_en": "cry out to someone in order to catch their attention; make a phone call",
+    "pronounce_th": "คอล",
+    "ipa": "/kɔːl/",
+    "part_of_speech": "verb, noun",
+    "cefr": "A1",
+    "examples": [
+      "Please call me when you arrive home.",
+      "I received a phone call from my mother."
+    ],
+    "synonyms": ["phone", "shout", "ring"],
+    "tags": ["action", "communication"]
+  },
+  {
+    "word": "camera",
+    "meaning_th": "กล้องถ่ายรูป, กล้องวิดีโอ",
+    "meaning_en": "a device for recording visual images in the form of photographs, film, or video signals",
+    "pronounce_th": "แคมเมอระ",
+    "ipa": "/ˈkæmrə/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "He took a picture of the bird with his new camera."
+    ],
+    "synonyms": [],
+    "tags": ["objects", "hobby", "technology"]
+  },
+  {
+    "word": "camp",
+    "meaning_th": "ค่าย, ตั้งค่าย, พักแรม",
+    "meaning_en": "a place where an army or other group of people is lodged in an organized body of tents or temporary buildings",
+    "pronounce_th": "แคมป์",
+    "ipa": "/kæmp/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "We decided to camp near the lake for the weekend."
+    ],
+    "synonyms": ["campsite", "bivouac"],
+    "tags": ["travel", "hobby", "action", "places"]
+  },
+  {
+    "word": "camping",
+    "meaning_th": "การตั้งแคมป์, การพักแรม",
+    "meaning_en": "the activity of spending a holiday living in a tent",
+    "pronounce_th": "แคมปิง",
+    "ipa": "/ˈkæmpɪŋ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "Camping is a great way to enjoy nature."
+    ],
+    "synonyms": [],
+    "tags": ["travel", "hobby", "lifestyle"]
+  },
+  {
+    "word": "can",
+    "meaning_th": "สามารถ, ทำได้, กระป๋อง",
+    "meaning_en": "be able to; used to identify a container or cylinder for preserving food or drink",
+    "pronounce_th": "แคน",
+    "ipa": "/kæn/",
+    "part_of_speech": "modal verb, noun",
+    "cefr": "A1",
+    "examples": [
+      "She can speak three languages fluently.",
+      "He drank a can of soda."
+    ],
+    "synonyms": ["be able to", "tin"],
+    "tags": ["grammar", "objects", "ability"]
+  },
+  {
+    "word": "cannot",
+    "meaning_th": "ไม่สามารถ, ไม่ได้",
+    "meaning_en": "not able to; the negative form of 'can'",
+    "pronounce_th": "แคนน็อท",
+    "ipa": "/ˈkænɒt/",
+    "part_of_speech": "modal verb",
+    "cefr": "A1",
+    "examples": [
+      "I cannot swim very well."
+    ],
+    "synonyms": ["can't"],
+    "tags": ["grammar", "ability"]
+  },
+  {
+    "word": "capital",
+    "meaning_th": "เมืองหลวง, อักษรตัวพิมพ์ใหญ่, เงินทุน",
+    "meaning_en": "the most important city or town of a country or region; large letter",
+    "pronounce_th": "แคพิทัล",
+    "ipa": "/ˈkæpɪtl/",
+    "part_of_speech": "noun, adjective",
+    "cefr": "A1",
+    "examples": [
+      "Bangkok is the capital city of Thailand.",
+      "Please write your name in capital letters."
+    ],
+    "synonyms": ["funds", "chief town"],
+    "tags": ["places", "geography", "grammar"]
+  },
+  {
+    "word": "car",
+    "meaning_th": "รถยนต์",
+    "meaning_en": "a road vehicle, typically with four wheels, powered by an internal combustion engine",
+    "pronounce_th": "คาร์",
+    "ipa": "/kɑː(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "He drives a red car to work."
+    ],
+    "synonyms": ["automobile", "vehicle"],
+    "tags": ["transportation", "vehicles"]
+  },
+  {
+    "word": "card",
+    "meaning_th": "บัตร, การ์ด, ไพ่",
+    "meaning_en": "a piece of thick, stiff paper or thin pasteboard, typically rectangular, used for writing or printing on",
+    "pronounce_th": "คาร์ด",
+    "ipa": "/kɑːd/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He paid for the dinner with a credit card."],
+    "synonyms": ["ticket", "badge"],
+    "tags": ["objects", "money", "leisure"]
+  },
+  {
+    "word": "career",
+    "meaning_th": "อาชีพ, สายงาน",
+    "meaning_en": "an occupation undertaken for a significant period of a person's life and with opportunities for progress",
+    "pronounce_th": "คะเรีย",
+    "ipa": "/kəˈrɪə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["She is looking for a career in marketing."],
+    "synonyms": ["profession", "job", "occupation"],
+    "tags": ["jobs", "business", "work"]
+  },
+  {
+    "word": "carrot",
+    "meaning_th": "แครอท",
+    "meaning_en": "a tapering orange-colored root eaten as a vegetable",
+    "pronounce_th": "แคแรท",
+    "ipa": "/ˈkærət/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Carrots are good for your eyesight."],
+    "synonyms": [],
+    "tags": ["food", "vegetables"]
+  },
+  {
+    "word": "carry",
+    "meaning_th": "ถือ, แบก, หิ้ว, พกพา",
+    "meaning_en": "support and move someone or something from one place to another",
+    "pronounce_th": "แครี",
+    "ipa": "/ˈkæri/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Could you help me carry these heavy bags?"],
+    "synonyms": ["transport", "bring", "fetch"],
+    "tags": ["action", "movement"]
+  },
+  {
+    "word": "cat",
+    "meaning_th": "แมว",
+    "meaning_en": "a small domesticated carnivorous mammal with soft fur",
+    "pronounce_th": "แคลท",
+    "ipa": "/kæt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The cat is sleeping on the sofa."],
+    "synonyms": ["feline"],
+    "tags": ["animals", "pets"]
+  },
+  {
+    "word": "CD",
+    "meaning_th": "ซีดี, แผ่นซีดี",
+    "meaning_en": "a compact disc",
+    "pronounce_th": "ซีดี",
+    "ipa": "/ˌsiː ˈdiː/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["I bought a music CD of my favorite band."],
+    "synonyms": ["disc"],
+    "tags": ["objects", "music", "technology"]
+  },
+  {
+    "word": "cent",
+    "meaning_th": "เซนต์ (หน่วยเงินตรา)",
+    "meaning_en": "a monetary unit in various countries, equal to one hundredth of a dollar, euro, or other decimal currency",
+    "pronounce_th": "เซนต์",
+    "ipa": "/sent/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["A dollar has one hundred cents."],
+    "synonyms": ["penny"],
+    "tags": ["money", "math"]
+  },
+  {
+    "word": "centre",
+    "meaning_th": "ศูนย์กลาง, ใจกลาง",
+    "meaning_en": "the point that is equally distant from every point on the circumference of a circle or sphere",
+    "pronounce_th": "เซนเทอะ",
+    "ipa": "/ˈsentə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["We live in the town centre."],
+    "synonyms": ["middle", "heart", "core"],
+    "tags": ["location", "general"]
+  },
+  {
+    "word": "century",
+    "meaning_th": "ศตวรรษ, รอบหนึ่งร้อยปี",
+    "meaning_en": "a period of one hundred years",
+    "pronounce_th": "เซนชูรี",
+    "ipa": "/ˈsentʃəri/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["We are living in the 21st century."],
+    "synonyms": [],
+    "tags": ["time", "history"]
+  },
+  {
+    "word": "chair",
+    "meaning_th": "เก้าอี้",
+    "meaning_en": "a separate seat for one person, typically with a back and four legs",
+    "pronounce_th": "แชร์",
+    "ipa": "/tʃeə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Please take a chair and sit down."],
+    "synonyms": ["seat"],
+    "tags": ["furniture", "home", "objects"]
+  },
+  {
+    "word": "change",
+    "meaning_th": "เปลี่ยนแปลง, แลกเปลี่ยน, เงินทอน",
+    "meaning_en": "make or become different; take or use another instead of",
+    "pronounce_th": "เชนจญ์",
+    "ipa": "/tʃeɪndʒ/",
+    "part_of_speech": "verb, noun",
+    "cefr": "A1",
+    "examples": [
+      "The weather can change quickly in autumn.",
+      "Don't forget your change at the shop."
+    ],
+    "synonyms": ["alter", "modify", "coins"],
+    "tags": ["action", "money", "general"]
+  },
+  {
+    "word": "chart",
+    "meaning_th": "แผนภูมิ, ตาราง",
+    "meaning_en": "a sheet of information in the form of a table, graph, or diagram",
+    "pronounce_th": "ชาร์ต",
+    "ipa": "/tʃɑːt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The sales chart shows a big increase this month."],
+    "synonyms": ["graph", "diagram", "table"],
+    "tags": ["school", "business", "objects"]
+  },
+  {
+    "word": "cheap",
+    "meaning_th": "ราคาถูก",
+    "meaning_en": "low in price, especially in relation to similar items or services",
+    "pronounce_th": "ชีพ",
+    "ipa": "/tʃiːp/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["This restaurant serves cheap and delicious food."],
+    "synonyms": ["inexpensive", "low-cost"],
+    "tags": ["description", "shopping", "money"]
+  },
+  {
+    "word": "check",
+    "meaning_th": "ตรวจสอบ, ตรวจเช็ค",
+    "meaning_en": "examine something in order to determine its accuracy, quality, or condition",
+    "pronounce_th": "เช็ค",
+    "ipa": "/tʃek/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Please check your answers before submitting the test."],
+    "synonyms": ["examine", "inspect", "verify"],
+    "tags": ["action", "school", "general"]
+  },
+  {
+    "word": "cheese",
+    "meaning_th": "ชีส, เนยแข็ง",
+    "meaning_en": "a food made from the pressed curds of milk",
+    "pronounce_th": "ชีส",
+    "ipa": "/tʃiːz/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["I love extra cheese on my pizza."],
+    "synonyms": [],
+    "tags": ["food", "cooking"]
+  },
+  {
+    "word": "chicken",
+    "meaning_th": "ไก่, เนื้อไก่",
+    "meaning_en": "a domestic fowl kept for its eggs or meat; the meat of this bird",
+    "pronounce_th": "ชิคเคิน",
+    "ipa": "/ˈtʃɪkɪn/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["We are having fried chicken for dinner."],
+    "synonyms": ["fowl"],
+    "tags": ["animals", "food"]
+  },
+  {
+    "word": "child",
+    "meaning_th": "เด็ก, ลูก",
+    "meaning_en": "a young human being below the age of puberty or full legal age",
+    "pronounce_th": "ไชลด์",
+    "ipa": "/tʃaɪld/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The child is playing with a toy car."],
+    "synonyms": ["kid", "toddler"],
+    "tags": ["people", "family"]
+  },
+  {
+    "word": "chocolate",
+    "meaning_th": "ช็อกโกแลต",
+    "meaning_en": "a food in the form of a paste or solid block made from roasted and ground cacao seeds",
+    "pronounce_th": "ช็อกโกแลต",
+    "ipa": "/ˈtʃɒklət/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["She bought a bar of dark chocolate."],
+    "synonyms": [],
+    "tags": ["food", "sweets", "snacks"]
+  },
+  {
+    "word": "choose",
+    "meaning_th": "เลือก",
+    "meaning_en": "pick out or select someone or something as being the best or most appropriate of two or more alternatives",
+    "pronounce_th": "ชูซฺ",
+    "ipa": "/tʃuːz/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["You can choose which book you want to read."],
+    "synonyms": ["select", "pick"],
+    "tags": ["action", "general"]
+  },
+  {
+    "word": "cinema",
+    "meaning_th": "โรงภาพยนตร์",
+    "meaning_en": "a theater where movies are shown for public entertainment",
+    "pronounce_th": "ซินเนอมา",
+    "ipa": "/ˈsɪnəmə/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Let's go to the cinema tonight."],
+    "synonyms": ["movie theater", "theater"],
+    "tags": ["places", "entertainment", "media"]
+  },
+  {
+    "word": "city",
+    "meaning_th": "เมือง, นคร",
+    "meaning_en": "a large town",
+    "pronounce_th": "สิที",
+    "ipa": "/ˈsɪti/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["New York is a famous and very busy city."],
+    "synonyms": ["town", "metropolis"],
+    "tags": ["places", "geography"]
+  },
+  {
+    "word": "class",
+    "meaning_th": "ชั้นเรียน, ห้องเรียน",
+    "meaning_en": "a group of students who are taught together",
+    "pronounce_th": "คลาส",
+    "ipa": "/klɑːs/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["What time does your English class start?"],
+    "synonyms": ["lesson", "course"],
+    "tags": ["school", "education"]
+  },
+  {
+    "word": "classroom",
+    "meaning_th": "ห้องเรียน (สถานที่)",
+    "meaning_en": "a room in a school in which classes are held",
+    "pronounce_th": "คลาสรูม",
+    "ipa": "/ˈklɑːsruːm/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["There is a computer in every classroom."],
+    "synonyms": [],
+    "tags": ["school", "places", "education"]
+  },
+  {
+    "word": "clean",
+    "meaning_th": "สะอาด, ทำความสะอาด",
+    "meaning_en": "free from dirt, marks, or stains; make clean",
+    "pronounce_th": "คลีน",
+    "ipa": "/kliːn/",
+    "part_of_speech": "adjective, verb",
+    "cefr": "A1",
+    "examples": [
+      "Please make sure your hands are clean.",
+      "I need to clean my bedroom this weekend."
+    ],
+    "synonyms": ["pure", "wash", "tidy"],
+    "tags": ["description", "action", "daily-life"]
+  },
+  {
+    "word": "climb",
+    "meaning_th": "ปีน, ไต่",
+    "meaning_en": "go up or climb towards the top of a mountain, tree, or ladder",
+    "pronounce_th": "ไคลมบ์",
+    "ipa": "/klaɪm/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["The boys like to climb trees in the park."],
+    "synonyms": ["ascend", "mount"],
+    "tags": ["action", "movement", "sports"]
+  },
+  {
+    "word": "clock",
+    "meaning_th": "นาฬิกา (ตั้งโต๊ะหรือติดผนัง)",
+    "meaning_en": "a mechanical or electrical device for measuring and showing time",
+    "pronounce_th": "คล็อก",
+    "ipa": "/klɒk/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The clock on the wall shows 10 o'clock."],
+    "synonyms": ["timepiece"],
+    "tags": ["objects", "time", "home"]
+  },
+  {
+    "word": "close",
+    "meaning_th": "ปิด",
+    "meaning_en": "move something so as to cover an opening",
+    "pronounce_th": "โคลส",
+    "ipa": "/kləʊz/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Please close the door when you leave."],
+    "synonyms": ["shut", "seal"],
+    "tags": ["action"]
+  },
+  {
+    "word": "clothes",
+    "meaning_th": "เสื้อผ้า, เครื่องนุ่งห่ม",
+    "meaning_en": "items worn to cover the body",
+    "pronounce_th": "โคลธ์ส",
+    "ipa": "/kləʊðz/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["She bought some new clothes for the winter trip."],
+    "synonyms": ["clothing", "garments", "apparel"],
+    "tags": ["clothing", "objects"]
+  },
+  {
+    "word": "club",
+    "meaning_th": "สโมสร, ชมรม",
+    "meaning_en": "an association or organization dedicated to a particular interest or activity",
+    "pronounce_th": "คลับ",
+    "ipa": "/klʌb/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He joined the school's photography club."],
+    "synonyms": ["association", "group", "society"],
+    "tags": ["places", "lifestyle", "school"]
+  },
+  {
+    "word": "coat",
+    "meaning_th": "เสื้อโค้ต, เสื้อนอกตัวยาว",
+    "meaning_en": "an outer garment with sleeves, worn outdoors and typically extending below the hips",
+    "pronounce_th": "โค้ต",
+    "ipa": "/kəʊt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Put on your warm coat; it's freezing outside."],
+    "synonyms": ["jacket", "overcoat"],
+    "tags": ["clothing", "objects"]
+  },
+  {
+    "word": "coffee",
+    "meaning_th": "กาแฟ",
+    "meaning_en": "a hot drink made from the roasted and ground seeds of a tropical shrub",
+    "pronounce_th": "คอฟฟี",
+    "ipa": "/ˈkɒfi/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["I usually drink a cup of black coffee in the morning."],
+    "synonyms": [],
+    "tags": ["drinks", "daily-life"]
+  },
+  {
+    "word": "cold",
+    "meaning_th": "หนาว, เย็น, ไข้หวัด",
+    "meaning_en": "of or at a low temperature; an illness affecting the nose and throat",
+    "pronounce_th": "โคลด์",
+    "ipa": "/kəʊld/",
+    "part_of_speech": "adjective, noun",
+    "cefr": "A1",
+    "examples": [
+      "The winter water is too cold for swimming.",
+      "I stayed at home because I caught a cold."
+    ],
+    "synonyms": ["chilly", "freezing", "flu"],
+    "tags": ["weather", "description", "health"]
+  },
+  {
+    "word": "college",
+    "meaning_th": "วิทยาลัย",
+    "meaning_en": "an educational institution or establishment, in particular one providing higher education",
+    "pronounce_th": "คอลเลจญ์",
+    "ipa": "/ˈkɒlɪdʒ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["My sister is studying art at a local college."],
+    "synonyms": ["university", "school"],
+    "tags": ["places", "education", "school"]
+  },
+  {
+    "word": "colour",
+    "meaning_th": "สี, สีสัน",
+    "meaning_en": "the property possessed by an object of producing different sensations on the eye as a result of the way it reflects light",
+    "pronounce_th": "คัลเลอะ",
+    "ipa": "/ˈkʌlə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["What is your favorite colour?"],
+    "synonyms": ["hue", "shade"],
+    "tags": ["colors", "description"]
+  },
+  {
+    "word": "come",
+    "meaning_th": "มา, เดินทางมาถึง",
+    "meaning_en": "move or travel towards or into a place thought of as near or familiar to the speaker",
+    "pronounce_th": "คัม",
+    "ipa": "/kʌm/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Please come to my party this Friday evening."],
+    "synonyms": ["arrive", "approach"],
+    "tags": ["action", "movement"]
+  },
+  {
+    "word": "common",
+    "meaning_th": "ธรรมดา, ทั่วไป, ร่วมกัน",
+    "meaning_en": "occurring, found, or done often; prevalent",
+    "pronounce_th": "คอมเมิน",
+    "ipa": "/ˈkɒmən/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["'Smith' is a very common last name in English."],
+    "synonyms": ["usual", "normal", "general"],
+    "tags": ["description"]
+  },
+  {
+    "word": "company",
+    "meaning_th": "บริษัท, การอยู่เป็นเพื่อน",
+    "meaning_en": "a commercial business; the condition of being with someone",
+    "pronounce_th": "คัมพะนี",
+    "ipa": "/ˈkʌmpəni/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He works for a multinational technology company."],
+    "synonyms": ["firm", "business", "corporation"],
+    "tags": ["business", "jobs", "work"]
+  },
+  {
+    "word": "compare",
+    "meaning_th": "เปรียบเทียบ",
+    "meaning_en": "estimate, measure, or note the similarity or dissimilarity between",
+    "pronounce_th": "คัมแพร์",
+    "ipa": "/kəmˈpeə(r)/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["If you compare these two books, this one is better."],
+    "synonyms": ["contrast", "match"],
+    "tags": ["action", "school"]
+  },
+  {
+    "word": "complete",
+    "meaning_th": "สมบูรณ์, เสร็จสิ้น, ทำให้สำเร็จ",
+    "meaning_en": "having all the necessary or appropriate parts; finish making or doing",
+    "pronounce_th": "คัมพลีท",
+    "ipa": "/kəmˈpliːt/",
+    "part_of_speech": "adjective, verb",
+    "cefr": "A1",
+    "examples": [
+      "The project is now complete.",
+      "Please complete the registration form online."
+    ],
+    "synonyms": ["total", "finish", "achieve"],
+    "tags": ["description", "action", "school"]
+  },
+  {
+    "word": "computer",
+    "meaning_th": "คอมพิวเตอร์",
+    "meaning_en": "an electronic device for storing and processing data",
+    "pronounce_th": "คัมพิวเทอะ",
+    "ipa": "/kəmˈpjuːtə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["I bought a new laptop computer for my studies."],
+    "synonyms": ["PC", "laptop"],
+    "tags": ["objects", "technology", "school"]
+  },
+  {
+    "word": "concert",
+    "meaning_th": "คอนเสิร์ต, การแสดงดนตรี",
+    "meaning_en": "a musical performance given in public",
+    "pronounce_th": "คอนเสิร์ต",
+    "ipa": "/ˈkɒnsət/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["We are going to a rock concert this weekend."],
+    "synonyms": ["show", "performance"],
+    "tags": ["entertainment", "music", "places"]
+  },
+  {
+    "word": "conversation",
+    "meaning_th": "การสนทนา, การพูดคุย",
+    "meaning_en": "a talk, especially an informal one, between two or more people",
+    "pronounce_th": "คอนเฝอสเเซเชิน",
+    "ipa": "/ˌkɒnvəˈseɪʃn/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["I had an interesting conversation with my neighbour."],
+    "synonyms": ["talk", "discussion", "chat"],
+    "tags": ["communication", "conversation"]
+  },
+  {
+    "word": "cook",
+    "meaning_th": "ทำอาหาร, ปรุงอาหาร, คนครัว",
+    "meaning_en": "prepare food, a dish, or a meal by combining ingredients and heating them",
+    "pronounce_th": "คุค",
+    "ipa": "/kʊk/",
+    "part_of_speech": "verb, noun",
+    "cefr": "A1",
+    "examples": [
+      "My father loves to cook dinner for us.",
+      "She is an excellent cook."
+    ],
+    "synonyms": ["bake", "prepare", "chef"],
+    "tags": ["cooking", "food", "action", "jobs"]
+  },
+  {
+    "word": "cooking",
+    "meaning_th": "การทำอาหาร",
+    "meaning_en": "the practice or skill of preparing food by combining, mixing, and heating ingredients",
+    "pronounce_th": "คุคคิง",
+    "ipa": "/ˈkʊkɪŋ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Cooking is one of my favorite hobbies."],
+    "synonyms": ["cuisine"],
+    "tags": ["hobby", "cooking", "lifestyle"]
+  },
+  {
+    "word": "cool",
+    "meaning_th": "เย็นสบาย, เจ๋ง, เท่",
+    "meaning_en": "fairly cold; fashionably attractive or impressive",
+    "pronounce_th": "คูล",
+    "ipa": "/kuːl/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "The weather is very nice and cool today.",
+      "Wow! Your new bike looks so cool."
+    ],
+    "synonyms": ["chilly", "awesome", "great"],
+    "tags": ["weather", "description"]
+  },
+  {
+    "word": "correct",
+    "meaning_th": "ถูกต้อง, แก้ไขให้ถูกต้อง",
+    "meaning_en": "free from error; true; put right",
+    "pronounce_th": "คะเรคท์",
+    "ipa": "/kəˈrekt/",
+    "part_of_speech": "adjective, verb",
+    "cefr": "A1",
+    "examples": [
+      "Please choose the correct answer.",
+      "The teacher will correct our homework."
+    ],
+    "synonyms": ["right", "accurate", "fix"],
+    "tags": ["description", "action", "school"]
+  },
+  {
+    "word": "cost",
+    "meaning_th": "ราคา, มีราคา, ค่าใช้จ่าย",
+    "meaning_en": "an amount that has to be paid or spent to buy or obtain something",
+    "pronounce_th": "คอสท์",
+    "ipa": "/kɒst/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "What is the cost of this laptop?",
+      "How much does this book cost?"
+    ],
+    "synonyms": ["price", "expense", "charge"],
+    "tags": ["money", "shopping"]
+  },
+  {
+    "word": "could",
+    "meaning_th": "สามารถ (รูปอดีตของ can), อาจจะ",
+    "meaning_en": "used to express possibility, or past ability",
+    "pronounce_th": "คูด",
+    "ipa": "/kʊd/",
+    "part_of_speech": "modal verb",
+    "cefr": "A1",
+    "examples": [
+      "When I was young, I could run very fast.",
+      "Could you please pass me the salt?"
+    ],
+    "synonyms": [],
+    "tags": ["grammar", "ability"]
+  },
+  {
+    "word": "country",
+    "meaning_th": "ประเทศ, ชนบท",
+    "meaning_en": "a nation with its own government, occupying a particular territory",
+    "pronounce_th": "คันทรี",
+    "ipa": "/ˈkʌntri/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "Thailand is a beautiful country.",
+      "They moved from the city to the country."
+    ],
+    "synonyms": ["nation", "state", "countryside"],
+    "tags": ["geography", "places"]
+  },
+  {
+    "word": "course",
+    "meaning_th": "หลักสูตร, รายวิชา, คอร์ส",
+    "meaning_en": "a series of lectures or lessons in a particular subject",
+    "pronounce_th": "คอร์ส",
+    "ipa": "/kɔːs/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["I am taking an intensive English course this summer."],
+    "synonyms": ["class", "program", "lesson"],
+    "tags": ["school", "education"]
+  },
+  {
+    "word": "cousin",
+    "meaning_th": "ลูกพี่ลูกน้อง",
+    "meaning_en": "a child of one's uncle or aunt",
+    "pronounce_th": "คัซซิน",
+    "ipa": "/ˈkʌzn/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["My cousin lives in London with his family."],
+    "synonyms": ["relative"],
+    "tags": ["people", "family"]
+  },
+  {
+    "word": "cow",
+    "meaning_th": "วัว, แม่วัว",
+    "meaning_en": "a fully grown female animal of a domesticated breed of ox, kept for milk or beef",
+    "pronounce_th": "คาว",
+    "ipa": "/kaʊ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Cows eat grass and provide fresh milk."],
+    "synonyms": ["cattle"],
+    "tags": ["animals", "nature", "farm"]
+  },
+  {
+    "word": "cream",
+    "meaning_th": "ครีม, ครีมนม",
+    "meaning_en": "the thick white or pale yellow fatty liquid which rises to the top of milk",
+    "pronounce_th": "ครีม",
+    "ipa": "/kriːm/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Would you like some cream in your coffee?"],
+    "synonyms": [],
+    "tags": ["food", "cooking"]
+  },
+  {
+    "word": "create",
+    "meaning_th": "สร้าง, รังสรรค์",
+    "meaning_en": "bring something into existence",
+    "pronounce_th": "ครีเอท",
+    "ipa": "/kriˈeɪt/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["The artist wants to create a new painting."],
+    "synonyms": ["make", "build", "produce"],
+    "tags": ["action", "art"]
+  },
+  {
+    "word": "culture",
+    "meaning_th": "วัฒนธรรม",
+    "meaning_en": "the arts and other manifestations of human intellectual achievement regarded collectively",
+    "pronounce_th": "คัลเชอะ",
+    "ipa": "/ˈkʌltʃə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Learning a language helps you understand its culture."],
+    "synonyms": ["tradition", "custom", "heritage"],
+    "tags": ["general", "history"]
+  },
+  {
+    "word": "cup",
+    "meaning_th": "ถ้วย, ถ้วยกาแฟ",
+    "meaning_en": "a small bowl-shaped container for drinking from, typically having a handle",
+    "pronounce_th": "คัพ",
+    "ipa": "/kʌp/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He drank a hot cup of tea."],
+    "synonyms": ["mug", "glass"],
+    "tags": ["objects", "kitchen"]
+  },
+  {
+    "word": "customer",
+    "meaning_th": "ลูกค้า",
+    "meaning_en": "a person or organization that buys goods or services from a store or business",
+    "pronounce_th": "คัสเทิมเมอะ",
+    "ipa": "/ˈkʌstəmə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The store assistant is talking to a customer."],
+    "synonyms": ["client", "buyer", "shopper"],
+    "tags": ["business", "shopping", "people"]
+  },
+  {
+    "word": "cut",
+    "meaning_th": "ตัด, หั่น",
+    "meaning_en": "make an opening, incision, or wound in something with a sharp tool",
+    "pronounce_th": "คัท",
+    "ipa": "/kʌt/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Please cut the cake into eight pieces."],
+    "synonyms": ["slice", "chop", "divide"],
+    "tags": ["action", "cooking"]
+  },
+  {
+    "word": "dad",
+    "meaning_th": "พ่อ, คุณพ่อ",
+    "meaning_en": "one's father",
+    "pronounce_th": "แดด",
+    "ipa": "/dæd/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["My dad bought a new car yesterday."],
+    "synonyms": ["father", "daddy"],
+    "tags": ["people", "family"]
+  },
+  {
+    "word": "dance",
+    "meaning_th": "เต้น, การเต้นรำ",
+    "meaning_en": "move rhythmically to music, typically following a set sequence of steps",
+    "pronounce_th": "แดนซ์",
+    "ipa": "/dɑːns/",
+    "part_of_speech": "verb, noun",
+    "cefr": "A1",
+    "examples": [
+      "She loves to dance to pop music.",
+      "They went to a traditional dance show."
+    ],
+    "synonyms": [],
+    "tags": ["action", "entertainment", "hobby"]
+  },
+  {
+    "word": "dancer",
+    "meaning_th": "นักเต้น, นักเต้นรำ",
+    "meaning_en": "a person who dances, especially professionally",
+    "pronounce_th": "แดนเซอะ",
+    "ipa": "/ˈdɑːnsə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["She is a talented ballet dancer."],
+    "synonyms": ["performer"],
+    "tags": ["jobs", "entertainment"]
+  },
+  {
+    "word": "dancing",
+    "meaning_th": "การเต้น, การลีลาศ",
+    "meaning_en": "the activity of dancing for entertainment or performance",
+    "pronounce_th": "แดนซิง",
+    "ipa": "/ˈdɑːnsɪŋ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Dancing is a fun way to stay healthy."],
+    "synonyms": [],
+    "tags": ["hobby", "entertainment", "lifestyle"]
+  },
+  {
+    "word": "dangerous",
+    "meaning_th": "อันตราย, น่ากลัว",
+    "meaning_en": "able or likely to cause harm or injury",
+    "pronounce_th": "เดนเจอะรัส",
+    "ipa": "/ˈdeɪndʒərəs/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["It is dangerous to walk alone here at night."],
+    "synonyms": ["risky", "unsafe", "hazardous"],
+    "tags": ["description"]
+  },
+  {
+    "word": "dark",
+    "meaning_th": "มืด, สีเข้ม",
+    "meaning_en": "with little or no light; of a deep or somber color",
+    "pronounce_th": "ดาร์ค",
+    "ipa": "/dɑːk/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "The room was completely dark when I woke up.",
+      "He prefers wearing dark blue shirts."
+    ],
+    "synonyms": ["gloomy", "shadowy", "deep"],
+    "tags": ["description", "weather", "colors"]
+  },
+  {
+    "word": "date",
+    "meaning_th": "วันที่, ออกเดต",
+    "meaning_en": "the day of the month or year as specified by a number",
+    "pronounce_th": "เดท",
+    "ipa": "/deɪt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["What is the date today? It's May 22nd."],
+    "synonyms": [],
+    "tags": ["time", "personal-info"]
+  },
+  {
+    "word": "daughter",
+    "meaning_th": "ลูกสาว",
+    "meaning_en": "a female child in relation to her parents",
+    "pronounce_th": "ดอเทอะ",
+    "ipa": "/ˈdɔːtə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["They have a son and a young daughter."],
+    "synonyms": ["child"],
+    "tags": ["people", "family"]
+  },
+  {
+    "word": "day",
+    "meaning_th": "วัน, กลางวัน",
+    "meaning_en": "a period of twenty-four hours; the time of light between sunrise and sunset",
+    "pronounce_th": "เดย์",
+    "ipa": "/deɪ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["I work five days a week, from Monday to Friday."],
+    "synonyms": ["daytime"],
+    "tags": ["time", "daily-life"]
+  },
+  {
+    "word": "dear",
+    "meaning_th": "ถึง (คำขึ้นต้นจดหมาย), ที่รัก",
+    "meaning_en": "used as an affectionate or formal form of address",
+    "pronounce_th": "เดียร์",
+    "ipa": "/dɪə(r)/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["Dear John, thank you for your nice email."],
+    "synonyms": ["beloved", "respected"],
+    "tags": ["communication", "feelings"]
+  },
+  {
+    "word": "December",
+    "meaning_th": "ธันวาคม",
+    "meaning_en": "the twelfth month of the year",
+    "pronounce_th": "ดิเซมเบอะ",
+    "ipa": "/dɪˈsembə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Christmas is celebrated in December."],
+    "synonyms": [],
+    "tags": ["time", "months"]
+  },
+  {
+    "word": "decide",
+    "meaning_th": "ตัดสินใจ",
+    "meaning_en": "come to a resolution in the mind as a result of consideration",
+    "pronounce_th": "ดิไซด์",
+    "ipa": "/dɪˈsaɪd/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["I cannot decide which dress to buy."],
+    "synonyms": ["choose", "resolve", "determine"],
+    "tags": ["action", "mind"]
+  },
+  {
+    "word": "delicious",
+    "meaning_th": "อร่อย",
+    "meaning_en": "highly pleasant to the taste",
+    "pronounce_th": "ดิลิเชิส",
+    "ipa": "/dɪˈlɪʃəs/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["This homemade chocolate cake is delicious."],
+    "synonyms": ["tasty", "yummy"],
+    "tags": ["food", "description"]
+  },
+  {
+    "word": "describe",
+    "meaning_th": "อธิบาย, บรรยายลักษณะ",
+    "meaning_en": "give an account in words of someone or something, including all the important characteristics",
+    "pronounce_th": "ดิสไครบ์",
+    "ipa": "/dɪˈskraɪb/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Can you describe the man you saw at the station?"],
+    "synonyms": ["explain", "depict", "portray"],
+    "tags": ["action", "communication", "school"]
+  },
+  {
+    "word": "description",
+    "meaning_th": "คำอธิบาย, การบรรยายลักษณะ",
+    "meaning_en": "a spoken or written representation or account of a person, object, or event",
+    "pronounce_th": "ดิสคริพเชิน",
+    "ipa": "/dɪˈskrɪpʃn/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Please read the product description before buying."],
+    "synonyms": ["explanation", "account"],
+    "tags": ["communication", "school"]
+  },
+  {
+    "word": "design",
+    "meaning_th": "ออกแบบ, แบบแปลน",
+    "meaning_en": "a plan or drawing produced to show the look and function or workings of a building, garment, or other object before it is built or made",
+    "pronounce_th": "ดิไซน์",
+    "ipa": "/dɪˈzaɪn/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "I really like the modern design of this house.",
+      "She wants to design clothes in the future."
+    ],
+    "synonyms": ["plan", "pattern", "create"],
+    "tags": ["art", "business", "action"]
+  },
+  {
+    "word": "desk",
+    "meaning_th": "โต๊ะเรียน, โต๊ะทำงาน (มีลิ้นชัก)",
+    "meaning_en": "a piece of furniture with a flat or sloped surface and typically with drawers, at which one can read, write, or do other work",
+    "pronounce_th": "เดสคฺ",
+    "ipa": "/desk/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He sits at his office desk all day."],
+    "synonyms": ["table", "counter"],
+    "tags": ["furniture", "school", "home", "objects"]
+  },
+  {
+    "word": "detail",
+    "meaning_th": "รายละเอียด",
+    "meaning_en": "an individual fact or item",
+    "pronounce_th": "ดีเทล",
+    "ipa": "/ˈdiːteɪl/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Please give me more details about the meeting room."],
+    "synonyms": ["fact", "item", "particular"],
+    "tags": ["general", "communication"]
+  },
+  {
+    "word": "dialogue",
+    "meaning_th": "บทสนทนา",
+    "meaning_en": "a conversation between two or more people as a feature of a book, play, or movie",
+    "pronounce_th": "ไดอะล็อก",
+    "ipa": "/ˈdaɪəlɒɡ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Listen to the dialogue and answer the question."],
+    "synonyms": ["conversation", "talk", "chat"],
+    "tags": ["school", "communication", "reading"]
+  },
+  {
+    "word": "dictionary",
+    "meaning_th": "พจนานุกรม",
+    "meaning_en": "a book or electronic resource that lists the words of a language and gives their meaning",
+    "pronounce_th": "ดิคชันนารี",
+    "ipa": "/ˈdɪkʃənri/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["You can use an online dictionary to check word meanings."],
+    "synonyms": ["wordbook", "glossary"],
+    "tags": ["objects", "school", "reading"]
+  },
+  {
+    "word": "die",
+    "meaning_th": "ตาย, เสียชีวิต",
+    "meaning_en": "stop living; become dead",
+    "pronounce_th": "ได",
+    "ipa": "/daɪ/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["The old plant will die if you don't water it."],
+    "synonyms": ["pass away", "perish"],
+    "tags": ["action", "life"]
+  },
+  {
+    "word": "diet",
+    "meaning_th": "อาหาร (ที่กินเป็นประจำ), การควบคุมอาหาร",
+    "meaning_en": "the kinds of food that a person, animal, or community habitually eats",
+    "pronounce_th": "ไดเอท",
+    "ipa": "/ˈdaɪət/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["A balanced diet is very important for your health."],
+    "synonyms": ["food", "nutrition"],
+    "tags": ["food", "health", "lifestyle"]
+  },
+  {
+    "word": "difference",
+    "meaning_th": "ความแตกต่าง",
+    "meaning_en": "a point or way in which people or things are not the same",
+    "pronounce_th": "ดิฟเฟอเรนซ์",
+    "ipa": "/ˈdɪfrəns/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["What is the difference between these two mobile phones?"],
+    "synonyms": ["dissimilarity", "gap"],
+    "tags": ["general", "comparison"]
+  },
+  {
+    "word": "different",
+    "meaning_th": "ที่แตกต่างกัน, ไม่เหมือนกัน",
+    "meaning_en": "not the same as another or each other",
+    "pronounce_th": "ดิฟเฟอเรนท์",
+    "ipa": "/ˈdɪfrənt/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["They go to different schools in Bangkok."],
+    "synonyms": ["dissimilar", "unlike", "various"],
+    "tags": ["description", "comparison"]
+  },
+  {
+    "word": "difficult",
+    "meaning_th": "ยาก, ไม่ยุติธรรม",
+    "meaning_en": "needing much effort or skill to accomplish, deal with, or understand",
+    "pronounce_th": "ดิฟฟิคัลท์",
+    "ipa": "/ˈdɪfɪkəlt/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["The English test was very difficult for me."],
+    "synonyms": ["hard", "tough", "challenging"],
+    "tags": ["description", "school"]
+  },
+  {
+    "word": "dinner",
+    "meaning_th": "อาหารค่ำ, อาหารเย็น",
+    "meaning_en": "the main meal of the day, taken either around midday or in the evening",
+    "pronounce_th": "ดินเนอะ",
+    "ipa": "/ˈdɪnə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["We usually have dinner together at 7 p.m."],
+    "synonyms": ["supper", "meal"],
+    "tags": ["food", "daily-life", "meals"]
+  },
+  {
+    "word": "dirty",
+    "meaning_th": "สกปรก",
+    "meaning_en": "covered or marked with an unclean substance",
+    "pronounce_th": "เดอร์ที",
+    "ipa": "/ˈdɜːti/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["Put your dirty clothes in the basket."],
+    "synonyms": ["unclean", "filthy", "messy"],
+    "tags": ["description", "daily-life"]
+  },
+  {
+    "word": "discuss",
+    "meaning_th": "สนทนา, แลกเปลี่ยนความเห็น",
+    "meaning_en": "talk about something with a person or people",
+    "pronounce_th": "ดิสคัส",
+    "ipa": "/dɪˈskʌs/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["We need to discuss our holiday plans tonight."],
+    "synonyms": ["talk about", "debate", "converse"],
+    "tags": ["action", "communication", "school"]
+  },
+  {
+    "word": "dish",
+    "meaning_th": "จาน, เมนูอาหาร",
+    "meaning_en": "a shallow container for cooking or serving food; a particular item of prepared food",
+    "pronounce_th": "ดิช",
+    "ipa": "/dɪʃ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "Please wash the dirty dishes in the kitchen.",
+      "Pad Thai is a very popular Thai dish."
+    ],
+    "synonyms": ["plate", "meal", "food"],
+    "tags": ["objects", "food", "kitchen"]
+  },
+  {
+    "word": "do",
+    "meaning_th": "ทำ, ปฏิบัติ (ใช้เป็นกริยาช่วยในประโยคคำถาม/ปฏิเสธ)",
+    "meaning_en": "perform, execute, or achieve an action; used before a verb to form questions and negative statements",
+    "pronounce_th": "ดู",
+    "ipa": "/duː/",
+    "part_of_speech": "verb, auxiliary verb",
+    "cefr": "A1",
+    "examples": [
+      "I always do my homework before dinner.",
+      "Do you speak English?"
+    ],
+    "synonyms": ["perform", "execute", "act"],
+    "tags": ["action", "grammar", "basic"]
+  },
+  {
+    "word": "doctor",
+    "meaning_th": "หมอ, แพทย์",
+    "meaning_en": "a qualified practitioner of medicine",
+    "pronounce_th": "ด็อกเทอะ",
+    "ipa": "/ˈdɒktə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["If you feel sick, you should see a doctor."],
+    "synonyms": ["physician", "MD"],
+    "tags": ["jobs", "people", "health"]
+  },
+  {
+    "word": "dog",
+    "meaning_th": "สุนัข, หมา",
+    "meaning_en": "a domesticated carnivorous mammal that typically has a long snout and an excellent sense of smell",
+    "pronounce_th": "ด็อก",
+    "ipa": "/dɒɡ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He walks his dog in the park every afternoon."],
+    "synonyms": ["canine", "hound"],
+    "tags": ["animals", "pets"]
+  },
+  {
+    "word": "dollar",
+    "meaning_th": "ดอลลาร์ (สกุลเงิน)",
+    "meaning_en": "the basic monetary unit of the US, Canada, Australia, and other countries",
+    "pronounce_th": "ดอลลาร์",
+    "ipa": "/ˈdɒlə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The book costs ten dollars."],
+    "synonyms": [],
+    "tags": ["money"]
+  },
+  {
+    "word": "door",
+    "meaning_th": "ประตู",
+    "meaning_en": "a hinged, sliding, or revolving barrier at the entrance to a room or building",
+    "pronounce_th": "ดอร์",
+    "ipa": "/dɔː(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Please close the front door when you go out."],
+    "synonyms": ["gate", "entrance"],
+    "tags": ["home", "objects"]
+  },
+  {
+    "word": "down",
+    "meaning_th": "ลง, ข้างล่าง",
+    "meaning_en": "towards or in a lower position",
+    "pronounce_th": "ดาวน์",
+    "ipa": "/daʊn/",
+    "part_of_speech": "adverb, preposition",
+    "cefr": "A1",
+    "examples": ["Sit down on the chair, please."],
+    "synonyms": ["downward", "below"],
+    "tags": ["direction", "grammar"]
+  },
+  {
+    "word": "downstairs",
+    "meaning_th": "ชั้นล่าง",
+    "meaning_en": "on or to a lower floor of a building",
+    "pronounce_th": "ดาวน์สแตร์ส",
+    "ipa": "/ˌdaʊnˈsteəz/",
+    "part_of_speech": "adverb",
+    "cefr": "A1",
+    "examples": ["The kitchen is downstairs."],
+    "synonyms": ["lower floor"],
+    "tags": ["location", "home"]
+  },
+  {
+    "word": "draw",
+    "meaning_th": "วาด, วาดภาพ",
+    "meaning_en": "produce a picture or diagram by making lines and marks on paper",
+    "pronounce_th": "ดรอ",
+    "ipa": "/drɔː/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["She likes to draw pictures of animals."],
+    "synonyms": ["sketch", "paint"],
+    "tags": ["action", "art", "hobby"]
+  },
+  {
+    "word": "dress",
+    "meaning_th": "ชุดกระโปรง, แต่งกาย",
+    "meaning_en": "a one-piece garment for a woman or girl; put on clothes on oneself or someone else",
+    "pronounce_th": "เดรส",
+    "ipa": "/dres/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "She wore a beautiful pink dress to the party.",
+      "Get up and dress quickly."
+    ],
+    "synonyms": ["gown", "clothe", "wear"],
+    "tags": ["clothing", "objects", "action"]
+  },
+  {
+    "word": "drink",
+    "meaning_th": "ดื่ม, เครื่องดื่ม",
+    "meaning_en": "take a liquid into the mouth and swallow it; a liquid for drinking",
+    "pronounce_th": "ดริงคฺ",
+    "ipa": "/drɪŋk/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "Would you like something to drink?",
+      "Can I have a cold drink, please?"
+    ],
+    "synonyms": ["beverage", "swallow", "sip"],
+    "tags": ["action", "drinks", "food"]
+  },
+  {
+    "word": "drive",
+    "meaning_th": "ขับรถ",
+    "meaning_en": "operate and control the direction and speed of a motor vehicle",
+    "pronounce_th": "ไดรฝ",
+    "ipa": "/draɪv/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["He learned how to drive a car last year."],
+    "synonyms": ["steer", "operate", "ride"],
+    "tags": ["action", "transportation"]
+  },
+  {
+    "word": "driver",
+    "meaning_th": "คนขับรถ",
+    "meaning_en": "a person who drives a vehicle",
+    "pronounce_th": "ไดรเฝอะ",
+    "ipa": "/ˈdraɪvə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The bus driver was very friendly."],
+    "synonyms": ["chauffeur", "operator"],
+    "tags": ["jobs", "people", "transportation"]
+  },
+  {
+    "word": "during",
+    "meaning_th": "ในระหว่าง, ตลอดช่วงเวลา",
+    "meaning_en": "throughout the course or duration of a period of time",
+    "pronounce_th": "ดูริง",
+    "ipa": "/ˈdjʊərɪŋ/",
+    "part_of_speech": "preposition",
+    "cefr": "A1",
+    "examples": ["No one is allowed to talk during the exam."],
+    "synonyms": ["throughout", "amidst"],
+    "tags": ["time", "grammar"]
+  },
+  {
+    "word": "DVD",
+    "meaning_th": "ดีวีดี, แผ่นดีวีดี",
+    "meaning_en": "a digital video disc",
+    "pronounce_th": "ดีวีดี",
+    "ipa": "/ˌdiː viː ˈdiː/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["We rented a movie DVD to watch at home."],
+    "synonyms": ["disc"],
+    "tags": ["objects", "entertainment", "technology"]
+  },
+  {
+    "word": "each",
+    "meaning_th": "แต่ละ, ชิ้นละ",
+    "meaning_en": "used to refer to every one of two or more people or things, regarded and identified separately",
+    "pronounce_th": "อีช",
+    "ipa": "/iːtʃ/",
+    "part_of_speech": "determiner, pronoun, adverb",
+    "cefr": "A1",
+    "examples": ["Each student has a computer desk."],
+    "synonyms": ["every", "individual"],
+    "tags": ["quantity", "grammar"]
+  },
+  {
+    "word": "ear",
+    "meaning_th": "หู",
+    "meaning_en": "the organ of hearing and balance in humans and other vertebrates",
+    "pronounce_th": "เอียร์",
+    "ipa": "/ɪə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The dog has long, brown ears."],
+    "synonyms": [],
+    "tags": ["body", "health"]
+  },
+  {
+    "word": "early",
+    "meaning_th": "แต่เช้า, ก่อนเวลา, เช้าตรู่",
+    "meaning_en": "before the usual or expected time",
+    "pronounce_th": "เออร์ลี",
+    "ipa": "/ˈɜːli/",
+    "part_of_speech": "adjective, adverb",
+    "cefr": "A1",
+    "examples": ["I usually wake up early in the morning."],
+    "synonyms": ["premature", "ahead of time"],
+    "tags": ["time", "daily-life"]
+  },
+  {
+    "word": "east",
+    "meaning_th": "ทิศตะวันออก",
+    "meaning_en": "the direction toward the point of the horizon where the sun rises",
+    "pronounce_th": "อีสท์",
+    "ipa": "/iːst/",
+    "part_of_speech": "noun, adjective, adverb",
+    "cefr": "A1",
+    "examples": ["The sun rises in the east."],
+    "synonyms": [],
+    "tags": ["geography", "direction", "location"]
+  },
+  {
+    "word": "easy",
+    "meaning_th": "ง่าย, สะดวก",
+    "meaning_en": "achieved without great effort; presenting few difficulties",
+    "pronounce_th": "อีซี",
+    "ipa": "/ˈiːzi/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["The English homework was very easy."],
+    "synonyms": ["simple", "effortless", "uncomplicated"],
+    "tags": ["description", "school"]
+  },
+  {
+    "word": "eat",
+    "meaning_th": "กิน, รับประทาน",
+    "meaning_en": "put food into the mouth and chew and swallow it",
+    "pronounce_th": "อีท",
+    "ipa": "/iːt/ ",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["What do you want to eat for lunch?"],
+    "synonyms": ["consume", "dine", "devour"],
+    "tags": ["action", "food", "daily-life"]
+  },
+  {
+    "word": "egg",
+    "meaning_th": "ไข่",
+    "meaning_en": "an oval or round object laid by a female bird, standardly eaten as food",
+    "pronounce_th": "เอก",
+    "ipa": "/eɡ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["I usually have a boiled egg for breakfast."],
+    "synonyms": [],
+    "tags": ["food", "breakfast", "cooking"]
+  },
+  {
+    "word": "eight",
+    "meaning_th": "แปด, เลขแปด",
+    "meaning_en": "the equivalent of the product of two and four; one more than seven",
+    "pronounce_th": "เอท",
+    "ipa": "/eɪt/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["The meeting will start at eight o'clock."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "eighteen",
+    "meaning_th": "สิบแปด",
+    "meaning_en": "one more than seventeen; twice nine",
+    "pronounce_th": "เอททีน",
+    "ipa": "/ˌeɪˈtiːn/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["She is eighteen years old and attends college."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "eighty",
+    "meaning_th": "แปดสิบ",
+    "meaning_en": "the numerical product of ten and eight",
+    "pronounce_th": "เอทที",
+    "ipa": "/ˈeɪti/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["My grandfather is eighty years old."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "elephant",
+    "meaning_th": "ช้าง",
+    "meaning_en": "a very large plant-eating mammal with a long flexible trunk and large ears",
+    "pronounce_th": "เอลเลิฟันท์",
+    "ipa": "/ˈelɪfənt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["We saw a wild elephant during our trip to the forest."],
+    "synonyms": [],
+    "tags": ["animals", "nature"]
+  },
+  {
+    "word": "eleven",
+    "meaning_th": "สิบเอ็ด",
+    "meaning_en": "one more than ten; the equivalent of the sum of five and six",
+    "pronounce_th": "อิเลฝเฝิน",
+    "ipa": "/ɪˈlevn/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["The train leaves at eleven o'clock."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "else",
+    "meaning_th": "อื่น, อื่นอีก, นอกจากนี้",
+    "meaning_en": "in addition; besides; different",
+    "pronounce_th": "เอลส์",
+    "ipa": "/els/",
+    "part_of_speech": "adverb",
+    "cefr": "A1",
+    "examples": ["Would you like anything else to eat?"],
+    "synonyms": ["other", "additional", "besides"],
+    "tags": ["grammar", "quantity"]
+  },
+  {
+    "word": "email",
+    "meaning_th": "อีเมล, จดหมายอิเล็กทรอนิกส์, ส่งอีเมล",
+    "meaning_en": "messages distributed by electronic means from one computer user to one or more recipients via a network",
+    "pronounce_th": "อีเมล",
+    "ipa": "/ˈiːmeɪl/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "I received an email from my manager today.",
+      "Please email the completed form to the office."
+    ],
+    "synonyms": ["electronic mail", "send mail"],
+    "tags": ["communication", "technology", "action"]
+  },
+  {
+    "word": "end",
+    "meaning_th": "จุดจบ, ปลาย, ตอนจบ, สิ้นสุด",
+    "meaning_en": "the final part of something; finish or stop",
+    "pronounce_th": "เอนด์",
+    "ipa": "/end/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "I missed the end of the movie.",
+      "The English class will end at noon."
+    ],
+    "synonyms": ["finish", "conclusion", "stop", "terminate"],
+    "tags": ["time", "action", "general"]
+  },
+  {
+    "word": "enjoy",
+    "meaning_th": "เพลิดเพลิน, สนุกสนาน",
+    "meaning_en": "take delight or pleasure in",
+    "pronounce_th": "อินจอย",
+    "ipa": "/ɪnˈdʒɔɪ/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["I hope you enjoy your holiday trip."],
+    "synonyms": ["like", "relish", "love"],
+    "tags": ["action", "feelings", "lifestyle"]
+  },
+  {
+    "word": "enough",
+    "meaning_th": "เพียงพอ, พอแล้ว",
+    "meaning_en": "as much or as many as required",
+    "pronounce_th": "อีนัฟ",
+    "ipa": "/ɪˈnʌf/",
+    "part_of_speech": "determiner, pronoun, adverb",
+    "cefr": "A1",
+    "examples": [
+      "We have enough food for dinner.",
+      "Stop! That is enough water."
+    ],
+    "synonyms": ["sufficient", "adequate"],
+    "tags": ["quantity", "grammar"]
+  },
+  {
+    "word": "euro",
+    "meaning_th": "ยูโร (สกุลเงินยุโรป)",
+    "meaning_en": "the single European currency",
+    "pronounce_th": "ยูโร",
+    "ipa": "/ˈjʊərəʊ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The coffee costs three euros in Paris."],
+    "synonyms": [],
+    "tags": ["money"]
+  },
+  {
+    "word": "even",
+    "meaning_th": "แม้แต่, แม้กระทั่ง",
+    "meaning_en": "used to emphasize something surprising or unexpected",
+    "pronounce_th": "อีเฝิน",
+    "ipa": "/ˈiːvn/",
+    "part_of_speech": "adverb",
+    "cefr": "A1",
+    "examples": ["It was so cold that even the river froze."],
+    "synonyms": ["indeed"],
+    "tags": ["grammar"]
+  },
+  {
+    "word": "evening",
+    "meaning_th": "ตอนเย็น, ตอนค่ำ",
+    "meaning_en": "the period of time at the end of the day, usually from about 6 p.m. to bedtime",
+    "pronounce_th": "อีฝนิง",
+    "ipa": "/ˈiːvnɪŋ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["What do you like to do in the evening?"],
+    "synonyms": ["nightfall", "dusk"],
+    "tags": ["time", "daily-life"]
+  },
+  {
+    "word": "event",
+    "meaning_th": "เหตุการณ์, งานสำคัญ, งานกิจกรรม",
+    "meaning_en": "a thing that happens, especially one of importance",
+    "pronounce_th": "อิเฝนท์",
+    "ipa": "/ɪˈvent/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The school offers many sports events this month."],
+    "synonyms": ["occurrence", "incident", "occasion"],
+    "tags": ["general", "lifestyle"]
+  },
+  {
+    "word": "ever",
+    "meaning_th": "เคย, ตลอดไป",
+    "meaning_en": "at any time; at all times",
+    "pronounce_th": "เอ็ฝเฝอะ",
+    "ipa": "/ˈevə(r)/",
+    "part_of_speech": "adverb",
+    "cefr": "A1",
+    "examples": ["Have you ever visited a wild animal park?"],
+    "synonyms": ["at any time"],
+    "tags": ["time", "frequency", "grammar"]
+  },
+  {
+    "word": "every",
+    "meaning_th": "ทุกๆ",
+    "meaning_en": "used to refer to all the individual members of a set without exception",
+    "pronounce_th": "เอ็ฝรี",
+    "ipa": "/ˈevri/",
+    "part_of_speech": "determiner",
+    "cefr": "A1",
+    "examples": ["I walk my dog in the park every day."],
+    "synonyms": ["each", "all"],
+    "tags": ["quantity", "grammar"]
+  },
+  {
+    "word": "everybody",
+    "meaning_th": "ทุกคน",
+    "meaning_en": "every person",
+    "pronounce_th": "เอ็ฝรีบอดี้",
+    "ipa": "/ˈevribɒdi/",
+    "part_of_speech": "pronoun",
+    "cefr": "A1",
+    "examples": ["Good morning everybody! Please sit down."],
+    "synonyms": ["everyone"],
+    "tags": ["people", "grammar"]
+  },
+  {
+    "word": "everyone",
+    "meaning_th": "ทุกคน",
+    "meaning_en": "every person",
+    "pronounce_th": "เอ็ฝรีวัน",
+    "ipa": "/ˈevriwʌn/",
+    "part_of_speech": "pronoun",
+    "cefr": "A1",
+    "examples": ["Everyone in my class passed the English exam."],
+    "synonyms": ["everybody"],
+    "tags": ["people", "grammar"]
+  },
+  {
+    "word": "everything",
+    "meaning_th": "ทุกสิ่ง, ทุกอย่าง",
+    "meaning_en": "all things; all the things of importance",
+    "pronounce_th": "เอ็ฝรีธิง",
+    "ipa": "/ˈevriθɪŋ/",
+    "part_of_speech": "pronoun",
+    "cefr": "A1",
+    "examples": ["Don't worry, everything will be fine."],
+    "synonyms": ["all"],
+    "tags": ["grammar", "general"]
+  },
+  {
+    "word": "exam",
+    "meaning_th": "การสอบ, ข้อสอบ",
+    "meaning_en": "a formal test of a person's knowledge or proficiency in a particular subject or skill",
+    "pronounce_th": "อิกแซม",
+    "ipa": "/ɪɡˈzæm/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["I need to study hard for the final exam."],
+    "synonyms": ["examination", "test", "quiz"],
+    "tags": ["school", "education"]
+  },
+  {
+    "word": "example",
+    "meaning_th": "ตัวอย่าง",
+    "meaning_en": "a thing characteristic of its kind or illustrating a general rule",
+    "pronounce_th": "อิกซามเพิล",
+    "ipa": "/ɪɡˈzɑːmpl/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Can you give me an example of a wild animal?"],
+    "synonyms": ["instance", "sample", "illustration"],
+    "tags": ["school", "general"]
+  },
+  {
+    "word": "excited",
+    "meaning_th": "รู้สึกตื่นเต้น",
+    "meaning_en": "very enthusiastic and eager",
+    "pronounce_th": "อิกไซทิด",
+    "ipa": "/ɪkˈsaɪtɪd/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["The children are excited about the holiday trip."],
+    "synonyms": ["thrilled", "eager", "enthusiastic"],
+    "tags": ["feelings", "emotions"]
+  },
+  {
+    "word": "exciting",
+    "meaning_th": "น่าตื่นเต้น",
+    "meaning_en": "causing great enthusiasm and eagerness",
+    "pronounce_th": "อิกไซทิง",
+    "ipa": "/ɪkˈsaɪtɪŋ/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["Watching a rock concert is very exciting."],
+    "synonyms": ["thrilling", "exhilarating"],
+    "tags": ["description"]
+  },
+  {
+    "word": "exercise",
+    "meaning_th": "การออกกำลังกาย, แบบฝึกหัด, ออกกำลังกาย",
+    "meaning_en": "activity requiring physical effort, carried out to sustain or improve health and fitness; a task set to practice a skill",
+    "pronounce_th": "เอ็กเซอะไซซฺ",
+    "ipa": "/ˈeksəsaɪz/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "Running is a great physical exercise.",
+      "Please complete exercise five on page ten."
+    ],
+    "synonyms": ["workout", "practice", "task"],
+    "tags": ["health", "sports", "school", "action"]
+  },
+  {
+    "word": "expensive",
+    "meaning_th": "ราคาแพง",
+    "meaning_en": "costing a lot of money",
+    "pronounce_th": "อิกสเพนสิฝ",
+    "ipa": "/ɪkˈspensɪv/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["This laptop computer is too expensive for me."],
+    "synonyms": ["costly", "dear", "high-priced"],
+    "tags": ["description", "shopping", "money"]
+  },
+  {
+    "word": "explain",
+    "meaning_th": "อธิบาย",
+    "meaning_en": "make something clear to someone by describing it in more detail or revealing relevant facts",
+    "pronounce_th": "อิกสเพลน",
+    "ipa": "/ɪkˈspleɪn/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Could you explain this difficult math question to me?"],
+    "synonyms": ["describe", "clarify", "illustrate"],
+    "tags": ["action", "communication", "school"]
+  },
+  {
+    "word": "extra",
+    "meaning_th": "พิเศษ, เพิ่มเติม, ที่มากกว่าปกติ",
+    "meaning_en": "added to an existing or usual amount or number; additional",
+    "pronounce_th": "เอ็กสทระ",
+    "ipa": "/ˈekstrə/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["I ordered extra cheese for my pizza."],
+    "synonyms": ["additional", "added", "spare"],
+    "tags": ["description", "quantity"]
+  },
+  {
+    "word": "eye",
+    "meaning_th": "ตา, ดวงตา",
+    "meaning_en": "each of a pair of globular organs in the head through which people and vertebrate animals see",
+    "pronounce_th": "ไอ",
+    "ipa": "/aɪ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["She has beautiful blue eyes and blonde hair."],
+    "synonyms": [],
+    "tags": ["body", "health"]
+  },
+  {
+    "word": "face",
+    "meaning_th": "ใบหน้า, เผชิญหน้า",
+    "meaning_en": "the front part of a person's head from the forehead to the chin",
+    "pronounce_th": "เฟซ",
+    "ipa": "/feɪs/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["She washed her face with cold water."],
+    "synonyms": ["countenance"],
+    "tags": ["body", "personal-info"]
+  },
+  {
+    "word": "fact",
+    "meaning_th": "ข้อเท็จจริง, ความจริง",
+    "meaning_en": "a thing that is known or proved to be true",
+    "pronounce_th": "แฟคท์",
+    "ipa": "/fækt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["It is a fact that the earth moves around the sun."],
+    "synonyms": ["truth", "reality"],
+    "tags": ["general", "school"]
+  },
+  {
+    "word": "fall",
+    "meaning_th": "ตก, ร่วง, ล้ม, ฤดูใบไม้ร่วง",
+    "meaning_en": "move downward rapidly and freely from a higher level; drop to the ground",
+    "pronounce_th": "ฟอล",
+    "ipa": "/fɔːl/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Watch out! The heavy box might fall from the desk."],
+    "synonyms": ["drop", "descend", "collapse"],
+    "tags": ["action", "movement"]
+  },
+  {
+    "word": "false",
+    "meaning_th": "เท็จ, ปลอม, ไม่จริง",
+    "meaning_en": "not according with truth or fact; incorrect",
+    "pronounce_th": "ฟอลส์",
+    "ipa": "/fɔːls/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["Is this statement true or false?"],
+    "synonyms": ["incorrect", "untrue", "wrong"],
+    "tags": ["description", "school"]
+  },
+  {
+    "word": "family",
+    "meaning_th": "ครอบครัว",
+    "meaning_en": "a group of one or more parents and their children living together as a unit",
+    "pronounce_th": "แฟมมิลี",
+    "ipa": "/ˈfæməli/",
+    "part_of_speech": "noun, adjective",
+    "cefr": "A1",
+    "examples": ["I love spending time with my family on weekends."],
+    "synonyms": ["household", "relatives"],
+    "tags": ["people", "family"]
+  },
+  {
+    "word": "famous",
+    "meaning_th": "มีชื่อเสียง, ดัง",
+    "meaning_en": "known about by many people",
+    "pronounce_th": "เฟมเมิส",
+    "ipa": "/ˈfeɪməs/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["Van Gogh is a world-famous artist."],
+    "synonyms": ["well-known", "celebrated"],
+    "tags": ["description", "entertainment"]
+  },
+  {
+    "word": "fantastic",
+    "meaning_th": "ยอดเยี่ยม, มหัศจรรย์",
+    "meaning_en": "imaginatively fanciful; extraordinarily good",
+    "pronounce_th": "แฟนแทสทิค",
+    "ipa": "/fænˈtæstɪk/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["The view from the mountain top is fantastic."],
+    "synonyms": ["wonderful", "excellent", "amazing"],
+    "tags": ["description"]
+  },
+  {
+    "word": "far",
+    "meaning_th": "ไกล, ห่างไกล",
+    "meaning_en": "at, to, or by a great distance",
+    "pronounce_th": "ฟาร์",
+    "ipa": "/fɑː(r)/",
+    "part_of_speech": "adverb",
+    "cefr": "A1",
+    "examples": ["The airport is very far from the town centre."],
+    "synonyms": ["distant", "remote"],
+    "tags": ["distance", "location", "grammar"]
+  },
+  {
+    "word": "farm",
+    "meaning_th": "ฟาร์ม, ไร่, นา",
+    "meaning_en": "an area of land and its buildings, used for growing crops and rearing animals",
+    "pronounce_th": "ฟาร์ม",
+    "ipa": "/fɑːm/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["My uncle owns a big cow farm in the country."],
+    "synonyms": ["plantation", "estate"],
+    "tags": ["places", "nature", "farm"]
+  },
+  {
+    "word": "farmer",
+    "meaning_th": "ชาวนา, ชาวไร่, เกษตรกร",
+    "meaning_en": "a person who owns or manages a farm",
+    "pronounce_th": "ฟาร์มเมอะ",
+    "ipa": "/ˈfɑːmə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The local farmer grows organic carrots."],
+    "synonyms": ["grower", "agriculturist"],
+    "tags": ["jobs", "people", "farm"]
+  },
+  {
+    "word": "fast",
+    "meaning_th": "รวดเร็ว, ไว",
+    "meaning_en": "moving or capable of moving at high speed",
+    "pronounce_th": "ฟาสท์",
+    "ipa": "/fɑːst/",
+    "part_of_speech": "adjective, adverb",
+    "cefr": "A1",
+    "examples": ["He drives a very fast red car."],
+    "synonyms": ["quick", "rapid", "speedy"],
+    "tags": ["description", "vehicles"]
+  },
+  {
+    "word": "fat",
+    "meaning_th": "อ้วน",
+    "meaning_en": "having a large amount of excess flesh",
+    "pronounce_th": "แฟท",
+    "ipa": "/fæt/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["Don't feed the cat too much; it's getting fat."],
+    "synonyms": ["plump", "overweight"],
+    "tags": ["description", "appearance"]
+  },
+  {
+    "word": "father",
+    "meaning_th": "พ่อ, บิดา",
+    "meaning_en": "a male parent",
+    "pronounce_th": "ฟาร์เธอะ",
+    "ipa": "/ˈfɑːðə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["My father works as a doctor at the local hospital."],
+    "synonyms": ["father", "dad"],
+    "tags": ["people", "family"]
+  },
+  {
+    "word": "favourite",
+    "meaning_th": "ที่โปรดปราน, ที่ชอบมากที่สุด",
+    "meaning_en": "preferred to all others of the same kind",
+    "pronounce_th": "เฟเฝอะริท",
+    "ipa": "/ˈfeɪvərɪt/",
+    "part_of_speech": "adjective, noun",
+    "cefr": "A1",
+    "examples": ["Chocolate ice cream is my favourite dessert."],
+    "synonyms": ["preferred", "beloved"],
+    "tags": ["description", "feelings"]
+  },
+  {
+    "word": "February",
+    "meaning_th": "กุมภาพันธ์",
+    "meaning_en": "the second month of the year",
+    "pronounce_th": "เฟบรูอะรี",
+    "ipa": "/ˈfebruəri/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Valentine's Day is in February."],
+    "synonyms": [],
+    "tags": ["time", "months"]
+  },
+  {
+    "word": "feel",
+    "meaning_th": "รู้สึก, สัมผัส",
+    "meaning_en": "be aware of a person's emotion or physical condition",
+    "pronounce_th": "ฟีล",
+    "ipa": "/fiːl/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["I feel very happy today because my school is closed."],
+    "synonyms": ["sense", "experience"],
+    "tags": ["action", "feelings", "emotions"]
+  },
+  {
+    "word": "feeling",
+    "meaning_th": "ความรู้สึก",
+    "meaning_en": "an emotional state or reaction",
+    "pronounce_th": "ฟีลลิง",
+    "ipa": "/ˈfiːlɪŋ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He shared his deep feelings with his brother."],
+    "synonyms": ["emotion", "sensation"],
+    "tags": ["feelings", "emotions"]
+  },
+  {
+    "word": "festival",
+    "meaning_th": "เทศกาล, งานฉลอง",
+    "meaning_en": "a day or period of celebration, typically a religious one",
+    "pronounce_th": "เฟสทิเฝิล",
+    "ipa": "/ˈfestɪvl/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Songkran is a world-famous water festival in Thailand."],
+    "synonyms": ["celebration", "carnival", "gala"],
+    "tags": ["lifestyle", "celebration", "culture"]
+  },
+  {
+    "word": "few",
+    "meaning_th": "น้อย, สองสามชิ้น (ใช้กับนามนับได้พหูพจน์)",
+    "meaning_en": "a small number of",
+    "pronounce_th": "ฟิว",
+    "ipa": "/fjuː/",
+    "part_of_speech": "determiner, adjective, pronoun",
+    "cefr": "A1",
+    "examples": ["I have a few questions about the final exam."],
+    "synonyms": ["some", "a handful of"],
+    "tags": ["quantity", "grammar"]
+  },
+  {
+    "word": "fifteen",
+    "meaning_th": "สิบห้า",
+    "meaning_en": "one more than fourteen; five less than twenty",
+    "pronounce_th": "ฟิฟทีน",
+    "ipa": "/ˌfɪfˈtiːn/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["The book costs fifteen dollars."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "fifth",
+    "meaning_th": "ที่ห้า, ลำดับที่ห้า",
+    "meaning_en": "constituting number five in a sequence",
+    "pronounce_th": "ฟิฟธ์",
+    "ipa": "/fɪfθ/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["My bedroom is on the fifth floor of the building."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "fifty",
+    "meaning_th": "ห้าสิบ",
+    "meaning_en": "the numerical product of ten and five",
+    "pronounce_th": "ฟิฟที",
+    "ipa": "/ˈfɪfti/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["My father is fifty years old."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "fill",
+    "meaning_th": "เติม, เติมให้เต็ม",
+    "meaning_en": "make an empty container full",
+    "pronounce_th": "ฟิล",
+    "ipa": "/fɪl/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Please fill this bottle with fresh water."],
+    "synonyms": ["load", "pack"],
+    "tags": ["action"]
+  },
+  {
+    "word": "film",
+    "meaning_th": "ภาพยนตร์, หนัง",
+    "meaning_en": "a movie or motion picture",
+    "pronounce_th": "ฟิล์ม",
+    "ipa": "/fɪlm/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["We are going to watch an exciting action film tonight."],
+    "synonyms": ["movie", "motion picture"],
+    "tags": ["entertainment", "media", "objects"]
+  },
+  {
+    "word": "final",
+    "meaning_th": "สุดท้าย, ท้ายสุด, รอบชิงชนะเลิศ",
+    "meaning_en": "coming at the end of a series; the last match in a sports tournament",
+    "pronounce_th": "ไฟเนิล",
+    "ipa": "/ˈfaɪnl/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["This is the final question of the English test."],
+    "synonyms": ["last", "ultimate", "concluding"],
+    "tags": ["description", "time"]
+  },
+  {
+    "word": "find",
+    "meaning_th": "หา, ค้นหา, พบ",
+    "meaning_en": "discover or perceive by chance or unexpectedly",
+    "pronounce_th": "ไฟนด์",
+    "ipa": "/faɪnd/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Where did you find your missing bag?"],
+    "synonyms": ["discover", "locate", "spot"],
+    "tags": ["action"]
+  },
+  {
+    "word": "fine",
+    "meaning_th": "สบายดี, ดี, ละเอียด",
+    "meaning_en": "of high quality; well or in good health",
+    "pronounce_th": "ไฟน์",
+    "ipa": "/faɪn/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["How are you? I'm fine, thank you."],
+    "synonyms": ["good", "well", "excellent"],
+    "tags": ["description", "conversation"]
+  },
+  {
+    "word": "finish",
+    "meaning_th": "เสร็จสิ้น, ทำเสร็จ, ตอนจบ",
+    "meaning_en": "bring a task or activity to an end; complete",
+    "pronounce_th": "ฟินนิช",
+    "ipa": "/ˈfɪnɪʃ/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Please finish your homework before going to bed."],
+    "synonyms": ["complete", "finish", "end"],
+    "tags": ["action", "time", "school"]
+  },
+  {
+    "word": "fire",
+    "meaning_th": "ไฟ, ไฟไหม้",
+    "meaning_en": "combustion or burning, in which substances combine chemically with oxygen from the air and typically give out bright light and heat",
+    "pronounce_th": "ไฟเออร์",
+    "ipa": "/ˈfaɪə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Don't play with fire; it is very dangerous."],
+    "synonyms": ["blaze", "flame"],
+    "tags": ["nature", "danger", "objects"]
+  },
+  {
+    "word": "first",
+    "meaning_th": "อันดับแรก, ที่หนึ่ง, แรกสุด",
+    "meaning_en": "coming before all others in time or order",
+    "pronounce_th": "เฟิร์สท์",
+    "ipa": "/fɜːst/",
+    "part_of_speech": "determiner, number, adverb",
+    "cefr": "A1",
+    "examples": [
+      "January is the first month of the year.",
+      "First, wash your hands before eating."
+    ],
+    "synonyms": ["initial", "primary", "foremost"],
+    "tags": ["numbers", "time", "sequence", "grammar"]
+  },
+  {
+    "word": "fish",
+    "meaning_th": "ปลา, เนื้อปลา",
+    "meaning_en": "a limbless cold-blooded vertebrate animal with gills and fins and living wholly in water",
+    "pronounce_th": "ฟิช",
+    "ipa": "/fɪʃ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["There are many colorful fish in the river."],
+    "synonyms": [],
+    "tags": ["animals", "nature", "food"]
+  },
+  {
+    "word": "five",
+    "meaning_th": "ห้า, เลขห้า",
+    "meaning_en": "one more than four; half of ten",
+    "pronounce_th": "ไฟฝ",
+    "ipa": "/faɪv/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["I have five English books in my bag."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "flat",
+    "meaning_th": "แฟลต, ห้องชุด, แบนราบ",
+    "meaning_en": "a suite of rooms on one floor forming a separate residence; having a level surface",
+    "pronounce_th": "แฟลท",
+    "ipa": "/flæt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["They live in a modern flat in London."],
+    "synonyms": ["apartment", "suite", "level"],
+    "tags": ["home", "places"]
+  },
+  {
+    "word": "flight",
+    "meaning_th": "เที่ยวบิน, การบิน",
+    "meaning_en": "an act of flying; a journey made through the air",
+    "pronounce_th": "ไฟลท์",
+    "ipa": "/flaɪt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Our flight to Bangkok departs from the airport soon."],
+    "synonyms": ["journey", "aviation"],
+    "tags": ["travel", "transportation"]
+  },
+  {
+    "word": "floor",
+    "meaning_th": "พื้นห้อง, ชั้น (ของตึก)",
+    "meaning_en": "the lower surface of a room, on which one walks; a story of a building",
+    "pronounce_th": "ฟลอร์",
+    "ipa": "/flɔː(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "Please sit down on the floor.",
+      "My flat is on the third floor."
+    ],
+    "synonyms": ["ground", "story", "level"],
+    "tags": ["home", "location"]
+  },
+  {
+    "word": "flower",
+    "meaning_th": "ดอกไม้",
+    "meaning_en": "the seed-bearing part of a plant, consisting of reproductive organs that are typically surrounded by a brightly colored corolla",
+    "pronounce_th": "ฟลาวเออะ",
+    "ipa": "/ˈflaʊə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The beautiful flowers in the garden smell nice."],
+    "synonyms": ["blossom", "bloom"],
+    "tags": ["nature", "plants"]
+  },
+  {
+    "word": "fly",
+    "meaning_th": "บิน",
+    "meaning_en": "move through the air using wings",
+    "pronounce_th": "ไฟ",
+    "ipa": "/flaɪ/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Birds can fly above the high buildings."],
+    "synonyms": ["soar", "wing"],
+    "tags": ["action", "movement"]
+  },
+  {
+    "word": "follow",
+    "meaning_th": "ตาม, ติดตาม, ปฏิบัติตาม",
+    "meaning_en": "go or come after a person or thing proceeding ahead; accept as a guide or leader",
+    "pronounce_th": "ฟอลโลว์",
+    "ipa": "/ˈfɒləʊ/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["The little dog will follow you everywhere.", "Please follow the school rules."],
+    "synonyms": ["pursue", "trail", "obey"],
+    "tags": ["action", "movement"]
+  },
+  {
+    "word": "food",
+    "meaning_th": "อาหาร",
+    "meaning_en": "any nutritious substance that people or animals eat or drink to maintain life and growth",
+    "pronounce_th": "ฟูด",
+    "ipa": "/fuːd/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["This small cafe serves delicious and cheap food."],
+    "synonyms": ["meal", "nourishment", "cuisine"],
+    "tags": ["food", "daily-life"]
+  },
+  {
+    "word": "foot",
+    "meaning_th": "เท้า, ฟุต (หน่วยวัดความยาว)",
+    "meaning_en": "the lower extremity of the leg below the ankle, on which a person stands or walks",
+    "pronounce_th": "ฟุท",
+    "ipa": "/fʊt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He hurt his left foot during the football match."],
+    "synonyms": [],
+    "tags": ["body", "health"]
+  },
+  {
+    "word": "football",
+    "meaning_th": "ฟุตบอล",
+    "meaning_en": "a team game played with a spherical ball that may be kicked",
+    "pronounce_th": "ฟุทบอล",
+    "ipa": "/ˈfʊtbɔːl/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The children love playing football in the yard."],
+    "synonyms": ["soccer"],
+    "tags": ["sports", "hobby", "games"]
+  },
+  {
+    "word": "for",
+    "meaning_th": "สำหรับ, เพื่อ, เป็นเวลา",
+    "meaning_en": "affecting, with regard to, or in respect of; because of",
+    "pronounce_th": "ฟอร์",
+    "ipa": "/fɔː(r)/",
+    "part_of_speech": "preposition",
+    "cefr": "A1",
+    "examples": ["I bought this birthday gift for you.", "We walked for two miles."],
+    "synonyms": [],
+    "tags": ["grammar"]
+  },
+  {
+    "word": "forget",
+    "meaning_th": "ลืม",
+    "meaning_en": "fail to remember",
+    "pronounce_th": "ฟอร์เก็ท",
+    "ipa": "/fəˈɡet/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": ["Don't forget to lock the door before leaving."],
+    "synonyms": ["neglect", "overlook"],
+    "tags": ["action", "mind"]
+  },
+  {
+    "word": "form",
+    "meaning_th": "แบบฟอร์ม, รูปแบบ, ก่อตัว",
+    "meaning_en": "a printed document with blank spaces for information; shape or configuration",
+    "pronounce_th": "ฟอร์ม",
+    "ipa": "/fɔːm/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "Please fill out this registration form.",
+      "The students form a line in the school yard."
+    ],
+    "synonyms": ["document", "shape", "structure"],
+    "tags": ["objects", "school", "action"]
+  },
+  {
+    "word": "forty",
+    "meaning_th": "สี่สิบ",
+    "meaning_en": "the numerical product of ten and four",
+    "pronounce_th": "ฟอร์ที",
+    "ipa": "/ˈfɔːti/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["This English dictionary costs forty dollars."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "four",
+    "meaning_th": "สี่, เลขสี่",
+    "meaning_en": "one more than three; two less than six",
+    "pronounce_th": "ฟอร์",
+    "ipa": "/fɔː(r)/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["There are four chairs around the dining table."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "fourteen",
+    "meaning_th": "สิบสี่",
+    "meaning_en": "one more than thirteen; six less than twenty",
+    "pronounce_th": "ฟอร์ทีน",
+    "ipa": "/ˌfɔːˈtiːn/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["My cousin is fourteen years old."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "fourth",
+    "meaning_th": "ที่สี่, ลำดับที่สี่",
+    "meaning_en": "constituting number four in a sequence",
+    "pronounce_th": "ฟอร์ธ์",
+    "ipa": "/fɔːθ/",
+    "part_of_speech": "number",
+    "cefr": "A1",
+    "examples": ["April is the fourth month of the year."],
+    "synonyms": [],
+    "tags": ["numbers", "math"]
+  },
+  {
+    "word": "free",
+    "meaning_th": "ฟรี, วาง, อิสระ",
+    "meaning_en": "given or available without charge; not occupied",
+    "pronounce_th": "ฟรี",
+    "ipa": "/friː/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "The local museum offers free tickets on Sundays.",
+      "Are you free this Friday evening?"
+    ],
+    "synonyms": ["complimentary", "available", "liberated"],
+    "tags": ["description", "shopping", "time"]
+  },
+  {
+    "word": "Friday",
+    "meaning_th": "วันศุกร์",
+    "meaning_en": "the day of the week before Saturday and after Thursday",
+    "pronounce_th": "ไฟรเดย์",
+    "ipa": "/ˈfraɪdeɪ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["We are going to a concert this Friday night."],
+    "synonyms": [],
+    "tags": ["time", "days"]
+  },
+  {
+    "word": "friend",
+    "meaning_th": "เพื่อน",
+    "meaning_en": "a person whom one knows and has a bond of mutual affection with",
+    "pronounce_th": "เฟรนด์",
+    "ipa": "/frend/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He is driving a car with his best friend."],
+    "synonyms": ["buddy", "pal", "companion"],
+    "tags": ["people", "family"]
+  },
+  {
+    "word": "friendly",
+    "meaning_th": "เป็นมิตร, เป็นกันเอง",
+    "meaning_en": "kind and pleasant",
+    "pronounce_th": "เฟรนด์ลี",
+    "ipa": "/ˈfrendli/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["Don't be afraid of the dog; it's very friendly."],
+    "synonyms": ["kind", "amiable", "welcoming"],
+    "tags": ["description", "feelings"]
+  },
+  {
+    "word": "from",
+    "meaning_th": "จาก, ตั้งแต่",
+    "meaning_en": "indicating the point in space or time at which a journey, motion, or action starts",
+    "pronounce_th": "ฟรอม",
+    "ipa": "/frɒm/",
+    "part_of_speech": "preposition",
+    "cefr": "A1",
+    "examples": ["Where are you from? I'm from Thailand."],
+    "synonyms": [],
+    "tags": ["grammar", "location"]
+  },
+  {
+    "word": "front",
+    "meaning_th": "ข้างหน้า, ด้านหน้า",
+    "meaning_en": "the side or part of an object that presents itself to view or that is normally ahead",
+    "pronounce_th": "ฟรอนท์",
+    "ipa": "/frʌnt/",
+    "part_of_speech": "noun, adjective",
+    "cefr": "A1",
+    "examples": ["Please write your name on the front page of the booklet."],
+    "synonyms": ["forefront", "vanguard", "ahead"],
+    "tags": ["location", "direction"]
+  },
+  {
+    "word": "fruit",
+    "meaning_th": "ผลไม้",
+    "meaning_en": "the sweet and fleshy product of a tree or other plant that contains seed and can be eaten as food",
+    "pronounce_th": "ฟรุต",
+    "ipa": "/fruːt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["She loves eating fresh fruit like apples and bananas."],
+    "synonyms": [],
+    "tags": ["food", "fruits"]
+  },
+  {
+    "word": "full",
+    "meaning_th": "เต็ม, อิ่ม",
+    "meaning_en": "containing or holding as much or as many as possible; having eaten to satisfaction",
+    "pronounce_th": "ฟูล",
+    "ipa": "/fʊl/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "The bottle is full of fresh water.",
+      "No more chocolate cake for me, I'm full."
+    ],
+    "synonyms": ["packed", "satisfied"],
+    "tags": ["description", "quantity", "food"]
+  },
+  {
+    "word": "fun",
+    "meaning_th": "ความสนุกสนาน, เรื่องน่าสนุก",
+    "meaning_en": "enjoyment, amusement, or lighthearted pleasure",
+    "pronounce_th": "ฟัน",
+    "ipa": "/fʌn/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Camping with friends is always great fun."],
+    "synonyms": ["enjoyment", "pleasure", "amusement"],
+    "tags": ["general", "lifestyle"]
+  },
+  {
+    "word": "funny",
+    "meaning_th": "ตลก, น่าขบขัน",
+    "meaning_en": "causing laughter or amusement; humorous",
+    "pronounce_th": "ฟันนี",
+    "ipa": "/ˈfʌni/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": ["He told a very funny story that made everyone laugh."],
+    "synonyms": ["humorous", "hilarious", "amusing"],
+    "tags": ["description"]
+  },
+  {
+    "word": "future",
+    "meaning_th": "อนาคต",
+    "meaning_en": "the time or a period of time following the moment of speaking or writing",
+    "pronounce_th": "ฟิวเชอะ",
+    "ipa": "/ˈfjuːtʃə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He wants to become a famous doctor in the future."],
+    "synonyms": ["time ahead", "tomorrow"],
+    "tags": ["time", "general"]
+  },
+  {
+    "word": "game",
+    "meaning_th": "เกม, การแข่งขันกีฬา",
+    "meaning_en": "an activity or sport pursued for amusement or exercise",
+    "pronounce_th": "เกม",
+    "ipa": "/ɡeɪm/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The children are playing a board game in the room."],
+    "synonyms": ["match", "sport", "amusement"],
+    "tags": ["entertainment", "sports", "games", "objects"]
+  },
+  {
+    "word": "garden",
+    "meaning_th": "สวน, สวนดอกไม้",
+    "meaning_en": "a piece of ground, adjoining a house, used for growing flowers, fruit, or vegetables",
+    "pronounce_th": "การ์เดน",
+    "ipa": "/ˈɡɑːdn/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["There are beautiful flowers in our front garden."],
+    "synonyms": ["yard", "park"],
+    "tags": ["places", "nature", "home"]
+  },
+  {
+    "word": "geography",
+    "meaning_th": "ภูมิศาสตร์",
+    "meaning_en": "the study of the physical features of the earth and its atmosphere",
+    "pronounce_th": "จีอ็อกแกรฟี",
+    "ipa": "/dʒiˈɒɡrəfi/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["Geography is my favourite subject at school."],
+    "synonyms": [],
+    "tags": ["school", "education", "geography"]
+  },
+  {
+    "word": "get",
+    "meaning_th": "ได้รับ, ไปเอามา, เข้าใจ",
+    "meaning_en": "come to have or hold something; receive; fetch",
+    "pronounce_th": "เก็ท",
+    "ipa": "/ɡet/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "Can you go outside and get some fresh air?",
+      "I get an email from my manager every Monday."
+    ],
+    "synonyms": ["receive", "obtain", "fetch", "acquire"],
+    "tags": ["action"]
+  },
+  {
+    "word": "girl",
+    "meaning_th": "เด็กผู้หญิง",
+    "meaning_en": "a female child or youth",
+    "pronounce_th": "เกิร์ล",
+    "ipa": "/ɡɜːl/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["The little girl is drawing pictures of birds."],
+    "synonyms": ["lass", "kid"],
+    "tags": ["people", "family"]
+  },
+  {
+    "word": "girlfriend",
+    "meaning_th": "แฟนสาว, เพื่อนหญิง",
+    "meaning_en": "a regular female companion with whom a person has a romantic relationship",
+    "pronounce_th": "เกิร์ลเฟรนด์",
+    "ipa": "/ˈɡɜːlfrend/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": ["He went to the cinema with his girlfriend."],
+    "synonyms": ["partner", "sweetheart"],
+    "tags": ["people", "family", "lifestyle"]
+  },
+  {
+    "word": "give",
+    "meaning_th": "ให้, มอบให้",
+    "meaning_en": "provide love, a thing, or care to someone",
+    "pronounce_th": "กิฝ",
+    "ipa": "/ɡɪv/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "Can you give me that book, please?"
     ],
     "synonyms": [
-      "cake-similar"
+      "provide",
+      "offer",
+      "hand"
     ],
     "tags": [
-      "A1",
-      "noun"
+      "action",
+      "basic"
+    ]
+  },
+  {
+    "word": "glad",
+    "meaning_th": "ดีใจ, ยินดี",
+    "meaning_en": "feeling pleasure or happiness",
+    "pronounce_th": "แกลด",
+    "ipa": "/ɡlæd/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "I am so glad to hear that you passed the exam."
+    ],
+    "synonyms": [
+      "happy",
+      "pleased",
+      "delighted"
+    ],
+    "tags": [
+      "feelings",
+      "emotions"
+    ]
+  },
+  {
+    "word": "glass",
+    "meaning_th": "แก้วน้ำ, กระจก, แว่นตา",
+    "meaning_en": "a hard, brittle substance, typically transparent; a container for drinking",
+    "pronounce_th": "กลาส",
+    "ipa": "/ɡlɑːs/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "He drank a glass of fresh water."
+    ],
+    "synonyms": [
+      "cup",
+      "tumbler"
+    ],
+    "tags": [
+      "objects",
+      "kitchen"
+    ]
+  },
+  {
+    "word": "go",
+    "meaning_th": "ไป, เดินทางไป",
+    "meaning_en": "move from one place to another",
+    "pronounce_th": "โก",
+    "ipa": "/ɡəʊ/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "I go to the office by bus every morning."
+    ],
+    "synonyms": [
+      "move",
+      "travel",
+      "proceed"
+    ],
+    "tags": [
+      "action",
+      "movement",
+      "basic"
+    ]
+  },
+  {
+    "word": "good",
+    "meaning_th": "ดี, เก่ง",
+    "meaning_en": "of a high standard; right or proper",
+    "pronounce_th": "กุด",
+    "ipa": "/ɡʊd/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "She is a very good student."
+    ],
+    "synonyms": [
+      "excellent",
+      "fine",
+      "great"
+    ],
+    "tags": [
+      "description",
+      "basic"
+    ]
+  },
+  {
+    "word": "goodbye",
+    "meaning_th": "ลาก่อน, สวัสดี (ตอนลา)",
+    "meaning_en": "used to express good wishes when parting",
+    "pronounce_th": "กุดบาย",
+    "ipa": "/ˌɡʊdˈbaɪ/",
+    "part_of_speech": "exclamation, noun",
+    "cefr": "A1",
+    "examples": [
+      "He said goodbye to his family at the airport."
+    ],
+    "synonyms": [
+      "bye",
+      "farewell"
+    ],
+    "tags": [
+      "conversation",
+      "greetings"
+    ]
+  },
+  {
+    "word": "grandfather",
+    "meaning_th": "ปู่, ตา",
+    "meaning_en": "the father of one's father or mother",
+    "pronounce_th": "แกรนด์ฟาร์เธอะ",
+    "ipa": "/ˈɡrænfɑːðə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "My grandfather is eighty years old."
+    ],
+    "synonyms": [
+      "grandpa"
+    ],
+    "tags": [
+      "people",
+      "family"
+    ]
+  },
+  {
+    "word": "grandmother",
+    "meaning_th": "ย่า, ยาย",
+    "meaning_en": "the mother of one's father or mother",
+    "pronounce_th": "แกรนด์มัธเธอะ",
+    "ipa": "/ˈɡrænmʌðə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "My grandmother cooks delicious food for us."
+    ],
+    "synonyms": [
+      "grandma"
+    ],
+    "tags": [
+      "people",
+      "family"
+    ]
+  },
+  {
+    "word": "grandparent",
+    "meaning_th": "ปู่ย่าตายาย",
+    "meaning_en": "a grandparent of a person",
+    "pronounce_th": "แกรนด์แพเรินท์",
+    "ipa": "/ˈɡrænpeərənt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I visit my grandparents every summer."
+    ],
+    "synonyms": [],
+    "tags": [
+      "people",
+      "family"
+    ]
+  },
+  {
+    "word": "great",
+    "meaning_th": "ยิ่งใหญ่, ดีมาก, ยอดเยี่ยม",
+    "meaning_en": "of an extent, amount, or intensity considerably above the normal or average",
+    "pronounce_th": "เกรท",
+    "ipa": "/ɡreɪt/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "We had a great time at the rock concert."
+    ],
+    "synonyms": [
+      "wonderful",
+      "fantastic",
+      "huge"
+    ],
+    "tags": [
+      "description"
+    ]
+  },
+  {
+    "word": "green",
+    "meaning_th": "สีเขียว",
+    "meaning_en": "of the color between blue and yellow in the spectrum; colored like grass",
+    "pronounce_th": "กรีน",
+    "ipa": "/ɡriːn/",
+    "part_of_speech": "adjective, noun",
+    "cefr": "A1",
+    "examples": [
+      "The trees turn green in spring."
+    ],
+    "synonyms": [],
+    "tags": [
+      "colors",
+      "description"
+    ]
+  },
+  {
+    "word": "grey",
+    "meaning_th": "สีเทา",
+    "meaning_en": "of a color intermediate between black and white",
+    "pronounce_th": "เกรย์",
+    "ipa": "/ɡreɪ/",
+    "part_of_speech": "adjective, noun",
+    "cefr": "A1",
+    "examples": [
+      "The sky is grey and cloudy today."
+    ],
+    "synonyms": [
+      "gray"
+    ],
+    "tags": [
+      "colors",
+      "description"
+    ]
+  },
+  {
+    "word": "group",
+    "meaning_th": "กลุ่ม, หมวดหมู่",
+    "meaning_en": "a number of people or things that are located, gathered, or classed together",
+    "pronounce_th": "กรุ๊ป",
+    "ipa": "/ɡruːp/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "A small group of students is waiting outside."
+    ],
+    "synonyms": [
+      "team",
+      "crowd",
+      "category"
+    ],
+    "tags": [
+      "general",
+      "people"
+    ]
+  },
+  {
+    "word": "grow",
+    "meaning_th": "เติบโต, ปลูก, ขยายตัว",
+    "meaning_en": "undergo natural development by increasing in size and changing physically",
+    "pronounce_th": "โกรว์",
+    "ipa": "/ɡrəʊ/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "The local farmer wants to grow organic carrots."
+    ],
+    "synonyms": [
+      "develop",
+      "increase",
+      "plant"
+    ],
+    "tags": [
+      "action",
+      "nature"
+    ]
+  },
+  {
+    "word": "guess",
+    "meaning_th": "เดา, คาดเดา",
+    "meaning_en": "estimate or suppose something without sufficient information to be sure",
+    "pronounce_th": "เกส",
+    "ipa": "/ɡes/",
+    "part_of_speech": "verb, noun",
+    "cefr": "A1",
+    "examples": [
+      "Can you guess the answer to this question?"
+    ],
+    "synonyms": [
+      "estimate",
+      "suppose"
+    ],
+    "tags": [
+      "action",
+      "mind",
+      "conversation"
+    ]
+  },
+  {
+    "word": "guitar",
+    "meaning_th": "กีตาร์",
+    "meaning_en": "a stringed musical instrument, with six or twelve strings, played by plucking or strumming",
+    "pronounce_th": "กีตาร์",
+    "ipa": "/ɡɪˈtɑː(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "He plays guitar in a famous rock band."
+    ],
+    "synonyms": [],
+    "tags": [
+      "music",
+      "objects",
+      "hobby"
+    ]
+  },
+  {
+    "word": "gym",
+    "meaning_th": "โรงยิม, สถานที่ออกกำลังกาย",
+    "meaning_en": "a room or building equipped for gymnastics, games, and other physical exercise",
+    "pronounce_th": "ยิม",
+    "ipa": "/dʒɪm/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I go to the gym three times a week."
+    ],
+    "synonyms": [
+      "fitness center",
+      "gymnasium"
+    ],
+    "tags": [
+      "places",
+      "sports",
+      "health"
+    ]
+  },
+  {
+    "word": "hair",
+    "meaning_th": "ผม, ขน",
+    "meaning_en": "any of the fine thread-like strands that grow from the skin of humans and other mammals",
+    "pronounce_th": "แฮร์",
+    "ipa": "/heə(r)/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "She has long blonde hair and blue eyes."
+    ],
+    "synonyms": [],
+    "tags": [
+      "body",
+      "appearance"
+    ]
+  },
+  {
+    "word": "half",
+    "meaning_th": "ครึ่ง, ครึ่งหนึ่ง",
+    "meaning_en": "either of two equal or corresponding parts into which something is or can be divided",
+    "pronounce_th": "ฮาฟ",
+    "ipa": "/hɑːf/",
+    "part_of_speech": "noun, determiner, adverb",
+    "cefr": "A1",
+    "examples": [
+      "Please cut the red apple in half."
+    ],
+    "synonyms": [],
+    "tags": [
+      "quantity",
+      "math"
+    ]
+  },
+  {
+    "word": "hand",
+    "meaning_th": "มือ, ยื่นให้",
+    "meaning_en": "the end part of a person's arm beyond the wrist",
+    "pronounce_th": "แฮนด์",
+    "ipa": "/hænd/",
+    "part_of_speech": "noun, verb",
+    "cefr": "A1",
+    "examples": [
+      "Wash your hands before having breakfast."
+    ],
+    "synonyms": [],
+    "tags": [
+      "body",
+      "action"
+    ]
+  },
+  {
+    "word": "happen",
+    "meaning_th": "เกิดขึ้น",
+    "meaning_en": "take place; occur",
+    "pronounce_th": "แฮพเพิน",
+    "ipa": "/ˈhæpən/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "What will happen if we arrive late?"
+    ],
+    "synonyms": [
+      "occur",
+      "take place"
+    ],
+    "tags": [
+      "action",
+      "general"
+    ]
+  },
+  {
+    "word": "happy",
+    "meaning_th": "มีความสุข",
+    "meaning_en": "feeling or showing pleasure or contentment",
+    "pronounce_th": "แฮพพี",
+    "ipa": "/ˈhæpi/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "I am very happy to meet you today."
+    ],
+    "synonyms": [
+      "glad",
+      "joyful",
+      "cheerful"
+    ],
+    "tags": [
+      "feelings",
+      "emotions",
+      "basic"
+    ]
+  },
+  {
+    "word": "hard",
+    "meaning_th": "ยาก, แข็ง, รุนแรง, ขยัน",
+    "meaning_en": "solid, firm, and rigid; difficult to understand or do; with a great deal of effort",
+    "pronounce_th": "ฮาร์ด",
+    "ipa": "/hɑːd/",
+    "part_of_speech": "adjective, adverb",
+    "cefr": "A1",
+    "examples": [
+      "The final exam was very hard.",
+      "He works hard at the office every day."
+    ],
+    "synonyms": [
+      "difficult",
+      "tough",
+      "firm"
+    ],
+    "tags": [
+      "description",
+      "work"
+    ]
+  },
+  {
+    "word": "hat",
+    "meaning_th": "หมวก",
+    "meaning_en": "a shaped covering for the head worn for warmth, as a fashion item, or as part of a uniform",
+    "pronounce_th": "แฮท",
+    "ipa": "/hæt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "He wore a black hat to protect his face from the sun."
+    ],
+    "synonyms": [
+      "cap"
+    ],
+    "tags": [
+      "clothing",
+      "objects"
+    ]
+  },
+  {
+    "word": "have",
+    "meaning_th": "มี, รับประทาน (ใช้เป็นกริยาช่วย)",
+    "meaning_en": "possess, own, or hold; consume",
+    "pronounce_th": "แฮฝ",
+    "ipa": "/hæv/",
+    "part_of_speech": "verb, auxiliary verb",
+    "cefr": "A1",
+    "examples": [
+      "I have a big house in Bangkok.",
+      "What time do you have breakfast?"
+    ],
+    "synonyms": [
+      "possess",
+      "own",
+      "consume"
+    ],
+    "tags": [
+      "action",
+      "grammar",
+      "basic"
+    ]
+  },
+  {
+    "word": "he",
+    "meaning_th": "เขา (สรรพนามบุรุษที่ 3 เพศชาย)",
+    "meaning_en": "used to refer to a male person that has already been mentioned",
+    "pronounce_th": "ฮี",
+    "ipa": "/hiː/",
+    "part_of_speech": "pronoun",
+    "cefr": "A1",
+    "examples": [
+      "He is a Senior Quality Assurance Engineer."
+    ],
+    "synonyms": [],
+    "tags": [
+      "people",
+      "grammar",
+      "basic"
+    ]
+  },
+  {
+    "word": "head",
+    "meaning_th": "ศีรษะ, หัวหน้า, มุ่งหน้าไป",
+    "meaning_en": "the upper part of the human body; the person in charge",
+    "pronounce_th": "เฮด",
+    "ipa": "/hed/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "He wears a black hat on his head."
+    ],
+    "synonyms": [
+      "chief",
+      "leader"
+    ],
+    "tags": [
+      "body",
+      "jobs"
+    ]
+  },
+  {
+    "word": "health",
+    "meaning_th": "สุขภาพ, ร่างกาย",
+    "meaning_en": "the state of being free from illness or injury",
+    "pronounce_th": "เฮลธ์",
+    "ipa": "/helθ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "Exercise is very important for your health."
+    ],
+    "synonyms": [
+      "wellness",
+      "fitness"
+    ],
+    "tags": [
+      "health",
+      "lifestyle"
+    ]
+  },
+  {
+    "word": "healthy",
+    "meaning_th": "แข็งแรง, ดีต่อสุขภาพ",
+    "meaning_en": "in a good physical or mental condition; beneficial to health",
+    "pronounce_th": "เฮลธี",
+    "ipa": "/ˈhelθi/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "Eating fresh fruit and vegetables is a healthy habit."
+    ],
+    "synonyms": [
+      "well",
+      "fit",
+      "wholesome"
+    ],
+    "tags": [
+      "description",
+      "health",
+      "lifestyle"
+    ]
+  },
+  {
+    "word": "hear",
+    "meaning_th": "ได้ยิน, รับรู้",
+    "meaning_en": "perceive with the ear the sound made by someone or something",
+    "pronounce_th": "เฮียร์",
+    "ipa": "/hɪə(r)/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "Did you hear that strange noise outside?"
+    ],
+    "synonyms": [
+      "listen to",
+      "perceive"
+    ],
+    "tags": [
+      "action",
+      "basic"
+    ]
+  },
+  {
+    "word": "hello",
+    "meaning_th": "สวัสดี",
+    "meaning_en": "used as a greeting or to begin a telephone conversation",
+    "pronounce_th": "เฮลโล",
+    "ipa": "/həˈləʊ/",
+    "part_of_speech": "exclamation, noun",
+    "cefr": "A1",
+    "examples": [
+      "Hello! How are you doing today?"
+    ],
+    "synonyms": [
+      "hi"
+    ],
+    "tags": [
+      "conversation",
+      "greetings",
+      "basic"
+    ]
+  },
+  {
+    "word": "help",
+    "meaning_th": "ช่วยเหลือ, ความช่วยเหลือ",
+    "meaning_en": "make it easier for someone to do something by offering one's services or resources",
+    "pronounce_th": "เฮลพ์",
+    "ipa": "/help/",
+    "part_of_speech": "verb, noun",
+    "cefr": "A1",
+    "examples": [
+      "Could you help me carry these heavy bags?",
+      "Thank you for your help."
+    ],
+    "synonyms": [
+      "assist",
+      "aid",
+      "support"
+    ],
+    "tags": [
+      "action",
+      "conversation",
+      "basic"
+    ]
+  },
+  {
+    "word": "her",
+    "meaning_th": "หล่อน, ของหล่อน (สรรพนามผู้หญิง)",
+    "meaning_en": "used as the object of a verb or preposition to refer to a female person; belonging to a female",
+    "pronounce_th": "เฮอร์",
+    "ipa": "/hɜː(r)/",
+    "part_of_speech": "pronoun, determiner",
+    "cefr": "A1",
+    "examples": [
+      "I saw her at the cafe down the street.",
+      "This is her book."
+    ],
+    "synonyms": [],
+    "tags": [
+      "people",
+      "grammar",
+      "basic"
+    ]
+  },
+  {
+    "word": "here",
+    "meaning_th": "ที่นี่, ตรงนี้",
+    "meaning_en": "in, at, or to this place or position",
+    "pronounce_th": "เฮียร์",
+    "ipa": "/hɪə(r)/",
+    "part_of_speech": "adverb",
+    "cefr": "A1",
+    "examples": [
+      "Please sign your name right here."
+    ],
+    "synonyms": [
+      "in this place"
+    ],
+    "tags": [
+      "location",
+      "grammar",
+      "basic"
+    ]
+  },
+  {
+    "word": "high",
+    "meaning_th": "สูง",
+    "meaning_en": "extending above the normal level or surface; great in amount or intensity",
+    "pronounce_th": "ไฮ",
+    "ipa": "/haɪ/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "The birds are flying above the high buildings."
+    ],
+    "synonyms": [
+      "tall",
+      "elevated",
+      "lofty"
+    ],
+    "tags": [
+      "description",
+      "size"
+    ]
+  },
+  {
+    "word": "him",
+    "meaning_th": "เขา (สรรพนามผู้ชาย ในฐานะกรรม)",
+    "meaning_en": "used as the object of a verb or preposition to refer to a male person",
+    "pronounce_th": "ฮิม",
+    "ipa": "/hɪm/",
+    "part_of_speech": "pronoun",
+    "cefr": "A1",
+    "examples": [
+      "I met him at the office yesterday afternoon."
+    ],
+    "synonyms": [],
+    "tags": [
+      "people",
+      "grammar",
+      "basic"
+    ]
+  },
+  {
+    "word": "his",
+    "meaning_th": "ของเขา (ผู้ชาย)",
+    "meaning_en": "belonging to or associated with a male person",
+    "pronounce_th": "ฮิซฺ",
+    "ipa": "/hɪz/",
+    "part_of_speech": "determiner, pronoun",
+    "cefr": "A1",
+    "examples": [
+      "He broke his left arm during the match.",
+      "This red car is his."
+    ],
+    "synonyms": [],
+    "tags": [
+      "people",
+      "grammar",
+      "basic"
+    ]
+  },
+  {
+    "word": "history",
+    "meaning_th": "ประวัติศาสตร์",
+    "meaning_en": "the study of past events, particularly in human affairs",
+    "pronounce_th": "ฮิสทรี",
+    "ipa": "/ˈhɪstri/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "She loves painting and art history."
+    ],
+    "synonyms": [],
+    "tags": [
+      "school",
+      "education"
+    ]
+  },
+  {
+    "word": "hobby",
+    "meaning_th": "งานอดิเรก",
+    "meaning_en": "an activity done regularly in one's leisure time for pleasure",
+    "pronounce_th": "ฮอบบี",
+    "ipa": "/ˈhɒbi/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "Cooking and photography are my favorite hobbies."
+    ],
+    "synonyms": [
+      "pastime",
+      "leisure activity"
+    ],
+    "tags": [
+      "lifestyle",
+      "hobby"
+    ]
+  },
+  {
+    "word": "holiday",
+    "meaning_th": "วันหยุด, เทศกาลวันหยุด",
+    "meaning_en": "a day of festivity or recreation when no work is done",
+    "pronounce_th": "ฮอลิเดย์",
+    "ipa": "/ˈhɒlədeɪ/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I hope you enjoy your winter holiday trip."
+    ],
+    "synonyms": [
+      "vacation",
+      "break"
+    ],
+    "tags": [
+      "time",
+      "travel",
+      "lifestyle"
     ]
   }
 ]
