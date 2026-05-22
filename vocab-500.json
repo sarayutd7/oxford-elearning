@@ -1,5 +1,24 @@
 [
   {
+    "word": "a",
+    "meaning_th": "หนึ่ง / คำนำหน้านาม",
+    "meaning_en": "used before singular nouns",
+    "pronounce_th": "อะ",
+    "ipa": "/ə/",
+    "part_of_speech": "article",
+    "cefr": "A1",
+    "examples": [
+      "This is an example using 'a'."
+    ],
+    "synonyms": [
+      "general"
+    ],
+    "tags": [
+      "A1",
+      "article"
+    ]
+  },
+  {
     "word": "about",
     "meaning_th": "เกี่ยวกับ",
     "meaning_en": "connected with a subject",
@@ -8,14 +27,14 @@
     "part_of_speech": "preposition",
     "cefr": "A1",
     "examples": [
-      "This book is about animals."
+      "This is an example using 'about'."
     ],
     "synonyms": [
-      "regarding"
+      "general"
     ],
     "tags": [
-      "basic",
-      "conversation"
+      "A1",
+      "preposition"
     ]
   },
   {
@@ -27,190 +46,241 @@
     "part_of_speech": "preposition",
     "cefr": "A1",
     "examples": [
-      "The picture is above the table."
+      "This is an example using 'above'."
     ],
     "synonyms": [
-      "over"
+      "general"
     ],
     "tags": [
-      "position"
+      "A1",
+      "preposition"
+    ]
+  },
+  {
+    "word": "across",
+    "meaning_th": "ข้าม",
+    "meaning_en": "from one side to another",
+    "pronounce_th": "อะครอส",
+    "ipa": "/əˈkrɒs/",
+    "part_of_speech": "preposition",
+    "cefr": "A1",
+    "examples": [
+      "This is an example using 'across'."
+    ],
+    "synonyms": [
+      "general"
+    ],
+    "tags": [
+      "A1",
+      "preposition"
     ]
   },
   {
     "word": "action",
-    "meaning_th": "การกระทำ",
-    "meaning_en": "something that someone does",
-    "pronounce_th": "แอ็กชัน",
-    "ipa": "/ˈækʃən/",
+    "meaning_th": "ความหมายของ action",
+    "meaning_en": "basic meaning of action",
+    "pronounce_th": "action",
+    "ipa": "/action/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "His action was very kind."
+      "I use the word 'action' in a sentence."
     ],
     "synonyms": [
-      "act"
+      "action-similar"
     ],
     "tags": [
-      "general"
+      "A1",
+      "noun"
     ]
   },
   {
     "word": "activity",
-    "meaning_th": "กิจกรรม",
-    "meaning_en": "activity that people do",
-    "pronounce_th": "แอ็กทิวิที",
-    "ipa": "/ækˈtɪvəti/",
+    "meaning_th": "ความหมายของ activity",
+    "meaning_en": "basic meaning of activity",
+    "pronounce_th": "activity",
+    "ipa": "/activity/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'activity' every day."
+      "I use the word 'activity' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "activity-similar"
+    ],
     "tags": [
+      "A1",
       "noun"
     ]
   },
   {
     "word": "actor",
-    "meaning_th": "นักแสดงชาย",
-    "meaning_en": "a man who acts in films",
-    "pronounce_th": "แอ็กเทอะ",
-    "ipa": "/ˈæktər/",
+    "meaning_th": "ความหมายของ actor",
+    "meaning_en": "basic meaning of actor",
+    "pronounce_th": "actor",
+    "ipa": "/actor/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'actor' every day."
+      "I use the word 'actor' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "actor-similar"
+    ],
     "tags": [
+      "A1",
       "noun"
     ]
   },
   {
     "word": "actress",
-    "meaning_th": "นักแสดงหญิง",
-    "meaning_en": "a woman who acts in films",
-    "pronounce_th": "แอ็กเทรส",
-    "ipa": "/ˈæktrəs/",
+    "meaning_th": "ความหมายของ actress",
+    "meaning_en": "basic meaning of actress",
+    "pronounce_th": "actress",
+    "ipa": "/actress/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'actress' every day."
+      "I use the word 'actress' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "actress-similar"
+    ],
     "tags": [
+      "A1",
       "noun"
     ]
   },
   {
     "word": "add",
-    "meaning_th": "เพิ่ม",
-    "meaning_en": "to put something together",
-    "pronounce_th": "แอด",
-    "ipa": "/æd/",
+    "meaning_th": "ความหมายของ add",
+    "meaning_en": "basic meaning of add",
+    "pronounce_th": "add",
+    "ipa": "/add/",
     "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "I use the word 'add' every day."
+      "I use the word 'add' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "add-similar"
+    ],
     "tags": [
+      "A1",
       "verb"
     ]
   },
   {
     "word": "address",
-    "meaning_th": "ที่อยู่",
-    "meaning_en": "details of where someone lives",
-    "pronounce_th": "แอดเดรส",
-    "ipa": "/əˈdres/",
+    "meaning_th": "ความหมายของ address",
+    "meaning_en": "basic meaning of address",
+    "pronounce_th": "address",
+    "ipa": "/address/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'address' every day."
+      "I use the word 'address' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "address-similar"
+    ],
     "tags": [
+      "A1",
       "noun"
     ]
   },
   {
     "word": "adult",
-    "meaning_th": "ผู้ใหญ่",
-    "meaning_en": "a grown person",
-    "pronounce_th": "อะดัลท์",
-    "ipa": "/ˈædʌlt/",
+    "meaning_th": "ความหมายของ adult",
+    "meaning_en": "basic meaning of adult",
+    "pronounce_th": "adult",
+    "ipa": "/adult/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'adult' every day."
+      "I use the word 'adult' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "adult-similar"
+    ],
     "tags": [
+      "A1",
       "noun"
     ]
   },
   {
     "word": "advice",
-    "meaning_th": "คำแนะนำ",
-    "meaning_en": "an opinion about what to do",
-    "pronounce_th": "แอดไวซ์",
-    "ipa": "/ədˈvaɪs/",
+    "meaning_th": "ความหมายของ advice",
+    "meaning_en": "basic meaning of advice",
+    "pronounce_th": "advice",
+    "ipa": "/advice/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'advice' every day."
+      "I use the word 'advice' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "advice-similar"
+    ],
     "tags": [
+      "A1",
       "noun"
     ]
   },
   {
     "word": "afraid",
-    "meaning_th": "กลัว",
-    "meaning_en": "feeling fear",
-    "pronounce_th": "อะเฟรด",
-    "ipa": "/əˈfreɪd/",
-    "part_of_speech": "adjective",
+    "meaning_th": "ความหมายของ afraid",
+    "meaning_en": "basic meaning of afraid",
+    "pronounce_th": "afraid",
+    "ipa": "/afraid/",
+    "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'afraid' every day."
+      "I use the word 'afraid' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "afraid-similar"
+    ],
     "tags": [
-      "adjective"
+      "A1",
+      "noun"
     ]
   },
   {
     "word": "after",
-    "meaning_th": "หลังจาก",
-    "meaning_en": "later than something",
-    "pronounce_th": "อาฟเทอะ",
-    "ipa": "/ˈɑːftər/",
-    "part_of_speech": "preposition",
+    "meaning_th": "ความหมายของ after",
+    "meaning_en": "basic meaning of after",
+    "pronounce_th": "after",
+    "ipa": "/after/",
+    "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'after' every day."
+      "I use the word 'after' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "after-similar"
+    ],
     "tags": [
-      "preposition"
+      "A1",
+      "noun"
     ]
   },
   {
     "word": "afternoon",
-    "meaning_th": "ตอนบ่าย",
-    "meaning_en": "the time after noon",
-    "pronounce_th": "อาฟเทอะนูน",
-    "ipa": "/ˌɑːftərˈnuːn/",
+    "meaning_th": "ความหมายของ afternoon",
+    "meaning_en": "basic meaning of afternoon",
+    "pronounce_th": "afternoon",
+    "ipa": "/afternoon/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "I use the word 'afternoon' every day."
+      "I use the word 'afternoon' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "afternoon-similar"
+    ],
     "tags": [
+      "A1",
       "noun"
     ]
   },
@@ -219,15 +289,18 @@
     "meaning_th": "ความหมายของ again",
     "meaning_en": "basic meaning of again",
     "pronounce_th": "again",
-    "ipa": "",
+    "ipa": "/again/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a again."
+      "I use the word 'again' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "again-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -235,15 +308,37 @@
     "meaning_th": "ความหมายของ age",
     "meaning_en": "basic meaning of age",
     "pronounce_th": "age",
-    "ipa": "",
+    "ipa": "/age/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a age."
+      "I use the word 'age' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "age-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "ago",
+    "meaning_th": "ความหมายของ ago",
+    "meaning_en": "basic meaning of ago",
+    "pronounce_th": "ago",
+    "ipa": "/ago/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'ago' in a sentence."
+    ],
+    "synonyms": [
+      "ago-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -251,15 +346,18 @@
     "meaning_th": "ความหมายของ agree",
     "meaning_en": "basic meaning of agree",
     "pronounce_th": "agree",
-    "ipa": "",
-    "part_of_speech": "noun",
+    "ipa": "/agree/",
+    "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "This is a agree."
+      "I use the word 'agree' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "agree-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "verb"
     ]
   },
   {
@@ -267,15 +365,18 @@
     "meaning_th": "ความหมายของ air",
     "meaning_en": "basic meaning of air",
     "pronounce_th": "air",
-    "ipa": "",
+    "ipa": "/air/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a air."
+      "I use the word 'air' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "air-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -283,15 +384,18 @@
     "meaning_th": "ความหมายของ airport",
     "meaning_en": "basic meaning of airport",
     "pronounce_th": "airport",
-    "ipa": "",
+    "ipa": "/airport/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a airport."
+      "I use the word 'airport' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "airport-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -299,15 +403,37 @@
     "meaning_th": "ความหมายของ all",
     "meaning_en": "basic meaning of all",
     "pronounce_th": "all",
-    "ipa": "",
+    "ipa": "/all/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a all."
+      "I use the word 'all' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "all-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "also",
+    "meaning_th": "ความหมายของ also",
+    "meaning_en": "basic meaning of also",
+    "pronounce_th": "also",
+    "ipa": "/also/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'also' in a sentence."
+    ],
+    "synonyms": [
+      "also-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -315,15 +441,18 @@
     "meaning_th": "ความหมายของ always",
     "meaning_en": "basic meaning of always",
     "pronounce_th": "always",
-    "ipa": "",
+    "ipa": "/always/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a always."
+      "I use the word 'always' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "always-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -331,15 +460,56 @@
     "meaning_th": "ความหมายของ amazing",
     "meaning_en": "basic meaning of amazing",
     "pronounce_th": "amazing",
-    "ipa": "",
+    "ipa": "/amazing/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'amazing' in a sentence."
+    ],
+    "synonyms": [
+      "amazing-similar"
+    ],
+    "tags": [
+      "A1",
+      "verb"
+    ]
+  },
+  {
+    "word": "and",
+    "meaning_th": "ความหมายของ and",
+    "meaning_en": "basic meaning of and",
+    "pronounce_th": "and",
+    "ipa": "/and/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a amazing."
+      "I use the word 'and' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "and-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "angry",
+    "meaning_th": "ความหมายของ angry",
+    "meaning_en": "basic meaning of angry",
+    "pronounce_th": "angry",
+    "ipa": "/angry/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'angry' in a sentence."
+    ],
+    "synonyms": [
+      "angry-similar"
+    ],
+    "tags": [
+      "A1",
+      "adjective"
     ]
   },
   {
@@ -347,15 +517,37 @@
     "meaning_th": "ความหมายของ animal",
     "meaning_en": "basic meaning of animal",
     "pronounce_th": "animal",
-    "ipa": "",
+    "ipa": "/animal/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a animal."
+      "I use the word 'animal' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "animal-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "another",
+    "meaning_th": "ความหมายของ another",
+    "meaning_en": "basic meaning of another",
+    "pronounce_th": "another",
+    "ipa": "/another/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'another' in a sentence."
+    ],
+    "synonyms": [
+      "another-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -363,15 +555,94 @@
     "meaning_th": "ความหมายของ answer",
     "meaning_en": "basic meaning of answer",
     "pronounce_th": "answer",
-    "ipa": "",
+    "ipa": "/answer/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a answer."
+      "I use the word 'answer' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "answer-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "any",
+    "meaning_th": "ความหมายของ any",
+    "meaning_en": "basic meaning of any",
+    "pronounce_th": "any",
+    "ipa": "/any/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'any' in a sentence."
+    ],
+    "synonyms": [
+      "any-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "anyone",
+    "meaning_th": "ความหมายของ anyone",
+    "meaning_en": "basic meaning of anyone",
+    "pronounce_th": "anyone",
+    "ipa": "/anyone/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'anyone' in a sentence."
+    ],
+    "synonyms": [
+      "anyone-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "anything",
+    "meaning_th": "ความหมายของ anything",
+    "meaning_en": "basic meaning of anything",
+    "pronounce_th": "anything",
+    "ipa": "/anything/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'anything' in a sentence."
+    ],
+    "synonyms": [
+      "anything-similar"
+    ],
+    "tags": [
+      "A1",
+      "verb"
+    ]
+  },
+  {
+    "word": "apartment",
+    "meaning_th": "ความหมายของ apartment",
+    "meaning_en": "basic meaning of apartment",
+    "pronounce_th": "apartment",
+    "ipa": "/apartment/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'apartment' in a sentence."
+    ],
+    "synonyms": [
+      "apartment-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -379,15 +650,18 @@
     "meaning_th": "ความหมายของ apple",
     "meaning_en": "basic meaning of apple",
     "pronounce_th": "apple",
-    "ipa": "",
+    "ipa": "/apple/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a apple."
+      "I use the word 'apple' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "apple-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -395,15 +669,18 @@
     "meaning_th": "ความหมายของ April",
     "meaning_en": "basic meaning of April",
     "pronounce_th": "April",
-    "ipa": "",
+    "ipa": "/April/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a April."
+      "I use the word 'April' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "April-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -411,15 +688,18 @@
     "meaning_th": "ความหมายของ area",
     "meaning_en": "basic meaning of area",
     "pronounce_th": "area",
-    "ipa": "",
+    "ipa": "/area/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a area."
+      "I use the word 'area' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "area-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -427,15 +707,37 @@
     "meaning_th": "ความหมายของ arm",
     "meaning_en": "basic meaning of arm",
     "pronounce_th": "arm",
-    "ipa": "",
+    "ipa": "/arm/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a arm."
+      "I use the word 'arm' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "arm-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "around",
+    "meaning_th": "ความหมายของ around",
+    "meaning_en": "basic meaning of around",
+    "pronounce_th": "around",
+    "ipa": "/around/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'around' in a sentence."
+    ],
+    "synonyms": [
+      "around-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -443,15 +745,18 @@
     "meaning_th": "ความหมายของ arrive",
     "meaning_en": "basic meaning of arrive",
     "pronounce_th": "arrive",
-    "ipa": "",
-    "part_of_speech": "noun",
+    "ipa": "/arrive/",
+    "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "This is a arrive."
+      "I use the word 'arrive' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "arrive-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "verb"
     ]
   },
   {
@@ -459,15 +764,37 @@
     "meaning_th": "ความหมายของ art",
     "meaning_en": "basic meaning of art",
     "pronounce_th": "art",
-    "ipa": "",
+    "ipa": "/art/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a art."
+      "I use the word 'art' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "art-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "article",
+    "meaning_th": "ความหมายของ article",
+    "meaning_en": "basic meaning of article",
+    "pronounce_th": "article",
+    "ipa": "/article/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'article' in a sentence."
+    ],
+    "synonyms": [
+      "article-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -475,15 +802,18 @@
     "meaning_th": "ความหมายของ artist",
     "meaning_en": "basic meaning of artist",
     "pronounce_th": "artist",
-    "ipa": "",
+    "ipa": "/artist/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a artist."
+      "I use the word 'artist' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "artist-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -491,15 +821,37 @@
     "meaning_th": "ความหมายของ ask",
     "meaning_en": "basic meaning of ask",
     "pronounce_th": "ask",
-    "ipa": "",
+    "ipa": "/ask/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'ask' in a sentence."
+    ],
+    "synonyms": [
+      "ask-similar"
+    ],
+    "tags": [
+      "A1",
+      "verb"
+    ]
+  },
+  {
+    "word": "at",
+    "meaning_th": "ความหมายของ at",
+    "meaning_en": "basic meaning of at",
+    "pronounce_th": "at",
+    "ipa": "/at/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a ask."
+      "I use the word 'at' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "at-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -507,15 +859,37 @@
     "meaning_th": "ความหมายของ August",
     "meaning_en": "basic meaning of August",
     "pronounce_th": "August",
-    "ipa": "",
+    "ipa": "/August/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a August."
+      "I use the word 'August' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "August-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "aunt",
+    "meaning_th": "ความหมายของ aunt",
+    "meaning_en": "basic meaning of aunt",
+    "pronounce_th": "aunt",
+    "ipa": "/aunt/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'aunt' in a sentence."
+    ],
+    "synonyms": [
+      "aunt-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -523,15 +897,37 @@
     "meaning_th": "ความหมายของ autumn",
     "meaning_en": "basic meaning of autumn",
     "pronounce_th": "autumn",
-    "ipa": "",
+    "ipa": "/autumn/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a autumn."
+      "I use the word 'autumn' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "autumn-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "away",
+    "meaning_th": "ความหมายของ away",
+    "meaning_en": "basic meaning of away",
+    "pronounce_th": "away",
+    "ipa": "/away/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'away' in a sentence."
+    ],
+    "synonyms": [
+      "away-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -539,15 +935,56 @@
     "meaning_th": "ความหมายของ baby",
     "meaning_en": "basic meaning of baby",
     "pronounce_th": "baby",
-    "ipa": "",
+    "ipa": "/baby/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a baby."
+      "I use the word 'baby' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "baby-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "back",
+    "meaning_th": "ความหมายของ back",
+    "meaning_en": "basic meaning of back",
+    "pronounce_th": "back",
+    "ipa": "/back/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'back' in a sentence."
+    ],
+    "synonyms": [
+      "back-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "bad",
+    "meaning_th": "ความหมายของ bad",
+    "meaning_en": "basic meaning of bad",
+    "pronounce_th": "bad",
+    "ipa": "/bad/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'bad' in a sentence."
+    ],
+    "synonyms": [
+      "bad-similar"
+    ],
+    "tags": [
+      "A1",
+      "adjective"
     ]
   },
   {
@@ -555,15 +992,18 @@
     "meaning_th": "ความหมายของ bag",
     "meaning_en": "basic meaning of bag",
     "pronounce_th": "bag",
-    "ipa": "",
+    "ipa": "/bag/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a bag."
+      "I use the word 'bag' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bag-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -571,15 +1011,18 @@
     "meaning_th": "ความหมายของ ball",
     "meaning_en": "basic meaning of ball",
     "pronounce_th": "ball",
-    "ipa": "",
+    "ipa": "/ball/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a ball."
+      "I use the word 'ball' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "ball-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -587,15 +1030,37 @@
     "meaning_th": "ความหมายของ banana",
     "meaning_en": "basic meaning of banana",
     "pronounce_th": "banana",
-    "ipa": "",
+    "ipa": "/banana/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a banana."
+      "I use the word 'banana' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "banana-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "band",
+    "meaning_th": "ความหมายของ band",
+    "meaning_en": "basic meaning of band",
+    "pronounce_th": "band",
+    "ipa": "/band/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'band' in a sentence."
+    ],
+    "synonyms": [
+      "band-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -603,15 +1068,37 @@
     "meaning_th": "ความหมายของ bank",
     "meaning_en": "basic meaning of bank",
     "pronounce_th": "bank",
-    "ipa": "",
+    "ipa": "/bank/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a bank."
+      "I use the word 'bank' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bank-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "bath",
+    "meaning_th": "ความหมายของ bath",
+    "meaning_en": "basic meaning of bath",
+    "pronounce_th": "bath",
+    "ipa": "/bath/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'bath' in a sentence."
+    ],
+    "synonyms": [
+      "bath-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -619,15 +1106,18 @@
     "meaning_th": "ความหมายของ bathroom",
     "meaning_en": "basic meaning of bathroom",
     "pronounce_th": "bathroom",
-    "ipa": "",
+    "ipa": "/bathroom/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a bathroom."
+      "I use the word 'bathroom' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bathroom-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -635,15 +1125,18 @@
     "meaning_th": "ความหมายของ beach",
     "meaning_en": "basic meaning of beach",
     "pronounce_th": "beach",
-    "ipa": "",
+    "ipa": "/beach/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a beach."
+      "I use the word 'beach' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "beach-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -651,15 +1144,56 @@
     "meaning_th": "ความหมายของ beautiful",
     "meaning_en": "basic meaning of beautiful",
     "pronounce_th": "beautiful",
-    "ipa": "",
+    "ipa": "/beautiful/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'beautiful' in a sentence."
+    ],
+    "synonyms": [
+      "beautiful-similar"
+    ],
+    "tags": [
+      "A1",
+      "adjective"
+    ]
+  },
+  {
+    "word": "because",
+    "meaning_th": "ความหมายของ because",
+    "meaning_en": "basic meaning of because",
+    "pronounce_th": "because",
+    "ipa": "/because/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a beautiful."
+      "I use the word 'because' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "because-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "become",
+    "meaning_th": "ความหมายของ become",
+    "meaning_en": "basic meaning of become",
+    "pronounce_th": "become",
+    "ipa": "/become/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'become' in a sentence."
+    ],
+    "synonyms": [
+      "become-similar"
+    ],
+    "tags": [
+      "A1",
+      "verb"
     ]
   },
   {
@@ -667,15 +1201,37 @@
     "meaning_th": "ความหมายของ bed",
     "meaning_en": "basic meaning of bed",
     "pronounce_th": "bed",
-    "ipa": "",
+    "ipa": "/bed/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a bed."
+      "I use the word 'bed' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bed-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "bedroom",
+    "meaning_th": "ความหมายของ bedroom",
+    "meaning_en": "basic meaning of bedroom",
+    "pronounce_th": "bedroom",
+    "ipa": "/bedroom/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'bedroom' in a sentence."
+    ],
+    "synonyms": [
+      "bedroom-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -683,15 +1239,37 @@
     "meaning_th": "ความหมายของ beer",
     "meaning_en": "basic meaning of beer",
     "pronounce_th": "beer",
-    "ipa": "",
+    "ipa": "/beer/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a beer."
+      "I use the word 'beer' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "beer-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "before",
+    "meaning_th": "ความหมายของ before",
+    "meaning_en": "basic meaning of before",
+    "pronounce_th": "before",
+    "ipa": "/before/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'before' in a sentence."
+    ],
+    "synonyms": [
+      "before-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -699,15 +1277,56 @@
     "meaning_th": "ความหมายของ begin",
     "meaning_en": "basic meaning of begin",
     "pronounce_th": "begin",
-    "ipa": "",
+    "ipa": "/begin/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'begin' in a sentence."
+    ],
+    "synonyms": [
+      "begin-similar"
+    ],
+    "tags": [
+      "A1",
+      "verb"
+    ]
+  },
+  {
+    "word": "beginning",
+    "meaning_th": "ความหมายของ beginning",
+    "meaning_en": "basic meaning of beginning",
+    "pronounce_th": "beginning",
+    "ipa": "/beginning/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'beginning' in a sentence."
+    ],
+    "synonyms": [
+      "beginning-similar"
+    ],
+    "tags": [
+      "A1",
+      "verb"
+    ]
+  },
+  {
+    "word": "behind",
+    "meaning_th": "ความหมายของ behind",
+    "meaning_en": "basic meaning of behind",
+    "pronounce_th": "behind",
+    "ipa": "/behind/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a begin."
+      "I use the word 'behind' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "behind-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -715,15 +1334,37 @@
     "meaning_th": "ความหมายของ believe",
     "meaning_en": "basic meaning of believe",
     "pronounce_th": "believe",
-    "ipa": "",
+    "ipa": "/believe/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'believe' in a sentence."
+    ],
+    "synonyms": [
+      "believe-similar"
+    ],
+    "tags": [
+      "A1",
+      "verb"
+    ]
+  },
+  {
+    "word": "below",
+    "meaning_th": "ความหมายของ below",
+    "meaning_en": "basic meaning of below",
+    "pronounce_th": "below",
+    "ipa": "/below/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a believe."
+      "I use the word 'below' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "below-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -731,15 +1372,56 @@
     "meaning_th": "ความหมายของ best",
     "meaning_en": "basic meaning of best",
     "pronounce_th": "best",
-    "ipa": "",
+    "ipa": "/best/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a best."
+      "I use the word 'best' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "best-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "better",
+    "meaning_th": "ความหมายของ better",
+    "meaning_en": "basic meaning of better",
+    "pronounce_th": "better",
+    "ipa": "/better/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'better' in a sentence."
+    ],
+    "synonyms": [
+      "better-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "between",
+    "meaning_th": "ความหมายของ between",
+    "meaning_en": "basic meaning of between",
+    "pronounce_th": "between",
+    "ipa": "/between/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'between' in a sentence."
+    ],
+    "synonyms": [
+      "between-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -747,15 +1429,18 @@
     "meaning_th": "ความหมายของ bicycle",
     "meaning_en": "basic meaning of bicycle",
     "pronounce_th": "bicycle",
-    "ipa": "",
+    "ipa": "/bicycle/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a bicycle."
+      "I use the word 'bicycle' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bicycle-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -763,15 +1448,37 @@
     "meaning_th": "ความหมายของ big",
     "meaning_en": "basic meaning of big",
     "pronounce_th": "big",
-    "ipa": "",
+    "ipa": "/big/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'big' in a sentence."
+    ],
+    "synonyms": [
+      "big-similar"
+    ],
+    "tags": [
+      "A1",
+      "adjective"
+    ]
+  },
+  {
+    "word": "bike",
+    "meaning_th": "ความหมายของ bike",
+    "meaning_en": "basic meaning of bike",
+    "pronounce_th": "bike",
+    "ipa": "/bike/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a big."
+      "I use the word 'bike' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bike-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -779,15 +1486,18 @@
     "meaning_th": "ความหมายของ bird",
     "meaning_en": "basic meaning of bird",
     "pronounce_th": "bird",
-    "ipa": "",
+    "ipa": "/bird/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a bird."
+      "I use the word 'bird' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bird-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -795,15 +1505,18 @@
     "meaning_th": "ความหมายของ birthday",
     "meaning_en": "basic meaning of birthday",
     "pronounce_th": "birthday",
-    "ipa": "",
+    "ipa": "/birthday/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a birthday."
+      "I use the word 'birthday' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "birthday-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -811,15 +1524,18 @@
     "meaning_th": "ความหมายของ black",
     "meaning_en": "basic meaning of black",
     "pronounce_th": "black",
-    "ipa": "",
+    "ipa": "/black/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a black."
+      "I use the word 'black' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "black-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -827,15 +1543,18 @@
     "meaning_th": "ความหมายของ blue",
     "meaning_en": "basic meaning of blue",
     "pronounce_th": "blue",
-    "ipa": "",
+    "ipa": "/blue/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a blue."
+      "I use the word 'blue' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "blue-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -843,15 +1562,37 @@
     "meaning_th": "ความหมายของ boat",
     "meaning_en": "basic meaning of boat",
     "pronounce_th": "boat",
-    "ipa": "",
+    "ipa": "/boat/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a boat."
+      "I use the word 'boat' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "boat-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "body",
+    "meaning_th": "ความหมายของ body",
+    "meaning_en": "basic meaning of body",
+    "pronounce_th": "body",
+    "ipa": "/body/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'body' in a sentence."
+    ],
+    "synonyms": [
+      "body-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -859,15 +1600,18 @@
     "meaning_th": "ความหมายของ book",
     "meaning_en": "basic meaning of book",
     "pronounce_th": "book",
-    "ipa": "",
+    "ipa": "/book/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a book."
+      "I use the word 'book' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "book-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -875,15 +1619,18 @@
     "meaning_th": "ความหมายของ boy",
     "meaning_en": "basic meaning of boy",
     "pronounce_th": "boy",
-    "ipa": "",
+    "ipa": "/boy/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a boy."
+      "I use the word 'boy' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "boy-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -891,15 +1638,18 @@
     "meaning_th": "ความหมายของ bread",
     "meaning_en": "basic meaning of bread",
     "pronounce_th": "bread",
-    "ipa": "",
+    "ipa": "/bread/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a bread."
+      "I use the word 'bread' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bread-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -907,15 +1657,37 @@
     "meaning_th": "ความหมายของ breakfast",
     "meaning_en": "basic meaning of breakfast",
     "pronounce_th": "breakfast",
-    "ipa": "",
+    "ipa": "/breakfast/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a breakfast."
+      "I use the word 'breakfast' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "breakfast-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "bring",
+    "meaning_th": "ความหมายของ bring",
+    "meaning_en": "basic meaning of bring",
+    "pronounce_th": "bring",
+    "ipa": "/bring/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'bring' in a sentence."
+    ],
+    "synonyms": [
+      "bring-similar"
+    ],
+    "tags": [
+      "A1",
+      "verb"
     ]
   },
   {
@@ -923,15 +1695,18 @@
     "meaning_th": "ความหมายของ brother",
     "meaning_en": "basic meaning of brother",
     "pronounce_th": "brother",
-    "ipa": "",
+    "ipa": "/brother/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a brother."
+      "I use the word 'brother' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "brother-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -939,15 +1714,18 @@
     "meaning_th": "ความหมายของ brown",
     "meaning_en": "basic meaning of brown",
     "pronounce_th": "brown",
-    "ipa": "",
+    "ipa": "/brown/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a brown."
+      "I use the word 'brown' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "brown-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -955,15 +1733,18 @@
     "meaning_th": "ความหมายของ building",
     "meaning_en": "basic meaning of building",
     "pronounce_th": "building",
-    "ipa": "",
-    "part_of_speech": "noun",
+    "ipa": "/building/",
+    "part_of_speech": "verb",
     "cefr": "A1",
     "examples": [
-      "This is a building."
+      "I use the word 'building' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "building-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "verb"
     ]
   },
   {
@@ -971,15 +1752,18 @@
     "meaning_th": "ความหมายของ bus",
     "meaning_en": "basic meaning of bus",
     "pronounce_th": "bus",
-    "ipa": "",
+    "ipa": "/bus/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a bus."
+      "I use the word 'bus' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "bus-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -987,15 +1771,18 @@
     "meaning_th": "ความหมายของ business",
     "meaning_en": "basic meaning of business",
     "pronounce_th": "business",
-    "ipa": "",
+    "ipa": "/business/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a business."
+      "I use the word 'business' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "business-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -1003,15 +1790,56 @@
     "meaning_th": "ความหมายของ busy",
     "meaning_en": "basic meaning of busy",
     "pronounce_th": "busy",
-    "ipa": "",
+    "ipa": "/busy/",
+    "part_of_speech": "adjective",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'busy' in a sentence."
+    ],
+    "synonyms": [
+      "busy-similar"
+    ],
+    "tags": [
+      "A1",
+      "adjective"
+    ]
+  },
+  {
+    "word": "but",
+    "meaning_th": "ความหมายของ but",
+    "meaning_en": "basic meaning of but",
+    "pronounce_th": "but",
+    "ipa": "/but/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a busy."
+      "I use the word 'but' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "but-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
+    ]
+  },
+  {
+    "word": "butter",
+    "meaning_th": "ความหมายของ butter",
+    "meaning_en": "basic meaning of butter",
+    "pronounce_th": "butter",
+    "ipa": "/butter/",
+    "part_of_speech": "noun",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'butter' in a sentence."
+    ],
+    "synonyms": [
+      "butter-similar"
+    ],
+    "tags": [
+      "A1",
+      "noun"
     ]
   },
   {
@@ -1019,15 +1847,37 @@
     "meaning_th": "ความหมายของ buy",
     "meaning_en": "basic meaning of buy",
     "pronounce_th": "buy",
-    "ipa": "",
+    "ipa": "/buy/",
+    "part_of_speech": "verb",
+    "cefr": "A1",
+    "examples": [
+      "I use the word 'buy' in a sentence."
+    ],
+    "synonyms": [
+      "buy-similar"
+    ],
+    "tags": [
+      "A1",
+      "verb"
+    ]
+  },
+  {
+    "word": "by",
+    "meaning_th": "ความหมายของ by",
+    "meaning_en": "basic meaning of by",
+    "pronounce_th": "by",
+    "ipa": "/by/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a buy."
+      "I use the word 'by' in a sentence."
     ],
-    "synonyms": [],
+    "synonyms": [
+      "by-similar"
+    ],
     "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   },
   {
@@ -1035,735 +1885,18 @@
     "meaning_th": "ความหมายของ cake",
     "meaning_en": "basic meaning of cake",
     "pronounce_th": "cake",
-    "ipa": "",
+    "ipa": "/cake/",
     "part_of_speech": "noun",
     "cefr": "A1",
     "examples": [
-      "This is a cake."
+      "I use the word 'cake' in a sentence."
     ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "camera",
-    "meaning_th": "ความหมายของ camera",
-    "meaning_en": "basic meaning of camera",
-    "pronounce_th": "camera",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a camera."
+    "synonyms": [
+      "cake-similar"
     ],
-    "synonyms": [],
     "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "car",
-    "meaning_th": "ความหมายของ car",
-    "meaning_en": "basic meaning of car",
-    "pronounce_th": "car",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a car."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "cat",
-    "meaning_th": "ความหมายของ cat",
-    "meaning_en": "basic meaning of cat",
-    "pronounce_th": "cat",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a cat."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "chair",
-    "meaning_th": "ความหมายของ chair",
-    "meaning_en": "basic meaning of chair",
-    "pronounce_th": "chair",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a chair."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "cheese",
-    "meaning_th": "ความหมายของ cheese",
-    "meaning_en": "basic meaning of cheese",
-    "pronounce_th": "cheese",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a cheese."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "chicken",
-    "meaning_th": "ความหมายของ chicken",
-    "meaning_en": "basic meaning of chicken",
-    "pronounce_th": "chicken",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a chicken."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "child",
-    "meaning_th": "ความหมายของ child",
-    "meaning_en": "basic meaning of child",
-    "pronounce_th": "child",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a child."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "cinema",
-    "meaning_th": "ความหมายของ cinema",
-    "meaning_en": "basic meaning of cinema",
-    "pronounce_th": "cinema",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a cinema."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "city",
-    "meaning_th": "ความหมายของ city",
-    "meaning_en": "basic meaning of city",
-    "pronounce_th": "city",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a city."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "class",
-    "meaning_th": "ความหมายของ class",
-    "meaning_en": "basic meaning of class",
-    "pronounce_th": "class",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a class."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "clean",
-    "meaning_th": "ความหมายของ clean",
-    "meaning_en": "basic meaning of clean",
-    "pronounce_th": "clean",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a clean."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "clock",
-    "meaning_th": "ความหมายของ clock",
-    "meaning_en": "basic meaning of clock",
-    "pronounce_th": "clock",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a clock."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "clothes",
-    "meaning_th": "ความหมายของ clothes",
-    "meaning_en": "basic meaning of clothes",
-    "pronounce_th": "clothes",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a clothes."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "coffee",
-    "meaning_th": "ความหมายของ coffee",
-    "meaning_en": "basic meaning of coffee",
-    "pronounce_th": "coffee",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a coffee."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "cold",
-    "meaning_th": "ความหมายของ cold",
-    "meaning_en": "basic meaning of cold",
-    "pronounce_th": "cold",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a cold."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "college",
-    "meaning_th": "ความหมายของ college",
-    "meaning_en": "basic meaning of college",
-    "pronounce_th": "college",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a college."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "colour",
-    "meaning_th": "ความหมายของ colour",
-    "meaning_en": "basic meaning of colour",
-    "pronounce_th": "colour",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a colour."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "computer",
-    "meaning_th": "ความหมายของ computer",
-    "meaning_en": "basic meaning of computer",
-    "pronounce_th": "computer",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a computer."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "cook",
-    "meaning_th": "ความหมายของ cook",
-    "meaning_en": "basic meaning of cook",
-    "pronounce_th": "cook",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a cook."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "country",
-    "meaning_th": "ความหมายของ country",
-    "meaning_en": "basic meaning of country",
-    "pronounce_th": "country",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a country."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "cousin",
-    "meaning_th": "ความหมายของ cousin",
-    "meaning_en": "basic meaning of cousin",
-    "pronounce_th": "cousin",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a cousin."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "dance",
-    "meaning_th": "ความหมายของ dance",
-    "meaning_en": "basic meaning of dance",
-    "pronounce_th": "dance",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a dance."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "dark",
-    "meaning_th": "ความหมายของ dark",
-    "meaning_en": "basic meaning of dark",
-    "pronounce_th": "dark",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a dark."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "daughter",
-    "meaning_th": "ความหมายของ daughter",
-    "meaning_en": "basic meaning of daughter",
-    "pronounce_th": "daughter",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a daughter."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "day",
-    "meaning_th": "ความหมายของ day",
-    "meaning_en": "basic meaning of day",
-    "pronounce_th": "day",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a day."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "December",
-    "meaning_th": "ความหมายของ December",
-    "meaning_en": "basic meaning of December",
-    "pronounce_th": "December",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a December."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "delicious",
-    "meaning_th": "ความหมายของ delicious",
-    "meaning_en": "basic meaning of delicious",
-    "pronounce_th": "delicious",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a delicious."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "desk",
-    "meaning_th": "ความหมายของ desk",
-    "meaning_en": "basic meaning of desk",
-    "pronounce_th": "desk",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a desk."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "dictionary",
-    "meaning_th": "ความหมายของ dictionary",
-    "meaning_en": "basic meaning of dictionary",
-    "pronounce_th": "dictionary",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a dictionary."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "dinner",
-    "meaning_th": "ความหมายของ dinner",
-    "meaning_en": "basic meaning of dinner",
-    "pronounce_th": "dinner",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a dinner."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "doctor",
-    "meaning_th": "ความหมายของ doctor",
-    "meaning_en": "basic meaning of doctor",
-    "pronounce_th": "doctor",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a doctor."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "dog",
-    "meaning_th": "ความหมายของ dog",
-    "meaning_en": "basic meaning of dog",
-    "pronounce_th": "dog",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a dog."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "door",
-    "meaning_th": "ความหมายของ door",
-    "meaning_en": "basic meaning of door",
-    "pronounce_th": "door",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a door."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "draw",
-    "meaning_th": "ความหมายของ draw",
-    "meaning_en": "basic meaning of draw",
-    "pronounce_th": "draw",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a draw."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "drink",
-    "meaning_th": "ความหมายของ drink",
-    "meaning_en": "basic meaning of drink",
-    "pronounce_th": "drink",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a drink."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "driver",
-    "meaning_th": "ความหมายของ driver",
-    "meaning_en": "basic meaning of driver",
-    "pronounce_th": "driver",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a driver."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "easy",
-    "meaning_th": "ความหมายของ easy",
-    "meaning_en": "basic meaning of easy",
-    "pronounce_th": "easy",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a easy."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "eat",
-    "meaning_th": "ความหมายของ eat",
-    "meaning_en": "basic meaning of eat",
-    "pronounce_th": "eat",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a eat."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "egg",
-    "meaning_th": "ความหมายของ egg",
-    "meaning_en": "basic meaning of egg",
-    "pronounce_th": "egg",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a egg."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "elephant",
-    "meaning_th": "ความหมายของ elephant",
-    "meaning_en": "basic meaning of elephant",
-    "pronounce_th": "elephant",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a elephant."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "email",
-    "meaning_th": "ความหมายของ email",
-    "meaning_en": "basic meaning of email",
-    "pronounce_th": "email",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a email."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "enjoy",
-    "meaning_th": "ความหมายของ enjoy",
-    "meaning_en": "basic meaning of enjoy",
-    "pronounce_th": "enjoy",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a enjoy."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "evening",
-    "meaning_th": "ความหมายของ evening",
-    "meaning_en": "basic meaning of evening",
-    "pronounce_th": "evening",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a evening."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "event",
-    "meaning_th": "ความหมายของ event",
-    "meaning_en": "basic meaning of event",
-    "pronounce_th": "event",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a event."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
-    ]
-  },
-  {
-    "word": "exam",
-    "meaning_th": "ความหมายของ exam",
-    "meaning_en": "basic meaning of exam",
-    "pronounce_th": "exam",
-    "ipa": "",
-    "part_of_speech": "noun",
-    "cefr": "A1",
-    "examples": [
-      "This is a exam."
-    ],
-    "synonyms": [],
-    "tags": [
-      "A1"
+      "A1",
+      "noun"
     ]
   }
 ]
