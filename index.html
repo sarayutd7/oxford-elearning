@@ -809,6 +809,11 @@ button:active{
             🌐 Translate
         </button>
 
+        <button class="tab-btn"
+                onclick="switchTab(event,'ai')">
+            🤖 AI
+        </button>
+
     </div>
 
     <!-- SEARCH -->
@@ -1046,6 +1051,680 @@ button:active{
         </div>
 
     </div>
+
+    <!-- =========================
+
+ AI TAB
+
+========================= -->
+
+<div id="ai"
+
+     class="tab-content">
+
+    <!-- AI GENERATE -->
+
+    <div class="card">
+
+        <h2>🤖 AI Vocabulary Generator</h2>
+
+        <p style="margin-bottom:20px;">
+
+            พิมพ์คำศัพท์ แล้วให้ AI
+
+            เติมข้อมูลทั้งหมดอัตโนมัติ
+
+        </p>
+
+        <input type="text"
+
+               id="aiWordInput"
+
+               placeholder="เช่น beautiful">
+
+        <div style="
+
+            display:flex;
+
+            gap:10px;
+
+            flex-wrap:wrap;
+
+        ">
+
+            <button class="btn-primary"
+
+                    onclick="generateAIVocab()">
+
+                ✨ Generate Vocabulary
+
+            </button>
+
+            <button onclick="randomAIVocab()">
+
+                🎲 Random Word
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <!-- AI RESULT -->
+
+    <div id="aiResult"
+
+         style="display:none;">
+
+        <div class="card">
+
+            <div style="
+
+                display:flex;
+
+                justify-content:space-between;
+
+                align-items:center;
+
+                gap:10px;
+
+                flex-wrap:wrap;
+
+            ">
+
+                <div>
+
+                    <h2 id="aiWord"></h2>
+
+                    <p id="aiIPA"></p>
+
+                </div>
+
+                <button onclick="speakAIWord()">
+
+                    🔊 Speak
+
+                </button>
+
+            </div>
+
+            <div style="margin-top:20px;">
+
+                <p>
+
+                    <strong>🇹🇭 Thai Meaning:</strong>
+
+                </p>
+
+                <p id="aiTH"></p>
+
+            </div>
+
+            <div style="margin-top:20px;">
+
+                <p>
+
+                    <strong>🇺🇸 English Meaning:</strong>
+
+                </p>
+
+                <p id="aiEN"></p>
+
+            </div>
+
+            <div style="margin-top:20px;">
+
+                <p>
+
+                    <strong>📚 Part of Speech:</strong>
+
+                </p>
+
+                <p id="aiPOS"></p>
+
+            </div>
+
+            <div style="margin-top:20px;">
+
+                <p>
+
+                    <strong>🎯 CEFR:</strong>
+
+                </p>
+
+                <p id="aiCEFR"></p>
+
+            </div>
+
+            <div style="margin-top:20px;">
+
+                <p>
+
+                    <strong>📝 Examples:</strong>
+
+                </p>
+
+                <ul id="aiExamples"></ul>
+
+            </div>
+
+            <div style="margin-top:20px;">
+
+                <p>
+
+                    <strong>🔗 Synonyms:</strong>
+
+                </p>
+
+                <div id="aiSynonyms"></div>
+
+            </div>
+
+            <div style="margin-top:20px;">
+
+                <p>
+
+                    <strong>🏷 Tags:</strong>
+
+                </p>
+
+                <div id="aiTags"></div>
+
+            </div>
+
+            <div style="
+
+                margin-top:30px;
+
+                display:flex;
+
+                gap:10px;
+
+                flex-wrap:wrap;
+
+            ">
+
+                <button class="btn-primary"
+
+                        onclick="saveAIVocab()">
+
+                    ➕ Add To Vocabulary
+
+                </button>
+
+                <button onclick="generateAnotherExample()">
+
+                    ✨ More Example
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+
+// =========================
+
+// AI VOCAB ENGINE DEMO
+
+// =========================
+
+let aiGeneratedVocab = null;
+
+// MOCK AI DATABASE
+
+const aiMockDatabase = {
+
+    beautiful: {
+
+        word: "beautiful",
+
+        meaning_th:
+
+            "สวยงาม",
+
+        meaning_en:
+
+            "very attractive and pleasing",
+
+        pronounce_th:
+
+            "บิว-ทิ-ฟูล",
+
+        ipa:
+
+            "/ˈbjuː.tɪ.fəl/",
+
+        part_of_speech:
+
+            "adjective",
+
+        cefr:
+
+            "A1",
+
+        examples: [
+
+            "She is beautiful.",
+
+            "The beach is beautiful."
+
+        ],
+
+        synonyms: [
+
+            "pretty",
+
+            "lovely",
+
+            "attractive"
+
+        ],
+
+        tags: [
+
+            "appearance",
+
+            "emotion",
+
+            "daily-life"
+
+        ]
+
+    },
+
+    computer: {
+
+        word: "computer",
+
+        meaning_th:
+
+            "คอมพิวเตอร์",
+
+        meaning_en:
+
+            "an electronic machine for processing data",
+
+        pronounce_th:
+
+            "คอม-พิว-เตอร์",
+
+        ipa:
+
+            "/kəmˈpjuː.tər/",
+
+        part_of_speech:
+
+            "noun",
+
+        cefr:
+
+            "A1",
+
+        examples: [
+
+            "I use a computer every day.",
+
+            "My computer is fast."
+
+        ],
+
+        synonyms: [
+
+            "PC",
+
+            "machine"
+
+        ],
+
+        tags: [
+
+            "technology",
+
+            "device"
+
+        ]
+
+    }
+
+};
+
+// =========================
+
+// GENERATE AI VOCAB
+
+// =========================
+
+async function generateAIVocab(){
+
+    const input =
+
+        document.getElementById("aiWordInput")
+
+            .value
+
+            .trim()
+
+            .toLowerCase();
+
+    if(!input){
+
+        alert("กรุณากรอกคำศัพท์");
+
+        return;
+
+    }
+
+    // =========================
+
+    // LOADING
+
+    // =========================
+
+    document.getElementById("aiResult")
+
+        .style.display = "block";
+
+    document.getElementById("aiWord")
+
+        .innerText = "🤖 AI Thinking...";
+
+    // simulate AI
+
+    await new Promise(resolve =>
+
+        setTimeout(resolve,800)
+
+    );
+
+    // =========================
+
+    // MOCK AI RESPONSE
+
+    // =========================
+
+    let generated =
+
+        aiMockDatabase[input];
+
+    // ถ้าไม่มีใน db
+
+    // AI mock generate
+
+    if(!generated){
+
+        generated = {
+
+            word: input,
+
+            meaning_th:
+
+                "AI generated meaning",
+
+            meaning_en:
+
+                `definition of ${input}`,
+
+            pronounce_th:
+
+                "AI pronunciation",
+
+            ipa:
+
+                "/ai-generated/",
+
+            part_of_speech:
+
+                "noun",
+
+            cefr:
+
+                "B1",
+
+            examples: [
+
+                `This is a ${input}.`,
+
+                `I like ${input}.`
+
+            ],
+
+            synonyms: [
+
+                "example",
+
+                "sample"
+
+            ],
+
+            tags: [
+
+                "ai-generated"
+
+            ]
+
+        };
+
+    }
+
+    aiGeneratedVocab = generated;
+
+    renderAIVocab(generated);
+
+}
+
+// =========================
+
+// RENDER AI RESULT
+
+// =========================
+
+function renderAIVocab(data){
+
+    document.getElementById("aiWord")
+
+        .innerText =
+
+        data.word;
+
+    document.getElementById("aiIPA")
+
+        .innerText =
+
+        data.ipa;
+
+    document.getElementById("aiTH")
+
+        .innerText =
+
+        data.meaning_th;
+
+    document.getElementById("aiEN")
+
+        .innerText =
+
+        data.meaning_en;
+
+    document.getElementById("aiPOS")
+
+        .innerText =
+
+        data.part_of_speech;
+
+    document.getElementById("aiCEFR")
+
+        .innerText =
+
+        data.cefr;
+
+    document.getElementById("aiExamples")
+
+        .innerHTML =
+
+        data.examples.map(v => `
+
+            <li>${v}</li>
+
+        `).join("");
+
+    document.getElementById("aiSynonyms")
+
+        .innerHTML =
+
+        data.synonyms.map(v => `
+
+            <span class="tag">
+
+                ${v}
+
+            </span>
+
+        `).join("");
+
+    document.getElementById("aiTags")
+
+        .innerHTML =
+
+        data.tags.map(v => `
+
+            <span class="tag">
+
+                ${v}
+
+            </span>
+
+        `).join("");
+
+}
+
+// =========================
+
+// SAVE AI VOCAB
+
+// =========================
+
+function saveAIVocab(){
+
+    if(!aiGeneratedVocab) return;
+
+    const exists =
+
+        vocabData.some(item =>
+
+            item.word?.toLowerCase()
+
+            ===
+
+            aiGeneratedVocab.word?.toLowerCase()
+
+        );
+
+    if(exists){
+
+        alert("คำนี้มีอยู่แล้ว");
+
+        return;
+
+    }
+
+    vocabData.unshift(aiGeneratedVocab);
+
+    saveToLocal();
+
+    renderManager();
+
+    renderFlashcard();
+
+    generateQuiz();
+
+    alert("✅ AI เพิ่มคำศัพท์เรียบร้อย");
+
+}
+
+// =========================
+
+// RANDOM WORD
+
+// =========================
+
+function randomAIVocab(){
+
+    const randomWords = [
+
+        "beautiful",
+
+        "computer",
+
+        "adventure",
+
+        "knowledge",
+
+        "future"
+
+    ];
+
+    const word =
+
+        randomWords[
+
+            Math.floor(
+
+                Math.random() *
+
+                randomWords.length
+
+            )
+
+        ];
+
+    document.getElementById("aiWordInput")
+
+        .value = word;
+
+    generateAIVocab();
+
+}
+
+// =========================
+
+// SPEAK
+
+// =========================
+
+function speakAIWord(){
+
+    if(!aiGeneratedVocab) return;
+
+    speakWord(aiGeneratedVocab.word);
+
+}
+
+// =========================
+
+// MORE EXAMPLE
+
+// =========================
+
+function generateAnotherExample(){
+
+    if(!aiGeneratedVocab) return;
+
+    const more =
+
+        `AI created another example for "${aiGeneratedVocab.word}".`;
+
+    aiGeneratedVocab.examples.push(more);
+
+    renderAIVocab(aiGeneratedVocab);
+
+}
+
+</script>
 
 </div>
 
