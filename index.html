@@ -1403,118 +1403,107 @@ const aiMockDatabase = {
 async function generateAIVocab(){
 
     const input =
-
         document.getElementById("aiWordInput")
-
             .value
-
-            .trim()
-
-            .toLowerCase();
+            .trim();
 
     if(!input){
 
         alert("กรุณากรอกคำศัพท์");
-
         return;
 
     }
 
-    // =========================
+    try{
 
-    // LOADING
+        // =========================
+        // TRANSLATE API
+        // =========================
 
-    // =========================
+        const translateURL =
+`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=th&dt=t&q=${encodeURIComponent(input)}`;
 
-    document.getElementById("aiResult")
+        const translateResponse =
+            await fetch(translateURL);
 
-        .style.display = "block";
+        const translateData =
+            await translateResponse.json();
 
-    document.getElementById("aiWord")
+        const meaningTH =
+            translateData[0]
+                .map(v => v[0])
+                .join("");
 
-        .innerText = "🤖 AI Thinking...";
+        // =========================
+        // DICTIONARY API
+        // =========================
 
-    // simulate AI
+        const dictResponse =
+            await fetch(
+`https://api.dictionaryapi.dev/api/v2/entries/en/${encodeURIComponent(input)}`
+            );
 
-    await new Promise(resolve =>
+        const dictData =
+            await dictResponse.json();
 
-        setTimeout(resolve,800)
+        const entry = dictData[0];
 
-    );
+        const meaning =
+            entry.meanings?.[0];
 
-    // =========================
+        const definition =
+            meaning?.definitions?.[0];
 
-    // MOCK AI RESPONSE
+        aiGeneratedVocab = {
 
-    // =========================
-
-    let generated =
-
-        aiMockDatabase[input];
-
-    // ถ้าไม่มีใน db
-
-    // AI mock generate
-
-    if(!generated){
-
-        generated = {
-
-            word: input,
+            word:
+                input,
 
             meaning_th:
-
-                "AI generated meaning",
+                meaningTH,
 
             meaning_en:
-
-                `definition of ${input}`,
+                definition?.definition || "",
 
             pronounce_th:
-
-                "AI pronunciation",
+                "",
 
             ipa:
-
-                "/ai-generated/",
+                entry.phonetic || "",
 
             part_of_speech:
-
-                "noun",
+                meaning?.partOfSpeech || "",
 
             cefr:
+                "A1",
 
-                "B1",
+            examples:
+                definition?.example
+                ? [definition.example]
+                : [],
 
-            examples: [
+            synonyms:
+                meaning?.synonyms?.slice(0,5)
+                || [],
 
-                `This is a ${input}.`,
-
-                `I like ${input}.`
-
-            ],
-
-            synonyms: [
-
-                "example",
-
-                "sample"
-
-            ],
-
-            tags: [
-
+            tags:[
                 "ai-generated"
-
             ]
 
         };
 
+        renderAIVocab(aiGeneratedVocab);
+
+        document.getElementById("aiResult")
+            .style.display = "block";
+
+    }catch(error){
+
+        console.error(error);
+
+        alert("AI generate failed");
+
     }
-
-    aiGeneratedVocab = generated;
-
-    renderAIVocab(generated);
 
 }
 
